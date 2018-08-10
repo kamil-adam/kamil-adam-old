@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="pl">
 
   {% include head.html %}
 
@@ -9,7 +9,12 @@
 
     <div class="content container">
       {{ content }}
+
+      {% include disqus.html %}
+
+      {% include footer.html %}
     </div>
 
+    {% include google-analytics.html %}
   </body>
 </html>

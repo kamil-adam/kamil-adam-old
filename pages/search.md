@@ -1,0 +1,31 @@
+---
+layout: page
+title: Wyszukiwarka
+permalink: /search/
+description: Wyszukiwarka postów i stron
+---
+<div class="search-engine">
+  <label>
+    Wyszukaj
+    <input id="search_input" placeholder="Wpisz szukaną frazę"/>
+  </label>
+
+  <div id="search_output"></div>
+
+  <script type="text/javascript" src="/public/js/search/fetch.js"></script>
+  <script type="text/javascript" src="/public/js/search/search.js"></script>
+
+  <script type="text/javascript">
+
+    const search = new jekyllSearch(
+      'https://www.writeonly.pl/public/js/search/search.json',
+      '#search_input',
+      '#search_output',
+      'https://www.writeonly.pl'
+    );
+
+    search.init();
+
+  </script>
+</div>
+

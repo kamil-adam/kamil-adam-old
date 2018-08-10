@@ -3,10 +3,10 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            BlackDoc
-tagline:          Black Theme for Jekyll
-description:      "A two-column black theme with a scrolling sidebar. Ideal for sites requiring a master-detail layout, e.g. documentation, cheatsheets, lyrics, notes..."
-url:              https://github.com/karloespiritu/blackdoc
+title:            WriteOnly.pl
+tagline:          WriteOnly Scala Blog
+description:      "Blog tylko-do-zapisu o językach programowania Scala/JVM, Scala.js i Scala Native"
+url:              https://writeonly.pl/
 baseurl:          /
                   # the optional subpath of your site, e.g. "/my-jekyll-site/"
                   # This will apply to all pages in your Jekyll site.
@@ -15,7 +15,7 @@ author:
   name:           Karlo Espiritu
   url:            https://twitter.com/karloespiritu
 
-paginate:         5
+paginate:         2
 # paginate_path:    '/page:num'
                     # Or '/my-jekyll-site/page:num' if you want to move your index pages
 
@@ -23,6 +23,8 @@ plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
+  - jekyll-sitemap
+#  - jekyll-twitter-plugin
 
 # Custom vars
 version:            2.0.1

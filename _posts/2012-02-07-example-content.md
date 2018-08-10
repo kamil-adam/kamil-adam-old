@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Example content
+author:     "writeonly"
+category:   test
+tag: test
+comments:   true
+toc:        true
 ---
 
 

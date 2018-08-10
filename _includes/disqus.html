@@ -1,0 +1,18 @@
+<!--{% if page.comments %}-->
+<div id="disqus_thread"></div>
+<script>
+
+var disqus_config = function () {
+this.page.url = "{{ site.url }}/{{ page.url }}";
+this.page.identifier = "{{ page.id }}";
+};
+
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://www-writeonly-pl.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Włacz JavaScript w twojej przeglądarce, aby zobaczyć <a href="https://disqus.com/?ref_noscript"> komentarze by Disqus.</a></noscript>
+<!--{% endif %}-->

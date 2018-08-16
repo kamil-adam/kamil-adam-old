@@ -1,11 +1,11 @@
 ---
-layout: post
-title: "Dlaczego warto prowadzić bloga o programowaniu"
-author:     "writeonly"
-category:   notatki
-tag: blog
-comments:   true
-toc:        true
+layout:   post
+title:    "Dlaczego warto prowadzić bloga o programowaniu"
+author:   "writeonly"
+category: przemyslenia
+tag:      przemyslenia blog
+comments: true
+toc:      true
 ---
 
 Ja znalazłem cztery powody, dlaczego warto prowadzić bloga o programowaniu. Natrafiałem na nie właśnie w tej kolejności.

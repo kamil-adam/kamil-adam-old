@@ -8,31 +8,33 @@ comments: true
 toc:      true
 ---
 
-Przed założeniem bloga opartego na technologiach Jekyll i GitHub Pages przejrzałem sporo polskojęzycznych blogów z opisem “Jak to zrobić”. 
-Wszyscy mówili, że jest to niesamowicie proste. 
-Za wyjątkiem jednego malkontenta, Gutka (<https://blog.gutek.pl/2014/10/30/nowy-blog-2/>). 
+Przed założeniem bloga opartego na technologiach Jekyll i GitHub Pages przejrzałem sporo polskojęzycznych blogów z opisem “Jak to zrobić”.
+Wszyscy mówili, że jest to niesamowicie proste.
+Za wyjątkiem jednego malkontenta, Gutka (<https://blog.gutek.pl/2014/10/30/nowy-blog-2/>).
 
-Pierwszy wieczór spędziłem na nieudanej instalacji Jekylla i próbie uruchomienia przykładowego bloga opartego na motywie graficznym BlackDocs (<https://github.com/karloespiritu/BlackDoc>). 
-Wieczór zakończyłem w momencie przeczytania porady na StackOverflow “usuń Rubiego i zainstaluj wszystko ponownie”. 
-Wtedy stwierdziłem, że może jednak Gutek ma rację i Jekyll bywa problematyczny. 
+Pierwszy wieczór spędziłem na nieudanej instalacji Jekylla i próbie uruchomienia przykładowego bloga opartego na motywie graficznym BlackDocs
+(<https://github.com/karloespiritu/BlackDoc>).
+Wieczór zakończyłem w momencie przeczytania porady na StackOverflow “usuń Rubiego i zainstaluj wszystko ponownie”.
+Wtedy stwierdziłem, że może jednak Gutek ma rację i Jekyll bywa problematyczny.
 
-Jednak nie poddałem się i po paru wieczorach miałem pusty blog z możliwością komentowania postów i skryptem raportującym statystyki 
-(funkcjonalność dodana według <https://devcave.pl/dajsiepoznac2017/jekyll-disqus-comments-google-analitics>) 
-oraz nie do końca skonfigurowaną wyszukiwarką (<https://devcave.pl/frontend/wyszukiwarka-na-blogu-bez-backendu>). 
-W tym momencie uznałem, że dalsze usprawnianie bloga, który nie zawiera żadnej treści, nie ma żadnego sensu. 
-W związku z czym odłożyłem na czas późniejszy dodawanie tagów i kategorii “bez użycia pluginu” 
-(<https://devenv.pl/pierwsze-zetkniecie-jekyll-podzial-kategorie/> i <http://www.minddust.com/post/tags-and-categories-on-github-pages/>). 
-A nuż w międzyczasie plugin dla kategorii znajdzie się na liście pluginów wspieranych przez GitHub Pages 
+Jednak nie poddałem się i po paru wieczorach miałem pusty blog z możliwością komentowania postów i skryptem raportującym statystyki
+(funkcjonalność dodana według <https://devcave.pl/dajsiepoznac2017/jekyll-disqus-comments-google-analitics>)
+oraz nie do końca skonfigurowaną wyszukiwarką (<https://devcave.pl/frontend/wyszukiwarka-na-blogu-bez-backendu>).
+W tym momencie uznałem, że dalsze usprawnianie bloga, który nie zawiera żadnej treści, nie ma żadnego sensu.
+W związku z czym odłożyłem na czas późniejszy dodawanie tagów i kategorii “bez użycia pluginu”
+(<https://devenv.pl/pierwsze-zetkniecie-jekyll-podzial-kategorie/> i <http://www.minddust.com/post/tags-and-categories-on-github-pages/>).
+A nuż w międzyczasie plugin dla kategorii znajdzie się na liście pluginów wspieranych przez GitHub Pages
 (Aktualna lista wspieranych pluginów <https://pages.github.com/versions/>).
 
-Po opublikowaniu pierwszego posta czułem jednak, że dalej czegoś brakuje. Wciśnięcie F12 i spojrzenie w kod strony było przerażające. 
-Ujrzałem spaghetti w postaci naprzemiennie występujących fragmentów HTML, CSS i JS. 
-Ale najgorsze było, gdy spojrzałem na zakładkę “Storage”. 
-Okazało się, że moja prosta strona internetowa zapisuje, o zgrozo, ciasteczka. 
-O ile ciasteczko dla systemu komentarzy Disqus można jeszcze obronić, że jest technicznie potrzebne do działania funkcjonalności, 
+Po opublikowaniu pierwszego posta czułem jednak, że dalej czegoś brakuje. Wciśnięcie F12 i spojrzenie w kod strony było przerażające.
+Ujrzałem spaghetti w postaci naprzemiennie występujących fragmentów HTML, CSS i JS.
+Ale najgorsze było, gdy spojrzałem na zakładkę “Storage”.
+Okazało się, że moja prosta strona internetowa zapisuje, o zgrozo, ciasteczka.
+O ile ciasteczko dla systemu komentarzy Disqus można jeszcze obronić, że jest technicznie potrzebne do działania funkcjonalności,
 o tyle ciasteczko dla Google Analytics jest już jawnym śledzeniem użytkownika!
 
-Poszukiwanie rozwiązania mojego problemu doprowadziło mnie do strony <https://jekyllcodex.org/> , a dokładniej do sekcji “Without plugins” (<https://jekyllcodex.org/without-plugins/>). 
+Poszukiwanie rozwiązania mojego problemu doprowadziło mnie do strony <https://jekyllcodex.org/> ,
+a dokładniej do sekcji “Without plugins” (<https://jekyllcodex.org/without-plugins/>).
 Znalazłem tam skrypt wyświetlający banner informujący o plikach Cookies. Po moich przeróbkach wygląda on tak:
 
 ```html

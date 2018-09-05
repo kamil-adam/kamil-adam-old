@@ -45,7 +45,7 @@ docker kill $(docker ps -q) && docker rm $(docker ps -a -q) && docker rmi $(dock
 
 Lepiej jest jednak dodać wpis do pliku `~/.bash_aliases` :
 ```bash
-alias docker_rmi_all=’docker kill $(docker ps -q) && docker rm $(docker ps -a -q) && docker rmi $(docker images -q)’
+alias docker_rmi_all='docker kill $(docker ps -q) && docker rm $(docker ps -a -q) && docker rmi $(docker images -q)'
 ```
 
 I wtedy wystarczy z wywołać w terminalu:

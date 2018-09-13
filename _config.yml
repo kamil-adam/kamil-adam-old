@@ -5,7 +5,7 @@ highlighter:      rouge
 # Setup
 title:            WriteOnly.pl
 tagline:          WriteOnly Scala Blog
-description:      "Blog tylko-do-zapisu o językach programowania Scala/JVM, Scala.js i Scala Native"
+description:      "Blog tylko-do-zapisu o językach programowania Scala/JVM, Scala.js i Scala Native oraz generatorze stron Jekkyll i użyciu wiersza poleceń"
 url:              https://writeonly.pl/
 baseurl:          /
                   # the optional subpath of your site, e.g. "/my-jekyll-site/"
@@ -31,3 +31,11 @@ version:            2.0.1
 
 github:
   repo:             https://github.com/karloespiritu/blackdoc
+
+facebook_url: https://www.facebook.com/WriteOnlyBlog/
+#twitter_url:
+#linkedin_url:
+#googleplus_url:
+#pinterest_url:
+#instagram_url:
+

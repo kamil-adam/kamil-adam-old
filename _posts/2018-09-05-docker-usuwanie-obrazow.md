@@ -8,7 +8,7 @@ comments: true
 toc:      true
 ---
 
-Dziesięć lat pracy pracy na Linuksie nauczyło mnie,
+Dziesięć lat pracy na Linuksie nauczyło mnie,
 że jeśli Linuks zaczyna magicznie i bez ostrzeżenia sam z siebie nie działać
 to najprawdopodobniej skończyło się miejsce na dysku.
 Identycznie jest z Dockerem.

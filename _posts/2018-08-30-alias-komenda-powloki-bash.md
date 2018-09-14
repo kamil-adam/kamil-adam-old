@@ -55,7 +55,7 @@ source ~/.bash_aliases
 
 by cieszyć się swoimi aliasami w każdym terminalu.
 
-Automatyczne wczytywanie aliasów
+## Automatyczne wczytywanie aliasów
 Można to jednak jeszcze bardziej uprościć.
 Przy starcie każdego nowego terminala jest wczytywany plik `~/.bashrc`.
 Wystarczy na końcu tego pliku dodać:
@@ -69,7 +69,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 ```
 Dodatkowy `if` uchroni nas przed błędem, gdy plik `~/.bash_aliases` nie istnieje.
-Kropka na na początku drugiej linii jest aliasem na `source`.
+Kropka na początku drugiej linii jest aliasem na `source`.
 
 Dodatkowo do pliku `~/.bash_aliases` warto dodać aliasy:
 ```bash

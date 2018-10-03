@@ -2,8 +2,8 @@
 layout:   post
 title:    "Przenośna Scala"
 author:   "writeonly"
-category: jekyll
-tag:      jekyll jekyllcodex
+category: resentiment
+tag:      resentiment scala scala/jvm scala.js scalanative
 comments: true
 toc:      true
 ---
@@ -11,7 +11,7 @@ toc:      true
 ## JVM Resentment
 
 Znajomy zajarał się językiem Rust.
-Opowiadami mi jaki to wspaniały język i pokazuje przykłady kodu.
+Opowiada mi jaki to wspaniały język i pokazuje przykłady kodu.
 RustLang na pierwszy rzut oka wygląda jak skrzyżowanie C i Haskella plus kanały jak w GoLang.
 Czyni go to pretendentem do bycia najbardziej skomplikowanym językiem programowania na świecie.
 Pretendentem, bo istnieje wśród programistów JVM opinia, że najbardziej skomlikowanym językiem na świecie jest Scala.
@@ -19,8 +19,7 @@ Scala jest skrzyżowaniem Javy i Haskella plus aktory z Erlanga.
 
 Przykłady kodu coś mi przypominają.
 Wyglądają prawie jak w Scali tylko trochę mniej obiektowe, więc pytam:
-- Dlaczego nie Scala? - pytam -
-Jest to w tej chwili jedyny funkcyjny język programowania, który odniósł sukces komercyjny.
+- Dlaczego nie Scala? Jest to w tej chwili jedyny funkcyjny język programowania, który odniósł sukces komercyjny.
 Nie licząc niszowego Erlanga - dodaję.
 - Bo ja nie lubię JVM - odpowiada. - Za dużo musiałem robić w apletach.
 
@@ -66,7 +65,7 @@ Niestety dalej jest w wersji eksperymentalnej i nie posiada np. wielowątkowośc
 Co czyni go na razie tylko zabawką dla nerdów i np. ... DevOpsów i QA.
 Bo o ile jednowątkowy program na produkcji zwykle nie ma sensu,
 to ScalaNative może zastąpić inne języki używane do wdrażania aplikacji i testowania.
-Zwłaszcza, że zwykle i tak są to zwykle języki jednowątkowe.
+Zwłaszcza, że zwykle i tak są to języki jednowątkowe.
 
 ## Portable Scala - wszystkie części mocy
 

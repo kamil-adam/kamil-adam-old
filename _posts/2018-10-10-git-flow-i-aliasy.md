@@ -34,7 +34,7 @@ Na szczęście istnieje 'git-flow'.
  wspierającym strategię rozgałęziania opracowaną przez Vincenta Driessena.
 Za [ściągawka do git-flow](<https://danielkummer.github.io/git-flow-cheatsheet/index.pl_PL.html>)
 
-Tutaj już nie mogą toczyć się dyskusje czy powinniśmy scalać z przełącznikiem `--no-ff` czy bez niegą.
+Tutaj już nie mogą toczyć się dyskusje czy powinniśmy scalać z przełącznikiem `--no-ff` czy bez niego.
 Możemy wziąć całe narzędzie ustandaryzowane i przetestowane przez społeczność i nie kroimy niczego własnego.
 
 Zalety tego są oczywiste:

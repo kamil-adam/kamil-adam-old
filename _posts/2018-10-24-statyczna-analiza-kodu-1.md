@@ -31,11 +31,10 @@ w tym poście skupię się tylko na wtyczkach modyfikujących kod źródłowy.
 
 ### sbt-scalariform - sbt plugin adding support for source code formatting using Scalariform
 [sbt-scalariform](<https://github.com/sbt/sbt-scalariform>)
-to wtyczka sbt dodającej obsługę formatowania kodu źródłowego przy użyciu formatera kodu Scalariform 
+to wtyczka sbt dodająca obsługę formatowania kodu źródłowego przy użyciu formatera kodu Scalariform 
 
 Dodajemy `scalariform`  do pliku `projektu/plugins.sbt`:
 ```scala
-// project/plugins.sbt
 addSbtPlugin("org.scalariform" % "sbt-scalariform" % "1.8.2")
 ```
 
@@ -141,7 +140,7 @@ sbt 'scalafix --check' 'test:scalafix --check' 'it:scalafix --check'
 ## Podsumowanie
 
 Wszystkie wymienione wyżej wtyczki dodałem do projektu
-[resentiment](<https://github.com/writeonly/resentiment>.)
+[resentiment](<https://github.com/writeonly/resentiment>).
 
 Na chwilę obecna moja komenda do zbudowania tego projektu to:
 ```bash

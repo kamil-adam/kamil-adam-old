@@ -3,7 +3,8 @@ layout:   post
 title:    "Docker - usuwanie obrazów"
 author:   "writeonly"
 category: cli
-tag:      cli docker alias
+tags:     cli alias
+labels:    docker
 comments: true
 toc:      true
 ---

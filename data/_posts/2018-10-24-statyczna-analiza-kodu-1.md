@@ -3,7 +3,8 @@ layout:   post
 title:    "Statyczna analiza kodu dla języka Scala w SBT - część 1."
 author:   "writeonly"
 category: resentiment
-tag:      resentiment scala sbt static analysis scalafix scalafmt scalariform
+tags:     resentiment scala sbt code-analysis static-code-analysis
+labels:    scalafix scalafmt scalariform
 comments: true
 toc:      true
 ---

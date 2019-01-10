@@ -3,7 +3,8 @@ layout:   post
 title: "Git-flow i aliasy"
 author:   "writeonly"
 category: cli
-tag:      cli git flow alias
+tags:     cli git alias
+labels:    flow
 comments: true
 toc:      true
 ---

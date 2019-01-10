@@ -3,7 +3,8 @@ layout:   post
 title:    "Dlaczego warto prowadzić bloga o programowaniu"
 author:   "writeonly"
 category: przemyslenia
-tag:      przemyslenia blog
+tags:     blog
+labels:    przemyslenia
 comments: true
 toc:      true
 ---
@@ -22,7 +23,7 @@ Kolejnym krokiem było trzymanie wiedzy w chmurze np. w Dokumentach Googlowych.
 ## Pomoc dla innych
 Nie tylko ja mam słabą pamięć.
 Poza tym do pracy przychodzą też nowi lub ludzie z innych zespołów, którzy chcą się czegoś dowiedzieć.
-Głupio mi było odpowiedzieć, że czegoś nie pamiętam, gdy wiedzą że robię to od roku.
+Głupio mi było odpowiedzieć, że czegoś nie pamiętam, gdy wiedzą że robię to od roku.q
 Wycinanie fragmentów Dokumentów Googlowych i wysyłanie ich przez komunikator nie było najbardziej eleganckim rozwiązaniem.
 Więc założyłem repozytorium na GitHubie i odsyłałem linki jako odpowiedzi na pytania.
 Było to rozwiązanie lepsze, ale nie zadowalało mnie w pełni,

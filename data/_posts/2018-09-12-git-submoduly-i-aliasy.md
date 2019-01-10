@@ -3,7 +3,8 @@ layout:   post
 title: "Git - submoduły i aliasy"
 author:   "writeonly"
 category: cli
-tag:      cli git submodule alias
+tags:     cli git alias
+labels:    submodule
 comments: true
 toc:      true
 ---

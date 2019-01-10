@@ -3,7 +3,8 @@ layout:   post
 title:    "Dynamiczna analiza kodu dla SBT - testy jednostkowe"
 author:   "writeonly"
 category: resentiment
-tag:      resentiment scala scala/jvm scala.js scalanative
+tags:     resentiment scala scala-jvm scala-js scala-native code-analysis dynamic-code-analysis specs2 scalatest
+labels:   utest minitest greenlight
 comments: true
 toc:      true
 ---
@@ -33,7 +34,7 @@ Najciekawsze style to:
   * `FunSpec`, `FreeSpec` i `WordSpec` - są to style testów umożliwiające pisanie zagnieżdżonych testów, 
   jednak zagnieżdżenia nie są wymagane (za wyjątkiem stylu `FunSpec`, gdzie trzeba użyć przynajmniej jeden poziom `Describe`)
   * `FeatureSpec` - jest to zaawansowany styl dla pisania testów akceptacyjnych.
-* [spec2](<https://etorreborre.github.io/specs2/>) - 
+* [specs2](<https://etorreborre.github.io/specs2/>) - 
 jest to drugi najbardziej znany framework do pisania testów dla języka Scala.
 Od wersji czwartej wspiera Scala.js w wersji 0.6.x.
 Ma dwa style pisania testów:

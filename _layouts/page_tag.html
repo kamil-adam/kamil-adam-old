@@ -1,0 +1,30 @@
+---
+layout: default
+title: {{ page.tag }}
+---
+<div class="posts">
+  {% include breadcrumbs.html %}
+  <h1 class="posts-title">Tag: {{ page.tag | capitalize }}</h1>
+
+  <dl class="posts-nav">
+    {% for post in site.posts %}
+    {% if post.tags contains page.tag %}
+    <dt>
+      <a class="posts-nav-item" href="{{ post.url | relative_url }}">
+        {{ post.title }}
+        <span class="posts-nav-item-date">
+          <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
+            {{ post.date | date: "%Y-%m-%d" }}
+          </time>
+        </span>
+      </a>
+    </dt>
+    <dd>
+      Kategoria :
+      <a href="{{ site.baseurl }}/categories/{{ post.category }}">{{ post.category | capitalize }}</a>
+    </dd>
+
+    {% endif %}
+    {% endfor %}
+  </dl>
+</div>

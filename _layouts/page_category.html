@@ -1,0 +1,34 @@
+---
+layout: default
+title: {{ page.category }}
+---
+<div class="posts">
+  {% include breadcrumbs.html %}
+  <h1 class="posts-title">Kategoria: {{ page.title }}</h1>
+
+  {{ posts.content }}
+
+  <dl class="posts-nav">
+    {% for post in site.posts %}
+    {% if post.category == page.category %}
+    <dt>
+      <a class="posts-nav-item" href="{{ post.url | relative_url }}">
+        {{ post.title }}
+        <span class="posts-nav-item-date">
+          <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
+            {{ post.date | date: "%Y-%m-%d" }}
+          </time>
+        </span>
+      </a>
+    </dt>
+    <dd>
+      {% assign tags = post.tags | sort %}
+      Tagi:
+      {% for tag in tags %}
+      <a href="{{ site.baseurl }}/tags/{{ tag }}">{{ tag }}</a>
+      {% endfor %}
+    </dd>
+    {% endif %}
+    {% endfor %}
+  </dl>
+</div>

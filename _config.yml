@@ -7,16 +7,13 @@ title:            WriteOnly.pl
 tagline:          WriteOnly Scala Blog
 description:      "Blog tylko-do-zapisu o językach programowania Scala/JVM, Scala.js i Scala Native oraz generatorze stron Jekkyll i użyciu wiersza poleceń"
 url:              https://writeonly.pl/
-baseurl:          /
-                  # the optional subpath of your site, e.g. "/my-jekyll-site/"
-                  # This will apply to all pages in your Jekyll site.
 
 author:
   name:           Karlo Espiritu
   url:            https://twitter.com/karloespiritu
 
-paginate:         2
-# paginate_path:    '/page:num'
+paginate:         1
+paginate_path:    '/:num'
                     # Or '/my-jekyll-site/page:num' if you want to move your index pages
 
 plugins:
@@ -24,7 +21,7 @@ plugins:
   - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap
-#  - jekyll-twitter-plugin
+  - jekyll-seo-tag
 
 # Custom vars
 version:            2.0.1
@@ -32,10 +29,20 @@ version:            2.0.1
 github:
   repo:             https://github.com/karloespiritu/blackdoc
 
-facebook_url: https://www.facebook.com/WriteOnlyBlog/
-#twitter_url:
-#linkedin_url:
+facebook_url:       https://www.facebook.com/WriteOnlyBlog/
+twitter_url:        https://twitter.com/Kamil_Adam_
+linkedin_url:       https://www.linkedin.com/in/kamil-żabiński/
 #googleplus_url:
 #pinterest_url:
 #instagram_url:
 
+collections_dir: data
+collections:
+  categories:
+    output: true
+  tags:
+    output: true
+  labels:
+    output: true
+
+service_worker: true

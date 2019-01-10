@@ -3,7 +3,8 @@ layout:   post
 title:    "Bardziej dynamiczna analiza kodu dla języka Scala - Property-based testing"
 author:   "writeonly"
 category: resentiment
-tag:      resentiment property-based testing scalacheck scalaprops nyaya scalaz scalatest specs2
+tags:     resentiment code-analysis static-code-analysis specs2 scalatest
+labels:   property-based scalacheck scalaprops nyaya scalaz
 comments: true
 toc:      true
 ---

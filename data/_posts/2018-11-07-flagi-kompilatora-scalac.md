@@ -3,7 +3,8 @@ layout:   post
 title:    "Flagi kompilatora Scalac"
 author:   "writeonly"
 category: resentiment
-tag:      resentiment scala scalac options sbt
+tags:     resentiment scala sbt
+labels:    scalac options
 comments: true
 toc:      true
 ---

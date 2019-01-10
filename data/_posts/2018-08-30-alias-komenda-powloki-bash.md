@@ -3,7 +3,8 @@ layout:   post
 title:    "Alias - komenda powłoki Bash"
 author:   "writeonly"
 category: cli
-tag:      cli bash alias git
+tags:     cli bash alias git
+labels:    
 comments: true
 toc:      true
 ---

@@ -7,12 +7,15 @@ title: Strona główna
   {% for post in paginator.posts %}
   <div class="post">
     <h1 class="post-title">
-      <a href="{{ site.baseurl }}/{{ post.url | remove_first: '/'}}">
+      <a href="{{ post.url | relative_url }}">
         {{ post.title }}
       </a>
     </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <span class="post-date">
+      <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
+        {{ post.date | date: "%Y-%m-%d" }}
+      </time>
+    </span>
 
     {{ post.content }}
   </div>
@@ -21,13 +24,13 @@ title: Strona główna
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Starsze</a>
+    <a class="pagination-item older" href="{{ site.baseurl }}/{{paginator.next_page}}">Starsze</a>
   {% else %}
     <span class="pagination-item older">Starsze</span>
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/">Nowsze</a>
+      <a class="pagination-item newer" href="{{ '/' | relative_url }}/">Nowsze</a>
     {% else %}
       <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Nowsze</a>
     {% endif %}

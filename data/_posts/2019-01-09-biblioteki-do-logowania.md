@@ -3,7 +3,8 @@ layout:   post
 title:    "Biblioteki do logowania dla języka Scala"
 author:   "writeonly"
 category: resentiment
-tag:      scala logging scala-logging slogging scribe
+tags:     resentiment scala
+labels:    logging scala-logging slogging scribe
 comments: true
 toc:      true
 ---

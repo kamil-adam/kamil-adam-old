@@ -1,0 +1,21 @@
+---
+layout: page
+title: Kategorie
+permalink: /categories/
+description: Kategorie postów
+---
+<div class="posts">
+  {% assign categories = site.categories | sort: "title" %}
+  <dl class="posts-nav">
+    {% for node in categories %}
+    {% if node.title != null and node.layout == "page_category"  %}
+    <dt>
+      <a class="posts-nav-item" href="{{ node.url | relative_url }}">{{ node.title }}</a>
+    </dt>
+    <dd>
+      {{ node.content }}
+    </dd>
+    {% endif %}
+    {% endfor %}
+  </dl>
+</div>

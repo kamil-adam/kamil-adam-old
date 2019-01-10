@@ -3,28 +3,55 @@ layout: default
 ---
 
 <div class="post">
+  <div class="topbar">
+    <a href="{{ site.baseurl }}/"> {{ site.title }} </a> /
+    <a href="{{ site.baseurl }}/categories/"> Categories </a> /
+    <a href="{{ site.baseurl }}/categories/{{ page.category }}">{{ page.category | capitalize }}</a> /
+    {{ page.title }}
+  </div>
+
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+
+  <span class="post-date">
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
+      {{ post.date | date: "%Y-%m-%d" }}
+    </time>
+  </span>
 
   {% include reading-time.html %}
 
   {{ content }}
 
-  {% include share-buttons.html %}
+</div>
+
+
+<div class="tags">
+  {% assign tags = page.tags | sort %}
+  Tagi:
+  {% for tag in tags %}
+  <a href="{{ site.baseurl }}/tags/{{ tag }}">{{ tag }}</a>
+  {% endfor %}
 </div>
 
 <div class="related">
   <h2>Powiązane posty</h2>
   <ul class="related-posts">
-    {% for post in site.related_posts limit:4 %}
-      <li>
-        <h3>
-          <a href="{{ site.baseurl }}/{{ post.url | remove_first: '/'}}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
+    {% for post in site.related_posts limit:2 %}
+    <li>
+      <h2>
+        <a href="{{ post.url | relative_url }}">
+          {{ post.title }}
+          <small>
+            <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
+              {{ post.date | date: "%Y-%m-%d" }}
+            </time>
+          </small>
+        </a>
+      </h2>
+    </li>
     {% endfor %}
   </ul>
 </div>
+
+{% include share-buttons.html %}
+

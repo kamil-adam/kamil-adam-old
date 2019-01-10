@@ -3,7 +3,8 @@ layout:   post
 title:    "Przenośna Scala"
 author:   "writeonly"
 category: resentiment
-tag:      resentiment scala scala/jvm scala.js scalanative
+tags:     resentiment scala scala-jvm scala-js scala-native sbt
+labels:    jvm net javascript native
 comments: true
 toc:      true
 ---

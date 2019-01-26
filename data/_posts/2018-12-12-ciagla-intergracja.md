@@ -10,41 +10,41 @@ toc:      true
 ---
 
 
-W poprzednich wpisach zbudowaliśmy ogromną komendę 
+W poprzednich wpisach zbudowaliśmy ogromną komendę
 do analizy statycznej i dynamicznej kodu projektu oraz generacji raportów.
 Jednak wykonanie tej komendy trwa.
 A programiści nie lubią czekać.
 
 Istnieje podejrzenie graniczące z pewnością,
 że programiści pracujący przy projekcie będą wywoływać komendę fragmentarycznie,
-a całą komendę tylko przed wysłaniem kodu do repozytorium. 
+a całą komendę tylko przed wysłaniem kodu do repozytorium.
 O ile i tego nie zapomną lub zignorują.
 
 W scentralizowanych systemach kontroli wersji takich jak SVN lub CVS
 problem ten rozwiązywano za pomocą *hooków* po stronie klienta (tj programisty).
 Np. nie można było zrobić *commita*, jeśli kod nie był sformatowany,
 a pokrycie kodu testami na odpowiednio wysokim poziomie.
-Nie było to jednak dobre rozwiązanie ponieważ każdą walidację po stronie klienta można oszukać, obejść i/lub wyłączyć.  
+Nie było to jednak dobre rozwiązanie ponieważ każdą walidację po stronie klienta można oszukać, obejść i/lub wyłączyć.
 
 Dziś istnieją zdecentralizowane systemy kontroli wersji jak Git czy Mercurial.
-Pozwalają one w łatwy sposób tworzyć *feature branche*, 
+Pozwalają one w łatwy sposób tworzyć *feature branche*,
 dzięki czemu kod nie jest wysyłany bezpośrednio do głównej gałęzi repozytorium.
 *Feature branche* nie muszą zawierać sformatowanego kodu, nie muszą się nawet kompilować.
 
-Jednocześnie chcielibyśmy mieć pewność, że w momencie łączenia *feature branch* z główną gałęzią repozytorium, 
+Jednocześnie chcielibyśmy mieć pewność, że w momencie łączenia *feature branch* z główną gałęzią repozytorium,
 kod zawarty w *feature branchy* działa poprawnie i spełnia standardy zdefiniowane w projekcie.
 Rozwiązaniem jest tutaj serwer ciągłej integracji.
 
 
 ## Serwer ciągłej integracji i zamieszanie ze słownictwem
 
-Serwer ciągłej integracji jest to serwer konfigurowany skryptem, zwanym także *pipeline*. 
+Serwer ciągłej integracji jest to serwer konfigurowany skryptem, zwanym także *pipeline*.
 Większość serwerów, w zależności od konfiguracji jest wstanie robić trzy rzeczy:
 * ciągłą integrację
 * ciągłe dostarczanie
 * ciągłe wdrażanie
 
-**Ciągła integracja** (ang. *Continuous Integration*, *CI*) jest to proces, 
+**Ciągła integracja** (ang. *Continuous Integration*, *CI*) jest to proces,
 który powinien wykonać się po każdym *commicie* wysłanym do zdalnego repozytorium kodu źródłowego.
 W jego skład wchodzą:
 * sprawdzenie poprawności formatowania
@@ -60,24 +60,24 @@ który powinien wykonać się po każdym *commicie* (zwykle *merge'u*) do gałę
 Składa się ze wszystkich etapów ciągłej integracji plus dodatkowo:
 * nadania numeru wersji (głównie w przypadku bibliotek)
 * zbudowaniu paczki wykonywalnej (biblioteki, mikroserwisu, aplikacji)
-* wdrożeniu na serwer developerski (w przypadku mikroserwisów i aplikacji) 
+* wdrożeniu na serwer developerski (w przypadku mikroserwisów i aplikacji)
 i uruchomieniu testów systemowych oraz akceptacyjnych, a następnie wdrożeniu na serwer testowy/demonstracyjny
 * opublikowaniu w repozytorium artefaktów (głównie w przypadku bibliotek)
 
-Oczywiście jest to tylko jedna z wielu wersji procesu. 
+Oczywiście jest to tylko jedna z wielu wersji procesu.
 Możliwe punkty zmiany to np.:
 * polityka firmy może zakładać, że numery wersji bibliotek powinny być nadawane ręcznie
-* aplikacja jest na tyle duża, że niemożliwością jest uruchamianie wszystkich testów po każdej zmianie     
+* aplikacja jest na tyle duża, że niemożliwością jest uruchamianie wszystkich testów po każdej zmianie
 
 **Ciągłe wdrażanie** (ang. *Continuous Deployment*) jest rozszerzeniem procesu ciągłego dostarczania dla aplikacji
-i zawiera tylko jeden dodatkowy punkt, zaufanie. Zaufanie, że: 
+i zawiera tylko jeden dodatkowy punkt, zaufanie. Zaufanie, że:
 * aplikacja została odpowiednio przetestowana
 * jeśli włączy się alarm, sygnalizujący błąd w aplikacji, to ktoś się nim zajmie
 
 Dodatkowy krok polega na automatycznym wdrażaniu wydanej aplikacji na serwer produkcyjny.
 
 Teoretycznie możnaby wprowadzać podział na serwery CI i serwery CD.
-Jednak jeśli z poziomu konfiguracji serwera CI mamy dostęp do basha, 
+Jednak jeśli z poziomu konfiguracji serwera CI mamy dostęp do basha,
 lub możemy pisać wtyczki w innych językach programowania,
 to z łatwością możemy zamienić serwer CI w serwer CD.
 Łatwo więc zauważyć że granica jest tutaj bardzo płynna.
@@ -85,19 +85,19 @@ to z łatwością możemy zamienić serwer CI w serwer CD.
 
 ## Wybór serwera CI/CD
 
-W świecie Javy jeśli ktoś mówi o serwerze CI zwykle ma na myśli Jenkinsa. 
+W świecie Javy jeśli ktoś mówi o serwerze CI zwykle ma na myśli Jenkinsa.
 Dostępnych jest jednak wiele serwerów ciągłej integracji.
-Chcąc jednak jak najszybciej (najprościej) pokazać zalety ciągłej integracji należy wybrać oprogramowanie darmowe 
+Chcąc jednak jak najszybciej (najprościej) pokazać zalety ciągłej integracji należy wybrać oprogramowanie darmowe
 i dodatkowo dostępne jako usługa (ang. *Software as a Service*, *SaaS*).
-Dobrze także, aby *po wyjęciu z pudełka* wspierało używane przez nas języki programowania.   
+Dobrze także, aby *po wyjęciu z pudełka* wspierało używane przez nas języki programowania.
 Przy takich założeniach wybór padł na dwa serwisy:
-* popularniejszy [Travis CI](<https://travis-ci.org/writeonly/resentiment>) używający kontenerów z Ubuntu 
+* popularniejszy [Travis CI](<https://travis-ci.org/writeonly/resentiment>) używający kontenerów z Ubuntu
 * młodszy [CircleCI](<https://circleci.com/gh/writeonly/resentiment>) używający kontenerów z Debianem
 
 Niestety nie udało mi się skonfigurować CircleCI dla języka ScalaNative.
 Problemem były zależności dla Debiana.
 
-Dodatkowo przydatne są także serwisy agregujące raporty z pokrycia kodu testami. 
+Dodatkowo przydatne są także serwisy agregujące raporty z pokrycia kodu testami.
 Ja znalazłem dwa działające jako serwis:
 * [Code Coverage Done Right | Codecov](<https://codecov.io/gh/writeonly/resentiment>)
 * [Coveralls - Test Coverage History & Statistics](<https://coveralls.io/github/writeonly/resentiment>)
@@ -112,12 +112,12 @@ addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.5.1")
 addSbtPlugin("org.scoverage" % "sbt-coveralls" % "1.2.7")
 ```
 * [sbt-scoverage](<https://github.com/scoverage/>) umożliwia generowanie raportów z pokrycia kodu testami,
-* [sbt-coveralls](<https://github.com/scoverage/sbt-coveralls>) umożliwia wysłanie raportu 
+* [sbt-coveralls](<https://github.com/scoverage/sbt-coveralls>) umożliwia wysłanie raportu
 do [Coveralls](<https://coveralls.io/>)
 
 ## Konfiguracja projektu dla Travis Ci
 
-TravisCi jest konfigurowany za pomocą pliku `.travis.yml`. 
+TravisCi jest konfigurowany za pomocą pliku `.travis.yml`.
 
 Najpierw wybieramy język programowania, jego wersję, wersję Ubuntu oraz wersję Javy:
 ```yaml
@@ -128,7 +128,7 @@ jdk: openjdk8
 ```
 
 Niestety `openjdk-8-jdk` nie jest domyślnie zainstalowane na Ubuntu w wersji `xenial`.
-Na szczęście możemy doinstalować potrzebną nam wersję Javy z pakietów Ubuntu. 
+Na szczęście możemy doinstalować potrzebną nam wersję Javy z pakietów Ubuntu.
 Pozostałe pakiety są dla ScalaNative
 ```yaml
 addons:
@@ -248,7 +248,7 @@ Caused by: java.io.IOException: error=2, No such file or directory
 	... 8 more
 ```
 
-Jest to kolejny problem ScalaNative po braku możliwości wygenerowania pokrycia kodu 
+Jest to kolejny problem ScalaNative po braku możliwości wygenerowania pokrycia kodu
 oraz braku możliwości uruchomienia testów integracyjnych.
 Dowodzi to że ScalaNative niestety dalej jest zabawką
 i jeśli chce się pisać monady w języku kompilowanym natywnie należy wybrać [RustLang](<https://www.rust-lang.org/>).
@@ -257,17 +257,17 @@ i jeśli chce się pisać monady w języku kompilowanym natywnie należy wybrać
 
 Poszukując serwisów CI natrafiłem na jeszcze jeden termin z kategorii *Continuous cośtam*.
 
-**Ciągła analiza statyczna** (ang. *Continuous static analysis*) jest to proces podobny do ciągłej integracji, ale ograniczony tylko do jednego kroku, 
+**Ciągła analiza statyczna** (ang. *Continuous static analysis*) jest to proces podobny do ciągłej integracji, ale ograniczony tylko do jednego kroku,
 analizy statycznej.
 Cechą charakterystyczną serwerów ciągłej analizy statycznej jest posiadanie ogromnej ilości reguł według których sprawdzany jest kod.
 Klasycznym przykładem oprogramowania w świecie Javy jest tutaj [SonarQube](<https://www.sonarqube.org/>).
-Ja oczywiście poszukiwałem oprogramowania działającego jako darmowa usługa dla projektów opensorsowych i znalazłem: 
+Ja oczywiście poszukiwałem oprogramowania działającego jako darmowa usługa dla projektów opensorsowych i znalazłem:
 * [Codacy: Automated code reviews & code analytics](<https://app.codacy.com/project/kamil-adam/resentiment/dashboard>)
 * [Rocro INSPECODE - Code review without the hassle.](<https://inspecode.rocro.com/reports/github.com/writeonly/resentiment/branch/master/summary>)
 
 ## Postscriptum 2
 
-Termin **ciągła analiza statyczna** ułożyłem sam, 
+Termin **ciągła analiza statyczna** ułożyłem sam,
 jednak występujący w jego miejscu termin **ciągła kontrola jakości kodu** (ang. *Continuous Inspection of Code Quality*)
 jest według mnie zbyt ogólny.
 

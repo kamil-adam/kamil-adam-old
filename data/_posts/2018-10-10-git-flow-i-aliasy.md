@@ -12,11 +12,11 @@ toc:      true
 ## Koncepcja Gitflow
 
 Gitflow jest wspaniałą koncepcją pracy z gałęziami w repozytorium Git.
-Strategia ta jest świetnie opisana na 
+Strategia ta jest świetnie opisana na
 [A successful Git branching model](<https://nvie.com/posts/a-successful-git-branching-model/>).
 
 Jednak początkowo może wydawać się zbyt skomplikowana.
-Straszy zwłaszcza ilością poleceń, które trzeba wykonać, żeby scalić gałąź z nową funkcjonalnością: 
+Straszy zwłaszcza ilością poleceń, które trzeba wykonać, żeby scalić gałąź z nową funkcjonalnością:
 ```bash
 $ git checkout develop
 $ git merge --no-ff myfeature
@@ -39,8 +39,8 @@ Tutaj już nie mogą toczyć się dyskusje czy powinniśmy scalać z przełączn
 Możemy wziąć całe narzędzie ustandaryzowane i przetestowane przez społeczność i nie kroimy niczego własnego.
 
 Zalety tego są oczywiste:
-* programista, tester i/lub wdrożeniowiec, 
-który raz nauczył się pracować z Gitflow ma jedną rzecz mniej do nauki przy przenoszeniu się do innego zespołu, 
+* programista, tester i/lub wdrożeniowiec,
+który raz nauczył się pracować z Gitflow ma jedną rzecz mniej do nauki przy przenoszeniu się do innego zespołu,
 gdzie będą stosować dokładnie ten sam Gitflow bez żadnych lokalnych modyfikacji
 * zamiast wpisywania długich wielolinijkowców w konsoli możemy używać pojedynczych komend.
 

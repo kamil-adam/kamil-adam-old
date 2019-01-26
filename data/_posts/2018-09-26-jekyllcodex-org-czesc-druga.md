@@ -4,7 +4,7 @@ title:    "jekyllcodex.org - część druga"
 author:   "writeonly"
 category: jekyll
 tags:     jekyll blog jekyllcodex
-labels:    
+labels:
 comments: true
 toc:      true
 ---
@@ -24,9 +24,9 @@ Są to skrypty, które w większości trafiły do układu strony `default.html`:
 
 - [ostrzeżenie o plikach cookies](<https://jekyllcodex.org/without-plugin/cookie-consent/>)
 - [pozycjonowanie](<https://jekyllcodex.org/without-plugin/seo/>)
-- [kanał rss](<https://jekyllcodex.org/without-plugin/rss-feed/>) 
+- [kanał rss](<https://jekyllcodex.org/without-plugin/rss-feed/>)
 - [przyciski linkujące do kont na portalach społecznościowych](<https://jekyllcodex.org/without-plugin/follow-buttons/>)
-- [czat na żywo](<https://jekyllcodex.org/without-plugin/live-chat/>) - jeszcze nie wiem po co, ale dodałem. 
+- [czat na żywo](<https://jekyllcodex.org/without-plugin/live-chat/>) - jeszcze nie wiem po co, ale dodałem.
 
 ### Skrypty dla postów
 Są to skrypty, które trafiły do układu strony `post.html`:
@@ -51,4 +51,4 @@ Te które pozostały do przetestowania dzielą się na dwie kategorie:
 
 ### Skrypty dodające wyszukiwarki
 - wyszukiwarka oparta o [google](<https://jekyllcodex.org/without-plugin/search-google/>)
-- wyszukiwarka oparta o [skrypt lunar](<https://jekyllcodex.org/without-plugin/search-lunr/>) 
+- wyszukiwarka oparta o [skrypt lunar](<https://jekyllcodex.org/without-plugin/search-lunr/>)

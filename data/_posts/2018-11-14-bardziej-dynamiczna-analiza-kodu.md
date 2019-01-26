@@ -3,7 +3,7 @@ layout:   post
 title:    "Bardziej dynamiczna analiza kodu dla języka Scala - Property-based testing"
 author:   "writeonly"
 category: resentiment
-tags:     resentiment code-analysis static-code-analysis specs2 scalatest
+tags:     resentiment code-analysis dynamic-code-analysis specs2 scalatest
 labels:   property-based scalacheck scalaprops nyaya scalaz
 comments: true
 toc:      true
@@ -161,7 +161,7 @@ sbt clean coverage reJS/it:test reJVM/it:test
 
 I naszym oczom powinien ukazać się piękny komunikat:
 ```bash
-pl.writeonly.re.shared.CalculatorIT$ 
+pl.writeonly.re.shared.CalculatorIT$
 +- additionTest  Falsified(0,0,[Arg(0, 18591416),Arg(0, 241819340)],LongSeed(1542137236582000128)) 4ms
 +- lessOrEqualTest ................................................. Passed(50,0,LongSeed(1542137236604999936)) 11ms
 `- multiplicationTest  Falsified(0,0,[Arg(0, -795557759),Arg(0, -1)],LongSeed(1542137236617999872)) 0ms
@@ -201,7 +201,7 @@ sbt clean coverage reJS/it:test reJVM/it:test
 
 Teraz dostajemy poprawną odpowiedź:
 ```bash
-pl.writeonly.re.shared.CalculatorIT$ 
+pl.writeonly.re.shared.CalculatorIT$
 +- additionTest ................................................. Passed(50,0,LongSeed(1542137486777999872)) 12ms
 +- lessOrEqualTest ................................................. Passed(50,0,LongSeed(1542137486793999872)) 5ms
 `- multiplicationTest ................................................. Passed(50,0,LongSeed(1542137486800999936)) 5ms

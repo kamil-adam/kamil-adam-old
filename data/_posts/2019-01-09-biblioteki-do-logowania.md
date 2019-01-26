@@ -4,7 +4,7 @@ title:    "Biblioteki do logowania dla języka Scala"
 author:   "writeonly"
 category: resentiment
 tags:     resentiment scala
-labels:    logging scala-logging slogging scribe
+labels:   logging scala-logging slogging scribe
 comments: true
 toc:      true
 ---
@@ -27,7 +27,7 @@ Biblioteki takie pozwalają przekierować logi do pliku, zapisać je w bazie dan
 * [scala-logging](<https://github.com/lightbend/scala-logging>) -
 wygodna i wydajna biblioteka logowania opakowywująca bibliotekę `SLF4J` dla języka Scala.
 Niestety działa tylko dla Scala/JVM
-* [util-logging](<https://github.com/lightbend/scala-logging>) - 
+* [util-logging](<https://github.com/lightbend/scala-logging>) -
 jest małym opakowaniem wbudowanego logowania Javy, aby uczynić go bardziej przyjaznym dla Scali.
 Niestety także, działa tylko dla Scala/JVM
 * [scalajs-java-logging](<https://github.com/scala-js/scala-js-java-logging>) -
@@ -355,4 +355,4 @@ Niestety pojawia się błąd:
 
 Jak zwykle składnia Scali pozwala zapisać te same rzeczy prościej niż w Javie,
 jednocześnie dzięki temu można wymusić konwencję tworzenia loggerów na etapie kompilacji.
-Dzięki temu nie mamy w kodzie loggerów o nazwach innych niż `loggger` jak np. `LOGGER` lub `LOG`. 
+Dzięki temu nie mamy w kodzie loggerów o nazwach innych niż `loggger` jak np. `LOGGER` lub `LOG`.

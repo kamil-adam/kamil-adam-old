@@ -10,7 +10,7 @@ toc:      true
 ---
 
 Nie bójmy się tego powiedzieć, Scala to nowy Perl.
-I tak jak w Perlu, w Scali obowiązuje zasada TIMTOWTDI (ang. There is more than one way to do it), 
+I tak jak w Perlu, w Scali obowiązuje zasada TIMTOWTDI (ang. There is more than one way to do it),
 czyli "Można to zrobić na różne sposoby".
 
 Jednak z biegiem czasu twórcy języka Scala uznali,
@@ -23,7 +23,7 @@ Dokładniej Scalac posiada ogromną ilość flag kompilacji.
 
 ## Rekomendowana lista flag kompilatora
 
-Na szczęście istnieją tacy ludzie jak [tpolecat](<https://github.com/tpolecat>), 
+Na szczęście istnieją tacy ludzie jak [tpolecat](<https://github.com/tpolecat>),
 który na swoim blogu zebrał listę [rekomendowanych flag kompilatora](https://tpolecat.github.io/2017/04/25/scalac-flags.html)
 Są to:
 ```scala
@@ -77,7 +77,7 @@ scalacOptions ++= Seq(
 ```
 
 Lista jest długa i działa dla języka Scala w wersji 2.12.
-Jeśli używasz języka Scala w wersji wcześniejszej to część flag będziesz musiał wyłączyć. 
+Jeśli używasz języka Scala w wersji wcześniejszej to część flag będziesz musiał wyłączyć.
 Dla wersji 2.11 jest to:
 ```scala
 scalacOptions --= Seq(
@@ -95,8 +95,8 @@ scalacOptions --= Seq(
 ## .. i wtyczka do nich
 
 Lista opcji jest długa i może zaciemniać plik `build.sbt`.
-Na szczęście [DavidGregory084](https://github.com/DavidGregory084) 
-stworzył wtyczkę [sbt-tpolecat](https://github.com/DavidGregory084/sbt-tpolecat) 
+Na szczęście [DavidGregory084](https://github.com/DavidGregory084)
+stworzył wtyczkę [sbt-tpolecat](https://github.com/DavidGregory084/sbt-tpolecat)
 dodającą flagi kompilatora do projektu.
 
 W pliku ` project/plugins.sbt` dodajemy:
@@ -107,7 +107,7 @@ i wtyczka automatycznie ustawia odpowiednie flagi dla wersji 2.10/2.11/2.12/2.13
 
 ## Portable Scala & Multi-project
 
-Jeśli kompilujesz projekt w Scali na różne platformy (JVM/JS/Native) 
+Jeśli kompilujesz projekt w Scali na różne platformy (JVM/JS/Native)
 lub posiadasz [multi-project](<https://www.scala-sbt.org/1.x/docs/Multi-Project.html>),
 tak jak ja w projekcie [resentiment](https://github.com/writeonly/resentiment),
 to musisz ręcznie dodać flagi dla kompilatora.

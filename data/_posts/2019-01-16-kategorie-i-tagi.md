@@ -13,7 +13,7 @@ Najlepiej za pomocą kategorii i tagów.
 ## Metadane
 
 Dla każdego postu oprócz zawartości zapisywałem także metadane,
-w tym kategorie i tagi. 
+w tym kategorie i tagi.
 W przypadku tego artykułu są to:
 
 ```yaml
@@ -34,13 +34,15 @@ Artykuł może zawierać wiele tagów, ale musi mieć dokładnie jedną kategori
 
 Jest to najprawdopodobniej największa wada Jekylla.
 Dla każdej kategorii i dla każdego taga trzeba utworzyć stronę pomocniczą.
+Strony pomocnicze kategorii muszą znajdować się w folderze `_categories`,
+a strony pomocnicze tagów w folderze `_tags`.
 
 Przykładowy strona pomocnicza dla kategorii:
 
 ```yaml
 {%raw%}
 ---
-permalink: /categories/resentiment.html
+permalink: /categories/resentiment
 layout: page_category
 category: "resentiment"
 ---
@@ -53,7 +55,7 @@ Przykładowy strona pomocnicza dla tagu:
 ```yaml
 {%raw%}
 ---
-permalink: /tags/scala-native.html
+permalink: /tags/scala-native
 layout: page_tag
 tag: "scala-native"
 ---
@@ -62,7 +64,7 @@ tag: "scala-native"
 
 ## Kolekcje
 
-Ponieważ stron pomocniczych jest dużo, 
+Ponieważ stron pomocniczych jest dużo,
 dlatego źle jest je trzymać w przestrzeni głównej projektu.
 Problem ten można rozwiązać za pomocą kolekcji.
 W pliku `_config.yml` dodajemy:
@@ -74,8 +76,8 @@ collections:
   tags:
     output: true
 ```
-Od tej pory strony dla kategorii będą znajdować się w katalogu `_categories`, 
-a strony dla tagów w katalogu `_tags`. 
+Od tej pory strony dla kategorii będą znajdować się w katalogu `_categories`,
+a strony dla tagów w katalogu `_tags`.
 
 
 Ale dla mnie nawet to było za dużo.
@@ -95,10 +97,10 @@ Od tej pory:
 W stronach pomocniczych użyliśmy layoutów `page_categories` i `page_tags`.
 Teraz trzeba je zdefiniować.
 
-Układ strony zawierający wszystkie artykuły z danej kategorii:
+Układ strony `_layout/page_category.html` zawierający wszystkie artykuły z danej kategorii:
 
 ```yaml
-{%raw%} 
+{%raw%}
 ---
 layout: default
 title: {{ page.category }}
@@ -136,9 +138,9 @@ title: {{ page.category }}
 {%endraw%}
 ```
 
-Układ strony zawierający wszystkie artykuły z danym tagiem:
+Układ strony `_layout/page_tag.html` zawierający wszystkie artykuły z danym tagiem:
 ```yaml
-{%raw%} 
+{%raw%}
 ---
 layout: default
 title: {{ page.tag }}
@@ -180,9 +182,9 @@ Potrzebujemy jeszcze jednej rzeczy.
 
 Strona `pages/categories.html` zawierająca listę wszystkich kategorii:
 ```yaml
-{%raw%} 
+{%raw%}
 ---
-layout: page
+layout: posts
 title: Kategorie
 permalink: /categories/
 description: Kategorie artykułów
@@ -207,9 +209,9 @@ description: Kategorie artykułów
 
 Strona `pages/tags.html` zawierająca listę wszystkich tagów:
 ```yaml
-{%raw%} 
+{%raw%}
 ---
-layout: page
+layout: posts
 title: Tagi
 permalink: /tags/
 description: Tagi artykułów
@@ -230,15 +232,15 @@ description: Tagi artykułów
 ```
 
 W obu przypadkach pobieramy listę wszystkich kategorii/tagów i sortujemy po tytułach.
-A następnie odrzucamy te które nie są poprawne do wyświetlenia, 
+A następnie odrzucamy te które nie są poprawne do wyświetlenia,
 czyli zawierają błędny `layout` lub nie posiadają tytułu.
 
 
 ## Podsumowanie
 
-Żeby wszystko działało trzeba było napisać trochę kodu. 
-Łącznie 17 stron pomocniczych dla tagów, 3 - dla kategorii, 
+Żeby wszystko działało trzeba było napisać trochę kodu.
+Łącznie 17 stron pomocniczych dla tagów, 3 - dla kategorii,
 dwa układy stron i dwie strony specjalne do agregacji kategorii i tagów.
 Ale oczywiście nie to zajeło najwięcej czasu.
-Największym problemem była wolność jaką daje jekyll, 
+Największym problemem była wolność jaką daje jekyll,
 czyli możliwość zbudowania układów stron w dowolny sposób.

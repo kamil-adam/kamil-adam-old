@@ -4,7 +4,7 @@ title:    "Alias - komenda powłoki Bash"
 author:   "writeonly"
 category: cli
 tags:     cli bash alias git
-labels:    
+labels:
 comments: true
 toc:      true
 ---

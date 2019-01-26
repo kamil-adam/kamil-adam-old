@@ -16,12 +16,17 @@
       {% endcomment %}
 
       {% assign pages = (site.pages | sort: 'title' ) %}
+
       {% for node in pages %}
-        {% if node.title != null %}
-          {% if node.layout == "page" %}
-            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}/{{ node.url  | remove_first: '/' }}">{{ node.title }}</a>
-          {% endif %}
-        {% endif %}
+      {% if node.title != null and node.layout == "posts"  %}
+      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}/{{ node.url  | remove_first: '/' }}">{{ node.title }}</a>
+      {% endif %}
+      {% endfor %}
+
+      {% for node in pages %}
+      {% if node.title != null and node.layout == "page"%}
+      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}/{{ node.url  | remove_first: '/' }}">{{ node.title }}</a>
+      {% endif %}
       {% endfor %}
 
     </nav>

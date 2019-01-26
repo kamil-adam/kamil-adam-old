@@ -3,8 +3,8 @@ layout:   post
 title:    "Statyczna analiza kodu dla języka Scala w SBT - część 1."
 author:   "writeonly"
 category: resentiment
-tags:     resentiment scala sbt code-analysis static-code-analysis
-labels:    scalafix scalafmt scalariform
+tags:     resentiment scala sbt code-analysis static-code-analysis scalafix
+labels:   scalafmt scalariform
 comments: true
 toc:      true
 ---
@@ -15,24 +15,24 @@ toc:      true
 w przeciwieństwie do analizy dynamicznej,
 która jest analizą wykonywaną na programach podczas ich wykonywania.
 
-> Termin ten jest zwykle stosowany do analizy wykonywanej przez zautomatyzowane narzędzie, 
+> Termin ten jest zwykle stosowany do analizy wykonywanej przez zautomatyzowane narzędzie,
 analiza wykonywana przez człowieka jest nazywana przeglądem kodu.
 
 Za [wikipedią](<https://en.wikipedia.org/wiki/Static_program_analysis>).
 
 Jest to moja ulubiona część konfigurowania projektu,
-ponieważ odpowiednio dobrany zestaw wtyczek do statycznej analizy kodu 
+ponieważ odpowiednio dobrany zestaw wtyczek do statycznej analizy kodu
 potrafi znacząco skrócić czas potrzebny do zrobienia przeglądu kodu.
 
 
 ## Wtyczki modyfikujące kod źródłowy
 
 Z powodu ogromu różnego rodzaju wtyczek do statycznej analizy kodu dla języka Scala
-w tym poście skupię się tylko na wtyczkach modyfikujących kod źródłowy. 
+w tym poście skupię się tylko na wtyczkach modyfikujących kod źródłowy.
 
 ### sbt-scalariform - sbt plugin adding support for source code formatting using Scalariform
 [sbt-scalariform](<https://github.com/sbt/sbt-scalariform>)
-to wtyczka sbt dodająca obsługę formatowania kodu źródłowego przy użyciu formatera kodu Scalariform 
+to wtyczka sbt dodająca obsługę formatowania kodu źródłowego przy użyciu formatera kodu Scalariform
 
 Dodajemy `scalariform`  do pliku `projektu/plugins.sbt`:
 ```scala
@@ -102,7 +102,7 @@ rules = [
 // Semantic Rules - Reguły semantyczne
   NoAutoTupling
   RemoveUnused
-  
+
 // Syntactic Rules - Reguły składniowe
   DisableSyntax
   LeakingImplicitClassVal
@@ -156,12 +156,12 @@ sbt scalafix test:scalafix it:scalafix && \
 sbt scalafmtSbt scalafmt test:scalafmt it:scalafmt
 ```
 
-Ewentualnie, gdy robię przegląd kodu mogę sprawdzić czy kod jest poprawny za pomocą komendy: 
+Ewentualnie, gdy robię przegląd kodu mogę sprawdzić czy kod jest poprawny za pomocą komendy:
 ```bash
 sbt 'scalafix --check' 'test:scalafix --check' 'it:scalafix --check' && \
-sbt scalafmtSbtCheck scalafmtCheck test:scalafmtCheck it:scalafmtCheck 
+sbt scalafmtSbtCheck scalafmtCheck test:scalafmtCheck it:scalafmtCheck
 ```
 
-Niestety ponieważ w testach używam porównania `==` 
+Niestety ponieważ w testach używam porównania `==`
 musiałem zakomentować linię `DisableSyntax.noUniversalEquality` w pliku  `.scalafix.conf`.
 Problem ten rozwiąże w następnym poście.

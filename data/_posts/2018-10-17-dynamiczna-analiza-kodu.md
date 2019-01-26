@@ -3,8 +3,8 @@ layout:   post
 title:    "Dynamiczna analiza kodu dla SBT - testy jednostkowe"
 author:   "writeonly"
 category: resentiment
-tags:     resentiment scala scala-jvm scala-js scala-native code-analysis dynamic-code-analysis specs2 scalatest
-labels:   utest minitest greenlight
+tags:     resentiment scala scala-jvm scala-js scala-native code-analysis dynamic-code-analysis specs2 scalatest utest
+labels:   minitest greenlight
 comments: true
 toc:      true
 ---
@@ -12,7 +12,7 @@ toc:      true
 ## Wprowadzenie
 
 > Dynamiczna analiza programu to analiza oprogramowania komputerowego wykonywanego przez wykonywanie programów na rzeczywistym lub wirtualnym procesorze.
-> Korzystanie z metryk testów, takich jak pokrycie kodu, zapewnia, że przetestowano odpowiednią ilość możliwych zachować programu. 
+> Korzystanie z metryk testów, takich jak pokrycie kodu, zapewnia, że przetestowano odpowiednią ilość możliwych zachować programu.
 > Aby analiza dynamiczna programu była skuteczna, program docelowy musi być wykonany z wystarczającą ilością danych wejściowych do testów, aby uzyskać interesujące zachowanie.
 > Testy jednostkowe, testy integracyjne, testy systemowe i testy akceptacyjne wykorzystują dynamiczną analizę programu.
 
@@ -22,34 +22,34 @@ W tym poście skupię się tylko na frameworkach do testów, testach jednostkowy
 
 ## Frameworki dla testów
 
-* [ScalaTest](<http://www.scalatest.org>) - 
+* [ScalaTest](<http://www.scalatest.org>) -
 jest to chyba najbardziej znany i rozbudowany framework dla testów do języka Scala.
 Wspiera Scala.js w wersji 0.6.x. Ostatnia wersja snapshot wspiera Scala Native.
-Posiada osiem różnych [stylów pisania testów](<http://www.scalatest.org/user_guide/selecting_a_style>), 
+Posiada osiem różnych [stylów pisania testów](<http://www.scalatest.org/user_guide/selecting_a_style>),
 jednak autorzy zachęcają do wybrania dwóch dla projektu.
 Jeden styl dla testów jednostkowo-integracyjnych, drugi - dla akceptacyjnych.
 Najciekawsze style to:
-  * `FunSuite` i `FlatSpec` - są to proste, płaskie style pisania testów podobne do JUnit. 
+  * `FunSuite` i `FlatSpec` - są to proste, płaskie style pisania testów podobne do JUnit.
   Jeśli jednak są dla kogoś zbyt awangardowe jest możliwość pisania testów w Scali z użyciem [JUnit i assercji z ScalaTest](<http://www.scalatest.org/getting_started_with_junit_4_in_scala>)
-  * `FunSpec`, `FreeSpec` i `WordSpec` - są to style testów umożliwiające pisanie zagnieżdżonych testów, 
+  * `FunSpec`, `FreeSpec` i `WordSpec` - są to style testów umożliwiające pisanie zagnieżdżonych testów,
   jednak zagnieżdżenia nie są wymagane (za wyjątkiem stylu `FunSpec`, gdzie trzeba użyć przynajmniej jeden poziom `Describe`)
   * `FeatureSpec` - jest to zaawansowany styl dla pisania testów akceptacyjnych.
-* [specs2](<https://etorreborre.github.io/specs2/>) - 
+* [specs2](<https://etorreborre.github.io/specs2/>) -
 jest to drugi najbardziej znany framework do pisania testów dla języka Scala.
 Od wersji czwartej wspiera Scala.js w wersji 0.6.x.
 Ma dwa style pisania testów:
   * `org.specs2.mutable.Specificatio` - najbardziej przypomina `FreeSpec` i jest przewidziany do pisania testów jednostkowych i integracyjnych.
-  * `org.specs2.Specification` - styl testów przewidziany do pisania testów akceptacyjnych, 
-* [uTest](<https://github.com/lihaoyi/utest>) - 
+  * `org.specs2.Specification` - styl testów przewidziany do pisania testów akceptacyjnych,
+* [uTest](<https://github.com/lihaoyi/utest>) -
 czarny koń tego zestawienia.
 Wspiera Scala.js w wersji 0.6.x i 1.0.x oraz Scala Native.
 Autor frameworka skromnie chwali się, że wspiera wszystkie wersje języka Scala.
 Ma jeden styl pisania testów który wygląda jak `FreeTest`.
-* [MiniTest](<https://github.com/monix/minitest>) - 
+* [MiniTest](<https://github.com/monix/minitest>) -
 stworzony przez [Monix](<https://monix.io>) do testowania swojej biblioteki.
 Wspiera Scala.js w wersji 0.6.x.
 Ma jeden styl pisania testów, który wygląda jak `FunSuite`.
-* [Greenlight](<https://github.com/greencatsoft/greenlight>) - 
+* [Greenlight](<https://github.com/greencatsoft/greenlight>) -
 projekt niestety umarł.
 Wspiera Scala.js w wersji 0.6.x.
 Ma jeden styl pisania testów, który wygląda jak `FlatSpec`
@@ -132,12 +132,12 @@ sbt clean compile test
 Testy przeszły, jesteśmy szczęśliwi:
 ```log
 [info] -------------------------------- Running Tests --------------------------------
-[info] + pl.writeonly.re.shared.CalculatorTest.addition.0 + 0 == 0 0ms  
-[info] + pl.writeonly.re.shared.CalculatorTest.addition.2 + 2 == 4 0ms  
-[info] + pl.writeonly.re.shared.CalculatorTest.multiplication.0 + 0 == 0 0ms  
-[info] + pl.writeonly.re.shared.CalculatorTest.multiplication.2 + 2 == 4 0ms  
-[info] + pl.writeonly.re.shared.CalculatorTest.less_or_equal.0 <= 2 == true 0ms  
-[info] + pl.writeonly.re.shared.CalculatorTest.less_or_equal.2 <= 0 == false 0ms  
+[info] + pl.writeonly.re.shared.CalculatorTest.addition.0 + 0 == 0 0ms
+[info] + pl.writeonly.re.shared.CalculatorTest.addition.2 + 2 == 4 0ms
+[info] + pl.writeonly.re.shared.CalculatorTest.multiplication.0 + 0 == 0 0ms
+[info] + pl.writeonly.re.shared.CalculatorTest.multiplication.2 + 2 == 4 0ms
+[info] + pl.writeonly.re.shared.CalculatorTest.less_or_equal.0 <= 2 == true 0ms
+[info] + pl.writeonly.re.shared.CalculatorTest.less_or_equal.2 <= 0 == false 0ms
 [info] Tests: 6, Passed: 6, Failed: 0
 ```
 
@@ -176,7 +176,7 @@ Dlatego projekt [resentiment](https://github.com/writeonly/resentiment) trzeba k
 sbt clean compile re/test coverage reJVM/test reJS/test && sbt coverageReport
 ```
 
-Teraz możemy otworzyć pliki `<folder_projektu>/re/js/target/scala-2.11/scoverage-report/index.html` 
+Teraz możemy otworzyć pliki `<folder_projektu>/re/js/target/scala-2.11/scoverage-report/index.html`
 oraz `<folder_projektu>/re/jvm/target/scala-2.11/scoverage-report/index.html`
-i zobaczyć, że klasa `Calculator` ma 100% pokrycia kodu testami. 
+i zobaczyć, że klasa `Calculator` ma 100% pokrycia kodu testami.
 Lider nietechniczny i Product Owner powinni być z nas zadowoleni.

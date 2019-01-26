@@ -9,7 +9,7 @@ comments: true
 toc:      true
 ---
 
-Jest to kontynuacja posta 
+Jest to kontynuacja posta
 [Statyczna analiza kodu dla języka Scala w SBT - część 1](resentiment/2018/10/24/statyczna-analiza-kodu-1.html).
 
 ## Wtyczki nie modyfikujące kodu źródłowego.
@@ -51,8 +51,8 @@ Teraz analizujemy kod i testy za pomocą polecenia:
 ```bash
 sbt scalastyle test:scalastyle it:scalastyle
 ```
-                                            
-Pełna lista reguł jest dostępna pod linkiem 
+
+Pełna lista reguł jest dostępna pod linkiem
 [rules-1.0.0](<http://www.scalastyle.org/rules-1.0.0.html>).
 
 Dla mnie najważniejszą funkcjonalnością jest liczenie [złożoności cyklomatycznej](<https://pl.wikipedia.org/wiki/Złożoność_cyklomatyczna>):
@@ -65,7 +65,7 @@ Dla mnie najważniejszą funkcjonalnością jest liczenie [złożoności cykloma
 ```
 
 ### WartRemover: a flexible scala linter
-[WartRemover](<https://www.wartremover.org>) 
+[WartRemover](<https://www.wartremover.org>)
 jest to wtyczka do usuwania brodawek z kodu.
 Przez brodawkę autor rozumie brzydkie rzeczy, które można napisać w języku Scala,
 bo składnia języka jest zbyt liberalna.
@@ -84,7 +84,7 @@ wartremoverErrors ++= Warts.unsafe
 ```
 
 Od teraz przy każdej kompilacji będą poszukiwane brodawki.
-Pełna lista [brodawkek](<http://www.wartremover.org/doc/warts.html>) 
+Pełna lista [brodawkek](<http://www.wartremover.org/doc/warts.html>)
 
 ### Scapegoat - Scala compiler plugin for static code analysis
 [Scapegoat](<https://github.com/sksamuel/scapegoat>) to linter dla języka Scala.
@@ -105,7 +105,7 @@ sbt scapegoat
 ```
 
 ### Linter - Static Analysis Compiler Plugin for Scala
-[Linter](<https://github.com/HairyFotr/linter>) 
+[Linter](<https://github.com/HairyFotr/linter>)
 to niestety nie rozwijany już linter.
 
 Dodajemy `Linter` do pliku `project/plugins.sbt`:
@@ -166,8 +166,8 @@ sbt cpd && \
 sbt stats
 ```
 
-Niestety, 
-ponieważ używam metody `println` w klasie `Core`, 
-muszę obniżyć poziom raportowania błędów 
+Niestety,
+ponieważ używam metody `println` w klasie `Core`,
+muszę obniżyć poziom raportowania błędów
 dla reguły `org.scalastyle.file.RegexChecker` w `ScalaStyle`
 z `error` na `warning`.

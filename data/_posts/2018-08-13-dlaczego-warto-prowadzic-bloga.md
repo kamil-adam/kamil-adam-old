@@ -2,9 +2,9 @@
 layout:   post
 title:    "Dlaczego warto prowadzić bloga o programowaniu"
 author:   "writeonly"
-category: przemyslenia
+category: thoughts
 tags:     blog
-labels:    przemyslenia
+labels:   thoughts
 comments: true
 toc:      true
 ---

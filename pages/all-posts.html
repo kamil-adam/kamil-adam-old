@@ -1,14 +1,12 @@
 ---
-layout: default
-title: {{ page.tag }}
+layout: page
+title: Wszystkie artykuły
+permalink: /all-posts/
+description: Wszystkie artykuły
 ---
 <div class="posts">
-  {% include breadcrumbs.html %}
-  <h1 class="posts-title">Tag: {{ page.tag | capitalize }}</h1>
-
   <dl class="posts-nav">
     {% for post in site.posts %}
-    {% if post.tags contains page.tag %}
     <dt>
       <a class="posts-nav-item" href="{{ post.url | relative_url }}">
         {{ post.title }}
@@ -23,7 +21,6 @@ title: {{ page.tag }}
       Kategoria :
       <a href="{{ site.baseurl }}/categories/{{ post.category }}">{{ post.category | capitalize }}</a>
     </dd>
-    {% endif %}
     {% endfor %}
   </dl>
 </div>

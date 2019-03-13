@@ -2,7 +2,7 @@
 layout:   post
 title:    "jekyllcodex.org - część druga"
 author:   "writeonly"
-category: jekyll
+category: writeonlydoc
 tags:     jekyll blog jekyllcodex
 labels:
 comments: true

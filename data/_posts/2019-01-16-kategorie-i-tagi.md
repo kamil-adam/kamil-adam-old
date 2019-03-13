@@ -2,7 +2,7 @@
 layout:   post
 title:    "Jekyll - kategorie i tagi"
 author:   "writeonly"
-category: jekyll
+category: writeonlydoc
 tags:     jekyll blog
 ---
 

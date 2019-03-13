@@ -2,7 +2,7 @@
 layout:   post
 title:    "Jekyll i ciasteczka (pliki cookies)"
 author:   "writeonly"
-category: jekyll
+category: writeonlydoc
 tags:     jekyll blog jekyllcodex
 labels:   cookies jquery
 comments: true

@@ -3,7 +3,7 @@ layout:   post
 title:    "setxkbmap - Jak szybko zmienić układ klawiatury z konsoli na Ubuntu?"
 author:   "writeonly"
 category: cli
-tags:     cli bash alias ubuntu
+tags:     cli bash ubuntu
 labels:
 comments: true
 toc:      true

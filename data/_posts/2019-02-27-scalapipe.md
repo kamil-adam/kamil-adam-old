@@ -37,7 +37,7 @@ Szumem jest tutaj tworzenie pomocniczych zmiennych,
 które często trudno nazwać w sensowny sposób.
 
 Dlatego powinniśmy unikać *wywołań cebulowych*
-Chyba, że piszemy w języku [Clojure](/tags/clojure) lub innym Lispie.
+Chyba, że piszemy w języku **[Clojure](/tags/clojure)** lub innym Lispie.
 Wtedy formatujemy kod:
 ```clojure
 (third_function
@@ -63,8 +63,8 @@ data
 Oczywiście o ile `first_function` jest metodą obiektu `data`,
 `second_function` jest metodą obiektu zwracanego przez `first_function` i tak dalej.
 Jeśli nie, to musimy użyć haków 
-jak [mplicit classes](<https://docs.scala-lang.org/overviews/core/implicit-classes.html>) w języku [Scala](/tags/scala)
-lub [extensions](<https://kotlinlang.org/docs/reference/extensions.html>)  w języku [Kotlin](/tags/kotlin).
+jak [implicit classes](<https://docs.scala-lang.org/overviews/core/implicit-classes.html>) w języku **[Scala](/tags/scala)**
+lub [extensions](<https://kotlinlang.org/docs/reference/extensions.html>)  w języku **[Kotlin](/tags/kotlin)**.
 
 Jeśli nasz język programowania nie wspiera haków to pozostaje nam kod z tworzeniem wielu pomocniczych zmiennych:
 ```scala
@@ -77,14 +77,14 @@ val data30 = thirty_function(data29)
 
 ### Prawdopodobna inspiracja - potoki w Bash i Jekyll
 
-W powłoce systemowej [Bash](tags/bash) przesyłanie danych między jedną komendą,
+W powłoce systemowej **[Bash](/tags/bash)** przesyłanie danych między jedną komendą,
 a drugą jest realizowane przez potoki, np:
 ```bash
 ps -a | sort | uniq | grep -v sh
 ```
 Dwie lub więcej komend można połączyć w jedną za pomocą operatora pionowej kreski `|` (ang. *pipe*).
 
-[Jekyll](tags/jekyll) także posiada potoki, ale dla utrudnienia nazywają się filtrami. 
+**[Jekyll](/tags/jekyll)** także posiada potoki, ale dla utrudnienia nazywają się filtrami. 
 Precyzyjniej to Jekyll używa języka szablonów Liquid, a Liquid posiada Filtry.
 Kod :
 ```jekyll
@@ -127,7 +127,7 @@ Na fali popularności *operator potoku* został dodany także do wielu innych j�
 Część z nich zawiera także drugi podobny operator zwany *back pipe operator* zapisywany `<|` lub `|>>`.
 Ten drugi zapis prawdopodobnie inspirowany jest językiem [Clojure](<https://clojure.org/guides/threading_macros>).
 
-Tak, [Clojure](/tags/clojure) posiada dużo lukru składniowego, 
+Tak, **[Clojure](/tags/clojure)** posiada dużo lukru składniowego,
 żeby poprawić standardową nieczytelność Lispa dzięki czemu możemy zapisać:
 
 ```clojure
@@ -149,7 +149,7 @@ Czyli jeśli w języku Perl 5 wprowadzono by oba operatory to moglibyśmy wywoł
 
 ## Rozwiązanie w Scali - ScalaPipe i operator drozda
 
-Język Scala nie posiada operatora potoku, 
+Język **[Scala](/tags/scala)** nie posiada operatora potoku,
 ale posiada możliwość definiowania operatorów.
 W internecie pod hasłem *ScalaPipe* można znaleść wiele możliwych implementacji.
 Moja ulubiona to:
@@ -173,7 +173,7 @@ object ScalaPipeOps extends ScalaPipeOps
 ```
 
 Na szczęście nie musimy sami implementować operatora *ScalaPipe*,
-ponieważ istnieje on już w bibliotece [ScalaZ](tags/scalaz),
+ponieważ istnieje on już w bibliotece **[Scalaz](/tags/scalaz)**
 ale dla utrudnienia nazywa się **operator drozda** (ang. *Thrush combinator*).
 Używając tego operatora z łatwością możemy zapisać:
 ```scala
@@ -217,6 +217,6 @@ data
 
 ## Podsumowanie
 
-Składnia języka Scala jest elastyczna, ale czasem nie aż tak bardzo jak była by potrzeba.
+Składnia języka **[Scala](/tags/scala)** jest elastyczna, ale czasem nie aż tak bardzo jak była by potrzeba.
 Mimo to, łatwo definiować nowe operatory oraz składnię, która może znacząco skrócić i uprościć kod.
 Warto jednak wcześnie sprawdzić czy nasz operator nie jest zdefiniowany w istniejącej i popularnej bibliotece.

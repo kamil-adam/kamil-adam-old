@@ -45,9 +45,9 @@ która wymaga by oba porównywane obiekty były tej samej klasy.
 
 Największą zaletą biblioteki **Scalactic** jest to,
 że nie zagłębia się w teorię czystego programowania funkcyjnego (ang. *pure functional programming*) 
-i nie pojawiają się tam takie straszne terminy jak [monada](/tags/monad) czy [klasy typów](tags/type-class).
+i nie pojawiają się tam takie straszne terminy jak **[monada](/tags/monad)** czy **[klasy typów](/tags/type-class)**.
 
-### ScalaZ i Cats 
+### Scalaz i Cats 
 *Kolejność chronologiczna.*
 
 Są to dwie wspaniałe biblioteki, które robią z Scali język funkcyjny przypominający Haskella.
@@ -56,15 +56,15 @@ Biblioteki te dzielą się na dwie główne części:
 * *Data types* - tutaj znajdują się monady, które są w Haskellu, ale nie ma ich w bibliotece standardowej jezyka Scala
 * *Type classes* - typ konstruktu systemowego, który obsługuje polimorfizm *ad hoc*. 
 
-Zarówno **[ScalaZ](<https://scalaz.github.io/7/>)** jak i **[Cats](<https://typelevel.org/cats/>)** posiadają klasę `Equal`,
+Zarówno **[Scalaz](/tags/scalaz)** jak i **[Cats](/tags/cats)** posiadają klasę `Equal`,
 która pozwala porównywać obiekty za pomocą operatora `===`. 
 
 Dobre porównanie obu bibliotek można znaleźć na [githubie](<https://github.com/fosskers/scalaz-and-cats>), 
 chociaż różnice są bardzo małe. 
-Obie biblioteki wspierają [scala.js](/tags/scala-js), 
-ale tylko **ScalaZ** - [scala native](/tags/scala-native). 
+Obie biblioteki wspierają **[scala.js](/tags/scala-js)**, 
+ale tylko **Scalaz** - **[scala native](/tags/scala-native)**.
 
-## "No Universal Equality" z ScalaZ w projekcie Resentiment
+## "No Universal Equality" z Scalaz w projekcie Resentiment
 
 W `build.sbt` do `SharedSettings` dodajemy bibliotekę `Scalaz`:
 ```scala

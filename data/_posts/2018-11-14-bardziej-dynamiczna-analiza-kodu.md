@@ -227,6 +227,6 @@ sbt scapegoat cpd stats
 
 ## Smutne podsumowania
 Klasyczne testy modułowe (jednostkowe) nie wystarczają,
-ponieważ prawnie napisane testy modułowe,
+ponieważ poprawnie napisane testy modułowe,
 które pokrywają 100% kodu aplikacji,
 mogą być niepoprawne, jeśli dane wejściowe są źle dobrane.

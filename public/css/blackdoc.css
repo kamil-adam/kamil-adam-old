@@ -60,12 +60,12 @@ h6 a {
 }
 
 a {
-  color: #ffeb99;
+  color: #caad00;
   transition: color ease 0.3s;
 }
 
 a:hover {
-  color: #caad00;
+  color: #ffeb99;
 }
 
 .btn {

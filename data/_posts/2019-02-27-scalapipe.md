@@ -3,7 +3,7 @@ layout:   post
 title:    'Problem wywołań cebulowych w Scali'
 author:   "writeonly"
 category: resentiment
-tags:     resentiment scala kotlin clojure bash jekyll scalaz
+tags:     resentiment scala kotlin clojure bash jekyll scalaz operator
 labels:   lips elixir f# ocaml elm livescript julia hack
 comments: true
 toc:      true

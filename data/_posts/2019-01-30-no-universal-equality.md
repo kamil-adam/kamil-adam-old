@@ -3,7 +3,7 @@ layout:   post
 title:    'Scala - "No Universal Equality"'
 author:   "writeonly"
 category: resentiment
-tags:     resentiment scala-jvm scala-js scala-native java scalatest scalaz cats monad type-class scalafix utest 
+tags:     scala-jvm scala-js scala-native java scalatest scalaz cats monad type-class scalafix utest 
 labels:   scalatic
 comments: true
 toc:      true

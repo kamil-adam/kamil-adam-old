@@ -3,7 +3,7 @@ layout:   post
 title:    "uTest - operator Arrow Asserts"
 author:   "writeonly"
 category: resentiment
-tags:     resentiment scala utest operator
+tags:     scala utest operator
 labels:   minitest greenlight
 comments: true
 toc:      true

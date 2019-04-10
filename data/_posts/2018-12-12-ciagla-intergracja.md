@@ -3,7 +3,7 @@ layout:   post
 title:    "Ciągła integracja, ciągła kontrola, ciągła Scala"
 author:   "writeonly"
 category: resentiment
-tags:     resentiment scala sbt
+tags:     scala sbt
 labels:    coveralls continuous-integration travis-ci
 comments: true
 toc:      true

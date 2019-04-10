@@ -3,7 +3,7 @@ layout:   post
 title:    "Przenośna Scala"
 author:   "writeonly"
 category: resentiment
-tags:     resentiment scala scala-jvm scala-js scala-native sbt ubuntu
+tags:     scala scala-jvm scala-js scala-native sbt ubuntu
 labels:   jvm net javascript native
 comments: true
 toc:      true

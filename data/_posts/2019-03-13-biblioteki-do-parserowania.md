@@ -3,7 +3,7 @@ layout:   post
 title:    "Biblioteki do parsowania dla języka Scala"
 author:   "writeonly"
 category: resentiment
-tags:     resentiment scala library utest
+tags:     scala library utest
 labels:   dsl parser lexer parboiled2 fastparse
 comments: true
 toc:      true

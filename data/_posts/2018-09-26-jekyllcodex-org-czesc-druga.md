@@ -5,6 +5,7 @@ author:   "writeonly"
 category: writeonlydoc
 tags:     jekyll blog jekyllcodex
 labels:
+langs:
 comments: true
 toc:      true
 ---

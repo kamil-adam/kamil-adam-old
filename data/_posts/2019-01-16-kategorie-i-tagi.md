@@ -4,6 +4,7 @@ title:    "Jekyll - kategorie i tagi"
 author:   "writeonly"
 category: writeonlydoc
 tags:     jekyll blog
+langs:
 ---
 
 
@@ -55,7 +56,7 @@ Przykładowy strona pomocnicza dla tagu:
 ```yaml
 {%raw%}
 ---
-permalink: /tags/scala-native
+permalink: /posts-by-tags/scala-native
 layout: page_tag
 tag: "scala-native"
 ---
@@ -128,7 +129,7 @@ title: {{ page.category }}
       {% assign tags = post.tags | sort %}
       Tagi:
       {% for tag in tags %}
-      <a href="{{ site.baseurl }}/tags/{{ tag }}">{{ tag }}</a>
+      <a href="{{ site.baseurl }}/posts-by-tags/{{ tag }}">{{ tag }}</a>
       {% endfor %}
     </dd>
     {% endif %}
@@ -213,7 +214,7 @@ Strona `pages/tags.html` zawierająca listę wszystkich tagów:
 ---
 layout: posts
 title: Tagi
-permalink: /tags/
+permalink: /posts-by-tags/
 description: Tagi artykułów
 ---
 <div class="posts">

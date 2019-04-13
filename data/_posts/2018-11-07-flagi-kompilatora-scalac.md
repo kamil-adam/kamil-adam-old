@@ -3,13 +3,14 @@ layout:   post
 title:    "Flagi kompilatora Scalac"
 author:   "writeonly"
 category: resentiment
-tags:     scala sbt
-labels:    scalac options
+tags:     sbt
+labels:   scalac options
+langs:    scala perl
 comments: true
 toc:      true
 ---
 
-Nie bójmy się tego powiedzieć, Scala to nowy Perl.
+Nie bójmy się tego powiedzieć, Scala to nowy **[Perl](/posts-by-langs/perl)**.
 I tak jak w Perlu, w Scali obowiązuje zasada TIMTOWTDI (ang. There is more than one way to do it),
 czyli "Można to zrobić na różne sposoby".
 

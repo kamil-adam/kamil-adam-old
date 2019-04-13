@@ -5,6 +5,7 @@ author:   "writeonly"
 category: writeonlydoc
 tags:     jekyll blog jekyllcodex
 labels:   cookies jquery
+langs:
 comments: true
 toc:      true
 ---

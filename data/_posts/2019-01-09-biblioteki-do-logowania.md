@@ -3,8 +3,9 @@ layout:   post
 title:    "Biblioteki do logowania dla języka Scala"
 author:   "writeonly"
 category: resentiment
-tags:     scala library
+tags:     library utest
 labels:   logging scala-logging slogging scribe
+langs:    scala java
 comments: true
 toc:      true
 ---
@@ -124,7 +125,7 @@ object Core extends Core {
 }
 ```
 
-Tworzymy test:
+Tworzymy test jednostkowy we frameworku **[uTest](/posts-by-tags)**:
 ```scala
 package pl.writeonly.re.shared
 
@@ -217,7 +218,7 @@ object Core extends Core {
 }
 ```
 
-Tworzymy test:
+Tworzymy test jednostkowy we frameworku **[uTest](/posts-by-tags)**:
 ```scala
 package pl.writeonly.re.shared
 

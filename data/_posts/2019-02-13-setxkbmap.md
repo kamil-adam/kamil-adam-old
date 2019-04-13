@@ -5,17 +5,18 @@ author:   "writeonly"
 category: cli
 tags:     cli bash ubuntu
 labels:
+langs:
 comments: true
 toc:      true
 ---
 
-Po długiej przerwie prosty artykuł "Jak szybko zmienić układ klawiatury z konsoli na **[Ubuntu](/tags/ubuntu)**?".
+Po długiej przerwie prosty artykuł "Jak szybko zmienić układ klawiatury z konsoli na **[Ubuntu](/posts-by-tags/ubuntu)**?".
 
 
 ## Problem
 
 Podczas pracy na Xubuntu zainstalowanym na wirtualnej maszynie często zmienia mi się układ klawiatury z polskiej na amerykańską.
-Na **[Ubuntu](/tags/ubuntu)** można odwrócić ten proces w łatwy sposób za pomocą ikonki na pasku zadań,
+Na **[Ubuntu](/posts-by-tags/ubuntu)** można odwrócić ten proces w łatwy sposób za pomocą ikonki na pasku zadań,
 jednak już w Xubuntu ta opcja jest ukryta głęboko w trzewiach ustawień systemowych.
 Dlatego prościej jest to zrobić z linii poleceń.
 

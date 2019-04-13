@@ -3,8 +3,9 @@ layout:   post
 title:    "Przenośna Scala"
 author:   "writeonly"
 category: resentiment
-tags:     scala scala-jvm scala-js scala-native sbt ubuntu
-labels:   jvm net javascript native
+tags:     scala-jvm scala-js scala-native sbt ubuntu clang
+labels:   jvm net native
+langs:    scala haskell erlang rust go ecmascript
 comments: true
 toc:      true
 ---
@@ -13,10 +14,10 @@ toc:      true
 
 Znajomy zajarał się językiem Rust.
 Opowiada mi jaki to wspaniały język i pokazuje przykłady kodu.
-RustLang na pierwszy rzut oka wygląda jak skrzyżowanie C i Haskella plus kanały jak w GoLang.
+**[Rust](/posts-by-langs/rust)** na pierwszy rzut oka wygląda jak skrzyżowanie **[C](/posts-by-tags/clang)** i języka **[Haskell](/posts-by-langs/haskell)** plus kanały jak w języka **[Go](/posts-by-langs/go)**.
 Czyni go to pretendentem do bycia najbardziej skomplikowanym językiem programowania na świecie.
 Pretendentem, bo istnieje wśród programistów JVM opinia, że najbardziej skomlikowanym językiem na świecie jest Scala.
-Scala jest skrzyżowaniem Javy i Haskella plus aktory z Erlanga.
+Scala jest skrzyżowaniem Javy i Haskella plus aktory z języka **[Erlang](/posts-by-langs/erlang)**.
 
 Przykłady kodu coś mi przypominają.
 Wyglądają prawie jak w Scali tylko trochę mniej obiektowe, więc pytam:
@@ -45,8 +46,8 @@ który działał na obu platformach.
 Jednak było to zalane taką ilością warstw abstrakcyjnych,
 że czyniło go to bezużytecznym.
 
-### JavaScript
-JavaScript jest platformą docelową dla każdego,
+### ECMAScript
+**[ECMAScript](/posts-by-langs/ecmasript)** jest platformą docelową dla każdego,
 kto chce uruchamiać cokolwiek na stronie internetowej.
 Dlatego jeśliby posiadać kompilator Scali do JavaScriptu
 to w łatwy sposób można by z każdego programisty Scali stworzyć legendarnego Full-Stack Developera.
@@ -57,13 +58,13 @@ Niestety Scala.js i Akka.js posiadają wszystkie wady Node.js to znaczy jednową
 ale do front-endu wydają się idealne.
 
 ### Native
-Największą zaletą języków RustLang i GoLang jest to,
+Największą zaletą języków **[Rust](/posts-by-langs/rust)**, **[Pony](/posts-by-langs/pony)**, **[Crystal](/posts-by-langs/crystal) czy **[Go](/posts-by-langs/go)**, jest to,
 że są to języki kompilowane do postaci natywnej,
 a programy w nich pisane mogą być dostarczane do klienta pod postacią jednego pliku.
 
 To samo ze Scalą robi kompilator [ScalaNative](<http://www.scala-native.org/en/v0.3.8/>).
 Niestety dalej jest w wersji eksperymentalnej i nie posiada np. wielowątkowości.
-Co czyni go na razie tylko zabawką dla nerdów i np. ... DevOpsów i QA.
+Co czyni go na razie tylko zabawką dla nerdów i np. ... DevOpsów oraz QA.
 Bo o ile jednowątkowy program na produkcji zwykle nie ma sensu,
 to ScalaNative może zastąpić inne języki używane do wdrażania aplikacji i testowania.
 Zwłaszcza, że zwykle i tak są to języki jednowątkowe.

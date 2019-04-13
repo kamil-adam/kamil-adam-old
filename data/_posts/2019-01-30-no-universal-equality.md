@@ -3,13 +3,14 @@ layout:   post
 title:    'Scala - "No Universal Equality"'
 author:   "writeonly"
 category: resentiment
-tags:     scala-jvm scala-js scala-native java scalatest scalaz cats monad type-class scalafix utest 
+tags:     scala-jvm scala-js scala-native scalatest scalaz cats monad type-class scalafix utest 
 labels:   scalatic
+langs:    scala java haskell
 comments: true
 toc:      true
 ---
 
-Ostatnim błędem zgłaszanym w kodzie projektu **[resentiment](/tags/resentiment)** przez **[scalafix](/tags/scalafix)** jest "No Universal Equality" wynikający z użycia operatora `==`. 
+Ostatnim błędem zgłaszanym w kodzie projektu **[resentiment](/category/resentiment)** przez **[scalafix](/posts-by-tags/scalafix)** jest "No Universal Equality" wynikający z użycia operatora `==`. 
 
 W Scala obiekty domyślnie porównuje się za pomocą operatora `==`.
 Operator ten wywołuje pod spodem znaną z Javy metodę `equals`.
@@ -36,7 +37,7 @@ których wywołanie wygląda jak wywołanie operatora i zwykle tym nowym operato
 
 ### Scalactic
 **[Scalactic](<http://www.scalactic.org>)**
-jest to zestaw utilsów/narzędzi wydzielony ze **[ScalaTest](/tags/scalatest)**,
+jest to zestaw utilsów/narzędzi wydzielony ze **[ScalaTest](/posts-by-tags/scalatest)**,
 który może być przydatny także w kodzie produkcyjnym.
 
 **Scalactic** posiada wiele klas do porównywania wartości,
@@ -45,24 +46,24 @@ która wymaga by oba porównywane obiekty były tej samej klasy.
 
 Największą zaletą biblioteki **Scalactic** jest to,
 że nie zagłębia się w teorię czystego programowania funkcyjnego (ang. *pure functional programming*) 
-i nie pojawiają się tam takie straszne terminy jak **[monada](/tags/monad)** czy **[klasy typów](/tags/type-class)**.
+i nie pojawiają się tam takie straszne terminy jak **[monada](/posts-by-tags/monad)** czy **[klasy typów](/posts-by-tags/type-class)**.
 
 ### Scalaz i Cats 
 *Kolejność chronologiczna.*
 
-Są to dwie wspaniałe biblioteki, które robią z Scali język funkcyjny przypominający Haskella.
+Są to dwie wspaniałe biblioteki, które robią ze Scali język funkcyjny przypominający język **[Haskell](/posts-by-langs/haskell)**.
 
 Biblioteki te dzielą się na dwie główne części:
 * *Data types* - tutaj znajdują się monady, które są w Haskellu, ale nie ma ich w bibliotece standardowej jezyka Scala
 * *Type classes* - typ konstruktu systemowego, który obsługuje polimorfizm *ad hoc*. 
 
-Zarówno **[Scalaz](/tags/scalaz)** jak i **[Cats](/tags/cats)** posiadają klasę `Equal`,
+Zarówno **[Scalaz](/posts-by-tags/scalaz)** jak i **[Cats](/posts-by-tags/cats)** posiadają klasę `Equal`,
 która pozwala porównywać obiekty za pomocą operatora `===`. 
 
 Dobre porównanie obu bibliotek można znaleźć na [githubie](<https://github.com/fosskers/scalaz-and-cats>), 
 chociaż różnice są bardzo małe. 
-Obie biblioteki wspierają **[scala.js](/tags/scala-js)**, 
-ale tylko **Scalaz** - **[scala native](/tags/scala-native)**.
+Obie biblioteki wspierają **[scala.js](/posts-by-tags/scala-js)**, 
+ale tylko **Scalaz** - **[scala native](/posts-by-tags/scala-native)**.
 
 ## "No Universal Equality" z Scalaz w projekcie Resentiment
 

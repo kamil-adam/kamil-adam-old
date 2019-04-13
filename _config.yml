@@ -44,5 +44,7 @@ collections:
     output: true
   labels:
     output: true
+  langs:
+    output: true
 
 service_worker: true

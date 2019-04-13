@@ -3,8 +3,9 @@ layout:   post
 title:    "uTest - operator Arrow Asserts"
 author:   "writeonly"
 category: resentiment
-tags:     scala utest operator
+tags:     utest operator
 labels:   minitest greenlight
+langs:    scala
 comments: true
 toc:      true
 ---
@@ -13,7 +14,7 @@ Dziś krótki wpis o tym że warto czytać dokumentację, zapraszam.
 
 ## Arrow Asserts
 
-Framework **[uTest](tags/utest)** do testów jednostkowych dla języka **[Scala](tags/scala)** udostępnia **[operator](tags/operator)** `a ==> b` zwany po angielsku **Arrow Asserts** 
+Framework **[uTest](/posts-by-tags/utest)** do testów jednostkowych dla języka **[Scala](/posts-by-langs/scala)** udostępnia **[operator](/posts-by-tags/operator)** `a ==> b` zwany po angielsku **Arrow Asserts** 
 (po polsku *Asercja Strzałkowa* ?). Jest on skrótem od `assert(a == b)`. Dzięki niemu kod :
 
 ```scala

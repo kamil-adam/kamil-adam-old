@@ -3,8 +3,9 @@ layout:   post
 title:    "Ciągła integracja, ciągła kontrola, ciągła Scala"
 author:   "writeonly"
 category: resentiment
-tags:     scala sbt
-labels:    coveralls continuous-integration travis-ci
+tags:     sbt scala-native clang
+labels:   coveralls continuous-integration travis-ci
+langs:    scala java rustlang
 comments: true
 toc:      true
 ---
@@ -94,7 +95,7 @@ Przy takich założeniach wybór padł na dwa serwisy:
 * popularniejszy [Travis CI](<https://travis-ci.org/writeonly/resentiment>) używający kontenerów z Ubuntu
 * młodszy [CircleCI](<https://circleci.com/gh/writeonly/resentiment>) używający kontenerów z Debianem
 
-Niestety nie udało mi się skonfigurować CircleCI dla języka ScalaNative.
+Niestety nie udało mi się skonfigurować CircleCI dla języka **[ScalaNative](/posts-by-tags/scala-native)**.
 Problemem były zależności dla Debiana.
 
 Dodatkowo przydatne są także serwisy agregujące raporty z pokrycia kodu testami.
@@ -119,7 +120,7 @@ do [Coveralls](<https://coveralls.io/>)
 
 TravisCi jest konfigurowany za pomocą pliku `.travis.yml`.
 
-Najpierw wybieramy język programowania, jego wersję, wersję Ubuntu oraz wersję Javy:
+Najpierw wybieramy język programowania, jego wersję, wersję Ubuntu oraz wersję maszyny wirtualnej Javy:
 ```yaml
 language: scala
 scala: 2.11.12
@@ -221,7 +222,7 @@ after_success:
 
 ## Podsumowanie
 
-Uważny czytelnik może zauważyć, że nie wywołuje testów dla ScalaNative.
+Uważny czytelnik może zauważyć, że nie wywołuje testów dla **[ScalaNative](/posts-by-tags/scala-native)**.
 Mimo zainstalowania wszystkich pakietów wywołanie testów dla ScalaNative kończy się błędem:
 ```bash
 [error] /usr/bin/ld: warning: libunwind.so.8, needed by /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/libunwind-x86_64.so, may conflict with libunwind.so.1
@@ -248,7 +249,7 @@ Caused by: java.io.IOException: error=2, No such file or directory
 	... 8 more
 ```
 
-Jest to kolejny problem ScalaNative po braku możliwości wygenerowania pokrycia kodu
+Jest to kolejny problem **[ScalaNative](/posts-by-tags/scala-native)**. po braku możliwości wygenerowania pokrycia kodu
 oraz braku możliwości uruchomienia testów integracyjnych.
 Dowodzi to że ScalaNative niestety dalej jest zabawką
 i jeśli chce się pisać monady w języku kompilowanym natywnie należy wybrać [RustLang](<https://www.rust-lang.org/>).

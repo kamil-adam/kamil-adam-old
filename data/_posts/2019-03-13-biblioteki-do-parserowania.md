@@ -3,8 +3,9 @@ layout:   post
 title:    "Biblioteki do parsowania dla języka Scala"
 author:   "writeonly"
 category: resentiment
-tags:     scala library utest
+tags:     library utest
 labels:   dsl parser lexer parboiled2 fastparse
+langs:    scala
 comments: true
 toc:      true
 ---
@@ -73,7 +74,7 @@ podobnym do notacja Backusa-Naura (ang. **Backus-Naur Form**, **BNF**)
 oraz generowane przed właściwą kompilacją.
 
 Dziś istnieją biblioteki przy pomocy których można napisać parser o akceptowalnej wydajności.
-Dla języka **[Scala](/tags/scala)** są to:
+Dla języka **[Scala](/posts-by-langs/scala)** są to:
 
 * [Scala Parser Combinators](<https://github.com/scala/scala-parser-combinators>) -
 Wspiera Scala.js w wersji 0.6.x.
@@ -120,7 +121,7 @@ class CalculatorParser {
   val expr: P[Int] = P(addSub ~ End)
 }
 ```
-I proste testy do tego w frameworku **[utest](/tags/utest)**:
+I proste testy do tego w frameworku **[utest](/posts-by-tags/utest)**:
 ```scala
 package pl.writeonly.re.shared.calculator
 
@@ -152,7 +153,7 @@ object CalculatorParserTest extends TestSuite {
 
 ## Podsumowanie
 
-Dzięki bibliotekom do parsowania możliwe jest pisanie parserów w językach ogólnego przeznaczenia jak **[Scala](/tags/scala)**.
+Dzięki bibliotekom do parsowania możliwe jest pisanie parserów w językach ogólnego przeznaczenia jak **[Scala](/posts-by-langs/scala)**.
 Nie są potrzebne dodatkowe narzędzia, ani dodatkowe fazy kompilacji.
-Dodatkowo dzięki możliwości dodawania operatorów do składni języka **[Scala](/tags/scala)**,
+Dodatkowo dzięki możliwości dodawania operatorów do składni języka **[Scala](/posts-by-langs/scala)**,
 możliwe jest używanie notacji podobnej do BNF.

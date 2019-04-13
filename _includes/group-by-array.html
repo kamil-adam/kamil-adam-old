@@ -7,7 +7,7 @@
 {% assign __names =  include.collection | map: include.field %}
 
 {% comment %} Flatten {% endcomment %}
-{% assign __names =  __names | join: ',' | join: ',' | split: ',' %}
+{% assign __names =  __names | join: ' ' | join: ' ' | split: ' ' %}
 
 {% comment %} Uniq {% endcomment %}
 {% assign __names =  __names | sort %}

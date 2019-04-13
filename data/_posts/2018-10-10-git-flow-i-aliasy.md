@@ -4,7 +4,8 @@ title: "Git-flow i aliasy"
 author:   "writeonly"
 category: cli
 tags:     cli git alias
-labels:    flow
+labels:   flow
+langs:
 comments: true
 toc:      true
 ---

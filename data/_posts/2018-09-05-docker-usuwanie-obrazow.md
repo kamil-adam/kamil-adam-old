@@ -4,7 +4,8 @@ title:    "Docker - usuwanie obrazów"
 author:   "writeonly"
 category: cli
 tags:     cli alias
-labels:    docker
+labels:   docker
+langs:
 comments: true
 toc:      true
 ---

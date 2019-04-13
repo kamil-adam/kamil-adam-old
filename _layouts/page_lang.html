@@ -1,0 +1,35 @@
+---
+layout: default
+title: {{ page.lang }}
+---
+<div class="posts">
+  {% include breadcrumbs.html %}
+  <h1 class="posts-title">Język: {{ page.lang }}</h1>
+
+  <dl class="posts-nav">
+    {% for post in site.posts %}
+    {% assign langs = post.langs | split: ' ' %}
+    {% if langs contains page.lang %}
+    <dt>
+      <a class="posts-nav-item" href="{{ post.url | relative_url }}">
+        <span class="posts-nav-item-date">
+          <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
+            {{ post.date | date: "%Y-%m-%d" }}
+          </time>
+        </span>
+        {{ post.title }}
+      </a>
+    </dt>
+    <dd>
+      Kategoria :
+      <a href="{{ site.baseurl }}/posts-by-category/{{ post.category }}">{{ post.category | capitalize }}</a>
+      {% assign tags = post.tags | sort %}
+      Tagi:
+      {% for tag in tags %}
+      <a href="{{ site.baseurl }}/posts-by-tags/{{ tag }}">{{ tag }}</a>
+      {% endfor %}
+    </dd>
+    {% endif %}
+    {% endfor %}
+  </dl>
+</div>

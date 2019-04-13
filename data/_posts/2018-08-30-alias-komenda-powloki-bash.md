@@ -5,6 +5,7 @@ author:   "writeonly"
 category: cli
 tags:     cli bash alias git
 labels:
+langs:
 comments: true
 toc:      true
 ---

@@ -5,6 +5,7 @@ author:   "writeonly"
 category: thoughts
 tags:     blog
 labels:   thoughts
+langs:
 comments: true
 toc:      true
 ---

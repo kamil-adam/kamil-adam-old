@@ -3,8 +3,9 @@ layout:   post
 title:    "Statyczna analiza kodu dla języka Scala w SBT - część 2."
 author:   "writeonly"
 category: resentiment
-tags:     scala scala-jvm scala-js scala-native code-analysis static-code-analysis sbt
-labels:    scalastyle wartremover scapegoat linter scala-clippy sbt-cpd sbt-stats
+tags:     scala-jvm scala-js scala-native code-analysis static-code-analysis sbt
+labels:   scalastyle wartremover scapegoat linter scala-clippy sbt-cpd sbt-stats
+langs:    scala
 comments: true
 toc:      true
 ---

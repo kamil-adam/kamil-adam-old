@@ -5,6 +5,7 @@ author:   "writeonly"
 category: resentiment
 tags:     code-analysis dynamic-code-analysis specs2 scalatest
 labels:   property-based scalacheck scalaprops nyaya scalaz
+langs:    scala haskell
 comments: true
 toc:      true
 ---
@@ -43,7 +44,7 @@ Dlatego testy te są wolne, chociaż testują pojedyncze moduły i jednostki.
 * [ScalaCheck](<https://www.scalacheck.org/>) -
 pierwsza i najbardziej popularna biblioteka *property-based testing*.
 Wspiera Scala.js w wersji 0.6 i 1.0.0.
-Inspirowana biblioteką [QuickCheck](<http://hackage.haskell.org/package/QuickCheck>) dla języka Haskell.
+Inspirowana biblioteką [QuickCheck](<http://hackage.haskell.org/package/QuickCheck>) dla języka **[Haskell](/posts-by-langs/haskell)**.
 Jeden z projektów [typelevel](<https://typelevel.org/projects/>).
 Posiada integracje z [ScalaTest](<http://www.scalatest.org/user_guide/writing_scalacheck_style_properties>)
 i [Specs2](<https://etorreborre.github.io/specs2/guide/SPECS2-4.3.4/org.specs2.guide.UseScalaCheck.html>).

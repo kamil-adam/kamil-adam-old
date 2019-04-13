@@ -11,18 +11,25 @@ title: {{ page.tag }}
     {% if post.tags contains page.tag %}
     <dt>
       <a class="posts-nav-item" href="{{ post.url | relative_url }}">
-        {{ post.title }}
         <span class="posts-nav-item-date">
           <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
             {{ post.date | date: "%Y-%m-%d" }}
           </time>
         </span>
+        {{ post.title }}
       </a>
     </dt>
     <dd>
       Kategoria :
-      <a href="{{ site.baseurl }}/categories/{{ post.category }}">{{ post.category | capitalize }}</a>
-    </dd>
+      <a href="{{ site.baseurl }}/posts-by-category/{{ post.category }}">{{ post.category | capitalize }}</a>
+      {% assign langs = post.langs | split: ' ' | sort %}
+      {% assign langs_size = langs | size %}
+      {% if 0 < langs_size %}
+      Języki:
+      {% for lang in langs %}
+      <a href="{{ site.baseurl }}/posts-by-langs/{{ lang }}">{{ lang }}</a>
+      {% endfor %}
+      {% endif %}
     {% endif %}
     {% endfor %}
   </dl>

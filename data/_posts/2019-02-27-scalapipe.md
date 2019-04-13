@@ -3,8 +3,9 @@ layout:   post
 title:    'Problem wywołań cebulowych w Scali'
 author:   "writeonly"
 category: resentiment
-tags:     scala kotlin clojure bash jekyll scalaz operator
-labels:   lips elixir f# ocaml elm livescript julia hack
+tags:     bash jekyll scalaz operator
+labels:   lips f# ocaml hack
+langs:    scala kotlin clojure perl elixir julia elm livescript
 comments: true
 toc:      true
 ---
@@ -37,7 +38,7 @@ Szumem jest tutaj tworzenie pomocniczych zmiennych,
 które często trudno nazwać w sensowny sposób.
 
 Dlatego powinniśmy unikać *wywołań cebulowych*
-Chyba, że piszemy w języku **[Clojure](/tags/clojure)** lub innym Lispie.
+Chyba, że piszemy w języku **[Clojure](/posts-by-langs/clojure)** lub innym Lispie.
 Wtedy formatujemy kod:
 ```clojure
 (third_function
@@ -63,8 +64,8 @@ data
 Oczywiście o ile `first_function` jest metodą obiektu `data`,
 `second_function` jest metodą obiektu zwracanego przez `first_function` i tak dalej.
 Jeśli nie, to musimy użyć haków 
-jak [implicit classes](<https://docs.scala-lang.org/overviews/core/implicit-classes.html>) w języku **[Scala](/tags/scala)**
-lub [extensions](<https://kotlinlang.org/docs/reference/extensions.html>)  w języku **[Kotlin](/tags/kotlin)**.
+jak [implicit classes](<https://docs.scala-lang.org/overviews/core/implicit-classes.html>) w języku **[Scala](/posts-by-langs/scala)**
+lub [extensions](<https://kotlinlang.org/docs/reference/extensions.html>)  w języku **[Kotlin](/posts-by-langs/kotlin)**.
 
 Jeśli nasz język programowania nie wspiera haków to pozostaje nam kod z tworzeniem wielu pomocniczych zmiennych:
 ```scala
@@ -77,14 +78,14 @@ val data30 = thirty_function(data29)
 
 ### Prawdopodobna inspiracja - potoki w Bash i Jekyll
 
-W powłoce systemowej **[Bash](/tags/bash)** przesyłanie danych między jedną komendą,
+W powłoce systemowej **[Bash](/posts-by-tags/bash)** przesyłanie danych między jedną komendą,
 a drugą jest realizowane przez potoki, np:
 ```bash
 ps -a | sort | uniq | grep -v sh
 ```
 Dwie lub więcej komend można połączyć w jedną za pomocą operatora pionowej kreski `|` (ang. *pipe*).
 
-**[Jekyll](/tags/jekyll)** także posiada potoki, ale dla utrudnienia nazywają się filtrami. 
+**[Jekyll](/posts-by-tags/jekyll)** także posiada potoki, ale dla utrudnienia nazywają się filtrami. 
 Precyzyjniej to Jekyll używa języka szablonów Liquid, a Liquid posiada Filtry.
 Kod :
 ```jekyll
@@ -127,7 +128,7 @@ Na fali popularności *operator potoku* został dodany także do wielu innych j�
 Część z nich zawiera także drugi podobny operator zwany *back pipe operator* zapisywany `<|` lub `|>>`.
 Ten drugi zapis prawdopodobnie inspirowany jest językiem [Clojure](<https://clojure.org/guides/threading_macros>).
 
-Tak, **[Clojure](/tags/clojure)** posiada dużo lukru składniowego,
+Tak, **[Clojure](/posts-by-langs/clojure)** posiada dużo lukru składniowego,
 żeby poprawić standardową nieczytelność Lispa dzięki czemu możemy zapisać:
 
 ```clojure
@@ -141,7 +142,7 @@ Tak, **[Clojure](/tags/clojure)** posiada dużo lukru składniowego,
 Po co nam dwa operatory potoku, tj `|>` i `<|`?
  
 Otóż `|>` dodaje argument na początku listy parametrów, a `<|` - na końcu listy.
-Czyli jeśli w języku Perl 5 wprowadzono by oba operatory to moglibyśmy wywołać:
+Czyli jeśli w języku **[Perl](/posts-by-langs/perl) 5 wprowadzono by oba operatory to moglibyśmy wywołać:
 
 ```perl
 (0, 1, 2, 3) <| grep { $_ != 2} <| map { $_ * 2})
@@ -149,7 +150,7 @@ Czyli jeśli w języku Perl 5 wprowadzono by oba operatory to moglibyśmy wywoł
 
 ## Rozwiązanie w Scali - ScalaPipe i operator drozda
 
-Język **[Scala](/tags/scala)** nie posiada operatora potoku,
+Język **[Scala](/posts-by-langs/scala)** nie posiada operatora potoku,
 ale posiada możliwość definiowania operatorów.
 W internecie pod hasłem *ScalaPipe* można znaleść wiele możliwych implementacji.
 Moja ulubiona to:
@@ -173,7 +174,7 @@ object ScalaPipeOps extends ScalaPipeOps
 ```
 
 Na szczęście nie musimy sami implementować operatora *ScalaPipe*,
-ponieważ istnieje on już w bibliotece **[Scalaz](/tags/scalaz)**
+ponieważ istnieje on już w bibliotece **[Scalaz](/posts-by-tags/scalaz)**
 ale dla utrudnienia nazywa się **operator drozda** (ang. *Thrush combinator*).
 Używając tego operatora z łatwością możemy zapisać:
 ```scala
@@ -182,7 +183,7 @@ import scalaz.Scalaz._
 data |> firstFunction |> secondFunction |> threeFunction
 ```
 
-Niestety Scala to nie Elixir i nie możemy zapisać:
+Niestety Scala to nie **[Elixir](/posts-by-langs/elixir)** i nie możemy zapisać:
 ```scala
 data
   |> firstFunction
@@ -217,6 +218,6 @@ data
 
 ## Podsumowanie
 
-Składnia języka **[Scala](/tags/scala)** jest elastyczna, ale czasem nie aż tak bardzo jak była by potrzeba.
+Składnia języka **[Scala](/posts-by-langs/scala)** jest elastyczna, ale czasem nie aż tak bardzo jak była by potrzeba.
 Mimo to, łatwo definiować nowe operatory oraz składnię, która może znacząco skrócić i uprościć kod.
 Warto jednak wcześnie sprawdzić czy nasz operator nie jest zdefiniowany w istniejącej i popularnej bibliotece.

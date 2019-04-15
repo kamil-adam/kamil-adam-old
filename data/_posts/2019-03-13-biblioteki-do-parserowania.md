@@ -3,8 +3,8 @@ layout:   post
 title:    "Biblioteki do parsowania dla języka Scala"
 author:   "writeonly"
 category: resentiment
-tags:     library utest
-labels:   dsl parser lexer parboiled2 fastparse
+tags:     library utest fastparse
+labels:   dsl parser lexer parboiled2 
 langs:    scala
 comments: true
 toc:      true
@@ -91,7 +91,7 @@ Wersja FastParse 1.0.0 wspierała Scala Native.
 
 ## FastParse w akcji
 
-Prosty parser wyrażeń arytmetycznych zaimplementowany przy pomocy FastParse
+Prosty parser wyrażeń arytmetycznych zaimplementowany przy pomocy **[FastParse](/posts-by-tags/fastparse)**:
 ```scala
 package pl.writeonly.re.shared.calculator
 

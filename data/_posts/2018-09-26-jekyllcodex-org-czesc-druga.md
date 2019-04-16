@@ -24,7 +24,7 @@ Skrypty wykorzystane przeze mnie podzieliłem na trzy kategorie ze względu na m
 Są to skrypty, które w większości trafiły do układu strony `default.html`:
 
 - [ostrzeżenie o plikach cookies](<https://jekyllcodex.org/without-plugin/cookie-consent/>)
-- [pozycjonowanie](<https://jekyllcodex.org/without-plugin/seo/>)
+- [seo](<https://jekyllcodex.org/without-plugin/seo/>)
 - [kanał rss](<https://jekyllcodex.org/without-plugin/rss-feed/>)
 - [przyciski linkujące do kont na portalach społecznościowych](<https://jekyllcodex.org/without-plugin/follow-buttons/>)
 - [czat na żywo](<https://jekyllcodex.org/without-plugin/live-chat/>) - jeszcze nie wiem po co, ale dodałem.

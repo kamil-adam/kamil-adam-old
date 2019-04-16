@@ -11,14 +11,14 @@ description: Wyszukiwarka artykułów
 </div>
 
 <!-- Script pointing to search-script.js -->
-<script src="/public/js/simple-jekyll-search/simple-jekyll-search.js" type="text/javascript"></script>
+<script src="/assets/js/simple-jekyll-search/simple-jekyll-search.js" type="text/javascript"></script>
 
 <!-- Configuration -->
 <script>
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
-  json: '/public/js/simple-jekyll-search/simple-jekyll-search.json',
+  json: '/assets/js/simple-jekyll-search/simple-jekyll-search.json',
   searchResultTemplate: '<div><a href="{url}"><h1>{title}</h1></a><span>{date}</span></div>',
   noResultsText: "Nic nie znaleziono"
 })

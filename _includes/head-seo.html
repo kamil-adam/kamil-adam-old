@@ -5,7 +5,7 @@
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   {% assign pagecontent_description = page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | strip_html | strip_newlines | replace: '  ', ' ' | truncate: 160 %}
   <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.use_default_description %}{{ site.description }}{% else %}{{ pagecontent_description }}{% endif %}" />
-
+  
   <link rel="shortcut icon" type="image/png" href="/img/icon-196x196.png">
   <link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png">
   <link rel="apple-touch-icon" href="/img/icon-196x196.png">

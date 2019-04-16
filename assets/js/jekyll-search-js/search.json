@@ -1,0 +1,23 @@
+---
+layout: null
+sitemap: false
+---
+
+{% capture json %}
+[
+  {% assign collections = site.collections | where_exp:'collection','collection.output != false' %}
+  {% for collection in collections %}
+    {% assign docs = collection.docs | where_exp:'post','post.sitemap != false' | where_exp:'post','post.date' | reverse %}
+    {% for post in docs %}
+      {
+        "title": {{ post.title | jsonify }},
+        "date": {{ post.date | date_to_xmlschema | date: "%Y-%m-%d" | jsonify }},
+        "excerpt": {{ post.excerpt | markdownify | strip_html | jsonify }},
+        "content": {{ post.content | markdownify | strip_html | jsonify }},
+        "url": {{ site.baseurl | append: post.url | jsonify }}
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  {% endfor %}]
+{% endcapture %}
+
+{{ json | lstrip }}

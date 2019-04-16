@@ -25,14 +25,19 @@ class jekyllSearch {
     const results = await this.findResults()
     const html = results.map(item => {
       return `
-        <li class="result">
-            <article class="result__article  article">
-                <h4>
-                  <a href="${this.siteURL + item.url}">${item.title}</a>
-                </h4>
-                <p>${item.excerpt}</p>
-            </article>
-        </li>`
+        <dt class="result">
+          <a class="posts-nav-item"  href="${this.siteURL + item.url}">
+            <span class="posts-nav-item-date">
+              <time datetime="${item.date}" class="date">
+                ${item.date}
+              </time>
+            </span>
+            ${item.title}
+          </a>
+        </dt>
+        <dd>
+          <p>${item.excerpt}</p>
+        </dd>`
     }).join('')
     if ((results.length == 0) || (this.searchField.value == '')) {
       this.resultsList.innerHTML = `<p>Nic nie znaleziono</p>`

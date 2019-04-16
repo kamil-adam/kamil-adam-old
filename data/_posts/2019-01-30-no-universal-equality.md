@@ -1,6 +1,6 @@
 ---
 layout:   post
-title:    'Scala - "No Universal Equality"'
+title:    "Scala - No Universal Equality"
 author:   "writeonly"
 category: resentiment
 tags:     scala-jvm scala-js scala-native scalatest scalaz cats monad type-class scalafix utest 

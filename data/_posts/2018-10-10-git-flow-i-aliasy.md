@@ -10,8 +10,6 @@ comments: true
 toc:      true
 ---
 
-## Koncepcja Gitflow
-
 Gitflow jest wspaniałą koncepcją pracy z gałęziami w repozytorium Git.
 Strategia ta jest świetnie opisana na
 [A successful Git branching model](<https://nvie.com/posts/a-successful-git-branching-model/>).

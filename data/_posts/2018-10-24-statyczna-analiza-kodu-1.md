@@ -10,8 +10,6 @@ comments: true
 toc:      true
 ---
 
-## Wprowadzenie
-
 > Statyczna analiza programu to analiza oprogramowania komputerowego wykonywanego bez faktycznego uruchamiania programów,
 w przeciwieństwie do analizy dynamicznej,
 która jest analizą wykonywaną na programach podczas ich wykonywania.

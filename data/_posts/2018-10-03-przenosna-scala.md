@@ -10,8 +10,6 @@ comments: true
 toc:      true
 ---
 
-## JVM Resentment
-
 Znajomy zajarał się językiem Rust.
 Opowiada mi jaki to wspaniały język i pokazuje przykłady kodu.
 **[Rust](/posts-by-langs/rust)** na pierwszy rzut oka wygląda jak skrzyżowanie **[C](/posts-by-tags/clang)** i języka **[Haskell](/posts-by-langs/haskell)** plus kanały jak w języka **[Go](/posts-by-langs/go)**.

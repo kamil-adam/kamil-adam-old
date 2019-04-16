@@ -10,8 +10,6 @@ comments: true
 toc:      true
 ---
 
-## Wprowadzenie
-
 > Dynamiczna analiza programu to analiza oprogramowania komputerowego wykonywanego przez wykonywanie programów na rzeczywistym lub wirtualnym procesorze.
 > Korzystanie z metryk testów, takich jak pokrycie kodu, zapewnia, że przetestowano odpowiednią ilość możliwych zachować programu.
 > Aby analiza dynamiczna programu była skuteczna, program docelowy musi być wykonany z wystarczającą ilością danych wejściowych do testów, aby uzyskać interesujące zachowanie.

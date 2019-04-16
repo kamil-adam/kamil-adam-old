@@ -94,5 +94,5 @@ Znalazłem tam skrypt wyświetlający banner informujący o plikach Cookies. Po 
 ```
 
 Czuję, że na stronie <https://jekyllcodex.org/> spędzę więcej czasu  z czego wynikają dwie smutne informacje:
-* później zacznę pisać o Scali
+* później zacznę pisać o języku **[Scala](/posts-by-langs/scala)**
 * istnieje niebezpieczeństwo, że nauczę się jQuery

@@ -11,16 +11,20 @@ toc:      true
 ---
 
 Wyszukiwując swój blog w google trafiłem na brzydki opis w rodzaju: 
-```
+```jekyll
+{%raw%}
 for post in paginator. posts %} {{ post. title }} {{ post. date | date:
+{%endraw%}
 ```
 wynika to z tego, że skrypt dla **[seo](/posts-by-tags/seo)**
 ze strony [jekyllcodex](<https://jekyllcodex.org/without-plugin/seo/>)
 generuje skrócony opis nawet dla stron używających liquiidu.
 Dokładnie problematyczna jest linia:
 
-```liquid
+```jekyll
+{%raw%}
   <meta name="description" content="{% if pagecontent_description.size > 10 %}{{ pagecontent_description }}{% else %}{{ site.description }}{% endif %}">
+{%endraw%}
 ```
 i dwie podobne dla niej
 
@@ -34,6 +38,7 @@ i dwie podobne dla niej
 ## ... i implementacja algorytmu
 Ładnie sformatowany kod rozwiązujący ten problem wygląda następująco:
 ```jekyll
+{%raw%}
 {% if page.description %}                {% comment %} jeśli strona posiada opis {% endcomment %}      
   {{ page.description }}                 {% comment %} to wyświetl go  {% endcomment %}      
 {% elsif page.use_default_description %} {% comment %} w przeciwnym wypadku jeśli strona posiada zmienną use_default_description {% endcomment %}  
@@ -41,14 +46,18 @@ i dwie podobne dla niej
 {% else %}                               {% comment %} w przeciwnym wypadku {% endcomment %}  
   {{ pagecontent_description }}          {% comment %} wyświelt przygotowany skrót {% endcomment %} 
 {% endif %}
+{%endraw%}
 ```
 
 Co produkcyjnie wygląda 
-```liquid
+```jekyll
+{%raw%}
   <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.index %}{{ site.description }}{% else %}{{ pagecontent_description }}{% endif %}">
+{%endraw%}
 ```
 A cały skrypt dla **[seo](/posts-by-tags/seo)** ostateczie wygląda:
-```liquid
+```jekyll
+{%raw%}
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -79,6 +88,7 @@ A cały skrypt dla **[seo](/posts-by-tags/seo)** ostateczie wygląda:
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ "/sitemap.xml" | prepend: site.baseurl | prepend: site.url }}" />
+{%endraw%}
 ```
 
 Aktualny skrypt do pobrania pod linkiem znajduje się dpo linkiem 

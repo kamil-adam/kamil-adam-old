@@ -4,8 +4,8 @@ highlighter:      rouge
 
 # Setup
 title:            WriteOnly.pl
-tagline:          WriteOnly Scala Blog
-description:      "Blog tylko-do-zapisu o językach programowania Scala/JVM, Scala.js i Scala Native oraz generatorze stron Jekkyll i użyciu wiersza poleceń"
+tagline:          WriteOnly Scala, Jekyll, Git & Bash Blog
+description:      "Blog tylko-do-zapisu o językach programowania Scala/JVM, Scala.js i Scala Native oraz generatorze stron Jekyll, repozytorium Git i użyciu wiersza poleceń CLI"
 url:              https://www.writeonly.pl
 
 author:

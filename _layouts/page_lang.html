@@ -2,10 +2,11 @@
 layout: default
 title: {{ page.lang }}
 ---
-<div class="posts">
-  {% include breadcrumbs.html %}
-  <h1 class="posts-title">Język: {{ page.lang }}</h1>
-
+<section class="posts">
+  <header>
+    {% include breadcrumbs.html %}
+    <h1 class="posts-title">Język: {{ page.lang }}</h1>
+  </header>
   <dl class="posts-nav">
     {% for post in site.posts %}
     {% assign langs = post.langs | split: ' ' %}
@@ -32,4 +33,4 @@ title: {{ page.lang }}
     {% endif %}
     {% endfor %}
   </dl>
-</div>
+</section>

@@ -2,9 +2,11 @@
 layout: default
 title: {{ page.tag }}
 ---
-<div class="posts">
-  {% include breadcrumbs.html %}
-  <h1 class="posts-title">Tag: {{ page.tag }}</h1>
+<section class="posts">
+  <header>
+    {% include breadcrumbs.html %}
+    <h1 class="posts-title">Tag: {{ page.tag }}</h1>
+  </header>
 
   <dl class="posts-nav">
     {% for post in site.posts %}
@@ -33,4 +35,4 @@ title: {{ page.tag }}
     {% endif %}
     {% endfor %}
   </dl>
-</div>
+</section>

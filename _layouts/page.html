@@ -1,8 +1,10 @@
 ---
 layout: default
 ---
-<div class="page">
-  {% include breadcrumbs.html %}
-  <h1 class="page-title">{{ page.title }}</h1>
+<section class="page">
+  <header>
+    {% include breadcrumbs.html %}
+    <h1 class="page-title">{{ page.title }}</h1>
+  </header>
   {{ content }}
-</div>
+</section>

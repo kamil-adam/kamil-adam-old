@@ -1,13 +1,13 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
-    <div class="sidebar-about">
+    <header class="sidebar-about">
       <h1>
         <a href="{{ '/' | relative_url }}">
           {{ site.title }}
         </a>
       </h1>
       <p class="lead">{{ site.description }}</p>
-    </div>
+    </header>
     <nav class="sidebar-nav">
 
       {% comment %}
@@ -25,6 +25,12 @@
 
       {% for node in pages %}
       {% if node.title != null and node.layout == "page"%}
+      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}/{{ node.url  | remove_first: '/' }}">{{ node.title }}</a>
+      {% endif %}
+      {% endfor %}
+
+      {% for node in pages %}
+      {% if node.title != null and node.layout == "search"%}
       <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}/{{ node.url  | remove_first: '/' }}">{{ node.title }}</a>
       {% endif %}
       {% endfor %}

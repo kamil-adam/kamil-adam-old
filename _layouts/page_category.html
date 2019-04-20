@@ -2,10 +2,12 @@
 layout: default
 title: {{ page.category }}
 ---
-<div class="posts">
-  {% include breadcrumbs.html %}
-  <h1 class="posts-title">Kategoria: {{ page.title }}</h1>
-
+<section class="posts">
+  <header>
+    {% include breadcrumbs.html %}
+    <h1 class="posts-title">Kategoria: {{ page.title }}</h1>
+  </header>  
+  
   <i>{{ page.content }}</i>
 
   <dl class="posts-nav">
@@ -39,4 +41,4 @@ title: {{ page.category }}
     {% endif %}
     {% endfor %}
   </dl>
-</div>
+</section>

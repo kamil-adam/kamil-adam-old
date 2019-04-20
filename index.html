@@ -4,7 +4,7 @@ title: Strona główna
 use_default_description: true
 ---
 
-<div class="post">
+<article class="post">
   {% for post in paginator.posts %}
   <div class="post">
     <h1 class="post-title">
@@ -21,7 +21,7 @@ use_default_description: true
     {{ post.content }}
   </div>
   {% endfor %}
-</div>
+</article>
 
 <div class="pagination">
   {% if paginator.next_page %}

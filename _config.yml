@@ -36,7 +36,7 @@ linkedin_url:       https://www.linkedin.com/in/kamil-żabiński/
 #pinterest_url:
 #instagram_url:
 
-collections_dir: data
+collections_dir: docs
 collections:
   categories:
     output: true

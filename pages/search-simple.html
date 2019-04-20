@@ -6,8 +6,8 @@ description: Wyszukiwarka artykułów
 ---
 <!-- Html Elements for Search -->
 <div id="search-container">
-<input type="text" id="search-input" placeholder="search...">
-<ul id="results-container"></ul>
+  <input type="text" id="search-input" placeholder="Przeszukaj artykuły">
+  <dl id="results-container" class="posts-nav"></dl>
 </div>
 
 <!-- Script pointing to search-script.js -->
@@ -18,8 +18,23 @@ description: Wyszukiwarka artykułów
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
-  json: '/public/js/simple-jekyll-search/simple-jekyll-search.json',
-  searchResultTemplate: '<div><a href="{url}"><h1>{title}</h1></a><span>{date}</span></div>',
+  json: '/assets/js/simple-jekyll-search/search.json',
+  searchResultTemplate: `
+         <dt class="result">
+          <a class="posts-nav-item"  href="{url}">
+            <span class="posts-nav-item-date">
+              <time datetime="{date}" class="date">
+                {date}
+              </time>
+            </span>
+            {title}
+          </a>
+        </dt>
+        <dd>
+          <p>{excerpt}</p>
+        </dd>`,
+
   noResultsText: "Nic nie znaleziono"
 })
 </script>
+Powered by <a href="https://github.com/christian-fei/Simple-Jekyll-Search">Simple-Jekyll-Search</a>

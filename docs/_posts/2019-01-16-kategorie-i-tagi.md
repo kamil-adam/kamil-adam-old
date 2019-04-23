@@ -1,9 +1,9 @@
 ---
-layout:   post
 title:    "Jekyll - kategorie i tagi"
 author:   "writeonly"
 category: writeonlydoc
 tags:     jekyll blog
+labels:
 langs:
 ---
 

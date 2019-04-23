@@ -1,13 +1,10 @@
 ---
-layout:   post
 title:    "jekyllcodex.org - część druga"
 author:   "writeonly"
 category: writeonlydoc
 tags:     jekyll blog jekyllcodex seo
 labels:
 langs:
-comments: true
-toc:      true
 ---
 
 Ponad miesiąc temu, w panice, szukałem prostego skryptu, który by wyświetlał ostrzeżenie o plikach cookies.

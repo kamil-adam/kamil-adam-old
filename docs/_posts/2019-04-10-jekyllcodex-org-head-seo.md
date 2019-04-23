@@ -1,13 +1,10 @@
 ---
-layout:   post
 title:    "jekyllcodex.org - problem ze skryptem seo"
 author:   "writeonly"
 category: writeonlydoc
 tags:     jekyll blog jekyllcodex seo
 labels:
 langs:
-comments: true
-toc:      true
 ---
 
 Wyszukiwując swój blog w google trafiłem na brzydki opis w rodzaju:

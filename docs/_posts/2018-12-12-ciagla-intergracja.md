@@ -1,13 +1,10 @@
 ---
-layout:   post
 title:    "Ciągła integracja, ciągła kontrola, ciągła Scala"
 author:   "writeonly"
 category: resentiment
 tags:     sbt scala-native clang
 labels:   coveralls continuous-integration travis-ci
 langs:    scala java rustlang
-comments: true
-toc:      true
 ---
 
 

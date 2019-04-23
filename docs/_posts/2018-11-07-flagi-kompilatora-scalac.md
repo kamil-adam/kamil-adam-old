@@ -1,13 +1,10 @@
 ---
-layout:   post
 title:    "Flagi kompilatora Scalac"
 author:   "writeonly"
 category: resentiment
 tags:     sbt
 labels:   scalac options
 langs:    scala perl
-comments: true
-toc:      true
 ---
 
 Nie bójmy się tego powiedzieć, Scala to nowy **[Perl](/posts-by-langs/perl)**.

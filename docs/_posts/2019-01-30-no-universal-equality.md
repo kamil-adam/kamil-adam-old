@@ -1,13 +1,10 @@
 ---
-layout:   post
 title:    "Scala - No Universal Equality"
 author:   "writeonly"
 category: resentiment
 tags:     scala-jvm scala-js scala-native scalatest scalaz cats monad type-class scalafix utest operator library
 labels:   scalatic
 langs:    scala java haskell
-comments: true
-toc:      true
 ---
 
 Ostatnim błędem zgłaszanym w kodzie projektu **[resentiment](/category/resentiment)** przez **[scalafix](/posts-by-tags/scalafix)**

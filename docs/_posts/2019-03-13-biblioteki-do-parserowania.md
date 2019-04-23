@@ -1,13 +1,10 @@
 ---
-layout:   post
 title:    "Biblioteki do parsowania dla języka Scala"
 author:   "writeonly"
 category: resentiment
 tags:     library utest fastparse
 labels:   dsl parser lexer parboiled2
 langs:    scala
-comments: true
-toc:      true
 ---
 
 ## Co to jest parser?

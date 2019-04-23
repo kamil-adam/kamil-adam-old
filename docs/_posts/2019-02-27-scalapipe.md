@@ -1,13 +1,10 @@
 ---
-layout:   post
 title:    'Problem wywołań cebulowych w Scali'
 author:   "writeonly"
 category: resentiment
 tags:     bash jekyll scalaz operator
 labels:   lips f# ocaml hack
 langs:    scala kotlin clojure perl elixir julia elm livescript
-comments: true
-toc:      true
 ---
 
 ## Problem: wywołania cebulowe

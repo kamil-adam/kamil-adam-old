@@ -1,13 +1,10 @@
 ---
-layout:   post
 title:    "Przenośna Scala"
 author:   "writeonly"
 category: resentiment
 tags:     scala-jvm scala-js scala-native sbt ubuntu clang
 labels:   jvm net native
 langs:    scala haskell erlang rust go ecmascript
-comments: true
-toc:      true
 ---
 
 Znajomy zajarał się językiem Rust.

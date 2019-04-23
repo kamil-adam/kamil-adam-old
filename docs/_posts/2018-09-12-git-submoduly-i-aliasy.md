@@ -1,13 +1,10 @@
 ---
-layout:   post
 title: "Git - submoduły i aliasy"
 author:   "writeonly"
 category: cli
 tags:     cli git alias
 labels:   submodule
 langs:    java ecmascript
-comments: true
-toc:      true
 ---
 
 *Post oparty na prawdziwych wydarzeniach i traumach*

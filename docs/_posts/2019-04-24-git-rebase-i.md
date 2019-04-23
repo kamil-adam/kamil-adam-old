@@ -1,13 +1,10 @@
 ---
-layout:   post
 title:    'Prosty sposób na zmianę historii Gita'
 author:   "writeonly"
 category: cli
 tags:     git ubuntu
 labels:
 langs:
-comments: true
-toc:      true
 ---
 
 Każdy z nas czasem zatwierdza (ang. *commit*) coś brzydkiego do repozytorium.

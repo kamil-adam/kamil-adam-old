@@ -1,13 +1,10 @@
 ---
-layout:   post
 title: "Git-flow i aliasy"
 author:   "writeonly"
 category: cli
 tags:     cli git alias
 labels:   flow
 langs:
-comments: true
-toc:      true
 ---
 
 Gitflow jest wspaniałą koncepcją pracy z gałęziami w repozytorium Git.

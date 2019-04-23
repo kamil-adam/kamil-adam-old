@@ -1,13 +1,10 @@
 ---
-layout:   post
 title:    "Jekyll i ciasteczka (pliki cookies)"
 author:   "writeonly"
 category: writeonlydoc
 tags:     jekyll blog jekyllcodex
 labels:   cookies jquery
 langs:
-comments: true
-toc:      true
 ---
 
 Przed założeniem bloga opartego na technologiach Jekyll i GitHub Pages przejrzałem sporo polskojęzycznych blogów z opisem “Jak to zrobić”.

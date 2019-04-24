@@ -4,7 +4,7 @@ title:    "Biblioteki do parsowania dla języka Scala"
 author:   "writeonly"
 category: resentiment
 tags:     library utest fastparse
-labels:   dsl parser lexer parboiled2 
+labels:   dsl parser lexer parboiled2
 langs:    scala
 comments: true
 toc:      true
@@ -17,7 +17,7 @@ czyli sprawdzeniu ich zgodności z określoną gramatyką formalną.
 Wynikiem pracy parsera jest drzewo składniowe (ang. *abstract syntax tree*, *AST*),
 na którym są przeprowadzane dalsze operacje.
 
-Programem pomocniczym, często działającym równolegle do parsera, jest lekser. 
+Programem pomocniczym, często działającym równolegle do parsera, jest lekser.
 Dokonuje on procesu analizy leksykalnej,
 czyli dzieli wejściowy tekst na leksemy.
 
@@ -25,49 +25,47 @@ czyli dzieli wejściowy tekst na leksemy.
 Parsery są używane do różnych celów:
 
 ### Parsowanie danych strukturalnych
-* Parsowanie języka programowania - 
-jest to pierwsza rzecz jaka nasuwa się na myśl, przynajmniej mi. 
-Parsery są pierwszą (wejściową) częścią kompilatora. 
-Oczywiście mało prawdopodobne, że będziesz tworzył nowy język programowania. 
-Czasem jednak istnieje potrzeba napisania parsera już istniejącego języka, 
+* Parsowanie języka programowania -
+jest to pierwsza rzecz jaka nasuwa się na myśl, przynajmniej mi.
+Parsery są pierwszą (wejściową) częścią kompilatora.
+Oczywiście mało prawdopodobne, że będziesz tworzył nowy język programowania.
+Czasem jednak istnieje potrzeba napisania parsera już istniejącego języka,
 gdy np. piszesz własny tool do formatowania kodu.
-* Parsowanie z serializowanych danych - 
-z serializowane dane można przesyłać i przechowywać w formatach tekstowych takich jak 
-JSON, CSV, JSON Lines (połączenie zalet formatów JSON i CSV), XML i wielu innych. 
+* Parsowanie z serializowanych danych -
+z serializowane dane można przesyłać i przechowywać w formatach tekstowych takich jak
+JSON, CSV, JSON Lines (połączenie zalet formatów JSON i CSV), XML i wielu innych.
 Ale możliwe, że chciałbyś napisać parser własnego formatu zoptymalizowany pod pewne konkretne wymagania.
 Jak np. [Rison](https://github.com/Hronom/jackson-dataformat-rison),
 JSON zmodyfikowany w taki sposób by móc go przesyłać bezpośrednio w adresie url.
-* Parsowanie konfiguracji - 
+* Parsowanie konfiguracji -
 teoretycznie każdą konfigurację można zapisać w Javowych plikach Properties lub Jsonie, ewentualnie Yamlu (nadzbiorze Jsona) albo XMLu.
-Powstają jednak cały czas nowe formaty dedykowane do przechowywania konfiguracji jak 
-[Hocon](<https://github.com/lightbend/config>) ([Shocon](<https://github.com/jvican/stoml>)) 
+Powstają jednak cały czas nowe formaty dedykowane do przechowywania konfiguracji jak
+[Hocon](<https://github.com/lightbend/config>) ([Shocon](<https://github.com/jvican/stoml>))
 lub
 [Toml](<https://github.com/toml-lang/toml>) ([Stoml](<https://github.com/jvican/stoml>)).
 * Parsowanie języka domenowego (ang. *domain-specific language*, *DSL*) -
 czasem prosta konfiguracja nie wystarcza i potrzebujemy czegoś więcej.
-Jeśli potrzebujesz prostych wyrażeń (np. relacji) wczytywanych z pliku możesz spróbować zaadoptować jeden z języków wyrażeń (ang. *Expression Language*, *EL*) jak 
+Jeśli potrzebujesz prostych wyrażeń (np. relacji) wczytywanych z pliku możesz spróbować zaadoptować jeden z języków wyrażeń (ang. *Expression Language*, *EL*) jak
 SpEL,
-[MVFLEX Expression Language (MVEL)](<https://github.com/mvel/mvel>), 
+[MVFLEX Expression Language (MVEL)](<https://github.com/mvel/mvel>),
 [Object-Graph Navigation Language (OGNL)](<https://github.com/apache/commons-ognl>).
 Jeśli potrzeba czegoś więcej można użyć jednego z istniejących silników reguł biznesowych.
-Problemem jest to że są to wielkie kobyły. 
+Problemem jest to że są to wielkie kobyły.
 Jeśli potrzebujemy prostego DSL możliwe że najlepiej będzie zaimplementować go samodzielnie.
- 
 
 ### Parsowanie danych niestrukturalnych
 
-Tutaj najbardziej znanym zastosowaniem jest przetwarzanie języków naturalnych, 
-ale proste parsery mogą być używane do przeszukiwania dowolnych danych tekstowych w celu odnalezienia 
-wszystkich adresów mailowych, numerów telefonów i tak dalej. 
+Tutaj najbardziej znanym zastosowaniem jest przetwarzanie języków naturalnych,
+ale proste parsery mogą być używane do przeszukiwania dowolnych danych tekstowych w celu odnalezienia
+wszystkich adresów mailowych, numerów telefonów i tak dalej.
 
-## Biblioteki 
+## Biblioteki
 
-W pradawnych czasach parsery pisało się całkowicie ręcznie, były to zwykle parsery zejść rekurencyjnych. 
+W pradawnych czasach parsery pisało się całkowicie ręcznie, były to zwykle parsery zejść rekurencyjnych.
 Zużywały mało pamięci, co było ważne w czasach procesorów ośmiobitowych, ale działały wolno.
-Dodatkowo, ponieważ drzewo AST było na bierząco konsumowane, 
+Dodatkowo, ponieważ drzewo AST było na bierząco konsumowane,
 utrodniona była wieloetapowa optymalizacja wynikowego kodu
-i wynikowy kod także był wolny. 
-
+i wynikowy kod także był wolny.
 W ciemnych wiekach średnich parsery generowało się za pomocą narzędzi Yacc i Lex lub podobnych ze zbliżonym interfejsem.
 Były one konfigurowane we własnym języku,
 podobnym do notacja Backusa-Naura (ang. **Backus-Naur Form**, **BNF**)
@@ -84,9 +82,9 @@ Podobno za to, że jest powolna
 *A macro-based PEG parser generator for Scala 2.10+*
 Wspiera Scala.js w wersji 0.6.x.
 Podobno najszybszy z parserów w działaniu, ale ma trudną składnię i zgłasza niezrozumiałe błędy
-* [FastParse](<http://www.lihaoyi.com/fastparse/>) - 
+* [FastParse](<http://www.lihaoyi.com/fastparse/>) -
 *Fast to write, Fast running Parsers in Scala*.
-Wspiera Scala.js w wersji 0.6.x. 
+Wspiera Scala.js w wersji 0.6.x.
 Wersja FastParse 1.0.0 wspierała Scala Native.
 
 ## FastParse w akcji

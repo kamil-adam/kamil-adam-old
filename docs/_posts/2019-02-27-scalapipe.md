@@ -14,7 +14,7 @@ toc:      true
 
 ### Przypadek pierwszy - języki nieobiektowe
 
-Jeśli mamy dane wejściowe, które chcemy przetworzyć za pomoca kilku funkcji po kolej, np: 
+Jeśli mamy dane wejściowe, które chcemy przetworzyć za pomoca kilku funkcji po kolej, np:
 ```scala
 third_function(second_function(first_function(data)))
 ```
@@ -22,7 +22,7 @@ Powstaje nam brzydkie i nieczytelne **wywołanie cebulowe**.
 * Cebulowe, ponieważ nawiasy układają się jak warstwy w cebuli wokół rdzenia, którym są tu dane wejściowe.
 * Nieczytelne, ponieważ przy czytaniu wzrok podąża od lewej do prawej.
 W tym wypadku jednak, żeby zrozumieć sens linijki wzrok musi zawrócić i ponownie czytać od prawej do lewej.
-* Brzydkie, ponieważ rozwiązanie to się nie *skaluje*, 
+* Brzydkie, ponieważ rozwiązanie to się nie *skaluje*,
 jeśli mielibyśmy trzydzieści takich funkcji musielibyśmy w końcu złamać linię lub przepisać kod na taki:
 
 ```scala
@@ -63,7 +63,7 @@ data
 
 Oczywiście o ile `first_function` jest metodą obiektu `data`,
 `second_function` jest metodą obiektu zwracanego przez `first_function` i tak dalej.
-Jeśli nie, to musimy użyć haków 
+Jeśli nie, to musimy użyć haków
 jak [implicit classes](<https://docs.scala-lang.org/overviews/core/implicit-classes.html>) w języku **[Scala](/posts-by-langs/scala)**
 lub [extensions](<https://kotlinlang.org/docs/reference/extensions.html>)  w języku **[Kotlin](/posts-by-langs/kotlin)**.
 
@@ -85,7 +85,7 @@ ps -a | sort | uniq | grep -v sh
 ```
 Dwie lub więcej komend można połączyć w jedną za pomocą operatora pionowej kreski `|` (ang. *pipe*).
 
-**[Jekyll](/posts-by-tags/jekyll)** także posiada potoki, ale dla utrudnienia nazywają się filtrami. 
+**[Jekyll](/posts-by-tags/jekyll)** także posiada potoki, ale dla utrudnienia nazywają się filtrami.
 Precyzyjniej to Jekyll używa języka szablonów Liquid, a Liquid posiada Filtry.
 Kod :
 ```jekyll
@@ -105,24 +105,24 @@ data |> first_function |> second_function |> third_function
 ```
 lub czytelniej:
 ```elixir
-data 
-  |> first_function 
+data
+  |> first_function
   |> second_function 
   |> third_function
 ```
 
-Został spopularyzowany przez język [Elixir](<https://hexdocs.pm/elixir/Kernel.html#%7C%3E/2>), 
+Został spopularyzowany przez język [Elixir](<https://hexdocs.pm/elixir/Kernel.html#%7C%3E/2>),
 ale wcześniej był już używany w językach [OCalm](http://caml.inria.fr/pub/docs/manual-ocaml/libref/Pervasives.html#VAL%28%7C%3E%29)
-oraz [F#](https://en.wikibooks.org/wiki/F_Sharp_Programming/Higher_Order_Functions#The_.7C.3E_Operator). 
+oraz [F#](https://en.wikibooks.org/wiki/F_Sharp_Programming/Higher_Order_Functions#The_.7C.3E_Operator).
 W tym ostatnim istnieje nawet możliwość samodzielnego zdefiniowania operatora potoku za pomocą linii:
 ```F#
 let inline (|>) x f = f x
 ```
 
-Na fali popularności *operator potoku* został dodany także do wielu innych języków programowania takich jak 
+Na fali popularności *operator potoku* został dodany także do wielu innych języków programowania takich jak
 [Elm](<https://edmz.org/design/2015/07/29/elm-lang-notes.html>),
-[LiveScript](<http://livescript.net/#piping>), 
-[Julia](<https://docs.julialang.org/en/v1/base/base/#Base.:%7C%3E>) czy 
+[LiveScript](<http://livescript.net/#piping>),
+[Julia](<https://docs.julialang.org/en/v1/base/base/#Base.:%7C%3E>) czy
 [Hack](<https://docs.hhvm.com/hack/expressions-and-operators/pipe>).
 
 Część z nich zawiera także drugi podobny operator zwany *back pipe operator* zapisywany `<|` lub `|>>`.
@@ -134,13 +134,13 @@ Tak, **[Clojure](/posts-by-langs/clojure)** posiada dużo lukru składniowego,
 ```clojure
 (-> data (first_function) (second_function) (third_function))
 ```
-**lub** 
+**lub**
 ```clojure
 (--> data (first_function) (second_function) (third_function))
 ```
 
 Po co nam dwa operatory potoku, tj `|>` i `<|`?
- 
+
 Otóż `|>` dodaje argument na początku listy parametrów, a `<|` - na końcu listy.
 Czyli jeśli w języku **[Perl](/posts-by-langs/perl) 5 wprowadzono by oba operatory to moglibyśmy wywołać:
 
@@ -192,7 +192,7 @@ data
 ```
 
 Wywołanie zdefiniowanego przez nas operatora nie może znajdować się bezpośrednio na początku linii.
-Ale może znajdować się na końcu linii:  
+Ale może znajdować się na końcu linii:
 ```scala
 data |>
   firstFunction |>

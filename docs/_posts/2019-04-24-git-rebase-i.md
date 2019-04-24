@@ -101,7 +101,7 @@ dobry commit, ze z złym opisem
 
 ```
 Kasujemy stary opis (*dobry commit ze złym opisem*) i wprowadzamy nowy np. *dobry commit z poprawionym opisem*.
-Ponownie wychodzimy z edytora 
+Ponownie wychodzimy z edytora
 i jeśli teraz wywołamy w konsoli:
 ```bash
 git rebase -i HEAD~3
@@ -240,8 +240,8 @@ które na **[Ubuntu](/posts-by-tags/ubuntu)** można zainstalować za pomocą:
 ```bash
 sudo apt-get install tig
 ```
-Jego główną zaletą jest to, 
-że jest aplikacją konsolową z przyjaznym interfejsem tekstowym (ang. *text-based user interface*, *TUI*) 
+Jego główną zaletą jest to,
+że jest aplikacją konsolową z przyjaznym interfejsem tekstowym (ang. *text-based user interface*, *TUI*)
 
 ## Podsumowanie
 Widać że `git rebase -i` to potężne narzędzie z wieloma możliwościami w rękach dobrego programisty.

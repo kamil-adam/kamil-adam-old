@@ -65,7 +65,7 @@ Options:
   -variant <name>     Specifies layout variant used to choose component names
 ```
 
-Aby przełączać się na polski układ klawiatury za każdym razem, 
+Aby przełączać się na polski układ klawiatury za każdym razem,
 gdy jest otwierany nowy terminal wystarczy dodać wywołanie komendy 'setxkbmap' do pliku '~/.bashrc' za pomocą polecenia:
 ```bash
 echo "setxkbmap pl" >> ~/.bashrc

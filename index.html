@@ -8,11 +8,25 @@ use_default_description: true
 <section>
   {% include pagination.html %}
   {% for post in paginator.posts %}
+    <header>
+      <h1 class="post-title">
+        <a href="{{ post.url | relative_url }}">
+          {{ post.title }}
+        </a>
+      </h1>
+      <span class="post-date">
+        <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
+          {{ post.date | date: "%Y-%m-%d" }}
+        </time>
+      </span>
+    </header>
+
     {% include post.html %}
     <footer>
-      <center>
-        <a href="{{ post.url | relative_url }}#footer">Przejdź do komentarzy</a>
-      </center>
+      <nav class="pagination">
+        <a class="pagination-item older"  href="{{ post.url | relative_url }}#header"><span>Przejdź do artykułu</span></a>
+        <a class="pagination-item newer"  href="{{ post.url | relative_url }}#footer"><span>Przejdź do komentarzy</span></a>
+      </nav>
     </footer>
   {% endfor %}
 </section>

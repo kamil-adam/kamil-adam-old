@@ -8,8 +8,8 @@ sitemap: false
   {% assign docs = site.posts | where_exp:'post','post.date' | reverse %}
   {% for doc in docs %}
   {
-    "url"         : {{ site.baseurl | append: post.url                      | jsonify }},
-    "date"        : {{ doc.date  | date_to_xmlschema | date: '%Y-%m-%d'    | jsonify }},
+    "url"         : {{ doc.url | relative_url                              | jsonify }},
+    "date"        : {{ doc.date | date_to_xmlschema | date: '%Y-%m-%d'     | jsonify }},
     "tags"        : {{ doc.tags | join: ' '                       | escape | jsonify }},
     "category"    : {{ doc.category                               | escape | jsonify }},
     "title"       : {{ doc.title                     | strip_html | escape | jsonify }},
@@ -21,7 +21,7 @@ sitemap: false
   {% assign docs = site.pages | where_exp:'doc','doc.sitemap != false' | where_exp:'doc','doc.title != null' %}
   {% for doc in docs %}
   {
-    "url"         : {{ site.baseurl | append: doc.url                      | jsonify }},
+    "url"         : {{ doc.url | relative_url                              | jsonify }},
     "date"        : {{ doc.date | date_to_xmlschema | date: '%Y-%m-%d'     | jsonify }},
     "category"    : {{ doc.category                               | escape | jsonify }},
     "tags"        : {{ doc.tags | join: ' '                       | escape | jsonify }},

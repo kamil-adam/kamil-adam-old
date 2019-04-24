@@ -10,7 +10,7 @@ sitemap: false
     {% assign docs = collection.docs | where_exp:'doc','doc.sitemap != false' %}
     {% for doc in docs %}
       {
-        "url"         : {{ site.baseurl | append: doc.url                      | jsonify }},
+        "url"         : {{ doc.url | relative_url                              | jsonify }},
         "date"        : {{ doc.date | date_to_xmlschema | date: '%Y-%m-%d'     | jsonify }},
         "category"    : {{ doc.category                               | escape | jsonify }},
         "tags"        : {{ doc.tags | join: ' '                       | escape | jsonify }},

@@ -1,13 +1,10 @@
 ---
-layout:   post
 title:    "uTest - operator Arrow Asserts"
 author:   "writeonly"
 category: resentiment
 tags:     utest operator
 labels:
 langs:    scala
-comments: true
-toc:      true
 ---
 
 Dziś krótki wpis o tym, że warto czytać dokumentację. Zapraszam.

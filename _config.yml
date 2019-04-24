@@ -16,11 +16,24 @@ paginate_path:    '/:num'
                     # Or '/my-jekyll-site/page:num' if you want to move your index pages
 
 plugins:
+  - jekyll-avatar
+  - jekyll-coffeescript
+  - jekyll-commonmark-ghpages
+  - jekyll-default-layout
   - jekyll-feed
   - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-mentions
+  - jekyll-optional-front-matter
   - jekyll-paginate
-  - jekyll-sitemap
+  - jekyll-readme-index
+  - jekyll-redirect-from
+  - jekyll-relative-links
+  - jekyll-remote-theme          # brilliant
+  - jekyll-sass-converter        # https://jekyllrb.com/docs/assets/
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-titles-from-headings
 
 # Custom vars
 version:            2.0.1

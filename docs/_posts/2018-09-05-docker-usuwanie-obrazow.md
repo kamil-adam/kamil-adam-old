@@ -1,13 +1,10 @@
 ---
-layout:   post
 title:    "Docker - usuwanie obrazów"
 author:   "writeonly"
 category: cli
 tags:     cli alias
 labels:   docker
 langs:
-comments: true
-toc:      true
 ---
 
 Dziesięć lat pracy na Linuksie nauczyło mnie,

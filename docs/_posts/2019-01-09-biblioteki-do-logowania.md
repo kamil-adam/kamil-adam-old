@@ -1,13 +1,10 @@
 ---
-layout:   post
 title:    "Biblioteki do logowania dla języka Scala"
 author:   "writeonly"
 category: resentiment
 tags:     library utest
 labels:   logging scala-logging slogging scribe
 langs:    scala java
-comments: true
-toc:      true
 ---
 
 Chcąc dowiedzieć się co dzieje się wewnątrz naszej aplikacji mamy dwie drogi.

@@ -1,13 +1,10 @@
 ---
-layout:   post
 title:    "Dlaczego warto prowadzić bloga o programowaniu"
 author:   "writeonly"
 category: thoughts
 tags:     blog
 labels:   thoughts
 langs:
-comments: true
-toc:      true
 ---
 
 Ja znalazłem cztery powody, dlaczego warto prowadzić bloga o programowaniu.

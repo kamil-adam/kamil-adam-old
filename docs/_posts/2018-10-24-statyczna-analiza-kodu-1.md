@@ -1,13 +1,10 @@
 ---
-layout:   post
 title:    "Statyczna analiza kodu dla języka Scala w SBT - część 1."
 author:   "writeonly"
 category: resentiment
 tags:     sbt code-analysis static-code-analysis scalafix
 labels:   scalafmt scalariform
 langs:    scala
-comments: true
-toc:      true
 ---
 
 > Statyczna analiza programu to analiza oprogramowania komputerowego wykonywanego bez faktycznego uruchamiania programów,

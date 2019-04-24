@@ -1,13 +1,10 @@
 ---
-layout:   post
 title:    "Alias - komenda powłoki Bash"
 author:   "writeonly"
 category: cli
 tags:     cli bash alias git
 labels:
 langs:
-comments: true
-toc:      true
 ---
 
 Jeśli:

@@ -1,13 +1,10 @@
 ---
-layout:   post
 title:    "Dynamiczna analiza kodu dla SBT - testy jednostkowe"
 author:   "writeonly"
 category: resentiment
 tags:     scala-jvm scala-js scala-native code-analysis dynamic-code-analysis specs2 scalatest utest
 labels:   minitest greenlight
 langs:    scala
-comments: true
-toc:      true
 ---
 
 > Dynamiczna analiza programu to analiza oprogramowania komputerowego wykonywanego przez wykonywanie programów na rzeczywistym lub wirtualnym procesorze.

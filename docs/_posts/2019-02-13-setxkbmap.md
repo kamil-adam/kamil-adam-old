@@ -1,13 +1,10 @@
 ---
-layout:   post
 title:    "setxkbmap - Jak szybko zmienić układ klawiatury z konsoli na Ubuntu?"
 author:   "writeonly"
 category: cli
 tags:     cli bash ubuntu
 labels:
 langs:
-comments: true
-toc:      true
 ---
 
 Po długiej przerwie prosty artykuł "Jak szybko zmienić układ klawiatury z konsoli na **[Ubuntu](/posts-by-tags/ubuntu)**?".

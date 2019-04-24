@@ -1,6 +1,5 @@
 # Dependencies
-markdown:         kramdown
-highlighter:      rouge
+markdown:         CommonMarkGhPages
 
 # Setup
 title:            WriteOnly.pl

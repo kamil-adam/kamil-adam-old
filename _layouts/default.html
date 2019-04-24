@@ -1,23 +1,14 @@
 <!DOCTYPE html>
 <html lang="pl">
-
   {% include head.html %}
 
   <body>
-
     {% include sidebar.html %}
 
     <section class="content container">
       {{ content }}
-
-      {% include footer.html %}
     </section>
 
-    <footer>
-      {% include follow-buttons.html %}
-      {% include cookie-consent.html %}
-      {% include google-analytics.html %}
-      <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="0dca5f9c-ac4d-47a2-8b50-771fa0788ba9";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-    </footer>  
+    {% include footer.html %}
   </body>
 </html>

@@ -5,6 +5,7 @@ author:   "writeonly"
 category: cli
 tags:     git ubuntu
 labels:
+langs:
 comments: true
 toc:      true
 ---

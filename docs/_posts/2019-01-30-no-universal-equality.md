@@ -3,7 +3,7 @@ layout:   post
 title:    "Scala - No Universal Equality"
 author:   "writeonly"
 category: resentiment
-tags:     scala-jvm scala-js scala-native scalatest scalaz cats monad type-class scalafix utest
+tags:     scala-jvm scala-js scala-native scalatest scalaz cats monad type-class scalafix utest operator library
 labels:   scalatic
 langs:    scala java haskell
 comments: true
@@ -13,7 +13,7 @@ toc:      true
 Ostatnim błędem zgłaszanym w kodzie projektu **[resentiment](/category/resentiment)** przez **[scalafix](/posts-by-tags/scalafix)**
 jest "No Universal Equality" wynikający z użycia operatora `==`.
 
-W Scala obiekty domyślnie porównuje się za pomocą operatora `==`.
+W języku **[Scala](/posts-by-langs/scala)** obiekty domyślnie porównuje się za pomocą operatora `==`.
 Operator ten wywołuje pod spodem znaną z Javy metodę `equals`.
 Operator `==` pozwala jednak na bezsensowne porównywanie obiektów, które są różnych klas.
 Mimo że  poprawnie napisana metoda `equals` zawsze zwróci w takim przypadku `false`.
@@ -55,7 +55,7 @@ i nie pojawiają się tam takie straszne terminy jak **[monada](/posts-by-tags/m
 Są to dwie wspaniałe biblioteki, które robią ze Scali język funkcyjny przypominający język **[Haskell](/posts-by-langs/haskell)**.
 
 Biblioteki te dzielą się na dwie główne części:
-* *Data types* - tutaj znajdują się monady, które są w Haskellu, ale nie ma ich w bibliotece standardowej jezyka Scala
+* *Data types* - tutaj znajdują się monady, które są w Haskellu, ale nie ma ich w bibliotece standardowej języka Scala
 * *Type classes* - typ konstruktu systemowego, który obsługuje polimorfizm *ad hoc*.
 
 Zarówno **[Scalaz](/posts-by-tags/scalaz)** jak i **[Cats](/posts-by-tags/cats)** posiadają klasę `Equal`,

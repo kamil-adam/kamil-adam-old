@@ -1,69 +1,22 @@
 ---
 layout: default
 ---
-<article class="post">
-  <div class="topbar">
+<section>
+  <header class="topbar">
     <a href="{{ site.baseurl }}/"> {{ site.title }} </a> /
     <a href="{{ site.baseurl }}/posts-by-category/"> Posts by category </a> /
     <a href="{{ site.baseurl }}/posts-by-category/{{ page.category }}">{{ page.category | capitalize }}</a> /
     {{ page.title }}
-  </div>
+  </header>
 
-  <h1 class="post-title">{{ page.title }}</h1>
+  {% assign post = page %}
+  {% include post.html %}
 
-  <span class="post-date">
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
-      {{ post.date | date: "%Y-%m-%d" }}
-    </time>
-  </span>
-
-  {% include reading-time.html %}
-
-  {{ content }}
-
-</article>
-
-
-<div class="tags">
-  {% assign tags = page.tags | sort %}
-  Tagi:
-  {% for tag in tags %}
-  <a href="{{ site.baseurl }}/posts-by-tags/{{ tag }}">{{ tag }}</a>
-  {% endfor %}
-</div>
-
-<div class="tags">
-  {% assign langs = page.langs | split: ' ' | sort %}
-  {% assign langs_size = langs | size %}
-  {% if 0 < langs_size %}
-  Języki:
-  {% for lang in langs %}
-  <a href="{{ site.baseurl }}/posts-by-langs/{{ lang }}">{{ lang }}</a>
-  {% endfor %}
-  {% endif %}
-</div>
-
-<div class="related">
-  <h2>Powiązane posty</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:2 %}
-    <li>
-      <h2>
-        <a href="{{ post.url | relative_url }}">
-          {{ post.title }}
-          <small>
-            <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
-              {{ post.date | date: "%Y-%m-%d" }}
-            </time>
-          </small>
-        </a>
-      </h2>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
-
-{% include share-buttons.html %}
-
-{% include disqus.html %}
+  <footer>
+    <a id="footer"></a>
+    {% include related-posts.html %}
+    {% include share-buttons.html %}
+    {% include disqus.html %}
+  </footer>
+</section>
 

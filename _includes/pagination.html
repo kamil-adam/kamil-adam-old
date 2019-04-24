@@ -1,0 +1,16 @@
+<nav class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ paginator.next_page | relative_url }}">Starsze artykyły</a>
+  {% else %}
+    <span class="pagination-item older">Starsze artykyły</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ '/' | relative_url }}">Nowsze artykyły</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ paginator.previous_page | relative_url }}">Nowsze artykyły</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Nowsze artykyły</span>
+  {% endif %}
+</nav>

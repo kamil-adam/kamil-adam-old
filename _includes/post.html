@@ -1,0 +1,36 @@
+<article class="post">
+  <header>
+    <h1 class="post-title">{{ post.title }}</h1>
+
+    <span class="post-date">
+      <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
+        {{ post.date | date: "%Y-%m-%d" }}
+      </time>
+    </span>
+
+    {% include reading-time.html %}
+  </header>
+
+  {{ post.content }}
+
+   <footer>
+    <nav class="tags">
+      {% assign tags = post.tags | sort %}
+      Tagi:
+      {% for tag in tags %}
+      <a href="{{ site.baseurl }}/posts-by-tags/{{ tag }}">{{ tag }}</a>
+      {% endfor %}
+    </nav>
+
+    <nav class="tags">
+      {% assign langs = post.langs | split: ' ' | sort %}
+      {% assign langs_size = langs | size %}
+      {% if 0 < langs_size %}
+      Języki:
+      {% for lang in langs %}
+      <a href="{{ site.baseurl }}/posts-by-langs/{{ lang }}">{{ lang }}</a>
+      {% endfor %}
+      {% endif %}
+    </nav>
+  </footer>
+</article>

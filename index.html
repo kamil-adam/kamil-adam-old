@@ -4,38 +4,16 @@ title: Strona główna
 use_default_description: true
 ---
 
-<article class="post">
+
+<section>
+  {% include pagination.html %}
   {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-    <span class="post-date">
-      <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
-        {{ post.date | date: "%Y-%m-%d" }}
-      </time>
-    </span>
-
-    {{ post.content }}
-  </div>
+    {% include post.html %}
+    <footer>
+      <center>
+        <a href="{{ post.url | relative_url }}#footer">Przejdź do komentarzy</a>
+      </center>
+    </footer>
   {% endfor %}
-</article>
+</section>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page | relative_url }}">Starsze</a>
-  {% else %}
-    <span class="pagination-item older">Starsze</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ '/' | relative_url }}">Nowsze</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ paginator.previous_page | relative_url }}">Nowsze</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Nowsze</span>
-  {% endif %}
-</div>

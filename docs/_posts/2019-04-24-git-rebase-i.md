@@ -3,7 +3,7 @@ layout:   post
 title:    'Prosty sposób na zmianę historii Gita'
 author:   "writeonly"
 category: cli
-tags:     git
+tags:     git ubuntu
 labels:
 comments: true
 toc:      true

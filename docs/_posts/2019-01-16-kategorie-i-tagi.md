@@ -17,8 +17,8 @@ Dla każdego postu oprócz zawartości zapisywałem także metadane,
 w tym kategorie i tagi.
 W przypadku tego artykułu są to:
 
-```yaml
 {%raw%}
+```yaml
 ---
 layout:   post
 title:    "Jekyll - kategorie i tagi"
@@ -26,8 +26,8 @@ author:   "writeonly"
 category: jekyll
 tags:     jekyll blog
 ---
-{%endraw%}
 ```
+{%endraw%}
 
 Artykuł może zawierać wiele tagów, ale musi mieć dokładnie jedną kategorię.
 
@@ -40,28 +40,28 @@ a strony pomocnicze tagów w folderze `_tags`.
 
 Przykładowy strona pomocnicza dla kategorii:
 
-```yaml
 {%raw%}
+```yaml
 ---
 permalink: /categories/resentiment
 layout: page_category
 category: "resentiment"
 ---
 Opis powstawania projektu <a href="https://github.com/writeonly/resentiment">resentiment</a>.
-{%endraw%}
 ```
+{%endraw%}
 
 Przykładowy strona pomocnicza dla tagu:
 
-```yaml
 {%raw%}
+```yaml
 ---
 permalink: /posts-by-tags/scala-native
 layout: page_tag
 tag: "scala-native"
 ---
-{%endraw%}
 ```
+{%endraw%}
 
 ## Kolekcje
 
@@ -100,8 +100,8 @@ Teraz trzeba je zdefiniować.
 
 Układ strony `_layout/page_category.html` zawierający wszystkie artykuły z danej kategorii:
 
-```yaml
 {%raw%}
+```yaml
 ---
 layout: default
 title: {{ page.category }}
@@ -136,12 +136,12 @@ title: {{ page.category }}
     {% endfor %}
   </dl>
 </div>
-{%endraw%}
 ```
+{%endraw%}
 
 Układ strony `_layout/page_tag.html` zawierający wszystkie artykuły z danym tagiem:
-```yaml
 {%raw%}
+```yaml
 ---
 layout: default
 title: {{ page.tag }}
@@ -172,8 +172,8 @@ title: {{ page.tag }}
     {% endfor %}
   </dl>
 </div>
-{%endraw%}
 ```
+{%endraw%}
 
 W obu przypadkach iterujemy po liście wszystkich artykułów i prostym `if`em wybieramy te które nas interesują.
 
@@ -182,8 +182,8 @@ W obu przypadkach iterujemy po liście wszystkich artykułów i prostym `if`em w
 Potrzebujemy jeszcze jednej rzeczy.
 
 Strona `pages/categories.html` zawierająca listę wszystkich kategorii:
-```yaml
 {%raw%}
+```yaml
 ---
 layout: posts
 title: Kategorie
@@ -205,12 +205,12 @@ description: Kategorie artykułów
     {% endfor %}
   </dl>
 </div>
-{%endraw%}
 ```
+{%endraw%}
 
 Strona `pages/tags.html` zawierająca listę wszystkich tagów:
-```yaml
 {%raw%}
+```yaml
 ---
 layout: posts
 title: Tagi
@@ -229,8 +229,8 @@ description: Tagi artykułów
     {% endfor %}
   </ul>
 </div>
-{%endraw%}
 ```
+{%endraw%}
 
 W obu przypadkach pobieramy listę wszystkich kategorii/tagów i sortujemy po tytułach.
 A następnie odrzucamy te które nie są poprawne do wyświetlenia,

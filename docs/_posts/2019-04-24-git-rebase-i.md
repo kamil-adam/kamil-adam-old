@@ -208,7 +208,7 @@ Teraz za pomocą pary komend `git add ...` i `git commit -m OPIS_REWIZJI` dzieli
 git add *.elm
 git commit -m 'dodanie frontendu w języku Elm, dialekcie języka Haskell transpilowanym do JS'
 git add *.ps
-git commit -m 'dodanie backendu w języku PureScript, dialekcie języka Haskell transpilowanym do JS'
+git commit -m 'dodanie backend-for-frontend w języku PureScript, dialekcie języka Haskell transpilowanym do JS'
 git add *.eta
 git commit -m 'dodanie backendu w języku Eta, dialekcie języka Haskell na JVM'
 ```

@@ -4,7 +4,7 @@ author:   "writeonly"
 category: resentiment
 tags:     scala-jvm scala-js scala-native sbt ubuntu clang
 labels:   jvm net native
-langs:    scala haskell erlang rust go ecmascript
+langs:    scala haskell erlang rust go javascript
 ---
 
 Znajomy zajarał się językiem Rust.
@@ -41,8 +41,8 @@ który działał na obu platformach.
 Jednak było to zalane taką ilością warstw abstrakcyjnych,
 że czyniło go to bezużytecznym.
 
-### ECMAScript
-**[ECMAScript](/posts-by-langs/ecmasript)** jest platformą docelową dla każdego,
+### JavaScript
+**[JavaScript](/posts-by-langs/ecmasript)** jest platformą docelową dla każdego,
 kto chce uruchamiać cokolwiek na stronie internetowej.
 Dlatego jeśliby posiadać kompilator Scali do JavaScriptu
 to w łatwy sposób można by z każdego programisty Scali stworzyć legendarnego Full-Stack Developera.

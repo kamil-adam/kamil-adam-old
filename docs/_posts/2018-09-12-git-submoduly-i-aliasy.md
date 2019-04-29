@@ -4,7 +4,7 @@ author:   "writeonly"
 category: cli
 tags:     cli git alias
 labels:   submodule
-langs:    java ecmascript
+langs:    java javascript
 ---
 
 *Post oparty na prawdziwych wydarzeniach i traumach*
@@ -32,7 +32,7 @@ wykonane w folderze projektu.
 - Ale nie zawsze jest to łatwe i możliwe:
   1. Biblioteki trzeba wydawać i trzymać je w menedżerze repozytoriów binarnych (ang. *Binary Repository Manager*),
 a takiego menedżera trzeba gdzieś zainstalować.
-  2. Menedżer repozytorium binarnych może kosztować, np. dla języka **[Java](/posts-by-langs/java)** jest za darmo, a dla języka **[ECMAScript](/posts-by-langs/ecmascript)** już niekoniecznie.
+  2. Menedżer repozytorium binarnych może kosztować, np. dla języka **[Java](/posts-by-langs/java)** jest za darmo, a dla języka **[JavaScript](/posts-by-langs/javascript)** już niekoniecznie.
   3. W językach skryptowych biblioteki są często instalowane do interpretera
   co może utrudniać instalację programu klientowi
 (przykład z pierwszej wersji [Git-Tools-Submodules](<https://git-scm.com/book/en/v1/Git-Tools-Submodules>)).

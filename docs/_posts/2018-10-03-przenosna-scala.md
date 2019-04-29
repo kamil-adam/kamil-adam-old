@@ -2,7 +2,7 @@
 title:    "Przenośna Scala"
 author:   "writeonly"
 category: resentiment
-tags:     scala-jvm scala-js scala-native sbt ubuntu clang
+tags:     scala-jvm scala-js scala-native sbt clang
 labels:   jvm net native
 langs:    scala haskell erlang rust go javascript
 ---

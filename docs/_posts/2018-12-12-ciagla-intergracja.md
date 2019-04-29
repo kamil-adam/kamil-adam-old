@@ -2,7 +2,7 @@
 title:    "Ciągła integracja, ciągła kontrola, ciągła Scala"
 author:   "writeonly"
 category: resentiment
-tags:     sbt scala-native clang
+tags:     sbt scala-native clang ubuntu
 labels:   coveralls continuous-integration travis-ci
 langs:    scala java rustlang
 ---
@@ -89,7 +89,7 @@ Chcąc jednak jak najszybciej (najprościej) pokazać zalety ciągłej integracj
 i dodatkowo dostępne jako usługa (ang. *Software as a Service*, *SaaS*).
 Dobrze także, aby *po wyjęciu z pudełka* wspierało używane przez nas języki programowania.
 Przy takich założeniach wybór padł na dwa serwisy:
-* popularniejszy [Travis CI](<https://travis-ci.org/writeonly/resentiment>) używający kontenerów z Ubuntu
+* popularniejszy [Travis CI](<https://travis-ci.org/writeonly/resentiment>) używający kontenerów z **[Ubuntu](/posts-by-tags/ubuntu)**
 * młodszy [CircleCI](<https://circleci.com/gh/writeonly/resentiment>) używający kontenerów z Debianem
 
 Niestety nie udało mi się skonfigurować CircleCI dla języka **[ScalaNative](/posts-by-tags/scala-native)**.

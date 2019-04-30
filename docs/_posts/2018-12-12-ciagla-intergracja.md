@@ -268,5 +268,3 @@ Ja oczywiście poszukiwałem oprogramowania działającego jako darmowa usługa 
 Termin **ciągła analiza statyczna** ułożyłem sam,
 jednak występujący w jego miejscu termin **ciągła kontrola jakości kodu** (ang. *Continuous Inspection of Code Quality*)
 jest według mnie zbyt ogólny.
-
-

@@ -104,7 +104,7 @@ lub czytelniej:
 ```elixir
 data
   |> first_function
-  |> second_function 
+  |> second_function
   |> third_function
 ```
 

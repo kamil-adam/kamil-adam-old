@@ -60,3 +60,5 @@ collections:
     output: true
 
 service_worker: true
+
+future: true

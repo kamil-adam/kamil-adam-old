@@ -2,19 +2,19 @@
 title:    "Biblioteki do parsowania dla języka Scala"
 author:   "writeonly"
 category: resentiment
-tags:     library utest fastparse
-labels:   dsl parser lexer parboiled2
+tags:     library utest fastparse json parser lexer ast
+labels:   dsl parboiled2
 langs:    scala
 ---
 
 ## Co to jest parser?
 
-Parser to program dokonujący procesu analizy składniowej na ciągu leksemów (tokenach z typami),
+**[Parser](/posts-by-tags/parser)** to program dokonujący procesu analizy składniowej na ciągu leksemów (tokenach z typami),
 czyli sprawdzeniu ich zgodności z określoną gramatyką formalną.
-Wynikiem pracy parsera jest drzewo składniowe (ang. *abstract syntax tree*, *AST*),
+Wynikiem pracy parsera jest **[drzewo składniowe](/posts-by-tags/ast)** (ang. *abstract syntax tree*, *AST*),
 na którym są przeprowadzane dalsze operacje.
 
-Programem pomocniczym, często działającym równolegle do parsera, jest lekser.
+Programem pomocniczym, często działającym równolegle do parsera, jest **[lekser](/posts-by-tags/lexer)**.
 Dokonuje on procesu analizy leksykalnej,
 czyli dzieli wejściowy tekst na leksemy.
 
@@ -30,12 +30,13 @@ Czasem jednak istnieje potrzeba napisania parsera już istniejącego języka,
 gdy np. piszesz własny tool do formatowania kodu.
 * Parsowanie z serializowanych danych -
 z serializowane dane można przesyłać i przechowywać w formatach tekstowych takich jak
-JSON, CSV, JSON Lines (połączenie zalet formatów JSON i CSV), XML i wielu innych.
+**[JSON](/posts-by-tags/json)**, CSV, JSON Lines (połączenie zalet formatów JSON i CSV), XML i wielu innych.
 Ale możliwe, że chciałbyś napisać parser własnego formatu zoptymalizowany pod pewne konkretne wymagania.
 Jak np. [Rison](https://github.com/Hronom/jackson-dataformat-rison),
 JSON zmodyfikowany w taki sposób by móc go przesyłać bezpośrednio w adresie url.
 * Parsowanie konfiguracji -
-teoretycznie każdą konfigurację można zapisać w Javowych plikach Properties lub Jsonie, ewentualnie Yamlu (nadzbiorze Jsona) albo XMLu.
+teoretycznie każdą konfigurację można zapisać w Javowych plikach Properties lub formacie JSON,
+ewentualnie Yamlu (nadzbiorze formatu JSON) albo XMLu.
 Powstają jednak cały czas nowe formaty dedykowane do przechowywania konfiguracji jak
 [Hocon](<https://github.com/lightbend/config>) ([Shocon](<https://github.com/jvican/stoml>))
 lub

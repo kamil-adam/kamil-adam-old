@@ -4,7 +4,7 @@ author:   "writeonly"
 category: resentiment
 tags:     sbt scala-native clang ubuntu
 labels:   coveralls continuous-integration travis-ci
-langs:    scala java rustlang
+langs:    scala java rust
 ---
 
 
@@ -249,7 +249,7 @@ Caused by: java.io.IOException: error=2, No such file or directory
 Jest to kolejny problem **[ScalaNative](/posts-by-tags/scala-native)**. po braku możliwości wygenerowania pokrycia kodu
 oraz braku możliwości uruchomienia testów integracyjnych.
 Dowodzi to że ScalaNative niestety dalej jest zabawką
-i jeśli chce się pisać monady w języku kompilowanym natywnie należy wybrać [RustLang](<https://www.rust-lang.org/>).
+i jeśli chce się pisać monady w języku kompilowanym natywnie należy wybrać **[Rust](/posts-by-langs/rust)**.
 
 ## Postscriptum
 

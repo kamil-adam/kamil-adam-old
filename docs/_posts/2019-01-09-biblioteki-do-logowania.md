@@ -2,7 +2,7 @@
 title:    "Biblioteki do logowania dla języka Scala"
 author:   "writeonly"
 category: resentiment
-tags:     library utest
+tags:     library utest cli
 labels:   logging scala-logging slogging scribe
 langs:    scala java
 ---
@@ -13,7 +13,7 @@ Jednak im więcej wątków w aplikacji i im bardziej komunikują się one w spos
 Drugim sposobem jest logowanie informacji.
 Najprostszym sposobem logowania informacji w Javie jest `System.out.println`, a w Scali upraszcza się to do `println`.
 Ale jest to złe z dwóch powodów:
-* Po pierwsze, jeśli piszemy aplikację "konsolową" (ang. command line interface, CLI)
+* Po pierwsze, jeśli piszemy aplikację "konsolową" (ang. *command line interface*, **[CLI](/posts-by-tags/cli)**)
 to użytkownik będzie niepotrzebnie widział nieinteresujące go informacje z wewnętrznego procesu przetwarzania.
 * Tak wypisanych informacji nie można zapisać w bazie danych ani wysłać do innego systemu.
 
@@ -122,7 +122,7 @@ object Core extends Core {
 }
 ```
 
-Tworzymy test jednostkowy we frameworku **[uTest](/posts-by-tags)**:
+Tworzymy test jednostkowy we frameworku **[uTest](/posts-by-tags/utest)**:
 ```scala
 package pl.writeonly.re.shared
 
@@ -215,7 +215,7 @@ object Core extends Core {
 }
 ```
 
-Tworzymy test jednostkowy we frameworku **[uTest](/posts-by-tags)**:
+Tworzymy test jednostkowy we frameworku **[uTest](/posts-by-tags/utest)**:
 ```scala
 package pl.writeonly.re.shared
 

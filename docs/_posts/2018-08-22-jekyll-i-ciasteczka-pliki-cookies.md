@@ -2,12 +2,13 @@
 title:    "Jekyll i ciasteczka (pliki cookies)"
 author:   "writeonly"
 category: writeonlydoc
-tags:     jekyll blog jekyllcodex
+tags:     jekyll blog jekyllcodex github-pages
 labels:   cookies jquery
 langs:
 ---
 
-Przed założeniem bloga opartego na technologiach Jekyll i GitHub Pages przejrzałem sporo polskojęzycznych blogów z opisem “Jak to zrobić”.
+Przed założeniem bloga opartego na technologiach **[Jekyll](/posts-by-tags/jekyll)** i **[GitHub Pages](/posts-by-tags/github-pages)** 
+przejrzałem sporo polskojęzycznych blogów z opisem “Jak to zrobić”.
 Wszyscy mówili, że jest to niesamowicie proste.
 Za wyjątkiem jednego malkontenta, Gutka (<https://blog.gutek.pl/2014/10/30/nowy-blog-2/>).
 
@@ -22,7 +23,7 @@ oraz nie do końca skonfigurowaną wyszukiwarką (<https://devcave.pl/frontend/w
 W tym momencie uznałem, że dalsze usprawnianie bloga, który nie zawiera żadnej treści, nie ma żadnego sensu.
 W związku z czym odłożyłem na czas późniejszy dodawanie tagów i kategorii “bez użycia pluginu”
 (<https://devenv.pl/pierwsze-zetkniecie-jekyll-podzial-kategorie/> i <http://www.minddust.com/post/tags-and-categories-on-github-pages/>).
-A nuż w międzyczasie plugin dla kategorii znajdzie się na liście pluginów wspieranych przez GitHub Pages
+A nuż w międzyczasie plugin dla kategorii znajdzie się na liście pluginów wspieranych przez **[GitHub Pages](/posts-by-tags/github-pages)**
 (Aktualna lista wspieranych pluginów <https://pages.github.com/versions/>).
 
 Po opublikowaniu pierwszego posta czułem jednak, że dalej czegoś brakuje. Wciśnięcie F12 i spojrzenie w kod strony było przerażające.

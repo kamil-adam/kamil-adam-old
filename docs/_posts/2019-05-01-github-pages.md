@@ -3,13 +3,13 @@ layout:   post
 title:    'Lokalne uruchamianie strony hostowanej na GitHub Pages'
 author:   "writeonly"
 category: writeonlydoc
-tags:     jekyll json alias
+tags:     jekyll json alias github-pages
 lang:     go ruby
 ---
 
 Jedną z największych zalet generator statycznych stron **[Jekyll](/posts-by-tags/jekyll)** jest to,
 że jest wspierany przez portal *[Github](<https://github.com/>)*
-za pomocą  *[Github Pages](<https://help.github.com/en/categories/github-pages-basics>)*.
+za pomocą  **[Github Pages](/posts-by-tags/github-pages)**.
 Gdyby nie *Github Pages* prawdopodobnie wybrałbym *[Hugo](<https://github.com/gohugoio/hugo>)*
 napisane w języku **[Go](/posts-by-langs/go)**
 do budowania tego bloga.

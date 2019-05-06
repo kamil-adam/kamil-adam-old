@@ -4,7 +4,7 @@ author:   "writeonly"
 category: resentiment
 tags:     bash jekyll scalaz operator
 labels:   lips f# ocaml hack
-langs:    scala kotlin clojure perl elixir julia elm livescript
+langs:    scala kotlin clojure lisp perl elixir julia elm livescript
 ---
 
 ## Problem: wywołania cebulowe
@@ -35,7 +35,7 @@ Szumem jest tutaj tworzenie pomocniczych zmiennych,
 które często trudno nazwać w sensowny sposób.
 
 Dlatego powinniśmy unikać *wywołań cebulowych*
-Chyba, że piszemy w języku **[Clojure](/posts-by-langs/clojure)** lub innym Lispie.
+Chyba, że piszemy w języku **[Clojure](/posts-by-langs/clojure)** lub innym **[Lispie](/posts-by-langs/lisp)**.
 Wtedy formatujemy kod:
 ```clojure
 (third_function
@@ -126,7 +126,7 @@ Część z nich zawiera także drugi podobny operator zwany *back pipe operator*
 Ten drugi zapis prawdopodobnie inspirowany jest językiem [Clojure](<https://clojure.org/guides/threading_macros>).
 
 Tak, **[Clojure](/posts-by-langs/clojure)** posiada dużo lukru składniowego,
-żeby poprawić standardową nieczytelność Lispa dzięki czemu możemy zapisać:
+żeby poprawić standardową nieczytelność **[Lispa](/posts-by-langs/lisp)** dzięki czemu możemy zapisać:
 
 ```clojure
 (-> data (first_function) (second_function) (third_function))

@@ -22,16 +22,23 @@ title: {{ page.tag }}
       </a>
     </dt>
     <dd>
+      <ul>
+        <li>
       Kategoria :
       <a href="{{ site.baseurl }}/posts-by-category/{{ post.category }}">{{ post.category | capitalize }}</a>
+        </li>
       {% assign langs = post.langs | split: ' ' | sort %}
       {% assign langs_size = langs | size %}
       {% if 0 < langs_size %}
+        <li>
       Języki:
       {% for lang in langs %}
       <a href="{{ site.baseurl }}/posts-by-langs/{{ lang }}">{{ lang }}</a>
       {% endfor %}
+        </li>
       {% endif %}
+      </ul>
+    </dd>
     {% endif %}
     {% endfor %}
   </dl>

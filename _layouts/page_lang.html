@@ -5,7 +5,7 @@ title: {{ page.lang }}
 <section class="posts">
   <header>
     {% include breadcrumbs.html %}
-    <h1 class="posts-title">Język: {{ page.lang }}</h1>
+    <h1 class="posts-title">Język: {{ page.lang | capitalize }}</h1>
   </header>
   <dl class="posts-nav">
     {% for post in site.posts %}
@@ -22,13 +22,19 @@ title: {{ page.lang }}
       </a>
     </dt>
     <dd>
+      <ul>
+        <li>
       Kategoria :
       <a href="{{ site.baseurl }}/posts-by-category/{{ post.category }}">{{ post.category | capitalize }}</a>
+        </li>
       {% assign tags = post.tags | sort %}
+        <li>
       Tagi:
       {% for tag in tags %}
       <a href="{{ site.baseurl }}/posts-by-tags/{{ tag }}">{{ tag }}</a>
       {% endfor %}
+        </li>
+      </ul>
     </dd>
     {% endif %}
     {% endfor %}

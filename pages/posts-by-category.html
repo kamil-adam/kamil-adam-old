@@ -11,7 +11,7 @@ description: Artykuły po kategorii
     {% assign posts = group_items[forloop.index0] %}
     <dt>
       <h2>
-        <a href="{{ site.baseurl }}/posts-by-category/{{ name }}">{{ name }}</a>
+        <a href="{{ site.baseurl }}/posts-by-category/{{ name }}">{{ name | capitalize }}</a>
       </h2>
     </dt>
     <dd>

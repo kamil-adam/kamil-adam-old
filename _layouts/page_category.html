@@ -24,19 +24,25 @@ title: {{ page.category }}
       </a>
     </dt>
     <dd>
+      <ul>
       {% assign tags = post.tags | sort %}
+        <li>
       Tagi:
       {% for tag in tags %}
       <a href="{{ site.baseurl }}/posts-by-tags/{{ tag }}">{{ tag }}</a>
       {% endfor %}
+        </li>
       {% assign langs = post.langs | split: ' ' | sort %}
       {% assign langs_size = langs | size %}
       {% if 0 < langs_size %}
+        <li>
       Języki:
       {% for lang in langs %}
       <a href="{{ site.baseurl }}/posts-by-langs/{{ lang }}">{{ lang }}</a>
       {% endfor %}
+        </li>
       {% endif %}
+      </ul>
     </dd>
     {% endif %}
     {% endfor %}

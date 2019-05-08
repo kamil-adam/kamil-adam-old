@@ -4,10 +4,10 @@ author:   "writeonly"
 category: onions
 tags:     clang llvm compiler parser lexer ast scala-native cli
 labels:   gcc ir r
-langs:    haskell java kotlin lua python ruby crystal julia pony rust swift go lisp
+langs:    haskell java kotlin lua python ruby crystal julia pony rust go lisp
 ---
 
-W dawnych czasach każdy dobry programista chciał napisać swój własny kompilator języka C.
+W dawnych czasach każdy dobry programista chciał napisać swój własny **[kompilator](/posts-by-tags/compiler)** języka C.
 Co prawda te czasy już minęły i dziś większość z nas programuje w językach o wiele bardziej złożonych niż C.
 Dzięki czemu jesteśmy w stanie pisać szybciej kod.
 Ale nadal warto znać podstawy budowy kompilatorów.
@@ -19,7 +19,7 @@ Dzida bojowa składa się z:
 
 ## Konstrukcja kompilatora
 Podobnie jest z kompilatorem.
-Kompilator języka programowania składa się z:
+**[Kompilator](/posts-by-tags/compiler)** języka programowania składa się z:
 1. front-endu, zależnego od języka wejściowego
 2. middle-endu, clou kompilatora
 3. back-endu, zależnego od architektury docelowej
@@ -47,7 +47,7 @@ Dokonuje optymalizacji uniwersalnych,
 czyli wszystkie optymalizacje niezależne od języka wejściowego i architektury docelowej.
 Z jednej strony jest to najmniej potrzebna część kompilatora.
 Z drugiej to właśnie rozbudowany optymalizator decyduje o tym, 
-który kompilator jest najlepszy.
+który **[kompilator](/posts-by-tags/compiler)** jest najlepszy.
 
 ### Back-end
 Back-end kompilatora składa się z:
@@ -72,7 +72,7 @@ Przykładem tej architektury jest architektura x86 oraz rodzina mikrokontroleró
 Przez lata najbardziej znanym opensoursowym i najlepszym kompilatorem o tej budowie był GCC
 (kiedyś *GNU C Compiler* , dziś *GNU Compiler Collection*).
 Jednak dziś powoli palmę pierwszeństwa odbiera mu **[LLVM](/posts-by-tags/llvm)**
-(kiedyś *Low Level Virtual Machine*, dziś nazwa się nie rozwija ponieważ jest to kompilator, a nie maszyna wirtualna).
+(kiedyś *Low Level Virtual Machine*, dziś nazwa się nie rozwija ponieważ jest to **[kompilator](/posts-by-tags/compiler)**, a nie maszyna wirtualna).
 
 LLVM powstał z projektu badawczego na temat kompilacji.
 Naukowcy wzięli frond-end z GCC i dopisali własny middle-end i back-end.
@@ -102,9 +102,9 @@ Są to:
 konwertuje kod czytelny dla człowieka w języku asemblera LLVM (pliki *.ll) do bitkodu LLVM (pliki *.bc)
 * [llvm-dis](<http://llvm.org/docs/CommandGuide/llvm-dis.html>) - Disassembler LLVM, 
 konwertuje bitkod LLVM (pliki *.bc) do kodu czytelnego dla człowieka w języku asemblera LLVM (pliki *.ll)
-* [opt](<http://llvm.org/docs/CommandGuide/opt.html>) - optimizer LLVM, 
+* [opt](<http://llvm.org/docs/CommandGuide/opt.html>) - Optimizer LLVM, 
 optymalizuje kod w języku asemblera LLVM
-* [llc](<http://llvm.org/docs/CommandGuide/llc.html>) - Kompilator LLVM, 
+* [llc](<http://llvm.org/docs/CommandGuide/llc.html>) - **[Kompilator](/posts-by-tags/compiler)** LLVM, 
 kompiluje kod w języku asemblera LLVM na kod w języku asemblera docelowej architektury
 * [lli](<http://llvm.org/docs/CommandGuide/lli.html>) - Interpreter (sic!) LLVM, 
 wykonuje kod

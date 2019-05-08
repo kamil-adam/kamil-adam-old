@@ -2,7 +2,7 @@
 title:    "Biblioteki do parsowania dla języka Scala"
 author:   "writeonly"
 category: resentiment
-tags:     library utest fastparse json parser lexer ast
+tags:     library utest fastparse json parser lexer ast compiler
 labels:   dsl parboiled2
 langs:    scala
 ---
@@ -24,7 +24,7 @@ Parsery są używane do różnych celów:
 ### Parsowanie danych strukturalnych
 * Parsowanie języka programowania -
 jest to pierwsza rzecz jaka nasuwa się na myśl, przynajmniej mi.
-Parsery są pierwszą (wejściową) częścią kompilatora.
+Parsery są pierwszą (wejściową) częścią **[kompilatora](/posts-by-tags/compiler)**.
 Oczywiście mało prawdopodobne, że będziesz tworzył nowy język programowania.
 Czasem jednak istnieje potrzeba napisania parsera już istniejącego języka,
 gdy np. piszesz własny tool do formatowania kodu.

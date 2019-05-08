@@ -2,7 +2,7 @@
 title:    "Scala - No Universal Equality"
 author:   "writeonly"
 category: resentiment
-tags:     scala-jvm scala-js scala-native scalatest scalaz cats monad type-class scalafix utest operator library
+tags:     scala-jvm scala-js scala-native scalatest scalaz cats monad type-class scalafix utest operator library compiler
 labels:   scalatic
 langs:    scala java haskell
 ---
@@ -23,7 +23,7 @@ Można ten problem rozwiązać na kilka sposobów.
 ## Dotty - Multiversal Equality
 
 Najprostszym sposobem rozwiązania problemu `Universal Equality` jest poczekać.
-Nowa wersja kompilatora Scala - [Dotty](<https://dotty.epfl.ch/>) będzie posiadać
+Nowa wersja **[kompilator](/posts-by-tags/compiler)** Scala - *[Dotty](<https://dotty.epfl.ch/>)* będzie posiadać
 [Multiversal Equality](<http://dotty.epfl.ch/docs/reference/other-new-features/multiversal-equality.html>)
 co rozwiązuje problem.
 

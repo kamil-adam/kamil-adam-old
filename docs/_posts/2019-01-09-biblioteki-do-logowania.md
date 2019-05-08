@@ -2,8 +2,8 @@
 title:    "Biblioteki do logowania dla języka Scala"
 author:   "writeonly"
 category: resentiment
-tags:     library utest cli
-labels:   logging scala-logging slogging scribe
+tags:     library utest cli slogging scala-js scala-native
+labels:   logging scala-logging scribe
 langs:    scala java
 ---
 
@@ -29,18 +29,18 @@ Niestety działa tylko dla Scala/JVM
 jest małym opakowaniem wbudowanego logowania Javy, aby uczynić go bardziej przyjaznym dla Scali.
 Niestety także, działa tylko dla Scala/JVM
 * [scalajs-java-logging](<https://github.com/scala-js/scala-js-java-logging>) -
-implementacja `java.logging` dla Scala.js.
-Wspiera Scala.js w wersji 0.6.x i 1.0.x
+implementacja `java.logging` dla **[Scala.js](/posts-by-tags/scala-js)**.
+Wspiera **[Scala.js](/posts-by-tags/scala-js)** w wersji 0.6.x i 1.0.x
 * [airframe-log](<https://wvlet.org/airframe/docs/airframe-log.html>) -
 biblioteka do ulepszania logowania aplikacji Scala z kolorami i lokalizacjami kodów źródłowych.
 Wspiera Scala.js w wersji 0.6.x i 1.0.x
 * [slogging](<https://github.com/jokade/slogging>) -
 biblioteka logowania zgodna z `scala-logging` (i `SLF4J`) oparta na makrach
-dla Scala/JVM, Scala.js (wersja 0.6.x) i Scala Native
+dla Scala/JVM, **[Scala.js](/posts-by-tags/scala-js)** (wersja 0.6.x) i **[Scala Native](/posts-by-tags/scala-native)**
 * [scribe](<https://github.com/outr/scribe>) -
 praktyczny szkielet logowania, który nie wymaga żadnej innej struktury logowania
 i może być w pełni skonfigurowany programowo.
-Wspiera Scala.js w wersji 0.6.x oraz Scala Native.
+Wspiera **[Scala.js](/posts-by-tags/scala-js)** w wersji 0.6.x oraz **[Scala Native](/posts-by-tags/scala-native)**.
 
 ## I konkretne próby zastosowania
 

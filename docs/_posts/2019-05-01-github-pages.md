@@ -3,7 +3,7 @@ layout:   post
 title:    'Lokalne uruchamianie strony hostowanej na GitHub Pages'
 author:   "writeonly"
 category: writeonlydoc
-tags:     jekyll json alias github-pages
+tags:     jekyll json alias github github-pages
 lang:     go ruby
 ---
 

@@ -2,7 +2,7 @@
 title:    "Przenośna Scala"
 author:   "writeonly"
 category: resentiment
-tags:     scala-jvm scala-js scala-native sbt clang
+tags:     scala-jvm scala-js scala-native sbt clang compiler transpiler
 labels:   jvm net native
 langs:    scala haskell erlang rust go javascript
 ---
@@ -44,20 +44,22 @@ Jednak było to zalane taką ilością warstw abstrakcyjnych,
 ### JavaScript
 **[JavaScript](/posts-by-langs/ecmasript)** jest platformą docelową dla każdego,
 kto chce uruchamiać cokolwiek na stronie internetowej.
-Dlatego jeśliby posiadać kompilator Scali do JavaScriptu
-to w łatwy sposób można by z każdego programisty Scali stworzyć legendarnego Full-Stack Developera.
-Szczęśliwie taki kompilator istnieje i nazywa się [Scala.js](<https://www.scala-js.org/>).
+Dlatego jeśliby posiadać **[transpilator](/posts-by-tags/transpiler)** języka Scala do JavaScriptu
+to w łatwy sposób można by z każdego programisty języka Scala stworzyć legendarnego Full-Stack Developera.
+Szczęśliwie taki **[transpilator](/posts-by-tags/transpiler)** istnieje i nazywa się [Scala.js](<https://www.scala-js.org/>).
 Istnieje nawet [Akka.js](<http://akka-js.org/>), framework aktorów.
 
 Niestety Scala.js i Akka.js posiadają wszystkie wady Node.js to znaczy jednowątkowość,
 ale do front-endu wydają się idealne.
 
 ### Native
-Największą zaletą języków **[Rust](/posts-by-langs/rust)**, **[Pony](/posts-by-langs/pony)**, **[Crystal](/posts-by-langs/crystal) czy **[Go](/posts-by-langs/go)**, jest to,
+Największą zaletą języków 
+**[Rust](/posts-by-langs/rust)**, **[Pony](/posts-by-langs/pony)**, **[Crystal](/posts-by-langs/crystal) czy **[Go](/posts-by-langs/go)**, 
+jest to,
 że są to języki kompilowane do postaci natywnej,
 a programy w nich pisane mogą być dostarczane do klienta pod postacią jednego pliku.
 
-To samo ze Scalą robi kompilator [ScalaNative](<http://www.scala-native.org/en/v0.3.8/>).
+To samo ze Scalą robi **[kompilator](/posts-by-tags/compiler)** [ScalaNative](<http://www.scala-native.org/en/v0.3.8/>).
 Niestety dalej jest w wersji eksperymentalnej i nie posiada np. wielowątkowości.
 Co czyni go na razie tylko zabawką dla nerdów i np. ... DevOpsów oraz QA.
 Bo o ile jednowątkowy program na produkcji zwykle nie ma sensu,

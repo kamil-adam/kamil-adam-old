@@ -2,8 +2,8 @@
 title:    "Bardziej dynamiczna analiza kodu dla języka Scala - Property-based testing"
 author:   "writeonly"
 category: resentiment
-tags:     code-analysis dynamic-code-analysis specs2 scalatest
-labels:   property-based scalacheck scalaprops nyaya scalaz
+tags:     code-analysis dynamic-code-analysis specs2 scalatest scalaz scala-js scala-native
+labels:   property-based scalacheck scalaprops nyaya
 langs:    scala haskell
 ---
 
@@ -47,8 +47,8 @@ Posiada integracje z [ScalaTest](<http://www.scalatest.org/user_guide/writing_sc
 i [Specs2](<https://etorreborre.github.io/specs2/guide/SPECS2-4.3.4/org.specs2.guide.UseScalaCheck.html>).
 * [scalaprops](<https://github.com/scalaprops/scalaprops>) -
 druga najbardziej popularna biblioteka *property-based testing*.
-Wspiera Scala.js w wersji 0.6 i Scala Native w wersji 0.3.
-Posiada integrację z biblioteką [Scalaz](<https://scalaz.github.io/7/>).
+Wspiera **[Scala.js](/posts-by-tags/scala-js)** w wersji 0.6 i **[Scala Native](/posts-by-tags/scala-native)** w wersji 0.3.
+Posiada integrację z biblioteką **[Scalaz](/posts-by-tags/scalaz)**.
 * [Nyaya](<https://github.com/japgolly/nyaya>) -
 projekt niestety umarł.
 Wspierał Scala.js w wersji 0.6.

@@ -2,7 +2,7 @@
 title:    "Flagi kompilatora Scalac"
 author:   "writeonly"
 category: resentiment
-tags:     sbt
+tags:     sbt compiler scalafix
 labels:   scalac options
 langs:    scala perl
 ---
@@ -15,7 +15,7 @@ Jednak z biegiem czasu twórcy języka Scala uznali,
 że niektóre sposoby są lepsze od innych i powinna istnieć możliwość wyłączenia gorszych sposobów.
 Dodatkowo niektóre funkcjonalności języka są tak inne od tego co do tej pory widzieli programiści języków obiektowych,
 że nie powinny być domyślnie włączone.
-Oba te warunki, i pewnie jeszcze kilka innych, powodują, że Scalac, kompilator języka Scala,
+Oba te warunki, i pewnie jeszcze kilka innych, powodują, że Scalac, **[kompilator](/posts-by-tags/compiler)** języka Scala,
 posiada [flagi kompilacji](<https://docs.scala-lang.org/overviews/compiler-options/index.html>).
 Dokładniej Scalac posiada ogromną ilość flag kompilacji.
 

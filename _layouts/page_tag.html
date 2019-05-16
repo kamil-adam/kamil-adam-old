@@ -8,6 +8,8 @@ title: {{ page.tag }}
     <h1 class="posts-title">Tag: {{ page.tag }}</h1>
   </header>
 
+  <i>{{ page.content }}</i>
+
   <dl class="posts-nav">
     {% for post in site.posts %}
     {% if post.tags contains page.tag %}

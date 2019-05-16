@@ -7,6 +7,9 @@ title: {{ page.lang }}
     {% include breadcrumbs.html %}
     <h1 class="posts-title">Język: {{ page.lang | capitalize }}</h1>
   </header>
+
+  <i>{{ page.content }}</i>
+
   <dl class="posts-nav">
     {% for post in site.posts %}
     {% assign langs = post.langs | split: ' ' %}

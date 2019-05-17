@@ -63,7 +63,7 @@ Options:
 ```
 
 Aby przełączać się na polski układ klawiatury za każdym razem,
-gdy jest otwierany nowy terminal wystarczy dodać wywołanie komendy 'setxkbmap' do pliku '~/.bashrc' za pomocą polecenia:
+gdy jest otwierany nowy terminal wystarczy dodać wywołanie polecenia `setxkbmap` do pliku `~/.bashrc` za pomocą polecenia:
 ```bash
 echo "setxkbmap pl" >> ~/.bashrc
 ```

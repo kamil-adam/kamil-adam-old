@@ -8,14 +8,14 @@ langs:    scala java rust
 ---
 
 
-W poprzednich wpisach zbudowaliśmy ogromną komendę
+W poprzednich wpisach zbudowaliśmy ogromne polecenie
 do analizy statycznej i dynamicznej kodu projektu oraz generacji raportów.
-Jednak wykonanie tej komendy trwa.
+Jednak wykonanie tego polecenia trwa.
 A programiści nie lubią czekać.
 
 Istnieje podejrzenie graniczące z pewnością,
-że programiści pracujący przy projekcie będą wywoływać komendę fragmentarycznie,
-a całą komendę tylko przed wysłaniem kodu do repozytorium.
+że programiści pracujący przy projekcie będą wywoływać polecenie fragmentarycznie,
+a całe polecenie tylko przed wysłaniem kodu do repozytorium.
 O ile i tego nie zapomną lub zignorują.
 
 W scentralizowanych systemach kontroli wersji takich jak SVN lub CVS

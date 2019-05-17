@@ -12,7 +12,7 @@ Dlaczego tak robimy?
 Czasem przypadkiem,
 ale często dlatego, że trzeba przełączyć się na inną gałąź,
 a posiadamy już jakieś zmiany na gałęzi aktualnej.
-Co prawda można niezatwierdzone zmiany, tylko schować w schowku za pomocą komendy `git stash`,
+Co prawda można niezatwierdzone zmiany, tylko schować w schowku za pomocą polecenia `git stash`,
 ale dane ze schowka strasznie łatwo stracić.
 Poza tym schowek jest jeden wspólny dla wszystkich gałęzi.
 
@@ -22,12 +22,12 @@ o ile posprzątamy wszystko przed złączeniem z główną gałęzią.
 Sposobów na sprzątanie w historii gita jest kilka,
 ale moim ulubiony,
 bo nie wymagającym zewnętrznych narzędzi,
-jest komenda:
+jest polecenie:
 ```bash
 git rebase -i HEAD~LICZBA_ZATWIERDZEN_WSTECZ
 ```
 
-## Usuwanie, łączenie i zmiana opisu rewizji za pomocą komendy git rebase -i
+## Usuwanie, łączenie i zmiana opisu rewizji za pomocą polecenia `git rebase -i`
 Wyobraźmy sobie,
 że mamy repozytorium w którym kilka ostatnich rewizji (ang. *commit*) było robionych w zbytnim pośpiechu i chcemy to teraz naprawić.
 Wywołujemy:
@@ -65,13 +65,13 @@ pick 6666666 błędny commit do skasowania
 ```
 
 Najpierw mamy listę rewizji w kolejności chronologicznej,
-a następnie listę możliwych komend do użycia.
+a następnie listę możliwych poleceń do użycia.
 
 *Oczywiście hashe rewizji zostały zmyślone by łatwiej było się skupić na tym co ważne.*
 
 W naszym przypadku użyjemy:
 * `pick` - żeby pozostawić rewizje niezmienioną
-* `reword` - żeby zmienić opis rewizji. Po użyciu tej komendy pojawi nam się kolejny ekran edytora do wprowadzenia nowego opisu
+* `reword` - żeby zmienić opis rewizji. Po użyciu tego polecenia pojawi nam się kolejny ekran edytora do wprowadzenia nowego opisu
 * `squash` lub `fixup` - żeby połączyć to rewizję z poprzednim. Ja wolę `fixup`, bo nie zostawia żadnych śladów w historii
 * `drop` - żeby pozbyć się niepotrzebnego rewizji
 
@@ -111,12 +111,13 @@ pick 3333333 dobry commit z poprawionym opisem
 pick 4545454 zły komit robiony na szybko
 ```
 i jeśli nie chcemy nic już zmieniać to wystarczy wyjść z edytora.
-Nie spowoduje to żadnych zmian, ponieważ dla każdego zatwierdzenia domyślnie jest ustawiona komenda `pick`,
-która go nie zmienia.
+Nie spowoduje to żadnych zmian,
+ponieważ dla każdego zatwierdzenia domyślnie jest ustawione polecenie `pick`,
+które go nie zmienia.
 
-### Zmienianie kolejności rewizji za pomocą komendy git rebase -i
+### Zmienianie kolejności rewizji za pomocą polecenia `git rebase -i`
 
-Komenda `git rebase -i` pozwala także zmienić kolejność rewizji.
+Polecenie `git rebase -i` pozwala także zmienić kolejność rewizji.
 
 Może się zdarzyć, że pracując dłużej na osobnej gałęzi dokonamy więcej zmian w kodzie.
 Takiej ilości, że dokonanie przeglądu kodu stanie się *niemożliwe*.
@@ -152,22 +153,22 @@ to łatwo moglibyśmy podzielić to na dwie gałęzie.
 Na szczęście nie ma nic prostrzego.
 Wystarczy wpisać tylko w konsoli `git rebase -i HEAD~6` i zmienić kolejność rewizji na taką jak potrzebujemy!
 Należy tylko uważać na to by nie skasować żadnej linii,
-ponieważ skasowanie linii działa jak komenda `drop`,
+ponieważ skasowanie linii działa jak polecenie `drop`,
 czyli usuwa rewizję.
 
 Uwaga!
-Zmiana kolejności rewizji może wymagać od nas użycia komend `git add` i `git rebase --continue`,
-podobnie jak przy używaniu komendy `git rebase NAZWA_GAŁĘZI`
+Zmiana kolejności rewizji może wymagać od nas użycia poleceń `git add` i `git rebase --continue`,
+podobnie jak przy używaniu polecenia `git rebase NAZWA_GAŁĘZI`
 
 
 ### Podział rewizji
 O ile łączenie rewizji jest banalnie proste
-i wymaga tylko użycia komendy `fixup` lub `squash`
+i wymaga tylko użycia polecenia `fixup` lub `squash`
 o tyle podział rewizji (ang. *split commit*) jest już trudniejszy.
 
 Najpierw musimy ustalić jak daleko w historii znajduje się rewizja do podziału,
 której szukamy,
-a następnie wywołać komendę `git rebase -i HEAD~` z odpowiednią liczbą, np.:
+a następnie wywołać polecenie `git rebase -i HEAD~` z odpowiednią liczbą, np.:
 ```bash
 git rebase -i HEAD~8
 ```
@@ -184,7 +185,7 @@ pick 8888888 dobre zatwierdzenie, bo małe
 pick 9999999 dobre zatwierdzenie, bo małe
 ```
 
-Następnie interesującą nas rewizję oznaczamy komendę `edit`
+Następnie interesującą nas rewizję oznaczamy poleceniem `edit`
 ```bash
 e 2222222 gigantyczne coś, z tydzień pracy z nadgodzinami
 pick 3333333 dobre zatwierdzenie, bo małe
@@ -198,11 +199,11 @@ pick 9999999 dobre zatwierdzenie, bo małe
 i zamykamy edytor.
 
 Teraz jesteśmy w historii rewizji zaraz po zatwierdzeniu dużej rewizji, która nas interesuje.
-Dlatego trzeba jeszcze zresetować gita do poprzedniej rewizji za pomocą komendy:
+Dlatego trzeba jeszcze zresetować gita do poprzedniej rewizji za pomocą polecenia:
 ```bash
 git reset HEAD^
 ```
-Teraz za pomocą pary komend `git add ...` i `git commit -m OPIS_REWIZJI` dzielimy pliki na atomowe części, np.:
+Teraz za pomocą pary poleceń `git add ...` i `git commit -m OPIS_REWIZJI` dzielimy pliki na atomowe części, np.:
 
 ```bash
 git add *.elm
@@ -212,11 +213,11 @@ git commit -m 'dodanie backend-for-frontend w języku PureScript, dialekcie jęz
 git add *.eta
 git commit -m 'dodanie backendu w języku Eta, dialekcie języka Haskell na JVM'
 ```
-Następnie zatwierdzamy wszystko za pomocą komendy:
+Następnie zatwierdzamy wszystko za pomocą polecenia:
 ```bash
 git rebase --continue
 ```
-I za pomocą komendy `git rebase -i HEAD~9` możemy zobaczyć wynik:
+I za pomocą polecenia `git rebase -i HEAD~9` możemy zobaczyć wynik:
 ```bash
 pick 1234567 dodanie frontendu w języku Elm, dialekcie języka Haskell transpilowanym do JS
 pick 2345678 dodanie backendu w języku PureScript, dialekcie języka Haskell transpilowanym do JS
@@ -243,4 +244,4 @@ Jego główną zaletą jest to,
 
 ## Podsumowanie
 Widać że `git rebase -i` to potężne narzędzie z wieloma możliwościami w rękach dobrego programisty.
-Nic nie napisałem na temat działania komendy `exec`, ponieważ nigdy nie miałem potrzeby jej użyć.
+Nic nie napisałem na temat działania polecenia `exec`, ponieważ nigdy nie miałem potrzeby go użyć.

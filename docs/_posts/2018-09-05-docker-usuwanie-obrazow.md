@@ -36,7 +36,7 @@ docker rmi $(docker images -q)
 ```
 
 ## Wszystko razem
-Można także wykonać wszystko razem jako jedną, połączoną komendę w terminalu:
+Można także wykonać wszystko razem jako jedno, połączone polecenie w terminalu:
 
 ```bash
 docker kill $(docker ps -q) && docker rm $(docker ps -a -q) && docker rmi $(docker images -q)

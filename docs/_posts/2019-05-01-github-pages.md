@@ -18,7 +18,7 @@ Największą wadą *Github Pages* jest to,
 Listę dozwolonych wtyczek (wraz z wersjami) można znaleźć na stronie [Dependency versions](https://pages.github.com/versions/)
 lub pod postacią pliku **[json](/posts-by-tags/json)** na stronie [versions.json](<https://pages.github.com/versions.json>).
 
-Chcąc budować i uruchamiać stronę lokalnie (poza *GitHub Pages*) za pomocą komend:
+Chcąc budować i uruchamiać stronę lokalnie (poza *GitHub Pages*) za pomocą poleceń:
 ```bash
 jekyll build
 jekyll serve
@@ -71,7 +71,7 @@ jekyll serve
 
 ## Problemy Jekylla
 
-niestety uruchomienie komendy `jekyll build` powoduje błąd:
+niestety uruchomienie polecenia `jekyll build` powoduje błąd:
 ```bash
 Traceback (most recent call last):
 	10: from /home/kamil-adam/gems/bin/jekyll:23:in `<main>'

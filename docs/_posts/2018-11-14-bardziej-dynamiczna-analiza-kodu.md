@@ -212,7 +212,7 @@ pl.writeonly.re.shared.CalculatorIT$
 [info] 5 pl.writeonly.re.shared.CalculatorIT$.multiplicationTest 50 50
 ```
 
-Ostatecznie moja pełna komenda do kompilacji to:
+Ostatecznie moje pełne polecenie do kompilacji to:
 ```bash
 sbt scalafix test:scalafix it:scalafix && \
 sbt scalafmtSbt scalafmt test:scalafmt it:scalafmt && \

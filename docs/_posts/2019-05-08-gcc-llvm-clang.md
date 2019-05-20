@@ -94,9 +94,9 @@ Niestety tego etapu nigdy nie udało mi się przejść więc nie wiem co dzieje 
 
 LLVM jest napisany w C++, języku który jako język obiektowy posiada polimorfizm out-of-the-box.
 
-## Główne programy/komendy LLVM
+## Główne programy/polecenia LLVM
 
-W skład LLVM wchodzi wiele bibliotek dostępnych także jako [komendy standalone](<http://llvm.org/docs/CommandGuide/>).
+W skład LLVM wchodzi wiele bibliotek dostępnych także jako [polecenia standalone](<http://llvm.org/docs/CommandGuide/>).
 Są to:
 * [llvm-as](<http://llvm.org/docs/CommandGuide/llvm-as.html>) - Asembler LLVM, 
 konwertuje kod czytelny dla człowieka w języku asemblera LLVM (pliki *.ll) do bitkodu LLVM (pliki *.bc)

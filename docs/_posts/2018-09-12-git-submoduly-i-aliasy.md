@@ -38,25 +38,25 @@ a takiego menedżera trzeba gdzieś zainstalować.
 (przykład z pierwszej wersji [Git-Tools-Submodules](<https://git-scm.com/book/en/v1/Git-Tools-Submodules>)).
   4. Nie wszystko da się umieścić w bibliotece, w tym wypadku jest to skrypt do budowania projektu.
 
-## Dodatkowe komendy
+## Dodatkowe polecenia
 Tak przekonany przestałem marudzić
  i przejrzałem [Git-Tools-Submodules](<https://git-scm.com/book/en/v2/Git-Tools-Submodules>),
  [git-submodule](<https://git-scm.com/docs/git-submodule>)
  oraz [git-clone](<https://git-scm.com/docs/git-clone>).
- Okazało się, że praca z submodułami nie jest taka straszna i sprowadza się głównie do dwóch komend:
+ Okazało się, że praca z submodułami nie jest taka straszna i sprowadza się głównie do dwóch poleceń:
 
 ```bash
 git clone --recurse-submodules
 git submodule update --init --recursive
 ```
-Pierwsza komenda ściąga repozytorium ze wszystkimi submodułami.
-Druga - aktualizuje submoduły po przełączeniu się na inny commit, gałąź lub po aktualizacji gałęzi.
+Pierwsze polecenie ściąga repozytorium ze wszystkimi submodułami.
+Drugie - aktualizuje submoduły po przełączeniu się na inną rewizję (ang. *commit*), gałąź lub po aktualizacji gałęzi.
 
-Niestety komendy te wydłużają i tak długie już komendy gita.
+Niestety polecenia te wydłużają i tak długie już polecenia gita.
 
 ## Aliasy Basha
 
-Szczęśliwie umiem rozwiązywać problem długich komend,
+Szczęśliwie umiem rozwiązywać problem długich poleceń,
 bo znam [aliasy basha](/cli/2018/08/30/alias-komenda-powloki-bash.html).
 
 Pierwsza wersja moich aliasów wyglądała następująco:
@@ -79,7 +79,7 @@ przecież git ma swój system [aliasów](<https://git-scm.com/book/en/v2/Git-Bas
 
 Po przeczytaniu [Git-Basics-Git-Aliases](<https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases>)
 i [git-config](<https://git-scm.com/docs/git-config>)
-mój zbiór aliasów zamienił się w zestaw komend gita do wykonania:
+mój zbiór aliasów zamienił się w zestaw poleceń gita do wykonania:
 
 ```bash
 git config --global alias.cl 'clone'
@@ -107,7 +107,7 @@ I od teraz:
 * `git develop` - przełącza na gałąź develop i aktualizuje submoduły;
 * `git tig` - uruchamia program `tig` (o ile mamy go zainstalowany).
 
-Komendy te zapisałem w pliku [git_config.sh](<https://github.com/writeonly/cli/blob/master/git_config.sh>)
+Polecenia te zapisałem w pliku [git_config.sh](<https://github.com/writeonly/cli/blob/master/git_config.sh>)
 i można je wykonać poleceniem:
 ```bash
 curl -s https://raw.githubusercontent.com/writeonly/cli/master/git_config.sh | bash

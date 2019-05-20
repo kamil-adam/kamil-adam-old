@@ -156,7 +156,7 @@ sbt stats
 Wszystkie wymienione wyżej wtyczki dodałem do projektu
 [resentiment](<https://github.com/writeonly/resentiment>)
 
-Moja komenda generowania raportów wygląda następująco:
+Moje polecenie generowania raportów wygląda następująco:
 ```bash
 sbt scalastyle test:scalastyle it:scalastyle && \
 sbt scapegoat && \

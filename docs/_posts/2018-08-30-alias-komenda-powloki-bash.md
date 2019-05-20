@@ -1,5 +1,5 @@
 ---
-title:    "Alias - komenda powłoki Bash"
+title:    "Alias - polecenie powłoki Bash"
 author:   "writeonly"
 category: cli
 tags:     cli bash alias git
@@ -8,12 +8,12 @@ langs:
 ---
 
 Jeśli:
-* masz problemy z zapamiętywaniem skomplikowanych komend Basha lub innych programów wywoływanych przez wiersz poleceń
+* masz problemy z zapamiętywaniem skomplikowanych poleceń Basha lub innych programów wywoływanych przez wiersz poleceń
 * nie lubisz wpisywać w terminalu długich poleceń z podkomendami i przełącznikami
 
-istnieje rozwiązanie twoich problemów! Jest to komenda powłoki Bash o nazwie `alias`.
+istnieje rozwiązanie twoich problemów! Jest to polecenie powłoki Bash o nazwie `alias`.
 
-Komendę `alias` można wywołać bez żadnego parametru:
+Polecenie `alias` można wywołać bez żadnego parametru:
 ```bash
 alias
 ```
@@ -28,9 +28,9 @@ alias NAME=VALUE
 ```
 
 gdzie:
-* `NAME` oznacza nazwę nowej "komendy" do wywoływania w wierszu poleceń
-* `VALUE` jest komendą, lub ciągiem komend, która zostanie wywołana naprawdę.
-Jeśli chcemy, żeby `VALUE` zawierało spację należy wszystko umieścić w parze apostrofów (‘) lub cudzysłowów (“)
+* `NAME` oznacza nazwę nowego "polecenia" do wywoływania w wierszu poleceń
+* `VALUE` jest poleceniem, lub ciągiem poleceń, które zostanie wywołana naprawdę.
+Jeśli chcemy, żeby `VALUE` zawierało spację należy wszystko umieścić w parze apostrofów (') lub cudzysłowów (")
 
 Przykłady użycia:
 ```bash
@@ -39,14 +39,14 @@ alias ..='cd ..'
 alias cwd='cd `pwd`'
 ```
 Od teraz :
-* komenda `rf <ścieżka_do_folderu>` będzie usuwać foldery,
-* komenda `..` przechodzić do folderu wyżej w drzewie hierarchii folderów,
-* komenda `cwd` będzie odświeżać aktywny folder.
+* polecenie `rf <ścieżka_do_folderu>` będzie usuwać foldery,
+* polecenie `..` przechodzić do folderu wyżej w drzewie hierarchii folderów,
+* polecenie `cwd` będzie odświeżać aktywny folder.
 
 ## Tworzenie permanentnych aliasów
 Problem z aliasami jest tylko jeden. Działają tylko w ramach terminala w którym zostały zdefiniowane.
 Można to rozwiązać w prosty sposób poprzez stworzenie wszystkich aliasów w pliku, np. pod nazwą `~/.bash_aliases`,
-a następnie wczytywania go za pomocą komendy `source`.
+a następnie wczytywania go za pomocą polecenia `source`.
 Teraz po otwarciu nowego terminala wystarczy wywołać:
 ```bash
 source ~/.bash_aliases
@@ -95,7 +95,7 @@ wget https://raw.githubusercontent.com/writeonly/cli/master/bash_aliases_install
 ```
 móc odzyskać wszystko to, do czego przywykłem.
 
-A komendą:
+A polecenie:
 ```bash
 update_aliases
 ```

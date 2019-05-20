@@ -75,12 +75,12 @@ val data30 = thirty_function(data29)
 
 ### Prawdopodobna inspiracja - potoki w Bash i Jekyll
 
-W powłoce systemowej **[Bash](/posts-by-tags/bash)** przesyłanie danych między jedną komendą,
-a drugą jest realizowane przez potoki, np:
+W powłoce systemowej **[Bash](/posts-by-tags/bash)** przesyłanie danych między jednym poleceniem,
+a drugim jest realizowane przez potoki, np:
 ```bash
 ps -a | sort | uniq | grep -v sh
 ```
-Dwie lub więcej komend można połączyć w jedną za pomocą operatora pionowej kreski `|` (ang. *pipe*).
+Dwa lub więcej poleceń można połączyć w jedno polecenie za pomocą operatora pionowej kreski `|` (ang. *pipe*).
 
 **[Jekyll](/posts-by-tags/jekyll)** także posiada potoki, ale dla utrudnienia nazywają się filtrami.
 Precyzyjniej to Jekyll używa języka szablonów Liquid, a Liquid posiada Filtry.

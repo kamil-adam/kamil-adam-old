@@ -20,7 +20,7 @@ $ git branch -d myfeature
 $ git push origin develop
 ```
 
-Ilość komend, parametrów i przełączników może powodować niekończące się problemy i dyskusje
+Ilość poleceń, parametrów i przełączników może powodować niekończące się problemy i dyskusje
  "czy na pewno potrzebujemy czegoś tak skomplikowanego?".
 
 Na szczęście istnieje 'git-flow'.
@@ -38,12 +38,12 @@ Zalety tego są oczywiste:
 * programista, tester i/lub wdrożeniowiec,
 który raz nauczył się pracować z Gitflow ma jedną rzecz mniej do nauki przy przenoszeniu się do innego zespołu,
 gdzie będą stosować dokładnie ten sam Gitflow bez żadnych lokalnych modyfikacji
-* zamiast wpisywania długich wielolinijkowców w konsoli możemy używać pojedynczych komend.
+* zamiast wpisywania długich wielolinijkowców w konsoli możemy używać pojedynczych poleceń.
 
 
 ## Moje aliasy
 
-Jednak nawet te komendy są dla mnie za długie.
+Jednak nawet te polecenia są dla mnie za długie.
 Dlatego przygotowałem [plik](<https://github.com/writeonly/cli/blob/master/git_config.sh>) z [aliasami Basha](</cli/2018/09/12/git-submoduly-i-aliasy.html>)
 
 ```bash
@@ -69,7 +69,7 @@ Można go zastosować poleceniem
 curl -s https://raw.githubusercontent.com/writeonly/cli/master/git_config.sh | bash
 ```
 
-i cieszyć się krótkimi komendami jak
+i cieszyć się krótkimi poleceniami jak:
 ```bash
 git ffstart myfeature
 git fffinish myfeature

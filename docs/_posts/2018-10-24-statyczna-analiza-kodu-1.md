@@ -139,20 +139,20 @@ sbt 'scalafix --check' 'test:scalafix --check' 'it:scalafix --check'
 Wszystkie wymienione wyżej wtyczki dodałem do projektu
 [resentiment](<https://github.com/writeonly/resentiment>).
 
-Na chwilę obecna moja komenda do zbudowania tego projektu to:
+Na chwilę obecna moje polecenie do zbudowania tego projektu to:
 ```bash
 sbt clean compile test:compile it:compile re/test && \
 sbt coverage reJVM/test reJS/test && \
 sbt coverageReport
 ```
 
-Wcześniej jednak powinienem wywołać komendę refaktoryzującą i formatującą kod:
+Wcześniej jednak powinienem wywołać polecenie refaktoryzującą i formatującą kod:
 ```bash
 sbt scalafix test:scalafix it:scalafix && \
 sbt scalafmtSbt scalafmt test:scalafmt it:scalafmt
 ```
 
-Ewentualnie, gdy robię przegląd kodu mogę sprawdzić czy kod jest poprawny za pomocą komendy:
+Ewentualnie, gdy robię przegląd kodu mogę sprawdzić czy kod jest poprawny za pomocą polecenia:
 ```bash
 sbt 'scalafix --check' 'test:scalafix --check' 'it:scalafix --check' && \
 sbt scalafmtSbtCheck scalafmtCheck test:scalafmtCheck it:scalafmtCheck

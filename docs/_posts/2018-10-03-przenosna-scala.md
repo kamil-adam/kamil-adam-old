@@ -7,7 +7,7 @@ labels:   jvm net native
 langs:    scala haskell erlang rust go javascript
 ---
 
-Znajomy zajarał się językiem Rust.
+Znajomy zajarał się językiem **[Rust](/posts-by-langs/rust)**.
 Opowiada mi jaki to wspaniały język i pokazuje przykłady kodu.
 **[Rust](/posts-by-langs/rust)** na pierwszy rzut oka wygląda jak skrzyżowanie **[C](/posts-by-tags/clang)** i języka **[Haskell](/posts-by-langs/haskell)** plus kanały jak w języka **[Go](/posts-by-langs/go)**.
 Czyni go to pretendentem do bycia najbardziej skomplikowanym językiem programowania na świecie.
@@ -54,7 +54,7 @@ ale do front-endu wydają się idealne.
 
 ### Native
 Największą zaletą języków 
-**[Rust](/posts-by-langs/rust)**, **[Pony](/posts-by-langs/pony)**, **[Crystal](/posts-by-langs/crystal) czy **[Go](/posts-by-langs/go)**, 
+**[Rust](/posts-by-langs/rust)**, **[Pony](/posts-by-langs/pony)**, **[Crystal](/posts-by-langs/crystal)** czy **[Go](/posts-by-langs/go)**, 
 jest to,
 że są to języki kompilowane do postaci natywnej,
 a programy w nich pisane mogą być dostarczane do klienta pod postacią jednego pliku.

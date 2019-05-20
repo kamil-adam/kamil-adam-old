@@ -2,7 +2,7 @@
 title:    "Biblioteki do logowania dla języka Scala"
 author:   "writeonly"
 category: resentiment
-tags:     library utest cli slogging scala-js scala-native
+tags:     library utest cli slogging scala-js scala-native factory
 labels:   logging scala-logging scribe
 langs:    scala java
 ---

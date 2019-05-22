@@ -1,6 +1,6 @@
 ---
 title:    "Jekyll - kategorie i tagi"
-author:   "writeonly"
+author:   kamil-adam
 category: writeonlydoc
 tags:     jekyll blog
 labels:
@@ -22,7 +22,7 @@ W przypadku tego artykułu są to:
 ---
 layout:   post
 title:    "Jekyll - kategorie i tagi"
-author:   "writeonly"
+author:   kamil-adam
 category: jekyll
 tags:     jekyll blog
 ---

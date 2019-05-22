@@ -1,6 +1,6 @@
 ---
 title:    'Krótki opis konstrukcji kompilatorów GCC, LLVM i Clang'
-author:   "writeonly"
+author:   kamil-adam
 category: onions
 tags:     clang llvm compiler parser lexer ast scala-native cli
 labels:   gcc ir r

@@ -1,6 +1,6 @@
 ---
 title:    "Scala - No Universal Equality"
-author:   "writeonly"
+author:   kamil-adam
 category: resentiment
 tags:     scala-jvm scala-js scala-native scalatest scalaz cats monad type-class scalafix utest operator library compiler
 labels:   scalatic

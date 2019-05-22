@@ -1,6 +1,6 @@
 ---
 title:    "Jekyll i ciasteczka (pliki cookies)"
-author:   "writeonly"
+author:   kamil-adam
 category: writeonlydoc
 tags:     jekyll blog jekyllcodex github-pages
 labels:   cookies jquery

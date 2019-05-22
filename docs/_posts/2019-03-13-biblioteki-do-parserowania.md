@@ -1,6 +1,6 @@
 ---
 title:    "Biblioteki do parsowania dla języka Scala"
-author:   "writeonly"
+author:   kamil-adam
 category: resentiment
 tags:     library utest fastparse json parser lexer ast compiler
 labels:   dsl parboiled2

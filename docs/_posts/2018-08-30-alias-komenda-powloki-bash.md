@@ -1,6 +1,6 @@
 ---
 title:    "Alias - polecenie powłoki Bash"
-author:   "writeonly"
+author:   kamil-adam
 category: cli
 tags:     cli bash alias git
 labels:

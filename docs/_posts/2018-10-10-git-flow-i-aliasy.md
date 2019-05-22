@@ -1,6 +1,6 @@
 ---
 title: "Git-flow i aliasy"
-author:   "writeonly"
+author:   kamil-adam
 category: cli
 tags:     cli git alias
 labels:   flow

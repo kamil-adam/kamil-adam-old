@@ -1,6 +1,6 @@
 ---
 title:    "jekyllcodex.org - część druga"
-author:   "writeonly"
+author:   kamil-adam
 category: writeonlydoc
 tags:     jekyll blog jekyllcodex seo
 labels:

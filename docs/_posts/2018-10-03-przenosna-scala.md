@@ -1,6 +1,6 @@
 ---
 title:    "Przenośna Scala"
-author:   "writeonly"
+author:   kamil-adam
 category: resentiment
 tags:     scala-jvm scala-js scala-native sbt clang compiler transpiler
 labels:   jvm net native

@@ -1,6 +1,6 @@
 ---
 title:    "Dlaczego warto prowadzić bloga o programowaniu"
-author:   "writeonly"
+author:   kamil-adam
 category: thoughts github
 tags:     blog
 labels:   thoughts

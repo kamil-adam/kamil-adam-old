@@ -1,5 +1,7 @@
 ---
-title:    'Czy nadaję się na programistę? ' 
+title:    'Czy nadaję się na programistę? Inne możliwości w IT'
+redirect_from:
+  - czy-nadaje-sie-na-programiste
 author:   TheKamilAdam
 category: thoughts
 tags:     blog bash
@@ -13,7 +15,7 @@ Złośliwi mówią,
 zamiast siedzieć w piwnicy i rozwiązywać tutoriale z programowania,
 ewentualnie dopytywać się co jeszcze się nauczyć,
 to niestety się nie nadajecie.
-Niezłośliwi podają [Tester na programistę](<https://www.youtube.com/watch?v=3bul8Z7SZlg>).
+Niezłośliwi podają [Test na programistę](<https://www.youtube.com/watch?v=3bul8Z7SZlg>).
 
 Ale niezależnie od wyniku testu nie przejmujcie się!
 W IT istnieje wiele innych dobrze płatnych stanowisk,
@@ -28,21 +30,21 @@ Czyli fałszywi przyjaciele języka angielskiego `engineer != inżynier`:
 jest 
 *[Bachelor of Science](<https://pl.wikipedia.org/wiki/Bachelor_of_Science>)*
 czyli dosłownie *licencjat techniczny*.
-A tak przynajmniej mam w angielskojęzycznym odpisie dyplomu.
+Tak przynajmniej mam w angielskojęzycznym odpisie dyplomu.
 
 Podsumowując, żeby pracować na stanowisku *cośtam engineer* nie trzeba mieć skończonych studiów technicznych,
 ani jakichkolwiek innych.
 
 ### Zespół do spraw rozwoju produktu
 
-**Zespołem ds. rozwoju** (ang. *Developer Team*) jest rdzeniem firmy wytwarzającej oprogramowanie.
+**Zespoł ds. rozwoju** (ang. *Developer Team*) jest rdzeniem firmy wytwarzającej oprogramowanie.
 Bywa nazywany *Zespołem deweloperski* chociaż nie wszystkie osoby wewnątrz tego zespołu to *deweloperzy* 
 oraz *zespołem technicznym* chociaż nie wszystkie osoby wewnątrz tego zespołu są techniczne.
 
 Zespół ten jest odpowiedzialny za wytworzenie produktu, 
 czyli oprogramowania,
 które zostanie sprzedane klientowi.
-Klasyczny zespołem ds. rozwoju składa się z trzech rodzajów stanowisk:
+Klasyczny zespoł ds. rozwoju składa się z trzech rodzajów stanowisk:
 * Analityk biznesowy
 * Tester
 * Programista
@@ -56,8 +58,8 @@ Historyjki te są zwykle umieszczane w Jirze lub innym narzędziu do zarządzani
 
 #### Tester
 
-**Tester** na podstawie historyjek opracowanych przez *Analityka biznesowego* przygotowuje **Przypadki testowe** (ang. *Test Cases*) następnie.
-Różnica między *Historyjką* a *Przypadkiem testowym* polega na tym, że *historyjka* opisuje funkcjonalność ogólnie bez podania poszczególnych parametrów, 
+**Tester** na podstawie historyjek opracowanych przez *Analityka biznesowego* przygotowuje **Przypadki testowe** (ang. *Test Cases*).
+Różnica między *historyjką* a *przypadkiem testowym* polega na tym, że *historyjka* opisuje funkcjonalność ogólnie bez podania poszczególnych parametrów, 
 a *przypadek testowy* zawiera konkretne parametry (przypadki brzegowe, klasy równoważności).
 Tak więc jedna *historyjka* może wygenerować wiele *przypadków testowych*.
 
@@ -96,7 +98,7 @@ Prawdopodobnie pochodzi z czasów,
 gdy program trzeba było najpierw napisać na kartce,
 a potem zakodować na kartach perforowanych.
 Obecnie jest używane też jako określenie obraźliwe na *klepacza kodu*, 
-programistę który tylko koduje, a nie myśli. 
+programistę, który tylko koduje, a nie myśli. 
 * **Inżynier oprogramowania** (ang. *Software Engineer*) - lepszy programista.
 Wręcz *programista++*.
 Od zwykłego programisty różni się tym, że zna się także na inżynierii wytwarzania oprogramowania, 
@@ -107,8 +109,9 @@ Jak pisałem wcześniej, nie trzeba być inżynierem, żeby być *engineer*.
 zna się także na architekturze.
 W realnym życiu można spotkać dwa typy architektów.
   * programujący architekt - programista tak dobry, że nie można mu było dać więcej pieniędzy, 
-więc dano mu tytuł dzięki czemu ma szacun na dzielni.
-  * nie programujący architekt - dziwny osobnik który kiedyś był programistą,
+więc dano mu tytuł,
+dzięki czemu ma szacun na dzielni.
+  * nie programujący architekt - dziwny osobnik, który kiedyś był programistą,
 a dziś prawdopodobnie odleciał wysoko i daleko od kodu. Rysuje dzidy w UMLu i programiści go nienawidzą.
 
 #### Mistrz młyna
@@ -123,7 +126,7 @@ Na *Scrum Mastera* są robione szkolenia.
 
 ### Właściciel produktu, Kierownik projektu
 
-**Właściciel produktu** (ang. *Produkct Owner*, *PO*) jest to osoba spoza teamu developerskiego, 
+**Właściciel produktu** (ang. *Product Owner*, *PO*) jest to osoba spoza teamu developerskiego, 
 która jest adwokatem klienta.
 To ona dostarcza opisów *słowno-muzycznych* jak powinna działać aplikacja, 
 które później starają się zrozumieć analitycy biznesowi.
@@ -132,7 +135,7 @@ Powinna bardzo dobrze znać dziedzinę biznesu dla której powstaje oprogramowan
 W przeciwnym wypadku staje się tylko niepotrzebnym pośrednikiem między klientem a *zespołem ds. rozwoju produktu*.
 
 
-Czasem zamiast lub obok *PO* jest jeszcze **Kierownik projektu** (ang. *Produkct Manager*, *PM*).
+Czasem zamiast lub obok *PO* jest jeszcze **Kierownik projektu** (ang. *Project Manager*, *PM*).
 Zwykle w firmach typu korpo o niepłaskiej hierarchii.
 Jako że jest to stanowisko kierownicze, zwykle trzeba na niego awansować z stanowiska analityka, testera lub programisty.
 O takiej osobie mówi się później 
@@ -168,12 +171,14 @@ powinien ściśle współpracować z działem rozwoju oprogramowania (*Developme
 Co jednak nie zawsze jest możliwe, np. dlatego że klient posiada swój własny dział wdrożeniowy.
 
 ### Dokumentalista, Dokumentalista techniczny
-Gdy aplikacja jest już wdrożona, prawdopodobnie będzie przekazywana z jakąś **dokumentację**.
-Dokumentację tę ktoś musi napisać i często  tym celu zatrudnia się osobne osoby.
+Gdy aplikacja jest już wdrożona, 
+prawdopodobnie będzie przekazywana z jakąś **dokumentacją**.
+Dokumentację tę ktoś musi napisać i często w tym celu zatrudnia się osobne osoby, 
+czyli **dokumentalistów**.
 
-Osobną kategorią jest **dokumentacja techniczna**.
+Osobną kategorią jest **dokumentacja techniczna**, pisana przez **dokumentalistów technicznych**.
 Pod tą nazwą kryją się co najmniej dwa rodzaje dokumentacji:
-* Dokumentacja kierowana do SysOpsów i DevOpsów opisująca opisująca jak zainstalować aplikację.
+* Dokumentacja kierowana do *SysOpsów* i *DevOpsów* opisująca jak zainstalować aplikację.
 * Dokumentacja opisująca zewnętrzne API aplikacji skierowana do Testerów i Programistów
 
 Co ciekawe, często w ramach oszczędności, jest ona pisana także przez osoby nietechniczne.
@@ -199,7 +204,7 @@ bo nie mieli też marketingowców i nikt się o nich nie dowiedział.
 ## Podsumowanie
 
 Podsumowując nietechniczne stanowiska w typowej firmie IT na które najłatwiej aplikować to:
-* Analityk biznesowy -  zasadzie nie wiem co trzeba umieć żeby zostać BA
+* Analityk biznesowy - w zasadzie nie wiem co trzeba umieć żeby zostać BA
 * Tester - ale często chcą studia techniczne na to stanowisko
 * Scrum Master - potrzebne jest szkolenie i twarda psychika
 * Product Owner - ale trzeba znać dziedzinę biznesową oprogramowania

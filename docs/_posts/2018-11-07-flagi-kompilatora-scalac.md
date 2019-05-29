@@ -5,6 +5,8 @@ category: resentiment
 tags:     sbt compiler scalafix
 labels:   scalac options
 langs:    scala perl
+redirect_from:
+  - flagi-kompilatora-scalac
 ---
 
 Nie bójmy się tego powiedzieć, Scala to nowy **[Perl](/posts-by-langs/perl)**.

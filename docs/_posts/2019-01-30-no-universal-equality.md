@@ -5,6 +5,8 @@ category: resentiment
 tags:     scala-jvm scala-js scala-native scalatest scalaz cats monad type-class scalafix utest operator library compiler
 labels:   scalatic
 langs:    scala java haskell
+redirect_from:
+  - no-universal-equality
 ---
 
 Ostatnim błędem zgłaszanym w kodzie projektu **[resentiment](/category/resentiment)** przez **[scalafix](/posts-by-tags/scalafix)**

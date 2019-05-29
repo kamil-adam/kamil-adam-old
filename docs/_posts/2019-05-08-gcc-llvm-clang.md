@@ -5,6 +5,8 @@ category: onions
 tags:     clang llvm compiler parser lexer ast scala-native cli
 labels:   gcc ir r
 langs:    haskell java kotlin lua python ruby crystal julia pony rust go lisp
+redirect_from:
+  - gcc-llvm-clang
 ---
 
 W dawnych czasach każdy dobry programista chciał napisać swój własny **[kompilator](/posts-by-tags/compiler)** języka C.

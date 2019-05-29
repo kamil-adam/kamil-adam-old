@@ -5,6 +5,9 @@ category: resentiment
 tags:     scala-js scala-jvm scala-native slogging library factory
 labels:
 langs:    scala
+redirect_from:
+  - konfiguracja-fabryki-slogging
+  - slogging
 ---
 
 W poście

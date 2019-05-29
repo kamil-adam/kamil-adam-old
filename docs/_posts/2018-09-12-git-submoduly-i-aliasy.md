@@ -5,6 +5,8 @@ category: cli
 tags:     cli git alias
 labels:   submodule
 langs:    java javascript
+redirect_from:
+  - git-submoduly-i-aliasy
 ---
 
 *Post oparty na prawdziwych wydarzeniach i traumach*

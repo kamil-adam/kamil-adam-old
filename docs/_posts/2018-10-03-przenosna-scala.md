@@ -5,6 +5,8 @@ category: resentiment
 tags:     scala-jvm scala-js scala-native sbt clang compiler transpiler
 labels:   jvm net native
 langs:    scala haskell erlang rust go javascript
+redirect_from:
+  - przenosna-scala
 ---
 
 Znajomy zajarał się językiem **[Rust](/posts-by-langs/rust)**.

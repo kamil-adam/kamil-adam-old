@@ -5,6 +5,8 @@ category: resentiment
 tags:     library utest cli slogging scala-js scala-native factory
 labels:   logging scala-logging scribe
 langs:    scala java
+redirect_from:
+  - biblioteki-do-logowania
 ---
 
 Chcąc dowiedzieć się co dzieje się wewnątrz naszej aplikacji mamy dwie drogi.

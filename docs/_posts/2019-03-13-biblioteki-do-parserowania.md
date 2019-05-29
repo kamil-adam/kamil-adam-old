@@ -5,6 +5,8 @@ category: resentiment
 tags:     library utest fastparse json parser lexer ast compiler
 labels:   dsl parboiled2
 langs:    scala
+redirect_from:
+  - biblioteki-do-parserowania
 ---
 
 ## Co to jest parser?

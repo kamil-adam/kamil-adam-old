@@ -1,10 +1,11 @@
 ---
-layout:   post
 title:    'Lokalne uruchamianie strony hostowanej na GitHub Pages'
 author:   TheKamilAdam
 category: writeonlydoc
 tags:     jekyll json alias github github-pages
 lang:     go ruby
+redirect_from:
+  - github-pages
 ---
 
 Jedną z największych zalet generator statycznych stron **[Jekyll](/posts-by-tags/jekyll)** jest to,

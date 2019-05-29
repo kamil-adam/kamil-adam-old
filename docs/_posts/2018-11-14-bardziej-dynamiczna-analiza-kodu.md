@@ -5,6 +5,8 @@ category: resentiment
 tags:     code-analysis dynamic-code-analysis specs2 scalatest scalaz scala-js scala-native
 labels:   property-based scalacheck scalaprops nyaya
 langs:    scala haskell
+redirect_from:
+  - bardziej-dynamiczna-analiza-kodu
 ---
 
 Testy modułowe (jednostkowe) napisane w poście

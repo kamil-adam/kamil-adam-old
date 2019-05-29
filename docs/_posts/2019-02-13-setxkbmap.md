@@ -5,6 +5,8 @@ category: cli
 tags:     cli bash ubuntu
 labels:
 langs:
+redirect_from:
+  - setxkbmap
 ---
 
 Po długiej przerwie prosty artykuł "Jak szybko zmienić układ klawiatury z konsoli na **[Ubuntu](/posts-by-tags/ubuntu)**?".

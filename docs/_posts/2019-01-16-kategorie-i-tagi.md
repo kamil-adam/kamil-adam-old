@@ -5,6 +5,8 @@ category: writeonlydoc
 tags:     jekyll blog
 labels:
 langs:
+redirect_from:
+  - kategorie-i-tagi
 ---
 
 

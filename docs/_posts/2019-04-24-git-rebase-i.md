@@ -5,6 +5,8 @@ category: cli
 tags:     git ubuntu
 labels:
 langs:
+redirect_from:
+  - git-rebase-i
 ---
 
 Każdy z nas czasem zatwierdza (ang. *commit*) coś brzydkiego do repozytorium.

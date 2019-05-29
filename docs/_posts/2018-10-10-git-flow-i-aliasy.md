@@ -5,6 +5,8 @@ category: cli
 tags:     cli git alias
 labels:   flow
 langs:
+redirect_from:
+  - git-flow-i-aliasy
 ---
 
 Gitflow jest wspaniałą koncepcją pracy z gałęziami w repozytorium Git.

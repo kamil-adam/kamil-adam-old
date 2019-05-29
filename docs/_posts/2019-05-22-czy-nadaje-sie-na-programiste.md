@@ -1,12 +1,12 @@
 ---
 title:    'Czy nadaję się na programistę? Inne możliwości w IT'
-redirect_from:
-  - czy-nadaje-sie-na-programiste
 author:   TheKamilAdam
 category: thoughts
 tags:     blog bash
 labels:
 langs:    perl python ruby
+redirect_from:
+  - czy-nadaje-sie-na-programiste
 ---
 
 Wiele osób pyta "Czy nadaję się na programistę?".

@@ -5,6 +5,8 @@ category: resentiment
 tags:     scala-jvm scala-js scala-native code-analysis dynamic-code-analysis specs2 scalatest utest
 labels:   minitest greenlight
 langs:    scala
+redirect_from:
+  - dynamiczna-analiza-kodu
 ---
 
 > Dynamiczna analiza programu to analiza oprogramowania komputerowego wykonywanego przez wykonywanie programów na rzeczywistym lub wirtualnym procesorze.

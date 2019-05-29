@@ -5,6 +5,8 @@ category: resentiment
 tags:     bash jekyll scalaz operator
 labels:   lips f# ocaml hack
 langs:    scala kotlin clojure lisp perl elixir julia elm livescript
+redirect_from:
+  - scalapipe
 ---
 
 ## Problem: wywołania cebulowe

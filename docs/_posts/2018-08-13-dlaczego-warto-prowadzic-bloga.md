@@ -5,6 +5,8 @@ category: thoughts
 tags:     blog github
 labels:
 langs:    scala java
+redirect_from:
+  - dlaczego-warto-prowadzic-bloga
 ---
 
 Ja znalazłem cztery powody, dlaczego warto prowadzić bloga o programowaniu.

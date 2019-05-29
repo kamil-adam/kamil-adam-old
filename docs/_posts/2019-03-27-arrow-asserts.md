@@ -5,6 +5,8 @@ category: resentiment
 tags:     utest operator
 labels:
 langs:    scala
+redirect_from:
+  - arrow-asserts
 ---
 
 Dziś krótki wpis o tym, że warto czytać dokumentację. Zapraszam.

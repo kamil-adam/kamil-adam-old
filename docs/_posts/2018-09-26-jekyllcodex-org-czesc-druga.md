@@ -5,6 +5,8 @@ category: writeonlydoc
 tags:     jekyll blog jekyllcodex seo
 labels:
 langs:
+redirect_from:
+  - jekyllcodex-org-czesc-druga
 ---
 
 Ponad miesiąc temu, w panice, szukałem prostego skryptu, który by wyświetlał ostrzeżenie o plikach cookies.

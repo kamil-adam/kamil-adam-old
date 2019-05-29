@@ -5,6 +5,8 @@ category: writeonlydoc
 tags:     jekyll blog jekyllcodex seo
 labels:
 langs:
+redirect_from:
+  - jekyllcodex-org-head-seo
 ---
 
 Wyszukiwując swój blog w google trafiłem na brzydki opis w rodzaju:

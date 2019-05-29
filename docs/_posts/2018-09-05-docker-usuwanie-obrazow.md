@@ -5,6 +5,8 @@ category: cli
 tags:     cli alias
 labels:   docker
 langs:
+redirect_from:
+  - docker-usuwanie-obrazow
 ---
 
 Dziesięć lat pracy na Linuksie nauczyło mnie,

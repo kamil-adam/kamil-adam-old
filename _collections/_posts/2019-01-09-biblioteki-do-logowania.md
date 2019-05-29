@@ -1,5 +1,7 @@
 ---
 title:    "Biblioteki do logowania dla języka Scala"
+redirect_from:
+  - biblioteki-do-logowania
 author:   TheKamilAdam
 category: scala-native
 tags:     library cli factory logging

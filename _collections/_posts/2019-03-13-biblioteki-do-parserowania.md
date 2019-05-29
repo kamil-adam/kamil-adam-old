@@ -1,5 +1,7 @@
 ---
 title:    "Biblioteki do parsowania dla języka Scala"
+redirect_from:
+  - biblioteki-do-parserowania
 author:   TheKamilAdam
 category: scala-native
 tags:     ast compiler dsl interface json lexer library parser properties xml

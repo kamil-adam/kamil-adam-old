@@ -1,5 +1,7 @@
 ---
 title:    "Przenośna Scala"
+redirect_from:
+  - przenosna-scala
 author:   TheKamilAdam
 category: scala-native
 tags:     compiler native nojvm transpiler

@@ -1,5 +1,7 @@
 ---
 title:    "Statyczna analiza kodu dla języka Scala w SBT - część 2."
+redirect_from:
+  - statyczna-analiza-kodu-2
 author:   TheKamilAdam
 category: scala-native
 tags:     code-analysis static-code-analysis

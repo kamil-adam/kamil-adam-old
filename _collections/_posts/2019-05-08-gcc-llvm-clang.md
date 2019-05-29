@@ -1,5 +1,7 @@
 ---
 title:    'Krótki opis konstrukcji kompilatorów GCC, LLVM i Clang'
+redirect_from:
+  - gcc-llvm-clang
 author:   TheKamilAdam
 category: programming
 tags:     api assembler ast bytecode cli compiler interface interpreter lexer parser

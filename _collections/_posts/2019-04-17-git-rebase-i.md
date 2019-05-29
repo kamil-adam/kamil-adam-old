@@ -1,5 +1,7 @@
 ---
 title:    'Prosty sposób na zmianę historii Gita'
+redirect_from:
+  - git-rebase-i
 author:   TheKamilAdam
 category: cli
 tools:    git ubuntu

@@ -1,5 +1,7 @@
 ---
 title:    "Ciągła integracja, ciągła kontrola, ciągła Scala"
+redirect_from:
+  - ciagla-intergracja
 author:   TheKamilAdam
 category: scala-native
 labels:   coveralls continuous-integration travis-ci

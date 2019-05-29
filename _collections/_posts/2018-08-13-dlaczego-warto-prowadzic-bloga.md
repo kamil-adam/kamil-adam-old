@@ -1,5 +1,7 @@
 ---
 title:    "Dlaczego warto prowadzić bloga o programowaniu"
+redirect_from:
+  - dlaczego-warto-prowadzic-bloga
 author:   TheKamilAdam
 category: thoughts
 tags:     blog

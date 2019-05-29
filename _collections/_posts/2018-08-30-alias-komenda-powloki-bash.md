@@ -1,5 +1,7 @@
 ---
 title:    "Alias - polecenie powłoki Bash"
+redirect_from:
+  - alias-komenda-powloki-bash
 author:   TheKamilAdam
 category: cli
 tags:     alias cli

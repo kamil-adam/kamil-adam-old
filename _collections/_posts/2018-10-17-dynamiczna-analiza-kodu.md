@@ -1,5 +1,7 @@
 ---
 title:    "Dynamiczna analiza kodu dla SBT - testy jednostkowe"
+redirect_from:
+  - dynamiczna-analiza-kodu
 author:   TheKamilAdam
 category: scala-native
 tags:     code-analysis dynamic-code-analysis

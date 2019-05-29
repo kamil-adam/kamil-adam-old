@@ -1,5 +1,7 @@
 ---
 title:    "Flagi kompilatora Scalac"
+redirect_from:
+  - flagi-kompilatora-scalac
 author:   TheKamilAdam
 category: scala-native
 tags:     compiler

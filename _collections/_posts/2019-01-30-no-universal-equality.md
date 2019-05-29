@@ -1,5 +1,7 @@
 ---
 title:    "Scala - No Universal Equality"
+redirect_from:
+  - no-universal-equality
 author:   TheKamilAdam
 category: scala-native
 tags:     compiler library monad operator type-classes

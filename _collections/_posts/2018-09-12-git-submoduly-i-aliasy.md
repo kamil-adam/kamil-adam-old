@@ -1,5 +1,7 @@
 ---
 title: "Git - submoduły i aliasy"
+redirect_from:
+  - git-submoduly-i-aliasy
 author:   TheKamilAdam
 category: cli
 tags:     cli alias interpreter

@@ -1,5 +1,7 @@
 ---
 title:    "Bardziej dynamiczna analiza kodu dla języka Scala - Property-based testing"
+redirect_from:
+  - bardziej-dynamiczna-analiza-kodu
 author:   TheKamilAdam
 category: scala-native
 tags:     code-analysis dynamic-code-analysis

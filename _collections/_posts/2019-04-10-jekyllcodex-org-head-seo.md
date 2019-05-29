@@ -1,5 +1,7 @@
 ---
 title:    "jekyllcodex.org - problem ze skryptem seo"
+redirect_from:
+  - jekyllcodex-org-head-seo
 author:   TheKamilAdam
 category: jekyll
 tags:     blog jekyllcodex seo

@@ -1,5 +1,7 @@
 ---
 title:    "jekyllcodex.org - część druga"
+redirect_from:
+  - jekyllcodex-org-czesc-druga
 author:   TheKamilAdam
 category: jekyll
 tags:     blog jekyllcodex seo

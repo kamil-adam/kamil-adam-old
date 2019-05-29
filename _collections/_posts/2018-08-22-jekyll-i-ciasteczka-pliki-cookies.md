@@ -1,5 +1,7 @@
 ---
 title:    "Jekyll i ciasteczka (pliki cookies)"
+redirect_from:
+  - jekyll-i-ciasteczka-pliki-cookies.
 author:   TheKamilAdam
 category: jekyll
 tags:     blog jekyllcodex github-pages

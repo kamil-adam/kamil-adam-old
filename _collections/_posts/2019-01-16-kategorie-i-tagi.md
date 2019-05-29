@@ -1,5 +1,7 @@
 ---
 title:    "Jekyll - kategorie i tagi"
+redirect_from:
+  - kategorie-i-tagi
 author:   TheKamilAdam
 category: jekyll
 tags:     blog

@@ -1,5 +1,7 @@
 ---
 title: "Git-flow i aliasy"
+redirect_from:
+  - git-flow-i-aliasy
 author:   TheKamilAdam
 category: cli
 tags:     alias cli

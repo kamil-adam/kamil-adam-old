@@ -1,5 +1,7 @@
 ---
 title:    "uTest - operator Arrow Asserts"
+redirect_from:
+  - arrow-asserts
 author:   TheKamilAdam
 category: scala-native
 tags:     operator

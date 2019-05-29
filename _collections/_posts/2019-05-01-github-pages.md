@@ -1,5 +1,7 @@
 ---
 title:    'Lokalne uruchamianie strony hostowanej na GitHub Pages'
+redirect_from:
+  - github-pages
 author:   TheKamilAdam
 category: jekyll
 tags:     json alias github-pages

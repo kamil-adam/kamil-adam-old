@@ -1,5 +1,7 @@
 ---
 title:    'Problem wywołań cebulowych w Scali'
+redirect_from:
+  - scalapipe
 author:   TheKamilAdam
 category: scala-native
 tags:     operator

@@ -139,7 +139,7 @@ Tak, **[Clojure](/posts-by-langs/clojure)** posiada dużo lukru składniowego,
 Po co nam dwa operatory potoku, tj `|>` i `<|`?
 
 Otóż `|>` dodaje argument na początku listy parametrów, a `<|` - na końcu listy.
-Czyli jeśli w języku **[Perl](/posts-by-langs/perl) 5 wprowadzono by oba operatory to moglibyśmy wywołać:
+Czyli jeśli w języku **[Perl](/posts-by-langs/perl)** 5 wprowadzonoby oba operatory to moglibyśmy wywołać:
 
 ```perl
 (0, 1, 2, 3) <| grep { $_ != 2} <| map { $_ * 2})

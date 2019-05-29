@@ -1,6 +1,6 @@
 ---
 title: "Git - submoduły i aliasy"
-author:   kamil-adam
+author:   TheKamilAdam
 category: cli
 tags:     cli git alias
 labels:   submodule

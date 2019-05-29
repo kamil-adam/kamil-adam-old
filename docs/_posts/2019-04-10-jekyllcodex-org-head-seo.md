@@ -1,6 +1,6 @@
 ---
 title:    "jekyllcodex.org - problem ze skryptem seo"
-author:   kamil-adam
+author:   TheKamilAdam
 category: writeonlydoc
 tags:     jekyll blog jekyllcodex seo
 labels:

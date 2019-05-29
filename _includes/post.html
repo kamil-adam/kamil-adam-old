@@ -2,6 +2,9 @@
   {{ post.content }}
 
    <footer>
+       <nav class="tags">
+           Autor: @{{post.author}}
+       </nav>
     <nav class="tags">
       {% assign tags = post.tags | sort %}
       Tagi:

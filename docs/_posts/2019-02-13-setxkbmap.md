@@ -1,6 +1,6 @@
 ---
 title:    "setxkbmap - Jak szybko zmienić układ klawiatury z konsoli na Ubuntu?"
-author:   kamil-adam
+author:   TheKamilAdam
 category: cli
 tags:     cli bash ubuntu
 labels:

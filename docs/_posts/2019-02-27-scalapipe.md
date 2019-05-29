@@ -1,6 +1,6 @@
 ---
 title:    'Problem wywołań cebulowych w Scali'
-author:   kamil-adam
+author:   TheKamilAdam
 category: resentiment
 tags:     bash jekyll scalaz operator
 labels:   lips f# ocaml hack

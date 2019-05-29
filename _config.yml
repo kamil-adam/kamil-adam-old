@@ -48,6 +48,9 @@ linkedin_url:       https://www.linkedin.com/in/kamil-żabiński/
 #pinterest_url:
 #instagram_url:
 
+jekyll-mentions:
+  base_url: https://twitter.com
+
 collections_dir: docs
 collections:
   categories:

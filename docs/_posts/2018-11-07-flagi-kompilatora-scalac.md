@@ -1,6 +1,6 @@
 ---
 title:    "Flagi kompilatora Scalac"
-author:   kamil-adam
+author:   TheKamilAdam
 category: resentiment
 tags:     sbt compiler scalafix
 labels:   scalac options

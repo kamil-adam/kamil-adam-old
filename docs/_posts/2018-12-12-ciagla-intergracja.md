@@ -1,6 +1,6 @@
 ---
 title:    "Ciągła integracja, ciągła kontrola, ciągła Scala"
-author:   kamil-adam
+author:   TheKamilAdam
 category: resentiment
 tags:     sbt scala-native clang ubuntu
 labels:   coveralls continuous-integration travis-ci

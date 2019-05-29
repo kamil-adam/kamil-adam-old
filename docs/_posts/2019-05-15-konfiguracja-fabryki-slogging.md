@@ -1,6 +1,6 @@
 ---
 title:    'Konfiguracja fabryki loggerów z biblioteki slogging w Scali'
-author:   kamil-adam
+author:   TheKamilAdam
 category: resentiment
 tags:     scala-js scala-jvm scala-native slogging library factory
 labels:

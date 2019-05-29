@@ -1,6 +1,6 @@
 ---
 title:    "Docker - usuwanie obrazów"
-author:   kamil-adam
+author:   TheKamilAdam
 category: cli
 tags:     cli alias
 labels:   docker

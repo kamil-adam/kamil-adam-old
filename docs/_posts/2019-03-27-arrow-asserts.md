@@ -1,6 +1,6 @@
 ---
 title:    "uTest - operator Arrow Asserts"
-author:   kamil-adam
+author:   TheKamilAdam
 category: resentiment
 tags:     utest operator
 labels:

@@ -1,6 +1,6 @@
 ---
 title:    'Prosty sposób na zmianę historii Gita'
-author:   kamil-adam
+author:   TheKamilAdam
 category: cli
 tags:     git ubuntu
 labels:

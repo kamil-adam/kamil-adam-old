@@ -1,9 +1,9 @@
 ---
 title:    "Dlaczego warto prowadzić bloga o programowaniu"
 author:   TheKamilAdam
-category: thoughts github
-tags:     blog
-labels:   thoughts
+category: thoughts
+tags:     blog github
+labels:
 langs:    scala java
 ---
 

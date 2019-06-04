@@ -2,7 +2,7 @@
 title:    'Krótki opis konstrukcji kompilatorów GCC, LLVM i Clang'
 author:   TheKamilAdam
 category: onions
-tags:     clang llvm compiler parser lexer ast scala-native cli
+tags:     clang llvm compiler parser lexer ast scala-native cli interface
 labels:   gcc ir r
 langs:    haskell java kotlin lua python ruby crystal julia pony rust go lisp
 redirect_from:
@@ -120,7 +120,7 @@ Technicznie [Clang](<https://clang.llvm.org/>) to front-end dla projektu **[LLVM
 kompilujący języki z rodziny C
 (C, C ++, Objective C, OpenCL, CUDA i RenderScript).
 
-W praktyce [Clang](<https://clang.llvm.org/get_started.html>) to kompilator maksymalnie zgodny z interface GCC
+W praktyce [Clang](<https://clang.llvm.org/get_started.html>) to kompilator maksymalnie zgodny z **[interfejsem](/posts-by-tags/interface)** GCC
 
 Można w swoim projekcie podmienić GCC na Clang i cieszyć się szybszą i lepszą kompilacją kodu.
 

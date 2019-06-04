@@ -2,7 +2,7 @@
 title:    "Biblioteki do parsowania dla języka Scala"
 author:   TheKamilAdam
 category: resentiment
-tags:     library utest fastparse json parser lexer ast compiler
+tags:     library utest fastparse json parser lexer ast compiler xml properties interface
 labels:   dsl parboiled2
 langs:    scala
 redirect_from:
@@ -32,12 +32,12 @@ Czasem jednak istnieje potrzeba napisania parsera już istniejącego języka,
 gdy np. piszesz własny tool do formatowania kodu.
 * Parsowanie z serializowanych danych -
 z serializowane dane można przesyłać i przechowywać w formatach tekstowych takich jak
-**[JSON](/posts-by-tags/json)**, CSV, JSON Lines (połączenie zalet formatów JSON i CSV), XML i wielu innych.
+**[JSON](/posts-by-tags/json)**, CSV, JSON Lines (połączenie zalet formatów JSON i CSV), **[XML](/posts-by-tags/xml)** i wielu innych.
 Ale możliwe, że chciałbyś napisać parser własnego formatu zoptymalizowany pod pewne konkretne wymagania.
 Jak np. [Rison](https://github.com/Hronom/jackson-dataformat-rison),
 JSON zmodyfikowany w taki sposób by móc go przesyłać bezpośrednio w adresie url.
 * Parsowanie konfiguracji -
-teoretycznie każdą konfigurację można zapisać w Javowych plikach Properties lub formacie JSON,
+teoretycznie każdą konfigurację można zapisać w Javowych plikach **[Properties](/posts-by-tags/properties)** lub formacie JSON,
 ewentualnie Yamlu (nadzbiorze formatu JSON) albo XMLu.
 Powstają jednak cały czas nowe formaty dedykowane do przechowywania konfiguracji jak
 [Hocon](<https://github.com/lightbend/config>) ([Shocon](<https://github.com/jvican/stoml>))
@@ -66,7 +66,7 @@ Zużywały mało pamięci, co było ważne w czasach procesorów ośmiobitowych,
 Dodatkowo, ponieważ drzewo AST było na bierząco konsumowane,
 utrodniona była wieloetapowa optymalizacja wynikowego kodu
 i wynikowy kod także był wolny.
-W ciemnych wiekach średnich parsery generowało się za pomocą narzędzi Yacc i Lex lub podobnych ze zbliżonym interfejsem.
+W ciemnych wiekach średnich parsery generowało się za pomocą narzędzi Yacc i Lex lub podobnych ze zbliżonym **[interfejsem](/posts-by-tags/interface)**.
 Były one konfigurowane we własnym języku,
 podobnym do notacja Backusa-Naura (ang. **Backus-Naur Form**, **BNF**)
 oraz generowane przed właściwą kompilacją.

@@ -2,9 +2,9 @@
 title:    'Krótki opis konstrukcji kompilatorów GCC, LLVM i Clang'
 author:   TheKamilAdam
 category: onions
-tags:     clang llvm compiler parser lexer ast scala-native cli interface
+tags:     clang llvm compiler parser lexer ast scala-native cli interface jvm
 labels:   gcc ir r
-langs:    haskell java kotlin lua python ruby crystal julia pony rust go lisp
+langs:    haskell kotlin lua python ruby crystal julia pony rust go lisp
 redirect_from:
   - gcc-llvm-clang
 ---
@@ -134,7 +134,7 @@ ActionScript,
 C#,
 Common Lisp,
 **[Haskell](/posts-by-langs/haskell)**,
-**[Java bytecode](/post-by-langs/java)**,
+**[Java bytecode](/post-by-tags/jvm)**,
 **[Kotlin](/posts-by-langs/kotlin)**,
 **[Lua](/posts-by-langs/lua)**,
 **[Python](/posts-by-langs/python)**,

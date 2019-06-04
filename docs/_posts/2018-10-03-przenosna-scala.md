@@ -2,7 +2,7 @@
 title:    "Przenośna Scala"
 author:   TheKamilAdam
 category: resentiment
-tags:     scala-jvm scala-js scala-native sbt clang compiler transpiler
+tags:     scala-jvm scala-js scala-native sbt clang compiler transpiler llvm
 labels:   jvm net native
 langs:    scala haskell erlang rust go javascript
 redirect_from:
@@ -61,7 +61,8 @@ jest to,
 że są to języki kompilowane do postaci natywnej,
 a programy w nich pisane mogą być dostarczane do klienta pod postacią jednego pliku.
 
-To samo ze Scalą robi **[kompilator](/posts-by-tags/compiler)** [ScalaNative](<http://www.scala-native.org/en/v0.3.8/>).
+To samo ze Scalą robi **[kompilator](/posts-by-tags/compiler)** [ScalaNative](<http://www.scala-native.org/en/v0.3.8/>)
+oparty na [LLVM](/posts-by-tags/llvm).
 Niestety dalej jest w wersji eksperymentalnej i nie posiada np. wielowątkowości.
 Co czyni go na razie tylko zabawką dla nerdów i np. ... DevOpsów oraz QA.
 Bo o ile jednowątkowy program na produkcji zwykle nie ma sensu,

@@ -2,8 +2,8 @@
 title:    "Biblioteki do parsowania dla języka Scala"
 author:   TheKamilAdam
 category: resentiment
-tags:     library utest fastparse json parser lexer ast compiler xml properties interface
-labels:   dsl parboiled2
+tags:     library utest fastparse json parser lexer ast compiler xml properties interface dsl
+labels:   parboiled2
 langs:    scala
 redirect_from:
   - biblioteki-do-parserowania
@@ -43,7 +43,7 @@ Powstają jednak cały czas nowe formaty dedykowane do przechowywania konfigurac
 [Hocon](<https://github.com/lightbend/config>) ([Shocon](<https://github.com/jvican/stoml>))
 lub
 [Toml](<https://github.com/toml-lang/toml>) ([Stoml](<https://github.com/jvican/stoml>)).
-* Parsowanie języka domenowego (ang. *domain-specific language*, *DSL*) -
+* Parsowanie języka domenowego (ang. *domain-specific language*, **[DSL](/posts-by-tags/dsl**) -
 czasem prosta konfiguracja nie wystarcza i potrzebujemy czegoś więcej.
 Jeśli potrzebujesz prostych wyrażeń (np. relacji) wczytywanych z pliku możesz spróbować zaadoptować jeden z języków wyrażeń (ang. *Expression Language*, *EL*) jak
 SpEL,

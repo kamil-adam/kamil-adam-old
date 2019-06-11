@@ -3,8 +3,8 @@ title:    'Functional Miners - Programowanie Funkcyjne dla Każdego'
 author:   TheKamilAdam
 category: relationships
 tags:     monad
-labels:   branfuck subleq monoid
-langs:    elixir clojure scala  
+labels:   brainfuck subleq monoid
+langs:    elixir clojure scala java haskell
 redirect_from:
   - fun-miners-programownnie-funkcyjne-dla-kazdego
   - programownnie-funkcyjne-dla-kazdego
@@ -74,7 +74,7 @@ ale nie da się wyrazić rekurencji,
 więc dodaje się nowe operatory i traci się kompletność w sensie turinga.
 
 Jeśli ktoś chciałby zobaczyć rachunek lambda w bardziej przystępnej formie, 
-czyli interaktywnie w Javie to polecam prezentacje Jarosława Ratajskiego (@Jarek): 
+czyli interaktywnie w **[Javie](/posts-by-langs/java)** to polecam prezentacje Jarosława Ratajskiego (@jarek000000):
 * W warszawie - *[WJUG #183 - Lambda Core: Hardcore - Jarosław Ratajski](<https://youtu.be/3GJpyHwzuh0>)* 
 * W Łodzi - *[Lambda Core - Hardcore - Jarek Ratajski](<https://youtu.be/TYAjT3GQHP4>)*
 

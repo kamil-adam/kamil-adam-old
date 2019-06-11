@@ -212,6 +212,8 @@ git add *.elm
 git commit -m 'dodanie frontendu w języku Elm, dialekcie języka Haskell transpilowanym do JS'
 git add *.ps
 git commit -m 'dodanie backend-for-frontend w języku PureScript, dialekcie języka Haskell transpilowanym do JS'
+git add *.fr
+git commit -m 'dodanie backendu w języku Frege, dialekcie języka Haskell na JVM'
 git add *.eta
 git commit -m 'dodanie backendu w języku Eta, dialekcie języka Haskell na JVM'
 ```
@@ -223,7 +225,8 @@ I za pomocą polecenia `git rebase -i HEAD~9` możemy zobaczyć wynik:
 ```bash
 pick 1234567 dodanie frontendu w języku Elm, dialekcie języka Haskell transpilowanym do JS
 pick 2345678 dodanie backendu w języku PureScript, dialekcie języka Haskell transpilowanym do JS
-pick 3456789 dodanie backendu w języku Eta, dialekcie języka Haskell na JVM
+pick 3456789 dodanie backendu w języku Frege, dialekcie języka Haskell na JVM
+pick 4567891 dodanie backendu w języku Eta, dialekcie języka Haskell na JVM
 pick 3333333 dobre zatwierdzenie, bo małe
 pick 4444444 dobre zatwierdzenie, bo małe
 pick 5555555 dobre zatwierdzenie, bo małe

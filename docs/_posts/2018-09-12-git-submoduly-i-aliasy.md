@@ -2,7 +2,7 @@
 title: "Git - submoduły i aliasy"
 author:   TheKamilAdam
 category: cli
-tags:     cli git alias
+tags:     cli git alias interpreter
 labels:   submodule
 langs:    java javascript
 redirect_from:
@@ -35,7 +35,7 @@ wykonane w folderze projektu.
   1. Biblioteki trzeba wydawać i trzymać je w menedżerze repozytoriów binarnych (ang. *Binary Repository Manager*),
 a takiego menedżera trzeba gdzieś zainstalować.
   2. Menedżer repozytorium binarnych może kosztować, np. dla języka **[Java](/posts-by-langs/java)** jest za darmo, a dla języka **[JavaScript](/posts-by-langs/javascript)** już niekoniecznie.
-  3. W językach skryptowych biblioteki są często instalowane do interpretera
+  3. W językach skryptowych biblioteki są często instalowane do **[interpretera](/posts-by-tags/interpreter)**
   co może utrudniać instalację programu klientowi
 (przykład z pierwszej wersji [Git-Tools-Submodules](<https://git-scm.com/book/en/v1/Git-Tools-Submodules>)).
   4. Nie wszystko da się umieścić w bibliotece, w tym wypadku jest to skrypt do budowania projektu.

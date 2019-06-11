@@ -2,7 +2,7 @@
 title:    'Krótki opis konstrukcji kompilatorów GCC, LLVM i Clang'
 author:   TheKamilAdam
 category: onions
-tags:     clang llvm compiler parser lexer ast scala-native cli interface jvm
+tags:     clang llvm compiler parser lexer ast scala-native cli interface jvm interpreter
 labels:   gcc ir r
 langs:    haskell kotlin lua python ruby crystal julia pony rust go lisp
 redirect_from:
@@ -88,7 +88,7 @@ dwóch ulubionych językach [rms](<https://pl.wikipedia.org/wiki/Richard_Stallma
 Dzięki temu połączeniu w GCC jest osiągany polimorfizm.
 
 Kompilacja GCC składa się z kilku etapów.
-Pierwszym jest skompilowanie własnej wersji interpretera **[Lispa](/posts-by-langs/lisp)** napisanego w C.
+Pierwszym jest skompilowanie własnej wersji **[interpretera](/posts-by-tags/interpreter)** **[Lispa](/posts-by-langs/lisp)** napisanego w C.
 Następnie wczytywany jest deklaratywny kod w Lispie opisujący docelową architekturę.
 Na podstawie kodu w Lispie generowany jest kod w C dla docelowej architektury.
 Kompilowany jest kod dla docelowej architektury.
@@ -108,7 +108,7 @@ konwertuje bitkod LLVM (pliki *.bc) do kodu czytelnego dla człowieka w języku 
 optymalizuje kod w języku asemblera LLVM
 * [llc](<http://llvm.org/docs/CommandGuide/llc.html>) - **[Kompilator](/posts-by-tags/compiler)** LLVM, 
 kompiluje kod w języku asemblera LLVM na kod w języku asemblera docelowej architektury
-* [lli](<http://llvm.org/docs/CommandGuide/lli.html>) - Interpreter (sic!) LLVM, 
+* [lli](<http://llvm.org/docs/CommandGuide/lli.html>) - **[Interpreter](/posts-by-tags/interpreter)** (sic!) LLVM,
 wykonuje kod
 * i wiele innych...
 

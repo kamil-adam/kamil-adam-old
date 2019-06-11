@@ -10,9 +10,9 @@ redirect_from:
   - programownnie-funkcyjne-dla-kazdego
 ---
 
-2019-05-21 odbyło się spotkanie *Functional Miners* (@fun_minors)
+2019-05-21 odbyło się spotkanie *Functional Miners* (@fun_miners)
 w *HackerSpace Silesia* (@hs_silesia) 
-o tematyce *Programowanie Funkcyjne dla Każdego*
+o tematyce *Programowanie Funkcyjne dla Każdego*.
 Wydarzyły się dwie prezentacje:
 * Wojciech Gawroński - Functional Programming in the Wild
 * Andrzej Spiess - From \x.x to Facebook - Introduction to Lambda Calculus
@@ -66,12 +66,12 @@ Andrzej (@ninjazoete) przygotował [prezentację](<https://youtu.be/nZuOyQalVW4>
 będącą bardzo teoretycznym i historycznym wprowadzeniem do [rachunku lambda](<https://pl.wikipedia.org/wiki/Rachunek_lambda>).
 
 Najważniesze punkty, które zrozumiałem to:
-* Problemowi stopu z Maszyny Turinga w rachunku lambda odpowieda problem nieredukowalnych lambd do postaci normalnej.
+* Problemowi stopu z Maszyny Turinga w rachunku lambda odpowiada problem nieredukowalnych lambd do postaci normalnej.
 * **[Haskell](/posts-by-langs/haskell)** jest kompilowany do HSC CORE, 
 który składa się 26 rodzajów konstruktorów (rachunek lambda + systemu F + kowersja + parametryczny polimorfizm) 
  * W typowanych lambdach problem stopu nie istnieje, 
 ale nie da się wyrazić rekurencji,
-wiec dodaje się nowe operatory i traci się kompletność w sensie turinga.
+więc dodaje się nowe operatory i traci się kompletność w sensie turinga.
 
 Jeśli ktoś chciałby zobaczyć rachunek lambda w bardziej przystępnej formie, 
 czyli interaktywnie w Javie to polecam prezentacje Jarosława Ratajskiego (@Jarek): 
@@ -82,8 +82,8 @@ Najważniejsza rzecz z tego wykładu to to, że:
 > Wszystko to co robicie da się zrobić czysto funkcyjnie, 
 to jest udowodnione przez [Turinga](<https://pl.wikipedia.org/wiki/Alan_Turing>)
 
-Repozytorium z kodem do analizy lambd -*[Lambda analysis package](<https://github.com/jarekratajski/badlam>)*.
+Repozytorium z kodem do analizy lambd - *[Lambda analysis package](<https://github.com/jarekratajski/badlam>)*.
 
 ## Podsumowanie
 
-Z niecierpliwością czekam na kolejne wykłady w ramach *Functional Miners* (@fun_minors)
+Z niecierpliwością czekam na kolejne wykłady w ramach *Functional Miners* (@fun_miners)

@@ -13,13 +13,16 @@ Wiele osób pyta się,
 **który język programowania wybrać na początek** jako pierwszy język do nauki.
 Wiele jednak zależy od tego do czego chcemy użyć tego języka programowania.
 Dlatego wybrałem zwycięzców w czterech kategoriach:
-* dynamicznie typowany język skryptowy ogólnego przeznaczenia
-* statycznie typowany korpo język
-* fullstack język, który można używać do pisania frontendu i backendu
-* szybki język natywny działający bez maszyny wirtualnej i interpretera
+1. dynamicznie typowany język skryptowy ogólnego przeznaczenia 
+2. statycznie typowany korpo język
+3. fullstack język, który można używać do pisania frontendu i backendu
+4. szybki język natywny działający bez maszyny wirtualnej i interpretera
+
+W tym artykule skupię się na zwyciężcy pierwszej kategorii,
+czyli języku skryptowym ogólnego przeznaczenia.
 
 **Ważna uwaga!**
-Wpis nie jest sponsorowany przez Google,
+Artykuł nie jest sponsorowany przez Google,
 mimo że każdy z tych języków jest używany przez Google.
 Nie jest też sponsorowany przez JetBrains.
 Po prostu uważam,

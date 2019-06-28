@@ -14,7 +14,7 @@ Wiele osób pyta się,
 Wiele jednak zależy od tego do czego chcemy użyć tego języka programowania.
 Dlatego wybrałem zwycięzców w czterech kategoriach:
 1. dynamicznie typowany język skryptowy ogólnego przeznaczenia 
-2. statycznie typowany korpo język
+2. [statycznie typowany korpo język](/ktory-jezyk-programowania-wybrac-korpo-jezyk)
 3. fullstack język, który można używać do pisania frontendu i backendu
 4. szybki język natywny działający bez maszyny wirtualnej i interpretera
 
@@ -113,6 +113,7 @@ ale bardzo możliwe,
 
 [Język skryptowy]: https://pl.wikipedia.org/wiki/J%C4%99zyk_skryptowy
 [Tiobe]: https://www.tiobe.com/tiobe-index/
+
 [IEEE]: https://spectrum.ieee.org/at-work/innovation/the-2018-top-programming-languages
 [PyCharm]: https://www.jetbrains.com/pycharm/
 [virtualenv]: https://pypi.org/project/virtualenv/

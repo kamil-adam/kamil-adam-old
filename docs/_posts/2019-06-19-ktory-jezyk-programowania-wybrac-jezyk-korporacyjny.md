@@ -1,10 +1,10 @@
- ---
+---
 title:    'Który język programowania wybrać na początek - język korporacyjny'
 author:   TheKamilAdam
 category: onions
 tags:     blog bash api
 labels:
-langs:    java scala kotlinclojure frege eta go python ruby haskell
+langs:    java scala kotlin clojure frege eta go python ruby haskell
 redirect_from:
   - ktory-jezyk-programowania-wybrac-jezyk-korporacyjny
 ---

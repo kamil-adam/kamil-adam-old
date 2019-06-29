@@ -8,7 +8,7 @@ title: {{ page.tag }}
     <h1 class="posts-title">Tag: {{ page.tag }}</h1>
   </header>
 
-  <i>{{ page.content }}</i>
+  {{ page.content }}
 
   <dl class="posts-nav">
     {% for post in site.posts %}
@@ -33,7 +33,7 @@ title: {{ page.tag }}
       {% assign langs_size = langs | size %}
       {% if 0 < langs_size %}
         <li>
-      Języki:
+      Języki programowania:
       {% for lang in langs %}
       <a href="{{ site.baseurl }}/posts-by-langs/{{ lang }}">{{ lang }}</a>
       {% endfor %}

@@ -2,7 +2,7 @@
 title:    'Czy nadaję się na programistę? Inne możliwości w IT'
 author:   TheKamilAdam
 category: thoughts
-tags:     blog bash api
+tags:     blog bash api gui
 labels:
 langs:    perl python ruby
 redirect_from:
@@ -179,13 +179,13 @@ czyli **dokumentalistów**.
 Osobną kategorią jest **dokumentacja techniczna**, pisana przez **dokumentalistów technicznych**.
 Pod tą nazwą kryją się co najmniej dwa rodzaje dokumentacji:
 * Dokumentacja kierowana do *SysOpsów* i *DevOpsów* opisująca jak zainstalować aplikację.
-* Dokumentacja opisująca zewnętrzne **[API](/posts-by-tags/api)** aplikacji skierowana do Testerów i Programistów
+* Dokumentacja opisująca zewnętrzne **[API]** aplikacji skierowana do Testerów i Programistów
 
 Co ciekawe, często w ramach oszczędności, jest ona pisana także przez osoby nietechniczne.
 
 ### UI Designer i UX Designer
 
-W teorii **UI Designer** rysuje jak ma wyglącać graficzny interfejs użytkownika (ang. *graphical user interface*, *GUI*),
+W teorii **UI Designer** rysuje jak ma wyglącać graficzny interfejs użytkownika (ang. *graphical user interface*, **[GUI]**),
 a *UX Designer* - jak ma się zachowywać.
 W praktyce wiele zależy od firmy.
 Często jest to stanowisko łączone, czyli *UI/UX Designer*.
@@ -213,3 +213,5 @@ Podsumowując nietechniczne stanowiska w typowej firmie IT na które najłatwiej
 * UI/UX Designer - trzeba mieć zmysł artystyczny
 * Sprzedawca i Marketingowiec - tak samo jak wszędzie, IT nie jest tu w żaden sposób wyjątkowe.
 
+[API]: /posts-by-tags/api
+[GUI]: /posts-by-tags/gui

@@ -5,10 +5,8 @@ title: {{ page.lang }}
 <section class="posts">
   <header>
     {% include breadcrumbs.html %}
-    <h1 class="posts-title">Język: {{ page.lang | capitalize }}</h1>
+    <h1 class="posts-title">Język programowania: {{ page.lang | capitalize }}</h1>
   </header>
-
-  <i>{{ page.content }}</i>
 
   <dl class="posts-nav">
     {% for post in site.posts %}
@@ -42,4 +40,8 @@ title: {{ page.lang }}
     {% endif %}
     {% endfor %}
   </dl>
+
+  <h2> Linki zewnętrzne </h2>
+  {{ page.content }}
+
 </section>

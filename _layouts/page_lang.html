@@ -8,8 +8,6 @@ title: {{ page.lang }}
     <h1 class="posts-title">Język: {{ page.lang | capitalize }}</h1>
   </header>
 
-  <i>{{ page.content }}</i>
-
   <dl class="posts-nav">
     {% for post in site.posts %}
     {% assign langs = post.langs | split: ' ' %}
@@ -42,4 +40,8 @@ title: {{ page.lang }}
     {% endif %}
     {% endfor %}
   </dl>
+
+  <h2> Linki zewnętrzne </h2>
+  {{ page.content }}
+
 </section>

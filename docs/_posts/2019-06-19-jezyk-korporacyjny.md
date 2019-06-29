@@ -2,9 +2,9 @@
 title:    'Który język programowania wybrać na początek - język korporacyjny'
 author:   TheKamilAdam
 category: onions
-tags:     blog bash api
+tags:     jvm
 labels:
-langs:    java scala kotlin clojure frege eta go python ruby haskell
+langs:    java scala kotlin clojure frege eta go python ruby lisp haskell ocaml
 redirect_from:
   - onions/2019/06/19/ktory-jezyk-programowania-wybrac-jezyk-korporacyjny
   - ktory-jezyk-programowania-wybrac-jezyk-korporacyjny
@@ -91,7 +91,7 @@ ale powoli zmierza do języka w którym także można używać wszystkich parady
 W skrócie *Java z opcjonalnymi typami*, 
 co jest oczywiście **wadą**
 * Dialekty istniejących języków (niekompatybilne na poziomie kodu źródłowego):
-  * **[Clojure]** - dialekt języka **Lisp**, posiada opcjonalny system @TypedClojure
+  * **[Clojure]** - dialekt języka **[Lisp]**, posiada opcjonalny system @TypedClojure
   * **[Frege]** - dialekt języka **[Haskell]**, kompilowany do klas Javy, posiadający imperatywne wejście-wyjście
 * Nowe implementacje istniejących języków (kompatybilne na poziomie kodu źródłowego):
   * **Jython** -> **[Python]**
@@ -153,12 +153,13 @@ ponieważ nowe języki używają bibliotek napisanych w swoich starszych kuzynac
 
 [Python]: /posts-by-langs/python
 [Ruby]: /posts-by-langs/ruby
+[Lisp]: /posts-by-langs/lisp
 [Haskell]: /posts-by-langs/haskell
 
 [C++/CLI]: https://pl.wikipedia.org/wiki/C%2B%2B/CLI
 [VB.NET]: https://pl.wikipedia.org/wiki/Visual_Basic_.NET
 [Visual Basic]: https://pl.wikipedia.org/wiki/Visual_Basic
 [F#]: https://pl.wikipedia.org/wiki/F_Sharp
-[OCaml]: https://pl.wikipedia.org/wiki/OCaml
+[OCaml]: /posts-by-langs/ocaml
 
 [JVM]: /posts-by-tags/jvm

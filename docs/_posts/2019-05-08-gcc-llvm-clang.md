@@ -2,7 +2,7 @@
 title:    'Krótki opis konstrukcji kompilatorów GCC, LLVM i Clang'
 author:   TheKamilAdam
 category: onions
-tags:     clang llvm compiler parser lexer ast scala-native cli interface jvm interpreter
+tags:     clang llvm compiler parser lexer ast scala-native cli interface jvm interpreter assembler
 labels:   gcc ir r
 langs:    haskell kotlin lua python ruby crystal julia pony rust go lisp
 redirect_from:
@@ -102,7 +102,7 @@ W skład LLVM wchodzi wiele bibliotek dostępnych także jako [polecenia standal
 Są to:
 * [llvm-as](<http://llvm.org/docs/CommandGuide/llvm-as.html>) - Asembler LLVM, 
 konwertuje kod czytelny dla człowieka w języku asemblera LLVM (pliki *.ll) do bitkodu LLVM (pliki *.bc)
-* [llvm-dis](<http://llvm.org/docs/CommandGuide/llvm-dis.html>) - Disassembler LLVM, 
+* [llvm-dis](<http://llvm.org/docs/CommandGuide/llvm-dis.html>) - Disaembler LLVM, 
 konwertuje bitkod LLVM (pliki *.bc) do kodu czytelnego dla człowieka w języku asemblera LLVM (pliki *.ll)
 * [opt](<http://llvm.org/docs/CommandGuide/opt.html>) - Optimizer LLVM, 
 optymalizuje kod w języku asemblera LLVM

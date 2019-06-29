@@ -3,8 +3,8 @@ title:    'Problem wywołań cebulowych w Scali'
 author:   TheKamilAdam
 category: resentiment
 tags:     bash jekyll scalaz operator
-labels:   lips f# ocaml hack
-langs:    scala kotlin clojure lisp perl elixir julia elm livescript
+labels:   f# hack
+langs:    scala kotlin clojure lisp perl elixir julia elm livescript ocaml
 redirect_from:
   - scalapipe
 ---
@@ -111,7 +111,7 @@ data
 ```
 
 Został spopularyzowany przez język [Elixir](<https://hexdocs.pm/elixir/Kernel.html#%7C%3E/2>),
-ale wcześniej był już używany w językach [OCalm](http://caml.inria.fr/pub/docs/manual-ocaml/libref/Pervasives.html#VAL%28%7C%3E%29)
+ale wcześniej był już używany w językach [OCaml](http://caml.inria.fr/pub/docs/manual-ocaml/libref/Pervasives.html#VAL%28%7C%3E%29)
 oraz [F#](https://en.wikibooks.org/wiki/F_Sharp_Programming/Higher_Order_Functions#The_.7C.3E_Operator).
 W tym ostatnim istnieje nawet możliwość samodzielnego zdefiniowania operatora potoku za pomocą linii:
 ```F#

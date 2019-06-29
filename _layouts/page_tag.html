@@ -8,7 +8,7 @@ title: {{ page.tag }}
     <h1 class="posts-title">Tag: {{ page.tag }}</h1>
   </header>
 
-  <i>{{ page.content }}</i>
+  {{ page.content }}
 
   <dl class="posts-nav">
     {% for post in site.posts %}

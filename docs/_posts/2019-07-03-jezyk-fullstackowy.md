@@ -15,7 +15,7 @@ Dlatego wybrałem zwycięzców w czterech kategoriach:
 1. [dynamicznie typowany język skryptowy ogólnego przeznaczenia](/jezyk-skryptowy)
 2. [statycznie typowany język korporacyjny używany do pisania długowiecznych aplikacji klasy *enterprise*](/jezyk-korporacyjny)
 3. język *fullstackowy*, który można używać do pisania frontendu i backendu
-4. szybki język natywny działający bez maszyny wirtualnej i interpretera
+4. [szybki język natywny działający bez maszyny wirtualnej i interpretera](/jezyk-natywny)
 
 W tym artykule skupię się na zwycięzcy trzeciej kategorii,
 świętym Graalu programowania webowego, 
@@ -24,7 +24,7 @@ w którym można pisać zarówno frontend jak i backend.
 
 **Ważna uwaga!**
 Artykuł nie jest sponsorowany przez Google,
-mimo że każdy ze zwycięskich językówf jest używany przez Google.
+mimo że każdy ze zwycięskich języków jest używany przez Google.
 Nie jest też sponsorowany przez JetBrains.
 Po prostu uważam,
 że JetBrains tworzy najlepsze IDE.

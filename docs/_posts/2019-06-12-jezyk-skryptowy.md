@@ -18,7 +18,7 @@ Dlatego wybrałem zwycięzców w czterech kategoriach:
 1. dynamicznie typowany język skryptowy ogólnego przeznaczenia 
 2. [statycznie typowany język korporacyjny używany do pisania długowiecznych aplikacji klasy *enterprise*](/jezyk-korporacyjny)
 3. [fullstack język, który można używać do pisania frontendu i backendu](/jezyk-fullstackowy)
-4. szybki język natywny działający bez maszyny wirtualnej i interpretera
+4. [szybki język natywny działający bez maszyny wirtualnej i interpretera](/jezyk-natywny)
 
 W tym artykule skupię się na zwyciężcy pierwszej kategorii,
 czyli języku skryptowym ogólnego przeznaczenia.

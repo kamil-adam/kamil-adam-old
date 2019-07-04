@@ -6,14 +6,16 @@ tags:     blog bash api
 labels:
 langs:    java scala kotlin clojure frege eta go python ruby haskell
 redirect_from:
+  - onions/2019/06/19/ktory-jezyk-programowania-wybrac-jezyk-korporacyjny
   - ktory-jezyk-programowania-wybrac-jezyk-korporacyjny
+  - jezyk-korporacyjny
 ---
 
 Wiele osób pyta się,
 **który język programowania wybrać na początek** jako pierwszy język do nauki.
 Wiele jednak zależy od tego do czego chcemy użyć tego języka programowania.
 Dlatego wybrałem zwycięzców w czterech kategoriach:
-1. [dynamicznie typowany język skryptowy ogólnego przeznaczenia](/ktory-jezyk-programowania-wybrac-jezyk-skryptowy)
+1. [dynamicznie typowany język skryptowy ogólnego przeznaczenia](/jezyk-skryptowy)
 2. statycznie typowany język korporacyjny używany do pisania długowiecznych aplikacji klasy *enterprise*
 3. fullstack język, który można używać do pisania frontendu i backendu
 4. szybki język natywny działający bez maszyny wirtualnej i interpretera

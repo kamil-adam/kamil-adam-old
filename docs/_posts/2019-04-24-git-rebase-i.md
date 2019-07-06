@@ -152,7 +152,7 @@ Czyli takiej, że najpierw znajdują się wszystkie rewizje zawierające refakto
 a dopiero później całe dodawanie nowej funkcjonalności,
 to łatwo moglibyśmy podzielić to na dwie gałęzie.
 
-Na szczęście nie ma nic prostrzego.
+Na szczęście nie ma nic prostszego.
 Wystarczy wpisać tylko w konsoli `git rebase -i HEAD~6` i zmienić kolejność rewizji na taką jak potrzebujemy!
 Należy tylko uważać na to by nie skasować żadnej linii,
 ponieważ skasowanie linii działa jak polecenie `drop`,

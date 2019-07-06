@@ -79,13 +79,13 @@ Różnice są także spore,
 jeśli chodzi o poszczególne miasta w Polsce.
 
 ## ... i pokonani
-Python powstał jako konkurencja dla języka **[Perl]** z prostrzą składnią.
+Python powstał jako konkurencja dla języka **[Perl]** z prostszą składnią.
 **[Perl]** posiadał mocno niespójną i trudną do nauki składnię.
 Wynika to z tego,
 że inspiracją dla Perla były narzędzia **[Bash]**, [AWK] i [Sed].
 
 Jednocześnie Python ciągle wygrywa z **[Ruby]**,
-ponieważ ma prostrzą składnię i [działa szybciej](<https://bulldogjob.pl/news/232-ktory-jezyk-programowania-jest-najszybszy>).
+ponieważ ma prostszą składnię i [działa szybciej](<https://bulldogjob.pl/news/232-ktory-jezyk-programowania-jest-najszybszy>).
 Jednak Ruby pozostaje bardzo ciekawym językiem programowania w którym powstały takie rzeczy jak:
 * [Sinatra] - wzorcowy mały framework webowy przeniesiony do wielu innych języków programowania,
 jak np. [Scalatra] lub [Spark]

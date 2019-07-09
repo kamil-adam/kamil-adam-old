@@ -2,8 +2,8 @@
 title:    "Jekyll i ciasteczka (pliki cookies)"
 author:   TheKamilAdam
 category: writeonlydoc
-tags:     jekyll blog jekyllcodex github-pages
-labels:   cookies jquery
+tags:     jekyll blog jekyllcodex github-pages jquery
+labels:   cookies
 langs:
 redirect_from:
   - jekyll-i-ciasteczka-pliki-cookies.

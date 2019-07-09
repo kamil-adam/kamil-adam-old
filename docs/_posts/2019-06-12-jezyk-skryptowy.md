@@ -4,7 +4,7 @@ author:   TheKamilAdam
 category: onions
 tags:     bash dsl bdd cst
 labels:
-langs:    python perl ruby elixir crystal lisp commonlisp scheme clojure
+langs:    python perl awk ruby elixir crystal lisp commonlisp scheme clojure
 redirect_from:
   - onions/2019/06/12/ktory-jezyk-programowania-wybrac-jezyk-skryptowy
   - ktory-jezyk-programowania-wybrac-jezyk-skryptowy
@@ -82,7 +82,7 @@ jeśli chodzi o poszczególne miasta w Polsce.
 Python powstał jako konkurencja dla języka **[Perl]** z prostszą składnią.
 **[Perl]** posiadał mocno niespójną i trudną do nauki składnię.
 Wynika to z tego,
-że inspiracją dla Perla były narzędzia **[Bash]**, [AWK] i [Sed].
+że inspiracją dla Perla były narzędzia **[Bash]**, **[AWK]** i [Sed].
 
 Jednocześnie Python ciągle wygrywa z **[Ruby]**,
 ponieważ ma prostszą składnię i [działa szybciej](<https://bulldogjob.pl/news/232-ktory-jezyk-programowania-jest-najszybszy>).
@@ -98,6 +98,7 @@ który stał się *de facto* standardem i został przeportowany dla wielu innych
 * [Capybara] - narzędzie to testów stron internetowych i aplikacji webowych
 
 Sama składnia języka **[Ruby]** była inspiracją dla języków **[Crystal]** i **[Elixir]**.
+Prawdopodobnych następców powolnego Rubiego.
 
 ## Podsumowanie
 Czy warto uczyć się języka skryptowego i Pythona w szczególności?
@@ -133,7 +134,7 @@ Jest coś szalonego w języku, którego zapis jest od razu jego drzewem **[CST]*
 [Stackless Python]: https://github.com/stackless-dev/stackless/wiki
 
 [Bash]: /posts-by-tags/bash
-[AWK]: https://pl.wikipedia.org/wiki/AWK
+[AWK]: /posts-by-langs/awk
 [Sed]: https://pl.wikipedia.org/wiki/Sed_(program)
 
 [Sinatra]: https://en.wikipedia.org/wiki/Sinatra_(software)

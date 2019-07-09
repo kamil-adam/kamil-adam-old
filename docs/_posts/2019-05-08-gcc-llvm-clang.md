@@ -2,14 +2,14 @@
 title:    'Krótki opis konstrukcji kompilatorów GCC, LLVM i Clang'
 author:   TheKamilAdam
 category: onions
-tags:     clang llvm compiler parser lexer ast scala-native cli interface jvm interpreter assembler
+tags:     clang llvm compiler parser lexer ast scala-native cli interface jvm interpreter assembler api bytecode
 labels:   gcc ir r
 langs:    haskell kotlin lua python ruby crystal julia pony rust go lisp
 redirect_from:
   - gcc-llvm-clang
 ---
 
-W dawnych czasach każdy dobry programista chciał napisać swój własny **[kompilator](/posts-by-tags/compiler)** języka C.
+W dawnych czasach każdy dobry programista chciał napisać swój własny **[kompilator]** języka C.
 Co prawda te czasy już minęły i dziś większość z nas programuje w językach o wiele bardziej złożonych niż C.
 Dzięki czemu jesteśmy w stanie pisać szybciej kod.
 Ale nadal warto znać podstawy budowy kompilatorów.
@@ -21,7 +21,7 @@ Dzida bojowa składa się z:
 
 ## Konstrukcja kompilatora
 Podobnie jest z kompilatorem.
-**[Kompilator](/posts-by-tags/compiler)** języka programowania składa się z:
+**[Kompilator]** języka programowania składa się z:
 1. front-endu, zależnego od języka wejściowego
 2. middle-endu, clou kompilatora
 3. back-endu, zależnego od architektury docelowej
@@ -32,8 +32,8 @@ Pojęcia front-end i back-end są starsze niż aplikacje jednostronicowe (ang. *
 
 ### Front-end
 Front-end kompilatora składa się z:
-1. analizatora leksykalnego (**[leksere](/posts-by-tags/lexer)**) - wynikiem działania jest ciąg leksemów (tokenów z typami)
-2. analizatora składniowego (**[parsera](/posts-by-tags/parser)**) - wynikiem jest drzewo **[AST](/posts-by-tags/ast)**
+1. analizatora leksykalnego (**[leksera]**) - wynikiem działania jest ciąg leksemów (tokenów z typami)
+2. analizatora składniowego (**[parsera]**) - wynikiem jest drzewo **[AST]**
 3. analizatora semantycznego - wynikiem jest zmodyfikowane drzewo AST z tablicą symboli. 
 Analizator semantyczny zajmuje się:
     * kontrolą nazw
@@ -41,7 +41,7 @@ Analizator semantyczny zajmuje się:
     * kontrolą poprawności instrukcji
 4. optymalizatora drzewa AST - wykonuje optymalizacje zależne od języka wejściowego
 5. generatora reprezentacji pośredniej (ang. *Intermediate representation*,  *IR*) -
-drzewo zostaje spłaszczone do uniwersalnego bytecodu lub uniwersalnego języka asemblerowego czytelnego dla człowieka
+drzewo zostaje spłaszczone do uniwersalnego kodu bajtowego lub uniwersalnego języka asemblerowego czytelnego dla człowieka
 
 ### Middle-end
 Zwany też optymalizatorem reprezentacji pośredniej.
@@ -49,7 +49,7 @@ Dokonuje optymalizacji uniwersalnych,
 czyli wszystkie optymalizacje niezależne od języka wejściowego i architektury docelowej.
 Z jednej strony jest to najmniej potrzebna część kompilatora.
 Z drugiej to właśnie rozbudowany optymalizator decyduje o tym, 
-który **[kompilator](/posts-by-tags/compiler)** jest najlepszy.
+który **[kompilator]** jest najlepszy.
 
 ### Back-end
 Back-end kompilatora składa się z:
@@ -73,8 +73,8 @@ Przykładem tej architektury jest architektura x86 oraz rodzina mikrokontroleró
 
 Przez lata najbardziej znanym opensoursowym i najlepszym kompilatorem o tej budowie był GCC
 (kiedyś *GNU C Compiler* , dziś *GNU Compiler Collection*).
-Jednak dziś powoli palmę pierwszeństwa odbiera mu **[LLVM](/posts-by-tags/llvm)**
-(kiedyś *Low Level Virtual Machine*, dziś nazwa się nie rozwija ponieważ jest to **[kompilator](/posts-by-tags/compiler)**, a nie maszyna wirtualna).
+Jednak dziś powoli palmę pierwszeństwa odbiera mu **[LLVM]**
+(kiedyś *Low Level Virtual Machine*, dziś nazwa się nie rozwija ponieważ jest to **[kompilator]**, a nie maszyna wirtualna).
 
 LLVM powstał z projektu badawczego na temat kompilacji.
 Naukowcy wzięli frond-end z GCC i dopisali własny middle-end i back-end.
@@ -83,32 +83,32 @@ ale dalej na otwartej licencji.
 
 Dlaczego naukowcy nie użyli middle-endu z GCC?
 Każdy kto spojrzał w kod GCC wie dlaczego.
-Ponieważ GCC jest napisany w języku C oraz **[Lispie](/posts-by-langs/lisp)**,
-dwóch ulubionych językach [rms](<https://pl.wikipedia.org/wiki/Richard_Stallman>).
+Ponieważ GCC jest napisany w języku C oraz języku **[Lisp]**,
+dwóch ulubionych językach [rms].
 Dzięki temu połączeniu w GCC jest osiągany polimorfizm.
 
 Kompilacja GCC składa się z kilku etapów.
-Pierwszym jest skompilowanie własnej wersji **[interpretera](/posts-by-tags/interpreter)** **[Lispa](/posts-by-langs/lisp)** napisanego w C.
+Pierwszym jest skompilowanie własnej wersji interpretera Lispa napisanego w C.
 Następnie wczytywany jest deklaratywny kod w Lispie opisujący docelową architekturę.
 Na podstawie kodu w Lispie generowany jest kod w C dla docelowej architektury.
 Kompilowany jest kod dla docelowej architektury.
 Niestety tego etapu nigdy nie udało mi się przejść więc nie wiem co dzieje się dalej.
 
-LLVM jest napisany w C++, języku który jako język obiektowy posiada polimorfizm out-of-the-box.
+**[LLVM]** jest napisany w C++, języku który jako język obiektowy posiada polimorfizm out-of-the-box.
 
 ## Główne programy/polecenia LLVM
 
-W skład LLVM wchodzi wiele bibliotek dostępnych także jako [polecenia standalone](<http://llvm.org/docs/CommandGuide/>).
+W skład LLVM wchodzi wiele bibliotek dostępnych także jako [polecenia standalone].
 Są to:
-* [llvm-as](<http://llvm.org/docs/CommandGuide/llvm-as.html>) - Asembler LLVM, 
+* [llvm-as] - **[Asembler]** LLVM, 
 konwertuje kod czytelny dla człowieka w języku asemblera LLVM (pliki *.ll) do bitkodu LLVM (pliki *.bc)
-* [llvm-dis](<http://llvm.org/docs/CommandGuide/llvm-dis.html>) - Disaembler LLVM, 
+* [llvm-dis] - Disasembler LLVM, 
 konwertuje bitkod LLVM (pliki *.bc) do kodu czytelnego dla człowieka w języku asemblera LLVM (pliki *.ll)
-* [opt](<http://llvm.org/docs/CommandGuide/opt.html>) - Optimizer LLVM, 
+* [opt] - Optimizer LLVM, 
 optymalizuje kod w języku asemblera LLVM
-* [llc](<http://llvm.org/docs/CommandGuide/llc.html>) - **[Kompilator](/posts-by-tags/compiler)** LLVM, 
+* [llc] - **[Kompilator]** LLVM, 
 kompiluje kod w języku asemblera LLVM na kod w języku asemblera docelowej architektury
-* [lli](<http://llvm.org/docs/CommandGuide/lli.html>) - **[Interpreter](/posts-by-tags/interpreter)** (sic!) LLVM,
+* [lli] - **[Interpreter]** (sic!) LLVM,
 wykonuje kod
 * i wiele innych...
 
@@ -116,11 +116,11 @@ wykonuje kod
 
 ### Clang ...
 
-Technicznie [Clang](<https://clang.llvm.org/>) to front-end dla projektu **[LLVM](/posts-by-tags/llvm)**
+Technicznie **[Clang]** to front-end dla projektu **[LLVM]**
 kompilujący języki z rodziny C
 (C, C ++, Objective C, OpenCL, CUDA i RenderScript).
 
-W praktyce [Clang](<https://clang.llvm.org/get_started.html>) to kompilator maksymalnie zgodny z **[interfejsem](/posts-by-tags/interface)** GCC
+W praktyce Clang to kompilator maksymalnie zgodny z **[API]** GCC
 
 Można w swoim projekcie podmienić GCC na Clang i cieszyć się szybszą i lepszą kompilacją kodu.
 
@@ -132,38 +132,38 @@ Ada, D, Delphi, Fortran.
 Także języki nienatywne zyskały swoją wersję natywną jak np.
 ActionScript,
 C#,
-Common Lisp,
-**[Haskell](/posts-by-langs/haskell)**,
-**[Java bytecode](/post-by-tags/jvm)**,
-**[Kotlin](/posts-by-langs/kotlin)**,
-**[Lua](/posts-by-langs/lua)**,
-**[Python](/posts-by-langs/python)**,
+**[CommonLisp]**,
+**[Haskell]**,
+**[Kod bajtowy]** Javy,
+**[Kotlin]**,
+**[Lua]**,
+**[Python]**,
 R,
-**[Ruby](/posts-by-langs/ruby)**,
-**[Scala](/posts-by-tags/scala-native)**.
+**[Ruby]**,
+**[Scala]**.
 Kompilatory wielu innych języków programowania powstały odrazu przy pomocy LLVM jak np.
-**[Crystal](/posts-by-langs/crystal)**,
-**[Julia](/posts-by-langs/julia)**,
-**[Pony](/posts-by-langs/pony)**,
-**[Rust](/posts-by-langs/rust)**,
+**[Crystal]**,
+**[Julia]**,
+**[Pony]**,
+**[Rust]**,
 Swift.
 
-Co ciekawe nie ma wśród nich języka **[Go](/posts-by-tags/go)**,
+Co ciekawe nie ma wśród nich języka **[Go]**.
 Plotki mówią że jest to spowodowane tym,
 że głównym sponsorem LLVM jest Apple.
 Ale LLVM jest używany przez Google w wielu innych projektach, 
-jak chociażby w Chromium/Chrom do kompilowania języka **[JavaScript](/posts-by-langs/javascript)**.
+jak chociażby w Chromium/Chrom do kompilowania języka **[JavaScript]**.
 Oficjalnym wytłumaczeniem jest to, że LLVM nie pozwalał na zarządzanie włóknami (ang. *fiber*), lekkimi procesami, 
 potrzebnymi do implementacji gorutyn (ang. *goroutines*).
 
 
 ### Przykładowa kompilacja za pomocą GCC i Clang
 
-Jako przykład skompilujemy interpreter języka **[Lua](/posts-by-langs/lua)**.
+Jako przykład skompilujemy interpreter języka **[Lua]**.
 Najpierw za pomocą kompilatora GCC, 
 a później za pomocą LLVM.
 
-Ściągamy repozytorium z kodem interpretera języka **[Lua](/posts-by-langs/lua)**:
+Ściągamy repozytorium z kodem interpretera języka **[Lua]**:
 ```bash
 https://github.com/lua/lua.git
 ```
@@ -184,7 +184,7 @@ U mnie było to:
 sudo apt-get install libreadline-dev
 ```
 
-Jeśli kompilacja przeszła uruchamiamy interpreter języka **[Lua](/posts-by-langs/lua)**:
+Jeśli kompilacja przeszła uruchamiamy interpreter języka **[Lua]**:
 ```bash
 ./lua
 ```
@@ -218,7 +218,7 @@ Więc instalujemy kompilator i ponawiamy kompilację:
 sudo apt install clang
 ```
 
-Jeśli kompilacja przeszła uruchamiamy interpreter języka **[Lua](/posts-by-langs/lua)**:
+Jeśli kompilacja przeszła uruchamiamy interpreter języka **[Lua]**:
 ```bash
 ./lua
 ```
@@ -229,7 +229,7 @@ print("Hello World")
 
 Widać,
 że GCC może zostać bezproblemowo zastąpiony przez Clang,
-ponieważ oba kompilatory mają zgodny interfejs **[CLI](/posts-by-tags/cli)**. 
+ponieważ oba kompilatory mają zgodny interfejs **[CLI]**. 
 
 ### Clang w szczegółach
 
@@ -269,4 +269,44 @@ clang lua.c -S -fomit-frame-pointer -o -
 ```
 
 ## Podsumowanie
-LLVM jest przyszłością i głównie ten projekt jest odpowiedzialny za wysyp nowych języków natywnych.
+**[LLVM]** jest przyszłością i głównie ten projekt jest odpowiedzialny za wysyp nowych języków natywnych.
+
+[Kompilator]: /posts-by-tags/compiler
+[Interpreter]: /posts-by-tags/interpreter
+[Asembler]: /posts-by-tags/assembler
+
+[leksera]: /posts-by-tags/lexer
+[parsera]: /posts-by-tags/parser
+[AST]: /posts-by-tags/ast
+
+[LLVM]: /posts-by-tags/llvm
+[Lisp]: /posts-by-langs/lisp
+[rms]: https://pl.wikipedia.org/wiki/Richard_Stallman
+
+[polecenia standalone]: http://llvm.org/docs/CommandGuide/
+[llvm-as]: http://llvm.org/docs/CommandGuide/llvm-as.html 
+[llvm-dis]: http://llvm.org/docs/CommandGuide/llvm-dis.html
+[opt]: http://llvm.org/docs/CommandGuide/opt.html 
+[llc]: http://llvm.org/docs/CommandGuide/llc.html 
+[lli]: http://llvm.org/docs/CommandGuide/lli.html
+
+[Clang]: /posts-by-tags/clang
+[API]: /posts-by-tags/api
+
+[CommonLisp]: /posts-by-langs/commonlisp
+[Haskell]: /posts-by-langs/haskell
+[Kod bajtowy]: /posts-by-tags/bytecode
+[Kotlin]: /posts-by-langs/kotlin
+[Lua]: /posts-by-langs/lua
+[Python]: /posts-by-langs/python
+[Ruby]: /posts-by-langs/ruby
+[Scala]: /posts-by-tags/scala-native
+[Crystal]: /posts-by-langs/crystal
+[Julia]: /posts-by-langs/julia
+[Pony]: /posts-by-langs/pony
+[Rust]: /posts-by-langs/rust
+
+[Go]: /posts-by-langs/go
+[JavaScript]: /posts-by-langs/javascript
+
+[CLI]: /posts-by-tags/cli

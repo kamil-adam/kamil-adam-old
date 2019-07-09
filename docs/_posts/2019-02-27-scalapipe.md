@@ -3,7 +3,7 @@ title:    'Problem wywołań cebulowych w Scali'
 author:   TheKamilAdam
 category: resentiment
 tags:     bash jekyll scalaz operator
-labels:   f# hack
+labels:
 langs:    scala kotlin clojure lisp perl elixir julia elm livescript ocaml
 redirect_from:
   - scalapipe

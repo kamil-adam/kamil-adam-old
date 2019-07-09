@@ -2,7 +2,7 @@
 title:    'Który język programowania wybrać na początek - język fullstackowy'
 author:   TheKamilAdam
 category: onions
-tags:     transpiler scala-js monad cli api interpreter
+tags:     transpiler scala-js monad cli api interpreter node-js jquery
 labels:   clojurescript udash kotlin-js postgresql
 langs:    java python scala kotlin haskell clojure javascript typescript purescript elm dart ruby ceylon
 redirect_from:
@@ -49,7 +49,7 @@ Początkowo głównym problemem z JavaScryptem było to,
 W niektórych przeglądarkach brakowało niektórych funkcji,
 w innych te same funkcje zachowywały się różnie.
 Spowodowało to powstawanie wielu różnych nakładek i bibliotek na JS,
-z czego jedna stała się *de facto* standardem - [JQuery].
+z czego jedna stała się *de facto* standardem - **[JQuery]**.
 
 Obecnie głównym problemem pisania aplikacji webowych jest to,
 że potrzebujemy osobnych programistów do tworzenia frontendu (*frontendowców*) 
@@ -106,7 +106,7 @@ stworzyć nowe języki programowania będące jak najbardziej podobne do JS,
 ale jednocześnie rozwiązujące znane w nim problemy.
 Te języki to m.in.:
 * **[CoffeeScript]** - pierwszy popularny, nowy język transpilowany do JS. Posiada klasy i *normalne* dziedziczenie,
-ale typowany dynamicznie. Promowany przez programistów [Ruby] we frameworku RoR
+ale typowany dynamicznie. Promowany przez programistów **[Ruby]** we frameworku RoR
 * **[TypeScript]** - rozszeżenie **[JS]** o statyczne typowanie i klasy
 * **[PureScript]** - **[Haskell]**, ale wykonywany zachłannie, 
 czyli jak *normalny* język programowania, a nie Haskell
@@ -208,7 +208,7 @@ gdy umie się już drugi nie powinno być problemem.
 [Słabe typowanie]: https://pl.wikipedia.org/wiki/Typowanie_s%C5%82abe
 [JSFuck]: https://github.com/aemkei/jsfuck
 
-[JQuery]: https://jquery.com/
+[JQuery]: /posts-by-tags/jquery
 
 [transpilator]: /posts-by-tags/transpiler
 
@@ -225,7 +225,7 @@ gdy umie się już drugi nie powinno być problemem.
 [Pyjs]: http://pyjs.org/
 
 [Scala.js]: /posts-by-tags/scala-js
-[Kotlin.js]: https://kotlinlang.org/docs/reference/js-overview.html
+[Kotlin.js]: /posts-by-tags/kotlin-js
 [Ceylon.js]: https://ceylon-lang.org/documentation/1.3/reference/interoperability/js/
 [ClojureScript]: https://clojurescript.org/
 

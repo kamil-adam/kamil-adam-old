@@ -2,7 +2,7 @@
 title:    'Functional Miners - Programowanie Funkcyjne dla Każdego'
 author:   TheKamilAdam
 category: relationships
-tags:     monad
+tags:     monad interpreter transpiler compiler
 labels:   brainfuck subleq monoid
 langs:    elixir clojure scala java haskell
 redirect_from:
@@ -28,7 +28,7 @@ Było to o tyle łatwe,
 Dla mnie, 
 głównym wnioskiem z prezentacji jest to,
 że nie należy w prezentacji umieszczać żadnych skomplikowanych definicji matematycznych, 
-np. **[monad](/posts-by-tags/monad)**.
+np. **[monad]**.
 Zwłaszcza jeśli są to pierwsze dwa slajdy.
 Nawet jeśli jest to tylko żart.
 
@@ -41,7 +41,7 @@ W prezentacji Wojtek stara się odpowiedzieć na pytania:
 * Z czego składa się funkcyjny język programowania?
   * *Patern Maching* - dopasowywanie do wzorca
   * *Macros* - prawdziwe makra, 
-  takie jak są w  **[Elixirze](/posts-by-langs/elixir)**, **[Clojure](/posts-by-langs/clojure)** lub **[Scali](/posts-by-langs/scala)** 
+  takie jak są w językach **[Elixir]*, **[Clojure]** lub **[Scala]** 
   * *Correctness* - *poprawność*, święty graal matematyków-programistów,
   która miała pozwolić na automatyczne stwierdzać poprawność programu
     * *Immutability* - *niezmienność*, zmienne są stałymi,
@@ -55,7 +55,7 @@ W prezentacji Wojtek stara się odpowiedzieć na pytania:
 * Jak uczyć się funkcyjnego języka programowania?
   * Warto mieć jeden mały programik,
   trochę większy niż *Hello Wolrd* i implementować go w wielu językach. 
-   Np **[interpreter](/posts-by-tags/interpreter)**, **[transpilator](/posts-by-tags/transpiler)** lub **[kompilator](/posts-by-tags/compiler)** ezoterycznego języka Brainfuck
+   Np **[interpreter]**, **[transpilator]** lub **[kompilator]** ezoterycznego języka Brainfuck
 
 Oprócz tego Wojtek rozprawiał się z mitami na temat programowania funkcyjnego,
 jak np. to że zasady SOLID stosują się także do funkcji i programowania funkcyjnego i deklaratywnego.
@@ -67,14 +67,14 @@ będącą bardzo teoretycznym i historycznym wprowadzeniem do [rachunku lambda](
 
 Najważniesze punkty, które zrozumiałem to:
 * Problemowi stopu z Maszyny Turinga w rachunku lambda odpowiada problem nieredukowalnych lambd do postaci normalnej.
-* **[Haskell](/posts-by-langs/haskell)** jest kompilowany do HSC CORE, 
+* **[Haskell]** jest kompilowany do HSC CORE, 
 który składa się 26 rodzajów konstruktorów (rachunek lambda + systemu F + kowersja + parametryczny polimorfizm) 
  * W typowanych lambdach problem stopu nie istnieje, 
 ale nie da się wyrazić rekurencji,
 więc dodaje się nowe operatory i traci się kompletność w sensie turinga.
 
 Jeśli ktoś chciałby zobaczyć rachunek lambda w bardziej przystępnej formie, 
-czyli interaktywnie w **[Javie](/posts-by-langs/java)** to polecam prezentacje Jarosława Ratajskiego (@jarek000000):
+czyli interaktywnie w języku **[Java]** to polecam prezentacje Jarosława Ratajskiego (@jarek000000):
 * W warszawie - *[WJUG #183 - Lambda Core: Hardcore - Jarosław Ratajski](<https://youtu.be/3GJpyHwzuh0>)* 
 * W Łodzi - *[Lambda Core - Hardcore - Jarek Ratajski](<https://youtu.be/TYAjT3GQHP4>)*
 
@@ -87,3 +87,18 @@ Repozytorium z kodem do analizy lambd - *[Lambda analysis package](<https://gith
 ## Podsumowanie
 
 Z niecierpliwością czekam na kolejne wykłady w ramach *Functional Miners* (@fun_miners)
+
+
+[monad]: /posts-by-tags/monad
+
+[Elixir]: /posts-by-langs/elixir
+[Clojure]: /posts-by-langs/clojure
+[Scala]: /posts-by-langs/scala
+
+[interpreter]: /posts-by-tags/interpreter
+[transpilator]: /posts-by-tags/transpiler
+[kompilator]: /posts-by-tags/compiler
+
+[Haskell]: /posts-by-langs/haskell
+[Java]: /posts-by-langs/java
+

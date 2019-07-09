@@ -2,25 +2,25 @@
 title:    "Przenośna Scala"
 author:   TheKamilAdam
 category: resentiment
-tags:     scala-jvm scala-js scala-native sbt clang compiler transpiler llvm
-labels:   jvm net native
-langs:    scala haskell erlang rust go javascript
+tags:     scala-jvm scala-js scala-native sbt clang compiler transpiler llvm node-js jvm native nojvm
+labels:
+langs:    scala haskell erlang rust go javascript pony crystal
 redirect_from:
   - przenosna-scala
 ---
 
-Znajomy zajarał się językiem **[Rust](/posts-by-langs/rust)**.
+Znajomy zajarał się językiem **[Rust]**.
 Opowiada mi jaki to wspaniały język i pokazuje przykłady kodu.
-**[Rust](/posts-by-langs/rust)** na pierwszy rzut oka wygląda jak skrzyżowanie **[C](/posts-by-tags/clang)** i języka **[Haskell](/posts-by-langs/haskell)** plus kanały jak w języka **[Go](/posts-by-langs/go)**.
+**[Rust]** na pierwszy rzut oka wygląda jak skrzyżowanie **[C]** i języka **[Haskell]** plus kanały jak w języka **[Go]**.
 Czyni go to pretendentem do bycia najbardziej skomplikowanym językiem programowania na świecie.
-Pretendentem, bo istnieje wśród programistów JVM opinia, że najbardziej skomlikowanym językiem na świecie jest Scala.
-Scala jest skrzyżowaniem Javy i Haskella plus aktory z języka **[Erlang](/posts-by-langs/erlang)**.
+Pretendentem, bo istnieje wśród programistów JVM opinia, że najbardziej skomlikowanym językiem na świecie jest **[Scala]**.
+**[Scala]** jest skrzyżowaniem Javy i Haskella plus aktory z języka **[Erlang]**.
 
 Przykłady kodu coś mi przypominają.
 Wyglądają prawie jak w Scali tylko trochę mniej obiektowe, więc pytam:
 - Dlaczego nie Scala? Jest to w tej chwili jedyny funkcyjny język programowania, który odniósł sukces komercyjny.
 Nie licząc niszowego Erlanga - dodaję.
-- Bo ja nie lubię JVM - odpowiada. - Za dużo musiałem robić w apletach.
+- Bo ja nie lubię **[JVM]** - odpowiada. - Za dużo musiałem robić w apletach.
 
 Po tej rozmowie zacząłem się zastanawiać czy istnieje możliwość używania Scali poza JVM.
 Czy Scala jest językiem przenaszalnym na inne platformy?
@@ -44,25 +44,24 @@ Jednak było to zalane taką ilością warstw abstrakcyjnych,
 że czyniło go to bezużytecznym.
 
 ### JavaScript
-**[JavaScript](/posts-by-langs/ecmasript)** jest platformą docelową dla każdego,
+**[JavaScript]** jest platformą docelową dla każdego,
 kto chce uruchamiać cokolwiek na stronie internetowej.
-Dlatego jeśliby posiadać **[transpilator](/posts-by-tags/transpiler)** języka Scala do JavaScriptu
-to w łatwy sposób można by z każdego programisty języka Scala stworzyć legendarnego Full-Stack Developera.
-Szczęśliwie taki **[transpilator](/posts-by-tags/transpiler)** istnieje i nazywa się [Scala.js](<https://www.scala-js.org/>).
-Istnieje nawet [Akka.js](<http://akka-js.org/>), framework aktorów.
+Dlatego jeśliby posiadać **[transpilator]** Scali do JavaScriptu
+to w łatwy sposób można by z każdego programisty Scali stworzyć legendarnego Full-Stack Developera.
+Szczęśliwie taki **[transpilator]** istnieje i nazywa się **[Scala.js]**.
+Istnieje nawet [Akka.js], framework aktorów.
 
-Niestety Scala.js i Akka.js posiadają wszystkie wady Node.js to znaczy jednowątkowość,
+Niestety **[Scala.js]** i Akka.js posiadają wszystkie wady **[Node.js]** to znaczy jednowątkowość,
 ale do front-endu wydają się idealne.
 
 ### Native
 Największą zaletą języków 
-**[Rust](/posts-by-langs/rust)**, **[Pony](/posts-by-langs/pony)**, **[Crystal](/posts-by-langs/crystal)** czy **[Go](/posts-by-langs/go)**, 
+**[Rust]**, **[Pony]**, **[Crystal]** czy **[Go]**, 
 jest to,
 że są to języki kompilowane do postaci natywnej,
 a programy w nich pisane mogą być dostarczane do klienta pod postacią jednego pliku.
 
-To samo ze Scalą robi **[kompilator](/posts-by-tags/compiler)** [ScalaNative](<http://www.scala-native.org/en/v0.3.8/>)
-oparty na [LLVM](/posts-by-tags/llvm).
+To samo ze Scalą robi **[kompilator]** **[Scala Native]** oparty na **[LLVM]**.
 Niestety dalej jest w wersji eksperymentalnej i nie posiada np. wielowątkowości.
 Co czyni go na razie tylko zabawką dla nerdów i np. ... DevOpsów oraz QA.
 Bo o ile jednowątkowy program na produkcji zwykle nie ma sensu,
@@ -74,15 +73,14 @@ Zwłaszcza, że zwykle i tak są to języki jednowątkowe.
 W łatwy sposób można stworzyć projekt, który będzie kompilowany na wszystkie trzy platformy,
 to znaczy JS, JVM i Native.
 
-Na początek instalujemy zależności dla
-[Scala Native](<http://www.scala-native.org/en/v0.3.8/user/setup.html#installing-clang-and-runtime-dependencies>):
+Na początek instalujemy [zależności] dla **[Scala Native]**:
 
 ```bash
 sudo apt install clang libunwind-dev
 sudo apt install libgc-dev libre2-dev
 ```
 
-Następnie pobieramy przykładową aplikację z [portable-scala](<https://github.com/portable-scala/sbt-crossproject.g8>):
+Następnie pobieramy przykładową [aplikację skośną] z portable-scala:
 ```bash
 sbt new portable-scala/sbt-crossproject.g8
 ```
@@ -99,9 +97,9 @@ sbt barJS/run barJVM/run barNative/run
 
 ## Mój Resentiment
 
-Stworzyłem projekt na portalu [GitHub](<https://github.com/writeonly/resentiment>),
+Stworzyłem projekt na portalu [GitHub],
 gdzie będę starał się rozwijać aplikację kompilowaną na wszystkie trzy platformy.
-Na razie pod tagiem [portable-scala](<https://github.com/writeonly/resentiment/tree/portable-scala>)
+Na razie pod tagiem [portable-scala]
 znajduje się wersja z podniesionymi zależnościami i ze zmienioną konfiguracją projektu.
 
 Pobranie projektu:
@@ -118,3 +116,29 @@ I uruchomienie:
 ```bash
 sbt re/run reJS/run reJVM/run
 ```
+
+[Scala]: /posts-by-langs/scala
+
+[Rust]: /posts-by-langs/rust
+[C]: /posts-by-tags/clang
+[Haskell]: /posts-by-langs/haskell
+[Go]: /posts-by-langs/go
+[Erlang]: /posts-by-langs/erlang
+
+[JavaScript]: /posts-by-langs/javascript
+[Transpilator]: /posts-by-tags/transpiler
+[Scala.js]: /posts-by-tags/scala-js
+[Node.js]: /posts-by-tags/node-js
+[Akka.js]: http://akka-js.org/
+
+[Pony]: /posts-by-langs/pony
+[Crystal]: /posts-by-langs/crystal
+[Kompilator]: /posts-by-tags/compiler
+[Scala Native]: /posts-by-tags/scala-native
+[LLVM]: /posts-by-tags/llvm
+
+[zależności]: http://www.scala-native.org/en/v0.3.8/user/setup.html#installing-clang-and-runtime-dependencies
+[aplikację skośną]: https://github.com/portable-scala/sbt-crossproject.g8
+
+[GitHub]: https://github.com/writeonly/resentiment
+[portable-scala]: https://github.com/writeonly/resentiment/tree/portable-scala

@@ -37,9 +37,9 @@ i na tej podstawie budował plik `Gemfile.lock`.
 Brzmi strasznie.
 
 Na szczęście żadne z tych rozwiązań nie jest potrzebne,
-ponieważ *GitHub* udostępnia gem `github-pages` (bibliotekę języka **[Ruby](/posts-by-lang/ruby)**) zawierający wersję wszystkich wspieranych wtyczek dla Jekylla.
-Także wtyczki są zwykłymi gemami (bibliotekami) języka **[Ruby](/posts-by-lang/ruby)**.
-Więc jedyne co potrzebujemy to program `bundle` do zarządzania zależnościami w języku **[Ruby](/posts-by-tags/ruby)**.
+ponieważ *GitHub* udostępnia gem `github-pages` (bibliotekę języka **[Ruby](/posts-by-langs/ruby)**) zawierający wersję wszystkich wspieranych wtyczek dla Jekylla.
+Także wtyczki są zwykłymi gemami (bibliotekami) języka **[Ruby](/posts-by-langs/ruby)**.
+Więc jedyne co potrzebujemy to program `bundle` do zarządzania zależnościami w języku **[Ruby](/posts-by-langs/ruby)**.
 
 ## Ukryta strona dokumentacji
 

@@ -47,7 +47,7 @@ więc muszą być wydajne i skalowalne
 Co ciekawe 1. kłóci się z 3. a 2. kłóci się z 4. 
 Widać więc, że potrzebny jest *zgniły kompromis*.
 
-Kiedyś były dwa głowne języki korporacyjne:
+Kiedyś były dwa główne języki korporacyjne:
 * prosty język Cobol używany dla programów będących daleko od sprzętu
 * skomplikowany język C++ używany dla programów będących blisko sprzętu
 
@@ -65,7 +65,7 @@ a przynajmniej do niedawna tak było
 
 Pradopodobnie największą wadą Javy jest to, 
 że jej rozwój mocno zamarł po wydaniu Javy 6 przez co inne języki mocno ją przegoniły.
-Co prawda ostatio nowe wersję wydawane są częściej, 
+Co prawda ostatnio nowe wersje wydawane są częściej,
 jednak dodają one mało nowych funkcjonalności.
 Z tego powodu składnia Javy jest niesamowicie rozwlekłą i bywa nazywana barokową, 
 tzn. trzeba napisać dużo kodu by osiągnąć ten sam efekt co w nowszych językach programowania.
@@ -113,7 +113,7 @@ C# identycznie jak Java jest kompilowany do kodu bajtowego,
 który nazywany jest 
 [Wspólnym Językiem Pośredni](https://en.wikipedia.org/wiki/Common_Intermediate_Language)
 (ang. *Common Intermediate Language*, **CLI**).
-CLI następnie jest wykonywany przez maszynę wirtualną nazywaną platformę .NET.
+CLI następnie jest wykonywany przez maszynę wirtualną nazywaną platformą .NET.
 
 Podobnie jak dla kodu bajtowego Javy i JVM, 
 tak dla CLI i platformy .Net także istnieją inne języki programowania,

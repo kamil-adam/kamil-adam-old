@@ -68,7 +68,7 @@ Niestety jest też parę minusów:
 który toczy Pythona najbardziej,
 jest problem z wersjami,
 czyli rozłam na wersję 2 oraz wersję 3.
-Powoduje to przymys poznania takich narzędzi jak [pipenv], [pyenv] i [virtualenv].
+Powoduje to przymus poznania takich narzędzi jak [pipenv], [pyenv] i [virtualenv].
 Dodatkowo nie pomagają różne implementacje jak [PyPy],
 lub [Stackless Python].
 * Statystyki informujące o wspaniałej przyszłości Pythona dotyczą zbiorczo całego świata.

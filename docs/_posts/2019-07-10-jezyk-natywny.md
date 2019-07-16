@@ -44,7 +44,7 @@ Języki natywne posiadają wiele zalet.
 Dla mnie najważniejszymi są:
 * możliwość spakowania programu/aplikacji do jednego pliku wykonywalnego
 razem ze wszystkimi bibliotekami trzecimi i plikami konfiguracyjnymi
-* mała zajętość zasobów, głownie pamięci RAM
+* mała zajętość zasobów, głównie pamięci RAM
 * szybkość działania
 
 ###  Jedna paczka ze wszystkim jako plik wykonywalny
@@ -59,7 +59,7 @@ który posłużył do napisania edytorów [Atom] oraz [VSC].
 
 Gorzej jest w przypadku języków korporacyjnych kompilowanych do kodu bajtowego.
 Ich maszyny wirtualne, jak JVM, są często zbyt duże, by móc je dołączać do każdego programu z osobna.
-Prawdziwy probmel zaczyna się,
+Prawdziwy problem zaczyna się,
 gdy różne programy wymagają różnych wersji maszyny wirtualych np. JRE 6 i JRE 11.   
 
 ### Niska zajętość RAMu
@@ -76,7 +76,7 @@ Lub przenośnych bibliotek graficznych jak GTK (Gnome) oraz Qt (KDE).
 Nie musimy uruchamiać także zewnętrznych interpreterów, maszyn wirtualnych i kompilatorów JIT.
  
 ### Szybkość działania
-Szybkość poszczególnych jezyków programowania jest tematem drażliwym.
+Szybkość poszczególnych języków programowania jest tematem drażliwym.
 Często testy porównawcze (ang. *benchmarks*) szybkości działania poszczególnych języków programowania 
 są pisane w taki sposób,
 żeby potwierdziły tezę piszącego.
@@ -157,7 +157,7 @@ który przebił się do mainstreamu
 * Niestety [GoLand](<https://www.jetbrains.com/go/>) od JetBains jest płatny,
 ale na szczęście istnieją inne dobre IDE dla **[Go]** jak [Atom] lub [VSC]
 * Mimo że to język względnie nowy powstała w nim już ogromna ilość oprogramowania jak np. **[Docker]** i Kubernetes.
-* Dzięki temu, że posiada upośledzoną skałdnię prawdopodobnie będzie to też nowy [język korporacyjny].
+* Dzięki temu, że posiada ~~upośledzoną~~ prostą skaładnię prawdopodobnie będzie to też nowy [język korporacyjny].
 
 Dodatkowo problemy znane z C++ są rozwiązane w **[Go]** za pomocą wszystkomającego kompilatora,
 który także formatuje kod i zarządza zależnościami. 
@@ -167,7 +167,7 @@ co widać po testach,
 ale za to szybko się kompiluje.
 
 ## ... i trudne alternatywy
-Co jednak jeśli nie chcemy pisać w języku z upośledzoną składnią,
+Co jednak jeśli nie chcemy pisać w języku z ~~upośledzoną~~ prostą składnią,
 który nie zawiera nawet generyków?
 Lub chcemy pisać szybko działające oprogramowanie?
 W takim przypadku istnieje kilka alternatyw,

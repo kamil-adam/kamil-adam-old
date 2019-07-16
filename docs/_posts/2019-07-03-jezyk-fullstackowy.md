@@ -95,7 +95,7 @@ Są to [Fay], [GHCJS], [Haste] i [uhc]
 Według wielu programistów pierwsze podejście było niezadowalające.
 Istniało wiele problemów z językami backedowymi transpilowanymi do JS.
 Prawdopodobnie największym jest przetwarzanie współbieżne.
-Statycznie typowane jezyki korporacyjne posiadają wielowątkowość do przetwarzania współbieżnego.
+Statycznie typowane języki korporacyjne posiadają wielowątkowość do przetwarzania współbieżnego.
 Interpretery JS posiadają jeden wątek 
 i do przetwarzania współbieżnego używa konstrukcji `Promise` (*obietnicy*),
 której najbliżej do [monady](/posts-by-tags/monad) `IO` z Haskella lub `Future` ze Scali.

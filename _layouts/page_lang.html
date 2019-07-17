@@ -5,8 +5,11 @@ title: {{ page.lang }}
 <section class="posts">
   <header>
     {% include breadcrumbs.html %}
-    <h1 class="posts-title">Język programowania: {{ page.lang | capitalize }}</h1>
+    <h1 class="posts-title">Język programowania: {{ page.title }}</h1>
+    <b>{{ page.title }}</b> - {{ page.description }}
   </header>
+
+  <h2>Artykuły:</h2>
 
   <dl class="posts-nav">
     {% for post in site.posts %}

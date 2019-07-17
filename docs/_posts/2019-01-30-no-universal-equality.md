@@ -2,7 +2,7 @@
 title:    "Scala - No Universal Equality"
 author:   TheKamilAdam
 category: resentiment
-tags:     scala-jvm scala-js scala-native scalatest scalaz cats monad type-class scalafix utest operator library compiler
+tags:     scala-jvm scala-js scala-native scalatest scalaz cats monad type-classes scalafix utest operator library compiler
 labels:   scalatic
 langs:    scala java haskell
 redirect_from:
@@ -46,7 +46,7 @@ która wymaga by oba porównywane obiekty były tej samej klasy.
 
 Największą zaletą biblioteki **Scalactic** jest to,
 że nie zagłębia się w teorię czystego programowania funkcyjnego (ang. *pure functional programming*)
-i nie pojawiają się tam takie straszne terminy jak **[monada](/posts-by-tags/monad)** czy **[klasy typów](/posts-by-tags/type-class)**.
+i nie pojawiają się tam takie straszne terminy jak **[monada](/posts-by-tags/monad)** czy **[klasy typów](/posts-by-tags/type-classes)**.
 
 ### Scalaz i Cats
 *Kolejność chronologiczna.*

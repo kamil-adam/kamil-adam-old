@@ -4,7 +4,7 @@ author:   TheKamilAdam
 category: onions
 tags:     bash dsl bdd cst
 labels:
-langs:    python perl awk ruby elixir crystal lisp commonlisp scheme clojure
+langs:    python perl awk ruby elixir crystal lisp common-lisp scheme clojure
 redirect_from:
   - onions/2019/06/12/ktory-jezyk-programowania-wybrac-jezyk-skryptowy
   - ktory-jezyk-programowania-wybrac-jezyk-skryptowy
@@ -115,7 +115,7 @@ ale bardzo możliwe,
 Nie lubię języków skryptowych.
 Kiedyś lubiłem Perla, ale wyrosłem.
 Z języków dynamicznie typowanych interesujący dla mnie jest tylko **[Lisp]**
-ze wszystkimi swoimi dialektami (**[Clojure]**, **[Scheme]**, **[CommonLisp]**).
+ze wszystkimi swoimi dialektami (**[Clojure]**, **[Scheme]**, **[Common Lisp]**).
 Jest coś szalonego w języku, którego zapis jest od razu jego drzewem **[CST]**.
 
 [Python]: /posts-by-langs/python
@@ -156,7 +156,7 @@ Jest coś szalonego w języku, którego zapis jest od razu jego drzewem **[CST]*
 [Elixir]: /posts-by-langs/elixir
 
 [Lisp]: /posts-by-langs/lisp
-[CommonLisp]: /posts-by-langs/commonlisp
+[Common Lisp]: /posts-by-langs/common-lisp
 [Scheme]: /posts-by-langs/scheme
 [Clojure]: /posts-by-langs/clojure
 [CST]: /posts-by-tags/cst

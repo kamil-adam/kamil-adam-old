@@ -132,7 +132,7 @@ Ada, D, Delphi, Fortran.
 Także języki nienatywne zyskały swoją wersję natywną jak np.
 ActionScript,
 C#,
-**[CommonLisp]**,
+**[Common Lisp]**,
 **[Haskell]**,
 **[Kod bajtowy]** Javy,
 **[Kotlin]**,
@@ -293,7 +293,7 @@ clang lua.c -S -fomit-frame-pointer -o -
 [Clang]: /posts-by-tags/clang
 [API]: /posts-by-tags/api
 
-[CommonLisp]: /posts-by-langs/commonlisp
+[Common Lisp]: /posts-by-langs/common-lisp
 [Haskell]: /posts-by-langs/haskell
 [Kod bajtowy]: /posts-by-tags/bytecode
 [Kotlin]: /posts-by-langs/kotlin

@@ -4,7 +4,7 @@ author:   TheKamilAdam
 category: onions
 tags:     node-js clang native llvm monad bytecode
 labels:
-langs:    rust java julia ocaml commonlisp go typescript dart haskell javascript scheme erlang lua pony crystal scala
+langs:    rust java julia ocaml common-lisp go typescript dart haskell javascript scheme erlang lua pony crystal scala
 redirect_from:
   - jezyk-natywny
 ---
@@ -107,7 +107,7 @@ Na podstawie tego zestawu testów możemy podzielić języki programowania na ki
    * Chapel
    * F# .NET Core - kompilowany do kodu bajtowego CIL
    * **[OCaml]** - kompilowany do kodu natywnego
-   * LispSBCL - implementacja **[CommonLisp]**
+   * LispSBCL - implementacja **[Common Lisp]**
    * **[Go]** - kompilowany do kodu natywnego
 4. Trzy do dziesięciu razy wolniejsze niż C:
    * **[TypeScript]** - kompilowany do JS i uruchamiany na Node.js
@@ -122,7 +122,7 @@ Moje największe zaskoczenia,
 gdy analizowałem wykresy:
 1. Do niedawna nikomu nieznany **[Rust]** znalazł się w pierwszej trójce najszybszych jezyków programowania.
 2. Kompilowany do kodu bajtowego F# wyprzedził kompilowany do kodu natywnego **[OCaml]**.
-3. Dynamicznie typowany **[CommonLisp]** wyprzedził statycznie typowany **[Go]**.
+3. Dynamicznie typowany **[Common Lisp]** wyprzedził statycznie typowany **[Go]**.
 4. **[TypeScript]** wyprzedził język **[Haskell]** - nie mam pojęcia jak oni to zrobili.
 Widocznie leniwość i **[monady]** są drogie.
 5. **[JavaScript]** (i **[TypeScript]**) niesamowicie wyprzedzają pozostałe języki skryptowe.
@@ -206,7 +206,7 @@ I to może odwrócić trend w najbliższych latach.
 [Java]: /posts-by-langs/java
 [Julia]: /posts-by-langs/julia
 [OCaml]: /posts-by-langs/ocaml
-[CommonLisp]: /posts-by-langs/commonlisp
+[Common Lisp]: /posts-by-langs/common-lisp
 [Go]: /posts-by-langs/go
 [TypeScript]: /posts-by-langs/typescript
 [Dart]: /posts-by-langs/dart

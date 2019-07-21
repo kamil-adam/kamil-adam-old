@@ -1,0 +1,24 @@
+---
+layout: page
+title: Przeczytane książki
+permalink: /read-books/
+description: Przeczytane książki programistyczne
+---
+<div class="posts">
+  <dl class="posts-nav">
+    {% assign books = site.books | reverse | sort: "year-of-publishment" %}
+    {% for book in books %}
+    <dt>
+      <a class="posts-nav-item" href="{{ book.url | relative_url }}">
+        {{ book.title }}
+      </a>
+    </dt>
+    <dd>
+      <ul>
+        <li>Autorzy: {{ book.authors }}</li>
+        <li>Rok pierwszego wydania: {{ book.year-of-publishment }}</li>
+      </ul>
+    </dd>
+    {% endfor %}
+  </dl>
+</div>

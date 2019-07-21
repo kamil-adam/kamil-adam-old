@@ -61,6 +61,8 @@ collections:
     output: true
   langs:
     output: true
+  books:
+    output: true
 
 service_worker: true
 

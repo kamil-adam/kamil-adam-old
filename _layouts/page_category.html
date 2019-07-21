@@ -10,6 +10,8 @@ title: {{ page.category }}
 
   <i>{{ page.content }}</i>
 
+  <h2>Artykuły należące do kategorii:</h2>
+
   <dl class="posts-nav">
     {% for post in site.posts %}
     {% if post.category == page.category %}

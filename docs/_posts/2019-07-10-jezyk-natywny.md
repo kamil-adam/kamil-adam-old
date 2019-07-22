@@ -92,31 +92,31 @@ Szczęśliwie taki zestaw istnieje i nazywa się [Benchmarks Game].
 
 Na podstawie tego zestawu testów możemy podzielić języki programowania na kilka grup pod względem szybkości działania:
 1. Top - trzy prawie idealnie tak samo szybkie języki programowania:
-  * C gcc
-  * C++ g++
-  * **[Rust]** - kompilowany do kodu natywnego język z systemem typów inspirowanych językiem **[Haskell]**
+   * C gcc
+   * C++ g++
+   * **[Rust]** - kompilowany do kodu natywnego język z systemem typów inspirowanych językiem **[Haskell]**
 2. Około dwa razy wolniejsze niż C:
-  * Ada 2012 Gnat - kompilowany do kodu natywnego
-  * Fortran Intel - kompilowany do kodu natywnego
-  * Swift - kompilowany do kodu natywnego
-  * C# .NET Core - kompilowany do kodu bajtowego CIL
-  * **[Java]** - kompilowany do kodu bajtowego maszyny wirtualnej Javy
-  * FreePascal - kompilowany do kodu natywnego
+   * Ada 2012 Gnat - kompilowany do kodu natywnego
+   * Fortran Intel - kompilowany do kodu natywnego
+   * Swift - kompilowany do kodu natywnego
+   * C# .NET Core - kompilowany do kodu bajtowego CIL
+   * **[Java]** - kompilowany do kodu bajtowego maszyny wirtualnej Javy
+   * FreePascal - kompilowany do kodu natywnego
 3. Około trzy razy wolniejsze niż C:
-  * **[Julia]** - kompilowany do kodu natywnego
-  * Chapel
-  * F# .NET Core - kompilowany do kodu bajtowego CIL
-  * **[OCaml]** - kompilowany do kodu natywnego
-  * LispSBCL - implementacja **[CommonLisp]**
-  * **[Go]** - kompilowany do kodu natywnego
+   * **[Julia]** - kompilowany do kodu natywnego
+   * Chapel
+   * F# .NET Core - kompilowany do kodu bajtowego CIL
+   * **[OCaml]** - kompilowany do kodu natywnego
+   * LispSBCL - implementacja **[CommonLisp]**
+   * **[Go]** - kompilowany do kodu natywnego
 4. Trzy do dziesięciu razy wolniejsze niż C:
-  * **[TypeScript]** - kompilowany do JS i uruchamiany na Node.js
-  * **[Dart]** - prawdopodobnie kompilowany do JS i uruchamiany na Node.js 
-  * **[Haskell]** GHC - prawdopodobnie kompilowany do C
-  * **[Node.js]** - prawdopodobnie chodzi o **[JavaScript]**
-  * Racket - implementacja **[Scheme]**
+   * **[TypeScript]** - kompilowany do JS i uruchamiany na Node.js
+   * **[Dart]** - prawdopodobnie kompilowany do JS i uruchamiany na Node.js 
+   * **[Haskell]** GHC - prawdopodobnie kompilowany do C
+   * **[Node.js]** - prawdopodobnie chodzi o **[JavaScript]**
+   * Racket - implementacja **[Scheme]**
 5. Ponad dziesięć razy wolniejsze niż C:
-  * reszta [języków skryptowych](/jezyk-skryptowy) w tym **[Erlang]** i **[Lua]**
+   * reszta [języków skryptowych](/jezyk-skryptowy) w tym **[Erlang]** i **[Lua]**
 
 Moje największe zaskoczenia,
 gdy analizowałem wykresy:
@@ -157,17 +157,16 @@ który przebił się do mainstreamu
 * Niestety [GoLand](<https://www.jetbrains.com/go/>) od JetBains jest płatny,
 ale na szczęście istnieją inne dobre IDE dla **[Go]** jak [Atom] lub [VSC]
 * Mimo że to język względnie nowy powstała w nim już ogromna ilość oprogramowania jak np. **[Docker]** i Kubernetes.
-* Dzięki temu, że posiada ~~upośledzoną~~ prostą skaładnię prawdopodobnie będzie to też nowy [język korporacyjny].
+* Dzięki temu, że posiada <s>~~upośledzoną~~</s> prostą składnię prawdopodobnie będzie to też nowy [język korporacyjny](/jezyk-korporacyjny).
 
 Dodatkowo problemy znane z C++ są rozwiązane w **[Go]** za pomocą wszystkomającego kompilatora,
 który także formatuje kod i zarządza zależnościami. 
-Prawdopodobnie **[Go]** jest też nowym [językiem korporacyjnym](/jezyk-korporacyjny).
 Co prawda nie jest superszybki,
 co widać po testach,
 ale za to szybko się kompiluje.
 
 ## ... i trudne alternatywy
-Co jednak jeśli nie chcemy pisać w języku z ~~upośledzoną~~ prostą składnią,
+Co jednak jeśli nie chcemy pisać w języku z <s>~~upośledzoną~~</s> prostą składnią,
 który nie zawiera nawet generyków?
 Lub chcemy pisać szybko działające oprogramowanie?
 W takim przypadku istnieje kilka alternatyw,
@@ -227,6 +226,7 @@ I to może odwrócić trend w najbliższych latach.
 [Tiobe]: https://www.tiobe.com/tiobe-index/
 [IEEE]: https://spectrum.ieee.org/at-work/innovation/the-2018-top-programming-languages
 [Docker]: /posts-by-tags/docker
+
 
 [Type Classes]: /posts-by-tags/type-classes
 

@@ -5,7 +5,7 @@ sitemap: false
 
 {% capture json %}
 [
-  {% assign docs = site.posts | where_exp:'post','post.date' | reverse %}
+  {% assign docs = site.posts | where_exp:'doc','doc.date' | reverse %}
   {% for doc in docs %}
   {
     "url"         : {{ doc.url | relative_url                              | jsonify }},

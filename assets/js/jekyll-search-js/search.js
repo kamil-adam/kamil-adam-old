@@ -36,7 +36,7 @@ class jekyllSearch {
           </a>
         </dt>
         <dd>
-          <p>${item.excerpt}</p>
+          <p>${item.description}</p>
         </dd>`
     }).join('')
     if ((results.length == 0) || (this.searchField.value == '')) {

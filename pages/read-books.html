@@ -15,7 +15,7 @@ description: Przeczytane książki programistyczne
     </dt>
     <dd>
       <ul>
-        <li>Autorzy: {{ book.authors }}</li>
+        <li>Autorzy: {{ book.authors | join: ", "}}</li>
         <li>Rok pierwszego wydania: {{ book.year-of-publishment }}</li>
       </ul>
     </dd>

@@ -1,0 +1,7 @@
+Jeżli pojawił się jakiś błąd to prawdopodobnie z tego powodu że nie mamy node.js w wersji 10.0.0 (lub wyższej)
+albo nie mamy zainstalowanego modułu
+
+Jeśli spotkaliś
+```bash
+npm install winston
+```

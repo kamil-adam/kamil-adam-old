@@ -4,7 +4,7 @@ markdown:         CommonMarkGhPages
 # Setup
 title:            WriteOnly.pl
 tagline:          WriteOnly Scala, Jekyll, Git & Bash Blog
-description:      "Blog tylko-do-zapisu o językach programowania Scala/JVM, Scala.js i Scala Native oraz generatorze stron Jekyll, repozytorium Git i użyciu wiersza poleceń CLI"
+description:      "Blog o programowaniu w językach Scala/JVM, Scala.js i Scala Native oraz generatorze stron Jekyll, repozytorium Git i użyciu wiersza poleceń CLI"
 url:              https://www.writeonly.pl
 
 author:

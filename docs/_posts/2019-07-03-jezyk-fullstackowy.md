@@ -2,9 +2,9 @@
 title:    'Który język programowania wybrać na początek - język fullstackowy'
 author:   TheKamilAdam
 category: onions
-tags:     transpiler scala-js monad cli api interpreter node-js jquery
+tags:     transpiler scala-js monad cli api interpreter node-js jquery bucklescript gui
 labels:   clojurescript udash kotlin-js postgresql
-langs:    java python scala kotlin haskell clojure javascript typescript purescript elm dart ruby ceylon
+langs:    java python scala kotlin haskell clojure javascript typescript purescript elm dart ruby ceylon ocaml resonml
 redirect_from:
   - jezyk-fullstackowy
   - onions/jezyk-fullstackowy
@@ -93,6 +93,8 @@ Tutaj pojawia się gwiazdka ponieważ istnieją [różnice](<https://clojurescri
     * [JSweet] - [transpilator] do  języka **[TypeScript]**, który następnie jest transpilowany do [JS]
   * Programiści języka **[Haskell]** także podejmowali kilka prób stworzenia transpilatora z Haskella do JS.
 Są to [Fay], [GHCJS], [Haste] i [uhc]
+  * Dla języka **[OCaml]** jest kilka transpilatorów, 
+    ale aktualnie nahbardziej obiecująco wygląda **[BuckleScript].**
 
 ### Podejście drugie - nowy język transpilowany do JS
 
@@ -123,6 +125,8 @@ Dlatego aplikacja napisana w Elmie może być mniejsza niż kod Reacta
 Inne przeglądarki miały posiadać maszynę wirtualną Darta napisaną w JS.
   2. Język do pisania frontendu, transpilowany do JS
   3. Język do pisania frontendu i aplikacji mobilnych za pomocą frameworku Flutter
+* **[ReasonML]** - **[OCaml]** ze zmienioną składnią w celu upodobnienia go do **[JS]**.
+  Także transpilowany za pomocą **[BuckleScript]**.
 
 Ale jakim cudem w ogóle można mówić o JS jako o języku *fullstackowym*?
 Spójrzy na małe kalendarium:
@@ -209,6 +213,10 @@ O wiele bardziej niż Java i JavaScript.
 Więc opanowanie jednego z nich,
 gdy umie się już drugi nie powinno być problemem.
 
+## Ciekawe linki
+
+[Lista języków kompilowanych do JS](<https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS>)
+
 [Słabe typowanie]: https://pl.wikipedia.org/wiki/Typowanie_s%C5%82abe
 [JSFuck]: https://github.com/aemkei/jsfuck
 
@@ -222,7 +230,9 @@ gdy umie się już drugi nie powinno być problemem.
 [ceylon]: /posts-by-langs/ceylon
 [Clojure]: /posts-by-langs/clojure
 [Haskell]: /posts-by-langs/haskell
+[OCaml]: /posts-by-langs/ocaml
 
+[GUI]: /posts-by-tags/gui
 [RAP]: https://www.eclipse.org/rap/
 [SWT]: https://www.eclipse.org/swt/
 [GWT]: http://www.gwtproject.org
@@ -241,6 +251,7 @@ gdy umie się już drugi nie powinno być problemem.
 [GHCJS]: https://github.com/ghcjs/ghcjs
 [Haste]: https://github.com/valderman/haste-compiler
 [uhc]: https://github.com/uhc/uhc
+[BuckleScript]: /posts-by-tags/bucklescript
 
 [JS]: /posts-by-langs/javascript
 [JVM]: /posts-by-tags/jvm
@@ -252,6 +263,7 @@ gdy umie się już drugi nie powinno być problemem.
 [PureScript]: /posts-by-langs/purescript
 [Elm]: /posts-by-langs/elm
 [Dart]: /posts-by-langs/dart
+[ReasonML]: /posts-by-langs/reasonml 
 
 [babeljs]: https://babeljs.io/
 

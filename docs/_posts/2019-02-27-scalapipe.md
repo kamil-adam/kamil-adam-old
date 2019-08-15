@@ -4,7 +4,7 @@ author:   TheKamilAdam
 category: resentiment
 tags:     bash jekyll scalaz operator
 labels:
-langs:    scala kotlin clojure lisp perl elixir julia elm livescript ocaml
+langs:    scala kotlin clojure lisp perl elixir julia elm livescript ocaml fsharp ml
 redirect_from:
   - scalapipe
   - resentiment/scalapipe
@@ -39,7 +39,7 @@ Szumem jest tutaj tworzenie pomocniczych zmiennych,
 które często trudno nazwać w sensowny sposób.
 
 Dlatego powinniśmy unikać *wywołań cebulowych*
-Chyba, że piszemy w języku **[Clojure](/posts-by-langs/clojure)** lub innym **[Lispie](/posts-by-langs/lisp)**.
+Chyba, że piszemy w języku **[Clojure]** lub innym **[Lispie](/posts-by-langs/lisp)**.
 Wtedy formatujemy kod:
 ```clojure
 (third_function
@@ -65,8 +65,8 @@ data
 Oczywiście o ile `first_function` jest metodą obiektu `data`,
 `second_function` jest metodą obiektu zwracanego przez `first_function` i tak dalej.
 Jeśli nie, to musimy użyć haków
-jak [implicit classes](<https://docs.scala-lang.org/overviews/core/implicit-classes.html>) w języku **[Scala](/posts-by-langs/scala)**
-lub [extensions](<https://kotlinlang.org/docs/reference/extensions.html>)  w języku **[Kotlin](/posts-by-langs/kotlin)**.
+jak [implicit classes](<https://docs.scala-lang.org/overviews/core/implicit-classes.html>) w języku **[Scala]**
+lub [extensions](<https://kotlinlang.org/docs/reference/extensions.html>) w języku **[Kotlin]**.
 
 Jeśli nasz język programowania nie wspiera haków to pozostaje nam kod z tworzeniem wielu pomocniczych zmiennych:
 ```scala
@@ -79,14 +79,14 @@ val data30 = thirty_function(data29)
 
 ### Prawdopodobna inspiracja - potoki w Bash i Jekyll
 
-W powłoce systemowej **[Bash](/posts-by-tags/bash)** przesyłanie danych między jednym poleceniem,
+W powłoce systemowej **[Bash]** przesyłanie danych między jednym poleceniem,
 a drugim jest realizowane przez potoki, np:
 ```bash
 ps -a | sort | uniq | grep -v sh
 ```
 Dwa lub więcej poleceń można połączyć w jedno polecenie za pomocą operatora pionowej kreski `|` (ang. *pipe*).
 
-**[Jekyll](/posts-by-tags/jekyll)** także posiada potoki, ale dla utrudnienia nazywają się filtrami.
+**[Jekyll]** także posiada potoki, ale dla utrudnienia nazywają się filtrami.
 Precyzyjniej to Jekyll używa języka szablonów Liquid, a Liquid posiada Filtry.
 Kod :
 ```jekyll
@@ -113,7 +113,7 @@ data
 ```
 
 Został spopularyzowany przez język [Elixir](<https://hexdocs.pm/elixir/Kernel.html#%7C%3E/2>),
-ale wcześniej był już używany w językach [OCaml](http://caml.inria.fr/pub/docs/manual-ocaml/libref/Pervasives.html#VAL%28%7C%3E%29)
+ale wcześniej był już używany w odmianach języka **[Meta Language]** jak [OCaml](http://caml.inria.fr/pub/docs/manual-ocaml/libref/Pervasives.html#VAL%28%7C%3E%29)
 oraz [F#](https://en.wikibooks.org/wiki/F_Sharp_Programming/Higher_Order_Functions#The_.7C.3E_Operator).
 W tym ostatnim istnieje nawet możliwość samodzielnego zdefiniowania operatora potoku za pomocą linii:
 ```F#
@@ -129,7 +129,7 @@ Na fali popularności *operator potoku* został dodany także do wielu innych j�
 Część z nich zawiera także drugi podobny operator zwany *back pipe operator* zapisywany `<|` lub `|>>`.
 Ten drugi zapis prawdopodobnie inspirowany jest językiem [Clojure](<https://clojure.org/guides/threading_macros>).
 
-Tak, **[Clojure](/posts-by-langs/clojure)** posiada dużo lukru składniowego,
+Tak, **[Clojure]** posiada dużo lukru składniowego,
 żeby poprawić standardową nieczytelność **[Lispa](/posts-by-langs/lisp)** dzięki czemu możemy zapisać:
 
 ```clojure
@@ -143,7 +143,7 @@ Tak, **[Clojure](/posts-by-langs/clojure)** posiada dużo lukru składniowego,
 Po co nam dwa operatory potoku, tj `|>` i `<|`?
 
 Otóż `|>` dodaje argument na początku listy parametrów, a `<|` - na końcu listy.
-Czyli jeśli w języku **[Perl](/posts-by-langs/perl)** 5 wprowadzonoby oba operatory to moglibyśmy wywołać:
+Czyli jeśli w języku **[Perl]** 5 wprowadzonoby oba operatory to moglibyśmy wywołać:
 
 ```perl
 (0, 1, 2, 3) <| grep { $_ != 2} <| map { $_ * 2})
@@ -151,7 +151,7 @@ Czyli jeśli w języku **[Perl](/posts-by-langs/perl)** 5 wprowadzonoby oba oper
 
 ## Rozwiązanie w Scali - ScalaPipe i operator drozda
 
-Język **[Scala](/posts-by-langs/scala)** nie posiada operatora potoku,
+Język **[Scala]** nie posiada operatora potoku,
 ale posiada możliwość definiowania operatorów.
 W internecie pod hasłem *ScalaPipe* można znaleść wiele możliwych implementacji.
 Moja ulubiona to:
@@ -175,7 +175,7 @@ object ScalaPipeOps extends ScalaPipeOps
 ```
 
 Na szczęście nie musimy sami implementować operatora *ScalaPipe*,
-ponieważ istnieje on już w bibliotece **[Scalaz](/posts-by-tags/scalaz)**
+ponieważ istnieje on już w bibliotece **[Scalaz]**
 ale dla utrudnienia nazywa się **operator drozda** (ang. *Thrush combinator*).
 Używając tego operatora z łatwością możemy zapisać:
 ```scala
@@ -184,7 +184,7 @@ import scalaz.Scalaz._
 data |> firstFunction |> secondFunction |> threeFunction
 ```
 
-Niestety Scala to nie **[Elixir](/posts-by-langs/elixir)** i nie możemy zapisać:
+Niestety Scala to nie **[Elixir]** i nie możemy zapisać:
 ```scala
 data
   |> firstFunction
@@ -219,6 +219,17 @@ data
 
 ## Podsumowanie
 
-Składnia języka **[Scala](/posts-by-langs/scala)** jest elastyczna, ale czasem nie aż tak bardzo jak była by potrzeba.
+Składnia języka **[Scala]** jest elastyczna, ale czasem nie aż tak bardzo jak była by potrzeba.
 Mimo to, łatwo definiować nowe operatory oraz składnię, która może znacząco skrócić i uprościć kod.
 Warto jednak wcześnie sprawdzić czy nasz operator nie jest zdefiniowany w istniejącej i popularnej bibliotece.
+
+[Clojure]: /posts-by-langs/clojure
+[Elixir]: /posts-by-langs/elixir
+[Kotlin]: /posts-by-langs/kotlin
+[Meta Language]: /posts-by-langs/ml
+[Perl]: /posts-by-langs/perl
+[Scala]: /posts-by-langs/scala
+
+[Bash]: /posts-by-tags/bash
+[Jekyll]: /posts-by-tags/jekyll
+[Scalaz]: /posts-by-tags/scalaz

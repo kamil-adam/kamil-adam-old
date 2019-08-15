@@ -4,7 +4,7 @@ author:   TheKamilAdam
 category: onions
 tags:     jvm
 labels:
-langs:    java scala kotlin clojure frege eta go python ruby lisp haskell ocaml
+langs:    java scala kotlin clojure frege eta go python ruby lisp haskell ocaml fsharp
 redirect_from:
   - jezyk-korporacyjny
   - onions/jezyk-korporacyjny
@@ -160,7 +160,7 @@ ponieważ nowe języki używają bibliotek napisanych w swoich starszych kuzynac
 [C++/CLI]: https://pl.wikipedia.org/wiki/C%2B%2B/CLI
 [VB.NET]: https://pl.wikipedia.org/wiki/Visual_Basic_.NET
 [Visual Basic]: https://pl.wikipedia.org/wiki/Visual_Basic
-[F#]: https://pl.wikipedia.org/wiki/F_Sharp
+[F#]: /posts-by-langs/fsharp
 [OCaml]: /posts-by-langs/ocaml
 
 [JVM]: /posts-by-tags/jvm

@@ -4,7 +4,7 @@ author:   TheKamilAdam
 category: onions
 tags:     node-js clang native llvm monad bytecode
 labels:
-langs:    rust java julia ocaml common-lisp go typescript dart haskell javascript scheme erlang lua pony crystal scala
+langs:    rust java julia ocaml common-lisp go typescript dart haskell javascript scheme erlang lua pony crystal scala fsharp racket ml
 redirect_from:
   - jezyk-natywny
   - onions/jezyk-natywny
@@ -109,8 +109,8 @@ Na podstawie tego zestawu testów możemy podzielić języki programowania na ki
 3. Około trzy razy wolniejsze niż C:
    * **[Julia]** - kompilowany do kodu natywnego
    * Chapel
-   * F# .NET Core - kompilowany do kodu bajtowego CIL
-   * **[OCaml]** - kompilowany do kodu natywnego
+   * **[F#]**.NET Core - kompilowany do kodu bajtowego CIL
+   * **[OCaml]** - obiektowa werjsa **[Meta Language]** kompilowany do kodu natywnego
    * LispSBCL - implementacja **[Common Lisp]**
    * **[Go]** - kompilowany do kodu natywnego
 4. Trzy do dziesięciu razy wolniejsze niż C:
@@ -118,14 +118,14 @@ Na podstawie tego zestawu testów możemy podzielić języki programowania na ki
    * **[Dart]** - prawdopodobnie kompilowany do JS i uruchamiany na Node.js 
    * **[Haskell]** GHC - prawdopodobnie kompilowany do C
    * **[Node.js]** - prawdopodobnie chodzi o **[JavaScript]**
-   * Racket - implementacja **[Scheme]**
+   * **[Racket]** - dialekt **[Scheme]**
 5. Ponad dziesięć razy wolniejsze niż C:
    * reszta [języków skryptowych](/jezyk-skryptowy) w tym **[Erlang]** i **[Lua]**
 
 Moje największe zaskoczenia,
 gdy analizowałem wykresy:
 1. Do niedawna nikomu nieznany **[Rust]** znalazł się w pierwszej trójce najszybszych jezyków programowania.
-2. Kompilowany do kodu bajtowego F# wyprzedził kompilowany do kodu natywnego **[OCaml]**.
+2. Kompilowany do kodu bajtowego **[F#]** wyprzedził kompilowany do kodu natywnego **[OCaml]**.
 3. Dynamicznie typowany **[Common Lisp]** wyprzedził statycznie typowany **[Go]**.
 4. **[TypeScript]** wyprzedził język **[Haskell]** - nie mam pojęcia jak oni to zrobili.
 Widocznie leniwość i **[monady]** są drogie.
@@ -209,7 +209,9 @@ I to może odwrócić trend w najbliższych latach.
 [Rust]: /posts-by-langs/rust
 [Java]: /posts-by-langs/java
 [Julia]: /posts-by-langs/julia
+[F#]: /posts-by-langs/fsharp
 [OCaml]: /posts-by-langs/ocaml
+[Meta Language]: /posts-by-langs/ml
 [Common Lisp]: /posts-by-langs/common-lisp
 [Go]: /posts-by-langs/go
 [TypeScript]: /posts-by-langs/typescript
@@ -217,6 +219,7 @@ I to może odwrócić trend w najbliższych latach.
 [Haskell]: /posts-by-langs/haskell
 [Node.js]: /posts-by-tags/node-js
 [JavaScript]: /posts-by-langs/javascript
+[Racket]: /posts-by-langs/racket 
 [Scheme]: /posts-by-langs/scheme
 [Erlang]: /posts-by-langs/erlang
 [Lua]: /posts-by-langs/lua

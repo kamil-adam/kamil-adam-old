@@ -5,6 +5,7 @@ category: resentiment
 tags:     sbt code-analysis static-code-analysis scalafix 
 labels:   scalafmt scalariform
 langs:    scala
+libs:
 redirect_from:
   - statyczna-analiza-kodu-1
   - resentiment/statyczna-analiza-kodu-1

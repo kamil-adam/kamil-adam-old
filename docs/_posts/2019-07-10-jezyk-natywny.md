@@ -5,6 +5,7 @@ category: onions
 tags:     node-js clang native llvm monad bytecode
 labels:
 langs:    rust java julia ocaml common-lisp go typescript dart haskell javascript scheme erlang lua pony crystal scala fsharp racket ml
+libs:
 redirect_from:
   - jezyk-natywny
   - onions/jezyk-natywny

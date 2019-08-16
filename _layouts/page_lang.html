@@ -27,17 +27,31 @@ title: {{ page.lang }}
     </dt>
     <dd>
       <ul>
+
         <li>
-      Kategoria :
-      <a href="{{ site.baseurl }}/posts-by-category/{{ post.category }}">{{ post.category | capitalize }}</a>
+          Kategoria :
+          <a href="{{ site.baseurl }}/posts-by-category/{{ post.category }}">{{ post.category | capitalize }}</a>
         </li>
-      {% assign tags = post.tags | sort %}
+
+        {% assign tags = post.tags | sort %}
         <li>
-      Tagi:
-      {% for tag in tags %}
-      <a href="{{ site.baseurl }}/posts-by-tags/{{ tag }}">{{ tag }}</a>
-      {% endfor %}
+          Tagi:
+          {% for tag in tags %}
+          <a href="{{ site.baseurl }}/posts-by-tags/{{ tag }}">{{ tag }}</a>
+          {% endfor %}
         </li>
+
+        {% assign libs = post.libs | split: ' ' | sort %}
+        {% assign libs_size = libs | size %}
+        {% if 0 < libs_size %}
+        <li>
+          Biblioteki programistyczne:
+          {% for lib in libs %}
+          <a href="{{ site.baseurl }}/posts-by-libs/{{ lib }}">{{ lib }}</a>
+          {% endfor %}
+        </li>
+        {% endif %}
+
       </ul>
     </dd>
     {% endif %}

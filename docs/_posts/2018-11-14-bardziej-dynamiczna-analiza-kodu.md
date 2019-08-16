@@ -2,9 +2,10 @@
 title:    "Bardziej dynamiczna analiza kodu dla języka Scala - Property-based testing"
 author:   TheKamilAdam
 category: resentiment
-tags:     code-analysis dynamic-code-analysis specs2 scalatest scalaz scala-js scala-native
+tags:     code-analysis dynamic-code-analysis scala-js scala-native
 labels:   property-based scalacheck scalaprops nyaya
 langs:    scala haskell
+libs:     specs2 scalatest scalaz
 redirect_from:
   - bardziej-dynamiczna-analiza-kodu
   - resentiment/bardziej-dynamiczna-analiza-kodu

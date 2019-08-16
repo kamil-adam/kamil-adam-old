@@ -5,6 +5,7 @@ category: onions
 tags:     bash dsl bdd cst
 labels:
 langs:    python perl awk ruby elixir crystal lisp common-lisp scheme clojure
+libs:
 redirect_from:
   - jezyk-skryptowy
   - onions/jezyk-skryptowy

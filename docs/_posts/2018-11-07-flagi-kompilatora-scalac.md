@@ -4,7 +4,8 @@ author:   TheKamilAdam
 category: resentiment
 tags:     sbt compiler scalafix
 labels:   scalac options
-langs:    scala perl
+langs:    scala perl 
+libs:
 redirect_from:
   - flagi-kompilatora-scalac
   - resentiment/flagi-kompilatora-scalac

@@ -5,6 +5,7 @@ category: onions
 tags:     clang llvm compiler parser lexer ast scala-native cli interface jvm interpreter assembler api bytecode
 labels:   gcc ir r
 langs:    haskell kotlin lua python ruby crystal julia pony rust go lisp
+libs:
 redirect_from:
   - gcc-llvm-clang
   - onions/gcc-llvm-clang

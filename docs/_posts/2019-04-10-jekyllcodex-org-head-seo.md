@@ -5,6 +5,7 @@ category: writeonlydoc
 tags:     jekyll blog jekyllcodex seo
 labels:
 langs:
+libs:
 redirect_from:
   - jekyllcodex-org-head-seo
   - writeonlydoc/jekyllcodex-org-head-seo

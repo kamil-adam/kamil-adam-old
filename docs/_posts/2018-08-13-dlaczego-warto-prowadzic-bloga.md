@@ -5,6 +5,7 @@ category: thoughts
 tags:     blog github
 labels:
 langs:    scala java
+libs:
 redirect_from:
   - dlaczego-warto-prowadzic-bloga
   - thoughts/dlaczego-warto-prowadzic-bloga

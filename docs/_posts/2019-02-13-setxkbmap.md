@@ -5,6 +5,7 @@ category: cli
 tags:     cli bash ubuntu
 labels:
 langs:
+libs:
 redirect_from:
   - setxkbmap
   - cli/setxkbmap

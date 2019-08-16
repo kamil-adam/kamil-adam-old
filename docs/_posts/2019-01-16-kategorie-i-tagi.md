@@ -5,6 +5,7 @@ category: writeonlydoc
 tags:     jekyll blog
 labels:
 langs:
+libs:
 redirect_from:
   - kategorie-i-tagi
   - writeonlydoc/kategorie-i-tagi

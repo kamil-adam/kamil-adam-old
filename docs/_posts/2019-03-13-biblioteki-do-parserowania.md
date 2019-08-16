@@ -2,9 +2,10 @@
 title:    "Biblioteki do parsowania dla języka Scala"
 author:   TheKamilAdam
 category: resentiment
-tags:     library utest fastparse json parser lexer ast compiler xml properties interface dsl
+tags:     library json parser lexer ast compiler xml properties interface dsl
 labels:   parboiled2
 langs:    scala
+libs:     utest fastparse
 redirect_from:
   - biblioteki-do-parserowania
   - resentiment/biblioteki-do-parserowania

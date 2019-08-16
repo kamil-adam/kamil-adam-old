@@ -2,9 +2,10 @@
 title:    "Scala - No Universal Equality"
 author:   TheKamilAdam
 category: resentiment
-tags:     scala-jvm scala-js scala-native scalatest scalaz cats monad type-classes scalafix utest operator library compiler
+tags:     scala-jvm scala-js scala-native monad type-classes scalafix operator library compiler
 labels:   scalatic
 langs:    scala java haskell
+libs:     scalatest scalaz cats scalafix utest
 redirect_from:
   - no-universal-equality
   - resentiment/no-universal-equality

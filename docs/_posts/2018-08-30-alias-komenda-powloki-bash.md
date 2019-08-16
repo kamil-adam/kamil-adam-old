@@ -5,6 +5,7 @@ category: cli
 tags:     cli bash alias git
 labels:
 langs:
+libs:
 redirect_from:
   - alias-komenda-powloki-bash
   - cli/alias-komenda-powloki-bash

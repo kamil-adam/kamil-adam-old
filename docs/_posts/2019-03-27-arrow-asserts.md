@@ -2,9 +2,10 @@
 title:    "uTest - operator Arrow Asserts"
 author:   TheKamilAdam
 category: resentiment
-tags:     utest operator
+tags:     operator
 labels:
 langs:    scala
+libs:     utest
 redirect_from:
   - arrow-asserts
   - resentiment/arrow-asserts

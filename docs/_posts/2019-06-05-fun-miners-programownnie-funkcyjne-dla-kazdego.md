@@ -5,6 +5,7 @@ category: relationships
 tags:     monad interpreter transpiler compiler
 labels:   brainfuck subleq monoid
 langs:    elixir clojure scala java haskell
+libs:
 redirect_from:
   - programownnie-funkcyjne-dla-kazdego
   - relationships/programownnie-funkcyjne-dla-kazdego

@@ -5,6 +5,7 @@ category: resentiment
 tags:     scala-jvm scala-js scala-native code-analysis static-code-analysis sbt
 labels:   scalastyle wartremover scapegoat linter scala-clippy sbt-cpd sbt-stats
 langs:    scala
+libs:
 redirect_from:
   - statyczna-analiza-kodu-2
   - resentiment/statyczna-analiza-kodu-2.html

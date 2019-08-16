@@ -5,6 +5,7 @@ category: cli
 tags:     cli git alias
 labels:   flow
 langs:
+libs:
 redirect_from:
   - git-flow-i-aliasy
   - cli/git-flow-i-aliasy

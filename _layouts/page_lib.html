@@ -1,20 +1,21 @@
 ---
 layout: default
-title: {{ page.tag }}
+title: {{ page.lib }}
 ---
 <section class="posts">
   <header>
     {% include breadcrumbs.html %}
   </header>
-  <h1 class="posts-title">Tag: {{ page.title }}</h1>
+  <h1 class="posts-title">Biblioteka: {{ page.title }}</h1>
 
   {{ page.content }}
 
-  <h2>Artykuły zawierające tag {{ page.title }}:</h2>
+  <h2>Artykuły zawierające biblitekę {{ page.title }}:</h2>
 
   <dl class="posts-nav">
     {% for post in site.posts %}
-    {% if post.tags contains page.tag %}
+    {% assign libs = post.libs | split: ' ' %}
+    {% if libs contains page.lib %}
     <dt>
       <a class="posts-nav-item" href="{{ post.url | relative_url }}">
         <span class="posts-nav-item-date">
@@ -32,6 +33,14 @@ title: {{ page.tag }}
           <a href="{{ site.baseurl }}/posts-by-category/{{ post.category }}">{{ post.category | capitalize }}</a>
         </li>
 
+        {% assign tags = post.tags | sort %}
+        <li>
+          Tagi:
+          {% for tag in tags %}
+          <a href="{{ site.baseurl }}/posts-by-tags/{{ tag }}">{{ tag }}</a>
+          {% endfor %}
+        </li>
+
         {% assign langs = post.langs | split: ' ' | sort %}
         {% assign langs_size = langs | size %}
         {% if 0 < langs_size %}
@@ -43,18 +52,7 @@ title: {{ page.tag }}
         </li>
         {% endif %}
 
-        {% assign libs = post.libs | split: ' ' | sort %}
-        {% assign libs_size = libs | size %}
-        {% if 0 < libs_size %}
-        <li>
-          Biblioteki programistyczne:
-          {% for lib in libs %}
-          <a href="{{ site.baseurl }}/posts-by-libs/{{ lib }}">{{ lib }}</a>
-          {% endfor %}
-        </li>
-        {% endif %}
-
-     </ul>
+      </ul>
     </dd>
     {% endif %}
     {% endfor %}

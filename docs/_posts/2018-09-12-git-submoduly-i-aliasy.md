@@ -5,6 +5,7 @@ category: cli
 tags:     cli git alias interpreter
 labels:   submodule
 langs:    java javascript
+libs:
 redirect_from:
   - git-submoduly-i-aliasy
   - cli/git-submoduly-i-aliasy

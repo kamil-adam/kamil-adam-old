@@ -4,6 +4,7 @@ author:   TheKamilAdam
 category: writeonlydoc
 tags:     jekyll json alias github github-pages
 lang:     go ruby
+libs:
 redirect_from:
   - github-pages
   - writeonlydoc/github-pages

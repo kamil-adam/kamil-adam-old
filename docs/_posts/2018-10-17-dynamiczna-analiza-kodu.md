@@ -2,9 +2,10 @@
 title:    "Dynamiczna analiza kodu dla SBT - testy jednostkowe"
 author:   TheKamilAdam
 category: resentiment
-tags:     scala-jvm scala-js scala-native code-analysis dynamic-code-analysis specs2 scalatest utest
+tags:     scala-jvm scala-js scala-native code-analysis dynamic-code-analysis 
 labels:   minitest greenlight
 langs:    scala
+libs:     specs2 scalatest utest
 redirect_from:
   - dynamiczna-analiza-kodu
   - resentiment/dynamiczna-analiza-kodu

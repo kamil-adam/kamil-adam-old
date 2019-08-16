@@ -5,6 +5,7 @@ category: onions
 tags:     jvm
 labels:
 langs:    java scala kotlin clojure frege eta go python ruby lisp haskell ocaml fsharp
+libs:
 redirect_from:
   - jezyk-korporacyjny
   - onions/jezyk-korporacyjny

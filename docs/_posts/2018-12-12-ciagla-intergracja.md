@@ -5,6 +5,7 @@ category: resentiment
 tags:     sbt scala-native clang ubuntu
 labels:   coveralls continuous-integration travis-ci
 langs:    scala java rust
+libs:
 redirect_from:
   - ciagla-intergracja
   - resentiment/ciagla-intergracja

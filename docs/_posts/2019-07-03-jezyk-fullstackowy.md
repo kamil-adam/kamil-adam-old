@@ -2,9 +2,10 @@
 title:    'Który język programowania wybrać na początek - język fullstackowy'
 author:   TheKamilAdam
 category: onions
-tags:     transpiler scala-js monad cli api interpreter node-js jquery bucklescript gui
+tags:     transpiler scala-js monad cli api interpreter node-js bucklescript gui
 labels:   clojurescript udash kotlin-js postgresql
 langs:    java python scala kotlin haskell clojure javascript typescript purescript elm dart ruby ceylon ocaml resonml
+libs:     jquery
 redirect_from:
   - jezyk-fullstackowy
   - onions/jezyk-fullstackowy

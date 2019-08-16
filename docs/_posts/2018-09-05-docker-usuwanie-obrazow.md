@@ -5,6 +5,7 @@ category: cli
 tags:     cli alias docker
 labels:
 langs:
+libs:
 redirect_from:
   - docker-usuwanie-obrazow
   - cli/docker-usuwanie-obrazow

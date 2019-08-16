@@ -5,6 +5,7 @@ category: thoughts
 tags:     blog bash api gui
 labels:
 langs:    perl python ruby
+libs:
 redirect_from:
   - czy-nadaje-sie-na-programiste
   - thoughts/czy-nadaje-sie-na-programiste

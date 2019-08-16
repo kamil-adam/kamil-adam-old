@@ -1,7 +1,7 @@
 <article class="post">
   {{ post.content }}
 
-   <footer>
+  <footer>
        <nav class="tags">
            Autor: @{{post.author}}
        </nav>
@@ -22,6 +22,17 @@
       <a href="{{ site.baseurl }}/posts-by-langs/{{ lang }}">{{ lang }}</a>
       {% endfor %}
       {% endif %}
+    </nav>
+
+    <nav class="tags">
+        {% assign libs = post.libs | split: ' ' | sort %}
+        {% assign libs_size = libs | size %}
+        {% if 0 < libs_size %}
+        Języki:
+        {% for lib in libs %}
+        <a href="{{ site.baseurl }}/posts-by-libs/{{ lib }}">{{ lib }}</a>
+        {% endfor %}
+        {% endif %}
     </nav>
   </footer>
 </article>

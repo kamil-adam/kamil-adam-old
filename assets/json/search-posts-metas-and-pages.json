@@ -42,9 +42,19 @@ sitemap: false
   {% for doc in docs %}
   {
     "url"         : {{ doc.url | relative_url                              | jsonify }},
-    "date"        : "Język:",
+    "date"        : "Język programowania:",
     "title"       : {{ doc.title                     | strip_html | escape | jsonify }},
     "description" : {{ doc.description               | strip_html | escape | jsonify }},
+    "content"     : {{ doc.content     | markdownify | strip_html | escape | jsonify }}
+  } ,
+  {% endfor %}
+  {% assign docs = site.libs %}
+  {% for doc in docs %}
+  {
+    "url"         : {{ doc.url | relative_url                              | jsonify }},
+    "date"        : "Biblioteka programistyczna:",
+    "title"       : {{ doc.title                     | strip_html | escape | jsonify }},
+    "description" : {{ doc.content                   | strip_html | escape | jsonify }},
     "content"     : {{ doc.content     | markdownify | strip_html | escape | jsonify }}
   } ,
   {% endfor %}

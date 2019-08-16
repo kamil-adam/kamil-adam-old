@@ -63,6 +63,8 @@ collections:
     output: true
   langs:
     output: true
+  libs:
+    output: true
   books:
     output: true
 

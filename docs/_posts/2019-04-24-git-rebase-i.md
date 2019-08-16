@@ -5,6 +5,7 @@ category: cli
 tags:     git ubuntu
 labels:
 langs:
+libs:
 redirect_from:
   - git-rebase-i
   - cli/git-rebase-i

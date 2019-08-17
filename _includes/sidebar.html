@@ -1,5 +1,6 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
+
     <header class="sidebar-about">
       <h1>
         <a href="{{ '/' | relative_url }}">
@@ -10,13 +11,6 @@
     </header>
 
     {% assign pages = (site.pages | sort: 'title' ) %}
-    <nav class="sidebar-nav">
-      {% for node in pages %}
-      {% if node.title != null and node.layout == "posts"  %}
-      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}/{{ node.url  | remove_first: '/' }}">{{ node.title }}</a>
-      {% endif %}
-      {% endfor %}
-    </nav>
 
     <nav class="sidebar-nav">
       {% for node in pages %}
@@ -33,5 +27,14 @@
       {% endif %}
       {% endfor %}
     </nav>
+
+    <nav class="sidebar-nav">
+      {% for node in pages %}
+      {% if node.title != null and node.layout == "posts"  %}
+      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}/{{ node.url  | remove_first: '/' }}">{{ node.title }}</a>
+      {% endif %}
+      {% endfor %}
+    </nav>
+
   </div>
 </div>

@@ -8,12 +8,11 @@ title: {{ page.book }}
   </header>
   <h1 class="posts-title">Książka: {{ page.title }}</h1>
 
-  <dd>
-    <ul>
-      <li>Autorzy: {{ page.authors }}</li>
-      <li>Rok pierwszego wydania: {{ page.year-of-publishment }}</li>
-    </ul>
-  </dd>
+  <ul>
+    <li>Autorzy: {{ page.authors }}</li>
+    <li>Tytuł oryginalny: {{ page.title-of-original }}</li>
+    <li>Rok pierwszego wydania: {{ page.year-of-publishment }}</li>
+  </ul>
 
   {{ page.content }}
 

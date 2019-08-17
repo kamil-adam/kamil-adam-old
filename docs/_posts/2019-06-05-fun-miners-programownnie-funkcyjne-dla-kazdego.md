@@ -6,8 +6,11 @@ tags:     monad interpreter transpiler compiler
 labels:   brainfuck subleq monoid
 langs:    elixir clojure scala java haskell
 redirect_from:
-  - fun-miners-programownnie-funkcyjne-dla-kazdego
   - programownnie-funkcyjne-dla-kazdego
+  - relationships/programownnie-funkcyjne-dla-kazdego
+  - fun-miners-programownnie-funkcyjne-dla-kazdego
+  - relationships/fun-miners-programownnie-funkcyjne-dla-kazdego
+  - relationships/2019/06/05/fun-miners-programownnie-funkcyjne-dla-kazdego.html
 ---
 
 2019-05-21 odbyło się spotkanie *Functional Miners* (@fun_miners)

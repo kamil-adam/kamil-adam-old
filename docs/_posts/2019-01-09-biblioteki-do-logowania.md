@@ -7,6 +7,8 @@ labels:   logging scala-logging scribe
 langs:    scala java
 redirect_from:
   - biblioteki-do-logowania
+  - resentiment/biblioteki-do-logowania
+  - resentiment/2019/01/09/biblioteki-do-logowania.html
 ---
 
 Chcąc dowiedzieć się co dzieje się wewnątrz naszej aplikacji mamy dwie drogi.

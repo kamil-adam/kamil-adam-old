@@ -7,6 +7,8 @@ labels:
 langs:    scala kotlin clojure lisp perl elixir julia elm livescript ocaml
 redirect_from:
   - scalapipe
+  - resentiment/scalapipe
+  - resentiment/2019/02/27/scalapipe.html
 ---
 
 ## Problem: wywołania cebulowe

@@ -7,6 +7,8 @@ labels:
 langs:
 redirect_from:
   - jekyllcodex-org-czesc-druga
+  - writeonlydoc/jekyllcodex-org-czesc-druga
+  - writeonlydoc/2018/09/26/jekyllcodex-org-czesc-druga.html
 ---
 
 Ponad miesiąc temu, w panice, szukałem prostego skryptu, który by wyświetlał ostrzeżenie o plikach cookies.

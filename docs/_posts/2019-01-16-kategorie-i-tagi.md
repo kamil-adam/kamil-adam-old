@@ -7,6 +7,8 @@ labels:
 langs:
 redirect_from:
   - kategorie-i-tagi
+  - writeonlydoc/kategorie-i-tagi
+  - writeonlydoc/2019/01/16/kategorie-i-tagi.html
 ---
 
 

@@ -7,6 +7,8 @@ labels:   scalastyle wartremover scapegoat linter scala-clippy sbt-cpd sbt-stats
 langs:    scala
 redirect_from:
   - statyczna-analiza-kodu-2
+  - resentiment/statyczna-analiza-kodu-2.html
+  - resentiment/2018/10/31/statyczna-analiza-kodu-2.html
 ---
 
 Jest to kontynuacja posta

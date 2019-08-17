@@ -7,6 +7,8 @@ labels:
 langs:    scala haskell erlang rust go javascript pony crystal
 redirect_from:
   - przenosna-scala
+  - resentiment/przenosna-scala
+  - resentiment/2018/10/03/przenosna-scala.html
 ---
 
 Znajomy zajarał się językiem **[Rust]**.

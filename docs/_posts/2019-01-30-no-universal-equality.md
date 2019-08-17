@@ -7,6 +7,8 @@ labels:   scalatic
 langs:    scala java haskell
 redirect_from:
   - no-universal-equality
+  - resentiment/no-universal-equality
+  - resentiment/no-universal-equality.html
 ---
 
 Ostatnim błędem zgłaszanym w kodzie projektu **[resentiment](/category/resentiment)** przez **[scalafix](/posts-by-tags/scalafix)**

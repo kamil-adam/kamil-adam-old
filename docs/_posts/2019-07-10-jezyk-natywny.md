@@ -7,7 +7,11 @@ labels:
 langs:    rust java julia ocaml common-lisp go typescript dart haskell javascript scheme erlang lua pony crystal scala
 redirect_from:
   - jezyk-natywny
+  - onions/jezyk-natywny
+  - onions/2019/07/03/jezyk-natywny.html
+  - onions/2019/07/03/ktory-jezyk-programowania-wybrac-jezyk-natywny.html
 ---
+
 Wiele osób pyta się,
 **który język programowania wybrać na początek** jako pierwszy język do nauki.
 Wiele jednak zależy od tego do czego chcemy użyć tego języka programowania.

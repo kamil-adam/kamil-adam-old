@@ -6,9 +6,10 @@ tags:     jvm
 labels:
 langs:    java scala kotlin clojure frege eta go python ruby lisp haskell ocaml
 redirect_from:
-  - onions/2019/06/19/ktory-jezyk-programowania-wybrac-jezyk-korporacyjny
-  - ktory-jezyk-programowania-wybrac-jezyk-korporacyjny
   - jezyk-korporacyjny
+  - onions/jezyk-korporacyjny
+  - onions/2019/06/19/jezyk-korporacyjny
+  - onions/2019/06/19/ktory-jezyk-programowania-wybrac-jezyk-korporacyjny.html
 ---
 
 Wiele osób pyta się,

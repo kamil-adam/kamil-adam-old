@@ -6,6 +6,8 @@ tags:     jekyll json alias github github-pages
 lang:     go ruby
 redirect_from:
   - github-pages
+  - writeonlydoc/github-pages
+  - writeonlydoc/2019/05/01/github-pages.html
 ---
 
 Jedną z największych zalet generator statycznych stron **[Jekyll](/posts-by-tags/jekyll)** jest to,

@@ -7,6 +7,8 @@ labels:
 langs:    perl python ruby
 redirect_from:
   - czy-nadaje-sie-na-programiste
+  - thoughts/czy-nadaje-sie-na-programiste
+  - thoughts/2019/05/22/czy-nadaje-sie-na-programiste.html
 ---
 
 Wiele osób pyta "Czy nadaję się na programistę?".

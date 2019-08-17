@@ -7,6 +7,8 @@ labels:
 langs:
 redirect_from:
   - setxkbmap
+  - cli/setxkbmap
+  - cli/2019/02/13setxkbmap.html
 ---
 
 Po długiej przerwie prosty artykuł "Jak szybko zmienić układ klawiatury z konsoli na **[Ubuntu](/posts-by-tags/ubuntu)**?".

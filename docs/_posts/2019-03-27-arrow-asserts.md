@@ -7,6 +7,8 @@ labels:
 langs:    scala
 redirect_from:
   - arrow-asserts
+  - resentiment/arrow-asserts
+  - resentiment/2019/03/27/arrow-asserts.html
 ---
 
 Dziś krótki wpis o tym, że warto czytać dokumentację. Zapraszam.

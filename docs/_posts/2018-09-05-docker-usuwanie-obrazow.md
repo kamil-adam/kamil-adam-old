@@ -7,6 +7,8 @@ labels:
 langs:
 redirect_from:
   - docker-usuwanie-obrazow
+  - cli/docker-usuwanie-obrazow
+  - cli/2018/09/05/docker-usuwanie-obrazow.html
 ---
 
 Dziesięć lat pracy na Linuksie nauczyło mnie,

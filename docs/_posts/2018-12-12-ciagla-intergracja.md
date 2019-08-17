@@ -7,8 +7,9 @@ labels:   coveralls continuous-integration travis-ci
 langs:    scala java rust
 redirect_from:
   - ciagla-intergracja
+  - resentiment/ciagla-intergracja
+  - resentiment/2018/12/12/ciagla-intergracja.html
 ---
-
 
 W poprzednich wpisach zbudowaliśmy ogromne polecenie
 do analizy statycznej i dynamicznej kodu projektu oraz generacji raportów.

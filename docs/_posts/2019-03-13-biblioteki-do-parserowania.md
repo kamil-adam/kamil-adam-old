@@ -7,6 +7,8 @@ labels:   parboiled2
 langs:    scala
 redirect_from:
   - biblioteki-do-parserowania
+  - resentiment/biblioteki-do-parserowania
+  - resentiment/2019/03/13/biblioteki-do-parserowania.html
 ---
 
 ## Co to jest parser?

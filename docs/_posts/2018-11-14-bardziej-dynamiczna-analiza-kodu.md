@@ -7,6 +7,8 @@ labels:   property-based scalacheck scalaprops nyaya
 langs:    scala haskell
 redirect_from:
   - bardziej-dynamiczna-analiza-kodu
+  - resentiment/bardziej-dynamiczna-analiza-kodu
+  - resentiment/2018/11/14/bardziej-dynamiczna-analiza-kodu.html
 ---
 
 Testy modułowe (jednostkowe) napisane w poście

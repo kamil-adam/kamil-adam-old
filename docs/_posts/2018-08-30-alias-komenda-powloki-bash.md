@@ -7,6 +7,8 @@ labels:
 langs:
 redirect_from:
   - alias-komenda-powloki-bash
+  - cli/alias-komenda-powloki-bash
+  - cli/2018/08/30/alias-komenda-powloki-bash.html
 ---
 
 Jeśli:

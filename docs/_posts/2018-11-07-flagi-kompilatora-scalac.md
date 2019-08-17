@@ -7,6 +7,8 @@ labels:   scalac options
 langs:    scala perl
 redirect_from:
   - flagi-kompilatora-scalac
+  - resentiment/flagi-kompilatora-scalac
+  - resentiment/2018/11/07/flagi-kompilatora-scalac.html
 ---
 
 Nie bójmy się tego powiedzieć, Scala to nowy **[Perl](/posts-by-langs/perl)**.

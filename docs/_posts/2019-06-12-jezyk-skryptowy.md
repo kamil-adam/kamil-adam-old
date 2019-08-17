@@ -6,9 +6,10 @@ tags:     bash dsl bdd cst
 labels:
 langs:    python perl awk ruby elixir crystal lisp common-lisp scheme clojure
 redirect_from:
-  - onions/2019/06/12/ktory-jezyk-programowania-wybrac-jezyk-skryptowy
-  - ktory-jezyk-programowania-wybrac-jezyk-skryptowy
   - jezyk-skryptowy
+  - onions/jezyk-skryptowy
+  - onions/2019/06/12/jezyk-skryptowy.html
+  - onions/2019/06/12/ktory-jezyk-programowania-wybrac-jezyk-skryptowy.html
 ---
 
 Wiele osób pyta się,

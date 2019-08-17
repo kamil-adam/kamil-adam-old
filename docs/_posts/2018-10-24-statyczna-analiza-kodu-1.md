@@ -7,6 +7,8 @@ labels:   scalafmt scalariform
 langs:    scala
 redirect_from:
   - statyczna-analiza-kodu-1
+  - resentiment/statyczna-analiza-kodu-1
+  - resentiment/2018/10/24/statyczna-analiza-kodu-1.html
 ---
 
 > Statyczna analiza programu to analiza oprogramowania komputerowego wykonywanego bez faktycznego uruchamiania programów,

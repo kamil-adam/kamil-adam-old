@@ -7,6 +7,8 @@ labels:
 langs:
 redirect_from:
   - git-rebase-i
+  - cli/git-rebase-i
+  - cli/2019/04/24/git-rebase-i.html
 ---
 
 Każdy z nas czasem zatwierdza (ang. *commit*) coś brzydkiego do repozytorium.

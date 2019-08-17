@@ -7,7 +7,11 @@ labels:   clojurescript udash kotlin-js postgresql
 langs:    java python scala kotlin haskell clojure javascript typescript purescript elm dart ruby ceylon
 redirect_from:
   - jezyk-fullstackowy
+  - onions/jezyk-fullstackowy
+  - onions/2019/07/03/jezyk-fullstackowy.html
+  - onions/2019/07/03/ktory-jezyk-programowania-wybrac-jezyk-fullstackowy.html
 ---
+
 Wiele osób pyta się,
 **który język programowania wybrać na początek** jako pierwszy język do nauki.
 Wiele jednak zależy od tego do czego chcemy użyć tego języka programowania.

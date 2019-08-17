@@ -6,7 +6,9 @@ tags:     jekyll blog jekyllcodex github-pages jquery
 labels:   cookies
 langs:
 redirect_from:
-  - jekyll-i-ciasteczka-pliki-cookies.
+  - jekyll-i-ciasteczka-pliki-cookies
+  - writeonlydoc/jekyll-i-ciasteczka-pliki-cookies
+  - writeonlydoc/2018/08/22/jekyll-i-ciasteczka-pliki-cookies.html
 ---
 
 Przed założeniem bloga opartego na technologiach **[Jekyll](/posts-by-tags/jekyll)** i **[GitHub Pages](/posts-by-tags/github-pages)** 

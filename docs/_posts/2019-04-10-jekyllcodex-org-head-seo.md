@@ -7,6 +7,8 @@ labels:
 langs:
 redirect_from:
   - jekyllcodex-org-head-seo
+  - writeonlydoc/jekyllcodex-org-head-seo
+  - writeonlydoc/2019/04/10/jekyllcodex-org-head-seo.html
 ---
 
 Wyszukiwując swój blog w google trafiłem na brzydki opis w rodzaju:

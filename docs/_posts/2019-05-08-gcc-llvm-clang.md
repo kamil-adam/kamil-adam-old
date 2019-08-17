@@ -7,6 +7,8 @@ labels:   gcc ir r
 langs:    haskell kotlin lua python ruby crystal julia pony rust go lisp
 redirect_from:
   - gcc-llvm-clang
+  - onions/gcc-llvm-clang
+  - onions/2019/05/08/gcc-llvm-clang.html
 ---
 
 W dawnych czasach każdy dobry programista chciał napisać swój własny **[kompilator]** języka C.

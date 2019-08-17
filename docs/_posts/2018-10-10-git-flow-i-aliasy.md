@@ -7,6 +7,8 @@ labels:   flow
 langs:
 redirect_from:
   - git-flow-i-aliasy
+  - cli/git-flow-i-aliasy
+  - cli/2018/10/10/git-flow-i-aliasy.html
 ---
 
 Gitflow jest wspaniałą koncepcją pracy z gałęziami w repozytorium Git.

@@ -7,6 +7,8 @@ labels:
 langs:    scala java
 redirect_from:
   - dlaczego-warto-prowadzic-bloga
+  - thoughts/dlaczego-warto-prowadzic-bloga
+  - thoughts/2018/08/13/dlaczego-warto-prowadzic-bloga.html
 ---
 
 Ja znalazłem cztery powody, dlaczego warto prowadzić bloga o programowaniu.

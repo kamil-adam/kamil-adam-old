@@ -7,6 +7,8 @@ labels:   minitest greenlight
 langs:    scala
 redirect_from:
   - dynamiczna-analiza-kodu
+  - resentiment/dynamiczna-analiza-kodu
+  - resentiment/2018/10/17/dynamiczna-analiza-kodu.html
 ---
 
 > Dynamiczna analiza programu to analiza oprogramowania komputerowego wykonywanego przez wykonywanie programów na rzeczywistym lub wirtualnym procesorze.

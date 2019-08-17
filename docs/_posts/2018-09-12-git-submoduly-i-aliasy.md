@@ -7,6 +7,8 @@ labels:   submodule
 langs:    java javascript
 redirect_from:
   - git-submoduly-i-aliasy
+  - cli/git-submoduly-i-aliasy
+  - cli/2018/09/12/git-submoduly-i-aliasy.html
 ---
 
 *Post oparty na prawdziwych wydarzeniach i traumach*

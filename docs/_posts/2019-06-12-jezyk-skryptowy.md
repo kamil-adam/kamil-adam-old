@@ -31,10 +31,12 @@ mimo że każdy z tych języków jest używany przez Google.
 Nie jest też sponsorowany przez JetBrains.
 Po prostu uważam,
 że JetBrains tworzy najlepsze IDE.
+Jest to tylko mój mały subiektywny ranking języków programowania na rok 2019.
 
 ## Język skryptowy ogólnego przeznaczenia - definicja
 [Język skryptowy](<https://pl.wikipedia.org/wiki/J%C4%99zyk_skryptowy>) (ang. *script language*)
-powinien być dynamicznie typowany i mieć prostą składnie.
+powinien być prostym językiem programowania,
+czyli być dynamicznie typowany i mieć prostą składnie.
 Dzięki temu można w nim szybko skryptować, testować, prototypować.
 Łatwo i szybko można go zrozumieć i jest polecany tym którzy *programują, ale nie są programistami*.
 

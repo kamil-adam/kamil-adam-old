@@ -2,7 +2,7 @@
 title:    'Który język programowania wybrać na początek - język natywny'
 author:   TheKamilAdam
 category: onions
-tags:     node-js clang native llvm monad bytecode
+tags:     node-js clang native llvm monad bytecode scala-native kotlin-native type-classes
 labels:
 langs:    rust java julia ocaml common-lisp go typescript dart haskell javascript scheme erlang lua pony crystal scala fsharp racket ml
 libs:
@@ -31,6 +31,7 @@ mimo że każdy ze zwycięskich języków jest używany przez Google.
 Nie jest też sponsorowany przez JetBrains.
 Po prostu uważam,
 że JetBrains tworzy najlepsze IDE.
+Jest to tylko mój mały subiektywny ranking języków programowania na rok 2019.
 
 ## Język natywny - definicja
 Roboczo przyjmiemy następujące definicje:
@@ -52,7 +53,7 @@ razem ze wszystkimi bibliotekami trzecimi i plikami konfiguracyjnymi
 * mała zajętość zasobów, głównie pamięci RAM
 * szybkość działania
 
-###  Jedna paczka ze wszystkim jako plik wykonywalny
+### Jedna paczka ze wszystkim jako plik wykonywalny
 Jeśli piszemy aplikację desktopową prawdopodobnie chcielibyśmy dostarczyć klientowi jeden plik wykonywalny.
 Tak żeby nie musiał instalować żadnych maszyn wirtualnych, interpreterów i dodatkowych bibliotek współdzielonych.
 Tak właśnie jest w przypadku języków kompilowanych do kodu natywnego.
@@ -149,6 +150,9 @@ A lista rzeczy które można zarzucić C++ jest długa:
 * często biblioteki wymagane do kompilacji instaluje się wprost do systemu operacyjnego,
 dlatego istnieje żart że linux nie jest systemem operacyjnym tylko środowiskiem do programowania w C/C++
 
+Na pewno nie jest to prosty język programowania.
+A niestety on jest często polecany jako pierwszy język do nauki programowania.
+
 ## Język natywny - zwycięzcy ...
 Język C++ z pozycji lidera próbowały wygryźć inne języki jak D oraz **[Vala]**
 (język transpilowany do C i oparty na bibliotece [GObject] ze składnią wzorowaną na językach **[Java]** i C#).
@@ -178,7 +182,7 @@ W takim przypadku istnieje kilka alternatyw,
 ale żadna z nich nie jest łatwa:
 * **[Rust]** - posiada zaawansowany system typów,
 domyślną niezmienność (ang. *immutable*), 
-prawie [Type Classes] i wiele innych cech deklaratywno funkcyjnych języków programowania.
+prawie **[Type Classes]** i wiele innych cech deklaratywno funkcyjnych języków programowania.
 Jednocześnie pozwalając na imperatywne optymalizacje tam gdzie ważna jest wydajność.
 * **[Pony](/posts-by-lang/pony)** - posiada typowany system aktorów,
 i podobnie jak **[Rust]**,

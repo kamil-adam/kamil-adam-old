@@ -33,6 +33,7 @@ mimo że każdy ze zwycięskich języków jest używany przez Google.
 Nie jest też sponsorowany przez JetBrains.
 Po prostu uważam,
 że JetBrains tworzy najlepsze IDE.
+Jest to tylko mój mały subiektywny ranking języków programowania na rok 2019.
 
 ## Język korporacyjny - definicja
 

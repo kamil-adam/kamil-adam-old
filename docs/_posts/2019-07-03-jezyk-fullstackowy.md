@@ -33,6 +33,7 @@ mimo że każdy ze zwycięskich języków jest używany przez Google.
 Nie jest też sponsorowany przez JetBrains.
 Po prostu uważam,
 że JetBrains tworzy najlepsze IDE.
+Jest to tylko mój mały subiektywny ranking języków programowania na rok 2019.
 
 ## JavaScript oraz jego problemy i dziwactwa
 **[JavaScript]** jest obecnie jedynym językiem programowania wspieranym przez przeglądarki bezpośrednio.
@@ -43,7 +44,7 @@ Jednocześnie JS posiada sporo swoich problemów i dziwactw. Zaczynając od najw
 3. Obiektowość oparta na [prototypach](<https://pl.wikipedia.org/wiki/Prototyp_(oprogramowanie)>).
 
 Ostatnie nie byłoby nawet problemem gdyby nie to,
-że w początkowej fazie istnienia  rozdziału na frontend i backend
+że w początkowej fazie istnienia rozdziału na frontend i backend
 programiści backendowi byli przymuszani do pisania frontendu.
 Bolało to zwłaszcza programistów języków korporacyjnych,
 gdzie obiektowość oparta jest na [klasach](<https://pl.wikipedia.org/wiki/Klasa_(programowanie_obiektowe)>).
@@ -55,6 +56,9 @@ W niektórych przeglądarkach brakowało niektórych funkcji,
 w innych te same funkcje zachowywały się różnie.
 Spowodowało to powstawanie wielu różnych nakładek i bibliotek na JS,
 z czego jedna stała się *de facto* standardem - **[JQuery]**.
+Było to jednak w dawnych czasach,
+gdy programowanie JavaScripcie było proste,
+ponieważ służył on głownie do robienia bezsensownych animacji na strona oraz customowych menu kontekstowych.
 
 Obecnie głównym problemem pisania aplikacji webowych jest to,
 że potrzebujemy osobnych programistów do tworzenia frontendu (*frontendowców*) 

@@ -13,49 +13,13 @@ title: {{ page.tag }}
   <h2>Artykuły zawierające tag {{ page.title }}:</h2>
 
   <dl class="posts-nav">
+    {% assign no-show-tags = true %}
+
     {% for post in site.posts %}
     {% if post.tags contains page.tag %}
-    <dt>
-      <a class="posts-nav-item" href="{{ post.url | relative_url }}">
-        <span class="posts-nav-item-date">
-          <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
-            {{ post.date | date: "%Y-%m-%d" }}
-          </time>
-        </span>
-        {{ post.title }}
-      </a>
-    </dt>
-    <dd>
-      <ul>
-        <li>
-          Kategoria :
-          <a href="{{ site.baseurl }}/posts-by-category/{{ post.category }}">{{ post.category | capitalize }}</a>
-        </li>
 
-        {% assign langs = post.langs | split: ' ' | sort %}
-        {% assign langs_size = langs | size %}
-        {% if 0 < langs_size %}
-        <li>
-          Języki programowania:
-          {% for lang in langs %}
-          <a href="{{ site.baseurl }}/posts-by-langs/{{ lang }}">{{ lang }}</a>
-          {% endfor %}
-        </li>
-        {% endif %}
+    {% include page-doc.html %}
 
-        {% assign libs = post.libs | split: ' ' | sort %}
-        {% assign libs_size = libs | size %}
-        {% if 0 < libs_size %}
-        <li>
-          Biblioteki programistyczne:
-          {% for lib in libs %}
-          <a href="{{ site.baseurl }}/posts-by-libs/{{ lib }}">{{ lib }}</a>
-          {% endfor %}
-        </li>
-        {% endif %}
-
-     </ul>
-    </dd>
     {% endif %}
     {% endfor %}
   </dl>

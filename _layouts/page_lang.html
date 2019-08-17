@@ -12,48 +12,14 @@ title: {{ page.lang }}
   <h2>Artykuły:</h2>
 
   <dl class="posts-nav">
+    {% assign no-show-langs = true %}
+
     {% for post in site.posts %}
     {% assign langs = post.langs | split: ' ' %}
     {% if langs contains page.lang %}
-    <dt>
-      <a class="posts-nav-item" href="{{ post.url | relative_url }}">
-        <span class="posts-nav-item-date">
-          <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
-            {{ post.date | date: "%Y-%m-%d" }}
-          </time>
-        </span>
-        {{ post.title }}
-      </a>
-    </dt>
-    <dd>
-      <ul>
 
-        <li>
-          Kategoria :
-          <a href="{{ site.baseurl }}/posts-by-category/{{ post.category }}">{{ post.category | capitalize }}</a>
-        </li>
+    {% include page-doc.html %}
 
-        {% assign tags = post.tags | sort %}
-        <li>
-          Tagi:
-          {% for tag in tags %}
-          <a href="{{ site.baseurl }}/posts-by-tags/{{ tag }}">{{ tag }}</a>
-          {% endfor %}
-        </li>
-
-        {% assign libs = post.libs | split: ' ' | sort %}
-        {% assign libs_size = libs | size %}
-        {% if 0 < libs_size %}
-        <li>
-          Biblioteki programistyczne:
-          {% for lib in libs %}
-          <a href="{{ site.baseurl }}/posts-by-libs/{{ lib }}">{{ lib }}</a>
-          {% endfor %}
-        </li>
-        {% endif %}
-
-      </ul>
-    </dd>
     {% endif %}
     {% endfor %}
   </dl>

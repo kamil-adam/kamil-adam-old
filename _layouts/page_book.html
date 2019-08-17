@@ -20,16 +20,9 @@ title: {{ page.book }}
   <dl class="posts-nav">
     {% for post in site.posts %}
     {% if post.books contains page.book %}
-    <dt>
-      <a class="posts-nav-item" href="{{ post.url | relative_url }}">
-        <span class="posts-nav-item-date">
-          <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
-            {{ post.date | date: "%Y-%m-%d" }}
-          </time>
-        </span>
-        {{ post.title }}
-      </a>
-    </dt>
+
+    {% include page-doc-dt.html %}
+
     {% endif %}
     {% endfor %}
   </dl>

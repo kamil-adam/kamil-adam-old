@@ -5,7 +5,7 @@ category: scala-native
 tags:     bash jekyll operator
 labels:
 libs:     scalaz
-langs:    scala kotlin clojure lisp perl elixir julia elm livescript ocaml fsharp ml
+langs:    scala kotlin clojure lisp perl elixir julia elm livescript ocaml fsharp meta-language
 redirect_from:
   - scalapipe
   - scala-native/scalapipe
@@ -228,7 +228,7 @@ Warto jednak wcześnie sprawdzić czy nasz operator nie jest zdefiniowany w istn
 [Clojure]: /posts-by-langs/clojure
 [Elixir]: /posts-by-langs/elixir
 [Kotlin]: /posts-by-langs/kotlin
-[Meta Language]: /posts-by-langs/ml
+[Meta Language]: /posts-by-langs/meta-language
 [Perl]: /posts-by-langs/perl
 [Scala]: /posts-by-langs/scala
 

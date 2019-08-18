@@ -4,7 +4,7 @@ author:   TheKamilAdam
 category: onions
 tags:     transpiler scala-js monad cli api interpreter node-js bucklescript gui
 labels:   clojurescript udash kotlin-js postgresql
-langs:    java python scala kotlin haskell clojure javascript typescript purescript elm dart ruby ceylon ocaml resonml
+langs:    java python scala kotlin haskell clojure javascript typescript purescript elm dart ruby ceylon ocaml resonml meta-language
 libs:     jquery
 redirect_from:
   - jezyk-fullstackowy
@@ -121,7 +121,8 @@ ale typowany dynamicznie. Promowany przez programistów **[Ruby]** we frameworku
 * **[TypeScript]** - rozszeżenie **[JS]** o statyczne typowanie i klasy
 * **[PureScript]** - **[Haskell]**, ale wykonywany zachłannie, 
 czyli jak *normalny* język programowania, a nie Haskell
-* **[Elm]*** - **[Haskell]**, ale już zintegrowany z frameworkami React i Redux (implementacja architektury Flux).
+* **[Elm]*** - język będący połączeniem języków **[Meta Language]** i **[Haskell]** 
+  oraz będący już zintegrowany z frameworkami React i Redux (implementacja architektury Flux).
 Jest z gwiazdką, bo jest dedykowany tylko do pisania frontendu.
 Jednocześnie posiada ciekawą właściwość jaką jest usuwanie martwego kodu podczas transpilacji.
 Dlatego aplikacja napisana w Elmie może być mniejsza niż kod Reacta 
@@ -236,6 +237,7 @@ gdy umie się już drugi nie powinno być problemem.
 [Clojure]: /posts-by-langs/clojure
 [Haskell]: /posts-by-langs/haskell
 [OCaml]: /posts-by-langs/ocaml
+[Meta Language]: /posts-by-langs/meta-language
 
 [GUI]: /posts-by-tags/gui
 [RAP]: https://www.eclipse.org/rap/
@@ -268,7 +270,7 @@ gdy umie się już drugi nie powinno być problemem.
 [PureScript]: /posts-by-langs/purescript
 [Elm]: /posts-by-langs/elm
 [Dart]: /posts-by-langs/dart
-[ReasonML]: /posts-by-langs/reasonml 
+[ReasonML]: /posts-by-langs/reasonml
 
 [babeljs]: https://babeljs.io/
 

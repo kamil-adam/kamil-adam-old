@@ -4,7 +4,7 @@ author:   TheKamilAdam
 category: onions
 tags:     node-js clang native llvm monad bytecode scala-native kotlin-native type-classes
 labels:
-langs:    rust java julia ocaml common-lisp go typescript dart haskell javascript scheme erlang lua pony crystal scala fsharp racket ml
+langs:    rust java julia ocaml common-lisp go typescript dart haskell javascript scheme erlang lua pony crystal scala fsharp racket meta-language
 libs:
 redirect_from:
   - jezyk-natywny
@@ -216,7 +216,7 @@ I to może odwrócić trend w najbliższych latach.
 [Julia]: /posts-by-langs/julia
 [F#]: /posts-by-langs/fsharp
 [OCaml]: /posts-by-langs/ocaml
-[Meta Language]: /posts-by-langs/ml
+[Meta Language]: /posts-by-langs/meta-language
 [Common Lisp]: /posts-by-langs/common-lisp
 [Go]: /posts-by-langs/go
 [TypeScript]: /posts-by-langs/typescript

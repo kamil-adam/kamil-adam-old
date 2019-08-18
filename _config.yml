@@ -1,5 +1,8 @@
 # Dependencies
 markdown:         CommonMarkGhPages
+commonmark:
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
 
 # Setup
 title:            WriteOnly.pl

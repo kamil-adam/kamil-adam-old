@@ -1,13 +1,14 @@
 ---
 title:    "uTest - operator Arrow Asserts"
 author:   TheKamilAdam
-category: resentiment
+category: scala-native
 tags:     operator
 labels:
 langs:    scala
 libs:     utest
 redirect_from:
   - arrow-asserts
+  - scala-native/arrow-asserts
   - resentiment/arrow-asserts
   - resentiment/2019/03/27/arrow-asserts.html
 ---

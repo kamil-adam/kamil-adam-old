@@ -1,13 +1,14 @@
 ---
 title:    "Przenośna Scala"
 author:   TheKamilAdam
-category: resentiment
+category: scala-native
 tags:     scala-jvm scala-js scala-native sbt clang compiler transpiler llvm node-js jvm native nojvm
 labels:
 langs:    scala haskell erlang rust go javascript pony crystal
 libs:     akka
 redirect_from:
   - przenosna-scala
+  - scala-native/przenosna-scala
   - resentiment/przenosna-scala
   - resentiment/2018/10/03/przenosna-scala.html
 ---

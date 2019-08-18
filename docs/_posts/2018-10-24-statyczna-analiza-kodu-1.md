@@ -1,13 +1,14 @@
 ---
 title:    "Statyczna analiza kodu dla języka Scala w SBT - część 1."
 author:   TheKamilAdam
-category: resentiment
+category: scala-native
 tags:     sbt code-analysis static-code-analysis scalafix 
 labels:   scalafmt scalariform
 langs:    scala
 libs:
 redirect_from:
   - statyczna-analiza-kodu-1
+  - scala-native/statyczna-analiza-kodu-1
   - resentiment/statyczna-analiza-kodu-1
   - resentiment/2018/10/24/statyczna-analiza-kodu-1.html
 ---

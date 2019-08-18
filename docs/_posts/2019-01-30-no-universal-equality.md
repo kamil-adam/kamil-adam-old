@@ -1,18 +1,19 @@
 ---
 title:    "Scala - No Universal Equality"
 author:   TheKamilAdam
-category: resentiment
+category: scala-native
 tags:     scala-jvm scala-js scala-native monad type-classes scalafix operator library compiler
 labels:   scalatic
 langs:    scala java haskell
 libs:     scalatest scalaz cats scalafix utest
 redirect_from:
   - no-universal-equality
+  - scala-native/no-universal-equality
   - resentiment/no-universal-equality
   - resentiment/no-universal-equality.html
 ---
 
-Ostatnim błędem zgłaszanym w kodzie projektu **[resentiment](/category/resentiment)** przez **[scalafix](/posts-by-tags/scalafix)**
+Ostatnim błędem zgłaszanym w kodzie projektu **[resentiment](/posts-by-category/resentiment)** przez **[scalafix](/posts-by-tags/scalafix)**
 jest "No Universal Equality" wynikający z użycia operatora `==`.
 
 W języku **[Scala](/posts-by-langs/scala)** obiekty domyślnie porównuje się za pomocą operatora `==`.

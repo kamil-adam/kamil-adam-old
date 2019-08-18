@@ -1,13 +1,14 @@
 ---
 title:    "Flagi kompilatora Scalac"
 author:   TheKamilAdam
-category: resentiment
+category: scala-native
 tags:     sbt compiler scalafix
 labels:   scalac options
 langs:    scala perl 
 libs:
 redirect_from:
   - flagi-kompilatora-scalac
+  - scala-native/flagi-kompilatora-scalac
   - resentiment/flagi-kompilatora-scalac
   - resentiment/2018/11/07/flagi-kompilatora-scalac.html
 ---
@@ -129,7 +130,7 @@ val SharedSettings = Seq(
 
 Właśnie ustawiliśmy ponad 30 różnych flag,
 ale pewnie w niektórych wypadkach chciałbyś zmodyfikować tę listę.
-Np. żeby móc używać wtyczki [ScalaFix](/resentiment/2018/10/24/statyczna-analiza-kodu-1.html).
+Np. żeby móc używać wtyczki [ScalaFix](/statyczna-analiza-kodu-1.html).
 
 Wtyczka ta wymaga dodania dwóch flag (`-Ywarn-adapted-args`, `-Ywarn-unused"`) oraz usunięcia jednej (`-Xfatal-warnings`).
 Dla wygody, flagi przypisuję do zmiennych, a następnie dodaje do `scalacOptions`.

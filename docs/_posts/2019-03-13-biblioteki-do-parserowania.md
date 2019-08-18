@@ -1,13 +1,14 @@
 ---
 title:    "Biblioteki do parsowania dla języka Scala"
 author:   TheKamilAdam
-category: resentiment
+category: scala-native
 tags:     library json parser lexer ast compiler xml properties interface dsl
 labels:   parboiled2
 langs:    scala
 libs:     utest fastparse
 redirect_from:
   - biblioteki-do-parserowania
+  - scala-native/biblioteki-do-parserowania
   - resentiment/biblioteki-do-parserowania
   - resentiment/2019/03/13/biblioteki-do-parserowania.html
 ---

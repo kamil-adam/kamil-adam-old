@@ -1,19 +1,20 @@
 ---
 title:    "Bardziej dynamiczna analiza kodu dla języka Scala - Property-based testing"
 author:   TheKamilAdam
-category: resentiment
+category: scala-native
 tags:     code-analysis dynamic-code-analysis scala-js scala-native
 labels:   property-based scalacheck scalaprops nyaya
 langs:    scala haskell
 libs:     specs2 scalatest scalaz
 redirect_from:
   - bardziej-dynamiczna-analiza-kodu
+  - scala-native/bardziej-dynamiczna-analiza-kodu
   - resentiment/bardziej-dynamiczna-analiza-kodu
   - resentiment/2018/11/14/bardziej-dynamiczna-analiza-kodu.html
 ---
 
 Testy modułowe (jednostkowe) napisane w poście
-[Dynamiczna analiza kodu](/resentiment/2018/10/17/dynamiczna-analiza-kodu.html)
+[Dynamiczna analiza kodu](/dynamiczna-analiza-kodu.html)
 dla projektu [resentiment](<https://github.com/writeonly/resentiment>)
 zawiodły.
 Mimo posiadania 100% pokrycia kodu dla klasy Calculator klasa ta nie działała w sposób poprawy.

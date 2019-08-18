@@ -1,13 +1,14 @@
 ---
 title:    "Ciągła integracja, ciągła kontrola, ciągła Scala"
 author:   TheKamilAdam
-category: resentiment
+category: scala-native
 tags:     sbt scala-native clang ubuntu
 labels:   coveralls continuous-integration travis-ci
 langs:    scala java rust
 libs:
 redirect_from:
   - ciagla-intergracja
+  - scala-native/ciagla-intergracja
   - resentiment/ciagla-intergracja
   - resentiment/2018/12/12/ciagla-intergracja.html
 ---

@@ -1,19 +1,20 @@
 ---
 title:    "Statyczna analiza kodu dla języka Scala w SBT - część 2."
 author:   TheKamilAdam
-category: resentiment
+category: scala-native
 tags:     scala-jvm scala-js scala-native code-analysis static-code-analysis sbt
 labels:   scalastyle wartremover scapegoat linter scala-clippy sbt-cpd sbt-stats
 langs:    scala
 libs:
 redirect_from:
   - statyczna-analiza-kodu-2
+  - scala-native/statyczna-analiza-kodu-2.html
   - resentiment/statyczna-analiza-kodu-2.html
   - resentiment/2018/10/31/statyczna-analiza-kodu-2.html
 ---
 
 Jest to kontynuacja posta
-[Statyczna analiza kodu dla języka Scala w SBT - część 1](resentiment/2018/10/24/statyczna-analiza-kodu-1.html).
+[Statyczna analiza kodu dla języka Scala w SBT - część 1](/statyczna-analiza-kodu-1.html).
 
 ## Wtyczki nie modyfikujące kodu źródłowego.
 

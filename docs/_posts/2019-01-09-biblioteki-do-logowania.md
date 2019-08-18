@@ -1,13 +1,14 @@
 ---
 title:    "Biblioteki do logowania dla języka Scala"
 author:   TheKamilAdam
-category: resentiment
+category: scala-native
 tags:     library cli scala-js scala-native factory logging
 labels:   logging scala-logging scribe
 langs:    scala java
 lisb:     utest slogging
 redirect_from:
   - biblioteki-do-logowania
+  - scala-native/biblioteki-do-logowania
   - resentiment/biblioteki-do-logowania
   - resentiment/2019/01/09/biblioteki-do-logowania.html
 ---

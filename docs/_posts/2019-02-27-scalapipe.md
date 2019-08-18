@@ -1,13 +1,14 @@
 ---
 title:    'Problem wywołań cebulowych w Scali'
 author:   TheKamilAdam
-category: resentiment
+category: scala-native
 tags:     bash jekyll operator
 labels:
 libs:     scalaz
 langs:    scala kotlin clojure lisp perl elixir julia elm livescript ocaml fsharp ml
 redirect_from:
   - scalapipe
+  - scala-native/scalapipe
   - resentiment/scalapipe
   - resentiment/2019/02/27/scalapipe.html
 ---

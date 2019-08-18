@@ -1,12 +1,13 @@
 ---
 title:    'Lokalne uruchamianie strony hostowanej na GitHub Pages'
 author:   TheKamilAdam
-category: writeonlydoc
+category: jekyll
 tags:     jekyll json alias github github-pages
 lang:     go ruby
 libs:
 redirect_from:
   - github-pages
+  - jekyll/github-pages
   - writeonlydoc/github-pages
   - writeonlydoc/2019/05/01/github-pages.html
 ---

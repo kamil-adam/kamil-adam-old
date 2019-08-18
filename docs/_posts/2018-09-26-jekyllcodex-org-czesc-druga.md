@@ -1,13 +1,14 @@
 ---
 title:    "jekyllcodex.org - część druga"
 author:   TheKamilAdam
-category: writeonlydoc
+category: jekyll
 tags:     jekyll blog jekyllcodex seo
 labels:
 langs:
 libs:
 redirect_from:
   - jekyllcodex-org-czesc-druga
+  - jekyll/jekyllcodex-org-czesc-druga
   - writeonlydoc/jekyllcodex-org-czesc-druga
   - writeonlydoc/2018/09/26/jekyllcodex-org-czesc-druga.html
 ---

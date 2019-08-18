@@ -1,13 +1,14 @@
 ---
 title:    "jekyllcodex.org - problem ze skryptem seo"
 author:   TheKamilAdam
-category: writeonlydoc
+category: jekyll
 tags:     jekyll blog jekyllcodex seo
 labels:
 langs:
 libs:
 redirect_from:
   - jekyllcodex-org-head-seo
+  - jekyll/jekyllcodex-org-head-seo
   - writeonlydoc/jekyllcodex-org-head-seo
   - writeonlydoc/2019/04/10/jekyllcodex-org-head-seo.html
 ---

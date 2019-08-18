@@ -1,13 +1,14 @@
 ---
 title:    "Jekyll - kategorie i tagi"
 author:   TheKamilAdam
-category: writeonlydoc
+category: jekyll
 tags:     jekyll blog
 labels:
 langs:
 libs:
 redirect_from:
   - kategorie-i-tagi
+  - jekyll/kategorie-i-tagi
   - writeonlydoc/kategorie-i-tagi
   - writeonlydoc/2019/01/16/kategorie-i-tagi.html
 ---

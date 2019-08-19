@@ -2,9 +2,9 @@
 title:    'Który język programowania wybrać na początek - język natywny'
 author:   TheKamilAdam
 category: programming
-tags:     node-js clang native llvm monad bytecode scala-native kotlin-native type-classes
+tags:     bytecode clang docker kotlin-native llvm monad native node-js scala-native type-classes
 labels:
-langs:    rust java julia ocaml common-lisp go typescript dart haskell javascript scheme erlang lua pony crystal scala fsharp racket meta-language
+langs:    common-lisp crystal dart erlang fsharp go haskell java javascript julia lua meta-language ocaml pony racket rust scala scheme smalltalk typescript
 libs:
 redirect_from:
   - jezyk-natywny
@@ -117,8 +117,8 @@ Na podstawie tego zestawu testów możemy podzielić języki programowania na ki
    * LispSBCL - implementacja **[Common Lisp]**
    * **[Go]** - kompilowany do kodu natywnego
 4. Trzy do dziesięciu razy wolniejsze niż C:
-   * **[TypeScript]** - kompilowany do JS i uruchamiany na Node.js
-   * **[Dart]** - prawdopodobnie kompilowany do JS i uruchamiany na Node.js 
+   * **[TypeScript]** - kompilowany do **[JS]** i uruchamiany na **[Node.js]**
+   * **[Dart]** - prawdopodobnie kompilowany do **[JS]** i uruchamiany na **[Node.js]** 
    * **[Haskell]** GHC - prawdopodobnie kompilowany do C
    * **[Node.js]** - prawdopodobnie chodzi o **[JavaScript]**
    * **[Racket]** - dialekt **[Scheme]**
@@ -185,11 +185,11 @@ ale żadna z nich nie jest łatwa:
 domyślną niezmienność (ang. *immutable*), 
 prawie **[Type Classes]** i wiele innych cech deklaratywno funkcyjnych języków programowania.
 Jednocześnie pozwalając na imperatywne optymalizacje tam gdzie ważna jest wydajność.
-* **[Pony](/posts-by-lang/pony)** - posiada typowany system aktorów,
+* **[Pony]** - posiada typowany system aktorów inspirowany językiem **[Erlang]**,
 i podobnie jak **[Rust]**,
 rozbudowany system własności zmiennych.
-* **[Crystal](/posts-by-lang/crystal)** - język bazujący składniowo na języku **[Ruby]**,
-a więc kolejny spadkobierca języka SmallTalk
+* **[Crystal])** - język bazujący składniowo na języku **[Ruby]**,
+a więc kolejny spadkobierca języka **[Smalltalk]]*
 
 Oprócz tego część języków nienatywnych stara się zostać językami natywnymi.
 Przykładami mogą tu być **[Scala Native]** i **[Kotlin Native]**.
@@ -203,8 +203,39 @@ Z drugiej strony ilość i jakość narzędzi,
 które powstają w Go jest niesamowita.
 I to może odwrócić trend w najbliższych latach.
 
-[maszyny P-code]: https://en.wikipedia.org/wiki/P-code_machine
+[Common Lisp]: /posts-by-langs/common-lisp
+[Crystal]: /posts-by-langs/crystal
+[Dart]: /posts-by-langs/dart
+[Erlang]: /posts-by-langs/erlang
+[F#]: /posts-by-langs/fsharp
+[Go]: /posts-by-langs/go
+[Haskell]: /posts-by-langs/haskell
+[Java]: /posts-by-langs/java
+[JavaScript]: /posts-by-langs/javascript
+[Julia]: /posts-by-langs/julia
+[JS]: /posts-by-langs/javascript
+[Lua]: /posts-by-langs/lua
+[Meta Language]: /posts-by-langs/meta-language
+[OCaml]: /posts-by-langs/ocaml
+[Pony]: /posts-by-langs/pony
+[Racket]: /posts-by-langs/racket 
+[Ruby]: /posts-by-langs/ruby
+[Rust]: /posts-by-langs/rust
+[Scala]: /posts-by-langs/scala
+[Scheme]: /posts-by-langs/scheme
+[Smalltalk]: /posts-by-langs/smalltalk
+[TypeScript]: /posts-by-langs/typescript
+
 [kod bajtowy]: /posts-by-tags/bytecode
+[Docker]: /posts-by-tags/docker
+[Kotlin Native]: /posts-by-tags/kotlin-native
+[LLVM]: /posts-by-tags/llvm
+[monady]: /posts-by-tags/monad
+[Node.js]: /posts-by-tags/node-js
+[Scala Native]: /posts-by-tags/scala-native
+[Type Classes]: /posts-by-tags/type-classes
+
+[maszyny P-code]: https://en.wikipedia.org/wiki/P-code_machine
 
 [Electron]: https://pl.wikipedia.org/wiki/Electron_(oprogramowanie)
 [Atom]: https://ide.atom.io/
@@ -212,41 +243,8 @@ I to może odwrócić trend w najbliższych latach.
 
 [Benchmarks Game]: https://benchmarksgame-team.pages.debian.net/benchmarksgame/which-programs-are-fastest.html
 
-[Rust]: /posts-by-langs/rust
-[Java]: /posts-by-langs/java
-[Julia]: /posts-by-langs/julia
-[F#]: /posts-by-langs/fsharp
-[OCaml]: /posts-by-langs/ocaml
-[Meta Language]: /posts-by-langs/meta-language
-[Common Lisp]: /posts-by-langs/common-lisp
-[Go]: /posts-by-langs/go
-[TypeScript]: /posts-by-langs/typescript
-[Dart]: /posts-by-langs/dart
-[Haskell]: /posts-by-langs/haskell
-[Node.js]: /posts-by-tags/node-js
-[JavaScript]: /posts-by-langs/javascript
-[Racket]: /posts-by-langs/racket 
-[Scheme]: /posts-by-langs/scheme
-[Erlang]: /posts-by-langs/erlang
-[Lua]: /posts-by-langs/lua
-
-[monady]: /posts-by-tags/monad
-[LLVM]: /posts-by-tags/llvm
-
 [Vala]: https://pl.wikipedia.org/wiki/Vala_(j%C4%99zyk_programowania)
 [GObject]: https://en.wikipedia.org/wiki/GObject
 
 [Tiobe]: https://www.tiobe.com/tiobe-index/
 [IEEE]: https://spectrum.ieee.org/at-work/innovation/the-2018-top-programming-languages
-[Docker]: /posts-by-tags/docker
-
-
-[Type Classes]: /posts-by-tags/type-classes
-
-[Pony]: /posts-by-langs/pony
-[Crystal]: /posts-by-langs/crystal
-[Ruby]: /posts-by-langs/ruby
-
-[Scala Native]: /posts-by-tags/scala-native
-[Kotlin Native]: /posts-by-tags/kotlin-native
-[Scala]: /posts-by-langs/scala

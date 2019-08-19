@@ -1,13 +1,14 @@
 ---
 title:    'Który język programowania wybrać na początek - język skryptowy'
 author:   TheKamilAdam
-category: onions
+category: programming
 tags:     bash dsl bdd cst
 labels:
 langs:    python perl awk ruby elixir crystal lisp common-lisp scheme clojure
 libs:
 redirect_from:
   - jezyk-skryptowy
+  - programming/jezyk-skryptowy
   - onions/jezyk-skryptowy
   - onions/2019/06/12/jezyk-skryptowy.html
   - onions/2019/06/12/ktory-jezyk-programowania-wybrac-jezyk-skryptowy.html

@@ -1,13 +1,14 @@
 ---
 title:    'Który język programowania wybrać na początek - język natywny'
 author:   TheKamilAdam
-category: onions
+category: programming
 tags:     node-js clang native llvm monad bytecode scala-native kotlin-native type-classes
 labels:
 langs:    rust java julia ocaml common-lisp go typescript dart haskell javascript scheme erlang lua pony crystal scala fsharp racket meta-language
 libs:
 redirect_from:
   - jezyk-natywny
+  - programming/jezyk-natywny
   - onions/jezyk-natywny
   - onions/2019/07/03/jezyk-natywny.html
   - onions/2019/07/03/ktory-jezyk-programowania-wybrac-jezyk-natywny.html

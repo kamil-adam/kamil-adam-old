@@ -1,13 +1,14 @@
 ---
 title:    'Który język programowania wybrać na początek - język korporacyjny'
 author:   TheKamilAdam
-category: onions
+category: programming
 tags:     jvm
 labels:
 langs:    java scala kotlin clojure frege eta go python ruby lisp haskell ocaml fsharp
 libs:
 redirect_from:
   - jezyk-korporacyjny
+  - programming/jezyk-korporacyjny
   - onions/jezyk-korporacyjny
   - onions/2019/06/19/jezyk-korporacyjny
   - onions/2019/06/19/ktory-jezyk-programowania-wybrac-jezyk-korporacyjny.html

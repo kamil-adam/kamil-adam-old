@@ -1,13 +1,14 @@
 ---
 title:    'Kolejny język programowania do nauki - paradygmaty programowania'
 author:   TheKamilAdam
-category: onions
+category: programming
 tags:     jvm lambda-calculus node-js 
 labels:
 langs:    clojure coffeescript common-lisp elm emacs-lisp fsharp go haskell java javascript kotlin lisp meta-language ocaml perl purescript python reasonml ruby rust scala scheme smalltalk typescript
 libs:     akka arrow cats pulsar quasar scalaz vavr zio
 redirect_from:
   - paradygmaty-programowania
+  - programming/paradygmaty-programowania
   - onions/paradygmaty-programowania
 ---
 

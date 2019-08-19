@@ -1,13 +1,14 @@
 ---
 title:    'Krótki opis konstrukcji kompilatorów GCC, LLVM i Clang'
 author:   TheKamilAdam
-category: onions
+category: programming
 tags:     clang llvm compiler parser lexer ast scala-native cli interface jvm interpreter assembler api bytecode
 labels:   gcc ir r
 langs:    haskell kotlin lua python ruby crystal julia pony rust go lisp
 libs:
 redirect_from:
   - gcc-llvm-clang
+  - programming/gcc-llvm-clang
   - onions/gcc-llvm-clang
   - onions/2019/05/08/gcc-llvm-clang.html
 ---

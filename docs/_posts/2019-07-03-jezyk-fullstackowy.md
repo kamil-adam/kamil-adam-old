@@ -2,9 +2,9 @@
 title:    'Który język programowania wybrać na początek - język fullstackowy'
 author:   TheKamilAdam
 category: programming
-tags:     transpiler scala-js monad cli api interpreter node-js bucklescript gui
+tags:     api bucklescript cli interpreter gui kotlin-js monad node-js scala-js transpiler   
 labels:   clojurescript udash kotlin-js postgresql
-langs:    java python scala kotlin haskell clojure javascript typescript purescript elm dart ruby ceylon ocaml resonml meta-language
+langs:    ceylon clojure coffeescript dart elm java javascript haskell kotlin livescript meta-language ocaml purescript python reasonml ruby scala typescript        
 libs:     jquery
 redirect_from:
   - jezyk-fullstackowy
@@ -110,7 +110,7 @@ Prawdopodobnie największym jest przetwarzanie współbieżne.
 Statycznie typowane języki korporacyjne posiadają wielowątkowość do przetwarzania współbieżnego.
 Interpretery JS posiadają jeden wątek 
 i do przetwarzania współbieżnego używa konstrukcji `Promise` (*obietnicy*),
-której najbliżej do [monady](/posts-by-tags/monad) `IO` z Haskella lub `Future` ze Scali.
+której najbliżej do [monady]) `IO` z Haskella lub `Future` ze Scali.
 Ponieważ nie da się łatwo zamienić modelu `Promise` na wielowątkowość to jest to problemem.
 
 Ponieważ pierwsze podejście okazało się niezadowalające postanowiono 
@@ -119,9 +119,12 @@ ale jednocześnie rozwiązujące znane w nim problemy.
 Te języki to m.in.:
 * **[CoffeeScript]** - pierwszy popularny, nowy język transpilowany do JS. Posiada klasy i *normalne* dziedziczenie,
 ale typowany dynamicznie. Promowany przez programistów **[Ruby]** we frameworku RoR
+* **[LiveScript]** - funkcyjny następca CoffeeScriptu
 * **[TypeScript]** - rozszeżenie **[JS]** o statyczne typowanie i klasy
 * **[PureScript]** - **[Haskell]**, ale wykonywany zachłannie, 
 czyli jak *normalny* język programowania, a nie Haskell
+* **[ReasonML]** - **[OCaml]** ze zmienioną składnią w celu upodobnienia go do **[JS]**.
+  Także transpilowany za pomocą **[BuckleScript]**.
 * **[Elm]*** - język będący połączeniem języków **[Meta Language]** i **[Haskell]** 
   oraz będący już zintegrowany z frameworkami React i Redux (implementacja architektury Flux).
 Jest z gwiazdką, bo jest dedykowany tylko do pisania frontendu.
@@ -132,8 +135,6 @@ Dlatego aplikacja napisana w Elmie może być mniejsza niż kod Reacta
 Inne przeglądarki miały posiadać maszynę wirtualną Darta napisaną w JS.
   2. Język do pisania frontendu, transpilowany do JS
   3. Język do pisania frontendu i aplikacji mobilnych za pomocą frameworku Flutter
-* **[ReasonML]** - **[OCaml]** ze zmienioną składnią w celu upodobnienia go do **[JS]**.
-  Także transpilowany za pomocą **[BuckleScript]**.
 
 Ale jakim cudem w ogóle można mówić o JS jako o języku *fullstackowym*?
 Spójrzy na małe kalendarium:
@@ -142,7 +143,7 @@ Teoretycznie nic to nie wnosi do tej historii, ale zainspirowało niektórych
 * 2008 - Gnome dodaje dwa [bindingi Javascriptu](<https://wiki.gnome.org/JavaScript>), [Gjs] i [Seed].
 Są one dedykowane do tworzenia **[GUI]** w miejsce wcześniej stosowanego w tym celu języka **[Python]**, 
 ale można ich używać jako główny język do pisania aplikacji oraz jako język skryptowy
-* 2009 - powstaje [Node.js], wyciągnięty z przeglądarki interpreter V8,
+* 2009 - powstaje [Node.js], wyciągnięty z przeglądarki [interpreter] V8,
 który można używać z linii poleceń [CLI]
 * 2011 - powstaje [Vert.x], framework do przetwarzania współbieżnego na [JVM],
 który posiada [API] m.in. w JavaScripcie
@@ -224,30 +225,48 @@ gdy umie się już drugi nie powinno być problemem.
 
 [Lista języków kompilowanych do JS](<https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS>)
 
+[ceylon]: /posts-by-langs/ceylon
+[Clojure]: /posts-by-langs/clojure
+[CoffeeScript]: /posts-by-langs/coffeescript
+[Dart]: /posts-by-langs/dart
+[Elm]: /posts-by-langs/elm
+[Java]: /posts-by-langs/java
+[JavaScript]: /posts-by-langs/javascript
+[JS]: /posts-by-langs/javascript
+[Haskell]: /posts-by-langs/haskell
+[Kotlin]: /posts-by-langs/kotlin
+[LiveScript]: /posts-by-langs/livescript
+[Meta Language]: /posts-by-langs/meta-language
+[OCaml]: /posts-by-langs/ocaml
+[PureScript]: /posts-by-langs/purescript
+[Python]: /posts-by-langs/python
+[ReasonML]: /posts-by-langs/reasonml
+[Ruby]: /posts-by-langs/ruby
+[Scala]: /posts-by-langs/scala
+[TypeScript]: /posts-by-langs/typescript
+
+[JQuery]: /posts-by-libs/jquery
+
+[API]: /posts-by-tags/api
+[BuckleScript]: /posts-by-tags/bucklescript
+[CLI]: /posts-by-tags/cli
+[JVM]: /posts-by-tags/jvm
+[interpreter]: /posts-by-tags/interpreter
+[GUI]: /posts-by-tags/gui
+[Kotlin.js]: /posts-by-tags/kotlin-js
+[monady]: /posts-by-tags/monad
+[Node.js]: /posts-by-tags/node.js
+[Scala.js]: /posts-by-tags/scala-js
+[transpilator]: /posts-by-tags/transpiler
+
 [Słabe typowanie]: https://pl.wikipedia.org/wiki/Typowanie_s%C5%82abe
 [JSFuck]: https://github.com/aemkei/jsfuck
 
-[JQuery]: /posts-by-tags/jquery
-
-[transpilator]: /posts-by-tags/transpiler
-
-[Java]: /posts-by-langs/java
-[Scala]: /posts-by-langs/scala
-[Kotlin]: /posts-by-langs/kotlin
-[ceylon]: /posts-by-langs/ceylon
-[Clojure]: /posts-by-langs/clojure
-[Haskell]: /posts-by-langs/haskell
-[OCaml]: /posts-by-langs/ocaml
-[Meta Language]: /posts-by-langs/meta-language
-
-[GUI]: /posts-by-tags/gui
 [RAP]: https://www.eclipse.org/rap/
 [SWT]: https://www.eclipse.org/swt/
 [GWT]: http://www.gwtproject.org
 [Pyjs]: http://pyjs.org/
 
-[Scala.js]: /posts-by-tags/scala-js
-[Kotlin.js]: /posts-by-tags/kotlin-js
 [Ceylon.js]: https://ceylon-lang.org/documentation/1.3/reference/interoperability/js/
 [ClojureScript]: https://clojurescript.org/
 
@@ -259,19 +278,8 @@ gdy umie się już drugi nie powinno być problemem.
 [GHCJS]: https://github.com/ghcjs/ghcjs
 [Haste]: https://github.com/valderman/haste-compiler
 [uhc]: https://github.com/uhc/uhc
-[BuckleScript]: /posts-by-tags/bucklescript
 
-[JS]: /posts-by-langs/javascript
-[JVM]: /posts-by-tags/jvm
 [udash]: https://udash.io/
-
-[JavaScript]: /posts-by-langs/javascript
-[CoffeeScript]: /posts-by-langs/coffeescript
-[TypeScript]: /posts-by-langs/typescript
-[PureScript]: /posts-by-langs/purescript
-[Elm]: /posts-by-langs/elm
-[Dart]: /posts-by-langs/dart
-[ReasonML]: /posts-by-langs/reasonml
 
 [babeljs]: https://babeljs.io/
 
@@ -281,20 +289,14 @@ gdy umie się już drugi nie powinno być problemem.
 [VSC]: https://code.visualstudio.com/docs/
 [Google Cloud Functions]: https://cloud.google.com/functions/
 
-[Python]: /posts-by-langs/python
-[Ruby]: /posts-by-langs/ruby
 [Gjs]: https://gitlab.gnome.org/GNOME/gjs/blob/master/README.md
 [Seed]: https://gitlab.gnome.org/GNOME/seed
 [V8]: https://pl.wikipedia.org/wiki/V8_(silnik_JavaScript)
-[Node.js]: https://en.wikipedia.org/wiki/Node.js
 [Npm]: https://pl.wikipedia.org/wiki/Npm_(manager_pakiet%C3%B3w)
 [Vert.x]: https://en.wikipedia.org/wiki/Vert.x
 
 [Babel]: https://babeljs.io/
 [Programowanie sterowane zdarzeniami]: https://pl.wikipedia.org/wiki/Programowanie_sterowane_zdarzeniami
-
-[API]: /posts-by-tags/api
-[CLI]: /posts-by-tags/cli
 
 [Lagom]: https://github.com/lagom/lagom
 [Akka HTTP]: https://github.com/akka/akka-http

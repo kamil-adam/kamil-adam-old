@@ -5,60 +5,12 @@ category: programming
 tags:     jvm lambda-calculus node-js 
 labels:
 langs:    clojure coffeescript common-lisp elm emacs-lisp fsharp go haskell java javascript kotlin lisp meta-language ocaml perl purescript python reasonml ruby rust scala scheme smalltalk typescript
-libs:     akka arrow cats pulsar quasar scalaz vavr zio
+libs:     
 redirect_from:
   - paradygmaty-programowania
   - programming/paradygmaty-programowania
   - onions/paradygmaty-programowania
 ---
-
-[Clojure]: /posts-by-langs/clojure
-[CS]: /posts-by-langs/coffeescript
-[Common Lisp]: /posts-by-langs/common-lisp
-[Elm]: /posts-by-langs/elm
-[F#]: /posts-by-langs/fsharp
-[Go]: /posts-by-langs/go
-[Haskell]: /posts-by-langs/haskell 
-[Java]: /posts-by-langs/java
-[JS]: /posts-by-langs/javascript
-[Kotlin]: /posts-by-langs/kotlin
-[LISP]: /posts-by-langs/lisp
-[LS]: /posts-by-langs/livescript
-[Meta Language]: /posts-by-langs/meta-language
-[OCaml]: /posts-by-langs/ocaml
-[Perl]: /posts-by-langs/perl
-[PureScript]: /posts-by-langs/purescript
-[Python]: /posts-by-langs/python
-[Racket]: /posts-by-langs/racket
-[ReasonML]: /posts-by-langs/resonml
-[Ruby]: /posts-by-langs/ruby
-[Rust]: /posts-by-langs/rust
-[Scheme]: /posts-by-langs/scheme
-[Smalltalk]: /posts-by-langs/smalltalk
-[Scala]: /posts-by-langs/scala
-[TS]: /posts-by-langs/typescript
-
-[Akka]: /posts-by-tags/akka
-[ARROW]: /posts-by-tags/arrow
-[Cats]: /posts-by-tags/cats
-[Functional Java]: /posts-by-tags/functionaljava
-[JVM]: /posts-by-tags/jvm
-[node.js]: /posts-by-tags/node-js
-[Pulsar]: posts-by-tags/pulsar
-[Quasar]: posts-by-tags/quasar
-[rachunek lambda]: /posts-by-tags/lambda-calculus
-[Scalaz]: /posts-by-tags/scalaz
-[Vavr]: /posts-by-tags/vavr
-[ZIO]: /posts-by-tags/zio
-
-[Czysta architektura]: /read-books/czysta-architektura
-[Czysty kod]: /read-books/czysty-kod
-[Mistrz czystego kodu]: /read-books/mistrz-czystego-kodu
-[Pragmatyczny programista]: /read-books/pragmatyczny-programista
-[Scala. Nauka programowania]: /read-books/scala-nauka-programowania
-
-[Squeak]: https://pl.wikipedia.org/wiki/Squeak
-[Tiobe]: https://www.tiobe.com/tiobe-index/
 
 [Zdecydowaliśmy się nauczyć programować](/jezyk-skryptowy).
 [I zostać programistami](/czy-nadaje-sie-na-programiste).
@@ -144,7 +96,7 @@ ale przypadkiem zaimplementowane już w 1958 w języki **[LISP]**.
       Jest totalne programowanie obiektowe,
       gdzie wszystko jest obiektem,
       a obiekty komunikują się wiadomościami.
-      Dziś tę definicję spełnia tylko Ruby.
+      Dziś tę definicję spełnia tylko **[Ruby]**.
    3. Dla języka C++ w 1985 roku.
       Jest to obecnie najpopularniejsza definicja obiektowości.
       Oparta na dziedziczeniu (czasem nazywanym rozszerzanie lub implementowaniem) klas, interfejsów i/lub protokołów.
@@ -186,7 +138,7 @@ Z czego programowanie logiczne jest dedykowane do specyficznej klasy problemów 
 
 ### http://wazniak.mimuw.edu.pl
   
-Na stronie <http://wazniak.mimuw.edu.pl>
+Na stronie <http://wazniak.mimuw.edu.pl>ę
 w kursie [Paradygmaty programowania](http://wazniak.mimuw.edu.pl/index.php?title=Paradygmaty_programowania)
 autor zgadza się co do czterech głównych paradygmatów z Vikash Sharma,
 ale dodaje jeszcze cztery [inne paradygmaty](<http://wazniak.mimuw.edu.pl/index.php?title=Paradygmaty_programowania/Wyk%C5%82ad_15:_Inne_paradygmaty_warte_wspomnienia>):
@@ -246,9 +198,9 @@ Pewnym rozwiązaniem mogą być strony try-online jak:
 
 Innym rozwiązaniem jest nauka nowych języków na platformę którą już mamy zainstalowaną.
 Czyli:
-* jeśli programujemy w C# możemy zacząć używać **[F#]**;
-* jeśli programujemy w Javie możemy zacząć używać jednego z języków **[Scala]**, **[Kotlin]** lub **[Clojure]**;
-* jeśli programujemy w **[JS]**/**[CS]**/**[LS]**/**[TS]**
+* jeśli programujemy w C# na .NET możemy zacząć używać **[F#]**;
+* jeśli programujemy w Javie na **[JVM]** możemy zacząć używać jednego z języków **[Scala]**, **[Kotlin]** lub **[Clojure]**;
+* jeśli programujemy w **[JS]**/**[CS]**/**[LS]**/**[TS]** na **[node.js]**
 możemy zacząć używać jednego z funkcyjnych transpilowanych do **[JS]** jak **[Elm]**, **[PureScript]** lub **[ReasonML]**. 
 
 ## Podsumowanie
@@ -259,3 +211,43 @@ Na nasze szczęście język taki istnieje.
 Tylko nie da się go nauczyć w jeden rok.
 
 cdn.
+
+[Clojure]: /posts-by-langs/clojure
+[CS]: /posts-by-langs/coffeescript
+[Common Lisp]: /posts-by-langs/common-lisp
+[Elm]: /posts-by-langs/elm
+[F#]: /posts-by-langs/fsharp
+[Go]: /posts-by-langs/go
+[Haskell]: /posts-by-langs/haskell 
+[Java]: /posts-by-langs/java
+[JS]: /posts-by-langs/javascript
+[Kotlin]: /posts-by-langs/kotlin
+[LISP]: /posts-by-langs/lisp
+[LS]: /posts-by-langs/livescript
+[Meta Language]: /posts-by-langs/meta-language
+[OCaml]: /posts-by-langs/ocaml
+[Perl]: /posts-by-langs/perl
+[PureScript]: /posts-by-langs/purescript
+[Python]: /posts-by-langs/python
+[Racket]: /posts-by-langs/racket
+[ReasonML]: /posts-by-langs/resonml
+[Ruby]: /posts-by-langs/ruby
+[Rust]: /posts-by-langs/rust
+[Scheme]: /posts-by-langs/scheme
+[Smalltalk]: /posts-by-langs/smalltalk
+[Scala]: /posts-by-langs/scala
+[TCL]: /posts-by-langs/tcl
+[TS]: /posts-by-langs/typescript
+
+[JVM]: /posts-by-tags/jvm
+[node.js]: /posts-by-tags/node-js
+[rachunek lambda]: /posts-by-tags/lambda-calculus
+
+[Czysta architektura]: /read-books/czysta-architektura
+[Czysty kod]: /read-books/czysty-kod
+[Mistrz czystego kodu]: /read-books/mistrz-czystego-kodu
+[Pragmatyczny programista]: /read-books/pragmatyczny-programista
+[Scala. Nauka programowania]: /read-books/scala-nauka-programowania
+
+[Squeak]: https://pl.wikipedia.org/wiki/Squeak
+[Tiobe]: https://www.tiobe.com/tiobe-index/

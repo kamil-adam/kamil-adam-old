@@ -2,7 +2,7 @@
 title:    'Functional Miners - Programowanie Funkcyjne dla Każdego'
 author:   TheKamilAdam
 category: relationships
-tags:     monad interpreter transpiler compiler
+tags:     monad interpreter transpiler compiler lambda-calculus
 labels:   brainfuck subleq monoid
 langs:    elixir clojure scala java haskell
 libs:
@@ -45,7 +45,7 @@ W prezentacji Wojtek stara się odpowiedzieć na pytania:
 * Z czego składa się funkcyjny język programowania?
   * *Patern Maching* - dopasowywanie do wzorca
   * *Macros* - prawdziwe makra, 
-  takie jak są w językach **[Elixir]*, **[Clojure]** lub **[Scala]** 
+  takie jak są w językach **[Elixir]**, **[Clojure]** lub **[Scala]** 
   * *Correctness* - *poprawność*, święty graal matematyków-programistów,
   która miała pozwolić na automatyczne stwierdzać poprawność programu
     * *Immutability* - *niezmienność*, zmienne są stałymi,
@@ -67,10 +67,10 @@ jak np. to że zasady SOLID stosują się także do funkcji i programowania funk
 ## Andrzej Spiess - From \x.x to Facebook - Introduction to Lambda Calculus
 
 Andrzej (@ninjazoete) przygotował [prezentację](<https://youtu.be/nZuOyQalVW4>)
-będącą bardzo teoretycznym i historycznym wprowadzeniem do [rachunku lambda](<https://pl.wikipedia.org/wiki/Rachunek_lambda>).
+będącą bardzo teoretycznym i historycznym wprowadzeniem do [rachunku lambda].
 
 Najważniesze punkty, które zrozumiałem to:
-* Problemowi stopu z Maszyny Turinga w rachunku lambda odpowiada problem nieredukowalnych lambd do postaci normalnej.
+* Problemowi stopu z Maszyny Turinga w **[rachunku lambda]** odpowiada problem nieredukowalnych lambd do postaci normalnej.
 * **[Haskell]** jest kompilowany do HSC CORE, 
 który składa się 26 rodzajów konstruktorów (rachunek lambda + systemu F + kowersja + parametryczny polimorfizm) 
  * W typowanych lambdach problem stopu nie istnieje, 
@@ -92,17 +92,15 @@ Repozytorium z kodem do analizy lambd - *[Lambda analysis package](<https://gith
 
 Z niecierpliwością czekam na kolejne wykłady w ramach *Functional Miners* (@fun_miners)
 
-
-[monad]: /posts-by-tags/monad
-
-[Elixir]: /posts-by-langs/elixir
 [Clojure]: /posts-by-langs/clojure
+[Elixir]: /posts-by-langs/elixir
+[Java]: /posts-by-langs/java
+[Haskell]: /posts-by-langs/haskell
 [Scala]: /posts-by-langs/scala
 
-[interpreter]: /posts-by-tags/interpreter
-[transpilator]: /posts-by-tags/transpiler
 [kompilator]: /posts-by-tags/compiler
-
-[Haskell]: /posts-by-langs/haskell
-[Java]: /posts-by-langs/java
+[interpreter]: /posts-by-tags/interpreter
+[rachunku lambda]: /posts-by-tags/lambda-calculus
+[monad]: /posts-by-tags/monad
+[transpilator]: /posts-by-tags/transpiler
 

@@ -286,7 +286,7 @@ gdy umie się już drugi nie powinno być problemem.
 [Tiobe]: https://www.tiobe.com/tiobe-index/
 [WebStorm]: https://www.jetbrains.com/webstorm/
 [Atom]: https://ide.atom.io/
-[VSC]: https://code.visualstudio.com/docs/
+[VSC]: https://vscodium.com/
 [Google Cloud Functions]: https://cloud.google.com/functions/
 
 [Gjs]: https://gitlab.gnome.org/GNOME/gjs/blob/master/README.md

@@ -239,7 +239,7 @@ I to może odwrócić trend w najbliższych latach.
 
 [Electron]: https://pl.wikipedia.org/wiki/Electron_(oprogramowanie)
 [Atom]: https://ide.atom.io/
-[VSC]: https://code.visualstudio.com/docs/
+[VSC]: https://vscodium.com/
 
 [Benchmarks Game]: https://benchmarksgame-team.pages.debian.net/benchmarksgame/which-programs-are-fastest.html
 

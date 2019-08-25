@@ -9,7 +9,7 @@ title: {{ page.book }}
   <h1 class="posts-title">Książka: {{ page.title }}</h1>
 
   <ul>
-    <li>Autorzy: {{ page.authors }}</li>
+    <li>Autorzy: {{ page.authors | join: ", "}}</li>
     <li>Tytuł oryginalny: {{ page.title-of-original }}</li>
     <li>Rok pierwszego wydania: {{ page.year-of-publishment }}</li>
   </ul>

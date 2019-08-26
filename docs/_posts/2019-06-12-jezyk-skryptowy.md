@@ -2,9 +2,9 @@
 title:    'Który język programowania wybrać na początek - język skryptowy'
 author:   TheKamilAdam
 category: programming
-tags:     bash dsl bdd cst
+tags:     bash bdd cst dsl
 labels:
-langs:    python perl awk ruby elixir crystal lisp common-lisp scheme clojure
+langs:    awk clojure common-lisp crystal elixir lisp perl python racket ruby scheme
 libs:
 redirect_from:
   - jezyk-skryptowy
@@ -120,7 +120,7 @@ ale bardzo możliwe,
 Nie lubię języków skryptowych.
 Kiedyś lubiłem Perla, ale wyrosłem.
 Z języków dynamicznie typowanych interesujący dla mnie jest tylko **[Lisp]**
-ze wszystkimi swoimi dialektami (**[Clojure]**, **[Scheme]**, **[Common Lisp]**).
+ze wszystkimi swoimi dialektami (**[Clojure]**, **[Racket]**, **[Scheme]**, **[Common Lisp]**).
 Jest coś szalonego w języku, którego zapis jest od razu jego drzewem **[CST]**.
 
 [Python]: /posts-by-langs/python
@@ -162,6 +162,7 @@ Jest coś szalonego w języku, którego zapis jest od razu jego drzewem **[CST]*
 
 [Lisp]: /posts-by-langs/lisp
 [Common Lisp]: /posts-by-langs/common-lisp
+[Racket]: /posts-by-langs/racket
 [Scheme]: /posts-by-langs/scheme
 [Clojure]: /posts-by-langs/clojure
 [CST]: /posts-by-tags/cst

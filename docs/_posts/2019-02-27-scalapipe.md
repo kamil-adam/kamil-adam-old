@@ -5,7 +5,7 @@ category: scala-native
 tags:     bash jekyll operator
 labels:
 libs:     scalaz
-langs:    scala kotlin clojure lisp perl elixir julia elm livescript ocaml fsharp meta-language
+langs:    clojure elixir elm fsharp julia kotlin lisp livescript meta-language ocaml perl racket scala
 redirect_from:
   - scalapipe
   - scala-native/scalapipe
@@ -41,7 +41,7 @@ Szumem jest tutaj tworzenie pomocniczych zmiennych,
 które często trudno nazwać w sensowny sposób.
 
 Dlatego powinniśmy unikać *wywołań cebulowych*
-Chyba, że piszemy w języku **[Clojure]** lub innym **[Lispie](/posts-by-langs/lisp)**.
+Chyba, że piszemy w języku **[Clojure]**, **[Racket]** lub innym **[Lispie](/posts-by-langs/lisp)**.
 Wtedy formatujemy kod:
 ```clojure
 (third_function
@@ -230,6 +230,7 @@ Warto jednak wcześnie sprawdzić czy nasz operator nie jest zdefiniowany w istn
 [Kotlin]: /posts-by-langs/kotlin
 [Meta Language]: /posts-by-langs/meta-language
 [Perl]: /posts-by-langs/perl
+[Racket]: /posts-by-langs/racket
 [Scala]: /posts-by-langs/scala
 
 [Bash]: /posts-by-tags/bash

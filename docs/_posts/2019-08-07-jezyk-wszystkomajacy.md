@@ -1,21 +1,24 @@
 ---
-title:    'Kolejny język programowania - język wszystkomający?'
+title:    'Kolejny język programowania - język wszystkomający'
 author:   TheKamilAdam
 category: programming
 tags:     jvm lambda-calculus node-js type-classes
 labels:
-langs:    clojure eiffel elm emacs-lisp fsharp go haskell java javascript kotlin lisp meta-language ocaml perl python reasonml ruby rust sather scala scheme smalltalk tcl
+langs:    clojure eiffel elm emacs-lisp fsharp go haskell java javascript kotlin lisp meta-language ocaml perl python racket reasonml ruby rust sather scala scheme smalltalk tcl
 libs:     akka arrow cats pulsar quasar scalaz vavr zio
 redirect_from:
   - jezyk-wszystkomajacy
   - programming/jezyk-wszystkomajacy
+---
 
 **Język wszystkomający** jest to język w którym można programować 
 [imperatywnie], [funkcyjnie], [obiektowo], [proceduralnie] oraz [strukturalnie].
 Prawdopodobnie jest to język zły do nauki jako pierwszy język programowania.
 Może też być złym językiem do nauki pojedynczych paradygmatów programowania,
 jeśli nie mamy odpowiedniej dyscypliny.
-Jeśli jednak mamy tę dyscyplinę jest to genialny język do nauki nowych paradygmatów.
+Jeśli jednak mamy tę dyscyplinę jest to genialny język do nauki nowych paradygmatów programowania.
+Po co uczyć się nowych paradygmatów programowania starałem się wyjaśnić w artykule 
+[Kolejny język programowania do nauki - paradygmaty programowania](/paradygmaty-programowania).
 
 ## Pierwszy język wszystkomający
 Chyba najpopularniejszym językiem wszystkomającym jest **[Scala]**.

@@ -4,7 +4,7 @@ author:   TheKamilAdam
 category: programming
 tags:     jvm lambda-calculus node-js 
 labels:
-langs:    clojure coffeescript common-lisp elm emacs-lisp fsharp go haskell java javascript kotlin lisp meta-language ocaml perl purescript python reasonml ruby rust scala scheme smalltalk typescript
+langs:    clojure coffeescript common-lisp elm emacs-lisp fsharp go haskell java javascript kotlin lisp livescript meta-language ocaml perl purescript python racket reasonml ruby rust scala scheme smalltalk typescript
 libs:     
 redirect_from:
   - paradygmaty-programowania
@@ -117,7 +117,7 @@ Od tej pory były trzy główne próby stworzenia języka funkcyjnego:
    2. Statycznie typowany, generyczny język programowania z rekurencją i strumieniami,
       czyli **[Meta Language]** stworzony  w 1973 roku. 
       Ustandaryzowany jako **Standard ML** w 1990 roku. 
-      Co ciekawe **[OCaml]** z 1996 roku jest prawdopodobnie pierwszym językiem wszystkomającym, 
+      Co ciekawe **[OCaml]** z 1996 roku jest prawdopodobnie pierwszym [językiem wszystkomającym](/jezyk-wszystkomajacy), 
       czyli obiektowo-funkcyjnym.
    3. W pełni funkcyjny język programowania kompilowany do rachunku lambda,
       czyli **[Haskell]** stworzony w roku 1990.
@@ -210,7 +210,7 @@ który zawierałby wszystkie paradygmaty programowania.
 Na nasze szczęście język taki istnieje.
 Tylko nie da się go nauczyć w jeden rok.
 
-cdn.
+Ciąg dalszy nastpił jako artykuł [Kolejny język programowania - język wszystkomający](/jezyk-wszystkomajacy)
 
 [Clojure]: /posts-by-langs/clojure
 [CS]: /posts-by-langs/coffeescript

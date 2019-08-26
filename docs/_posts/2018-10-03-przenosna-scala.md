@@ -2,9 +2,9 @@
 title:    "Przenośna Scala"
 author:   TheKamilAdam
 category: scala-native
-tags:     scala-jvm scala-js scala-native sbt clang compiler transpiler llvm node-js jvm native nojvm
+tags:     clang compiler jvm llvm native node-js nojvm sbt scala-jvm scala-js scala-native transpiler
 labels:
-langs:    scala haskell erlang rust go javascript pony crystal
+langs:    crystal erlang haskell go javascript pony rust scala
 libs:     akka
 redirect_from:
   - przenosna-scala
@@ -128,6 +128,7 @@ sbt re/run reJS/run reJVM/run
 [Haskell]: /posts-by-langs/haskell
 [Go]: /posts-by-langs/go
 [Erlang]: /posts-by-langs/erlang
+[JVM]: /posts-by-tags/jvm
 
 [JavaScript]: /posts-by-langs/javascript
 [Transpilator]: /posts-by-tags/transpiler

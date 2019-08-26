@@ -4,7 +4,7 @@ author:   TheKamilAdam
 category: programming
 tags:     api bucklescript cli interpreter gui kotlin-js monad node-js scala-js transpiler   
 labels:   clojurescript udash kotlin-js postgresql
-langs:    ceylon clojure coffeescript dart elm java javascript haskell kotlin livescript meta-language ocaml purescript python reasonml ruby scala typescript        
+langs:    ceylon clojure coffeescript dart elm java javascript haskell kotlin livescript meta-language ocaml purescript python racket reasonml ruby scala typescript
 libs:     jquery
 redirect_from:
   - jezyk-fullstackowy
@@ -100,7 +100,8 @@ Tutaj pojawia się gwiazdka ponieważ istnieją [różnice](<https://clojurescri
   * Programiści języka **[Haskell]** także podejmowali kilka prób stworzenia transpilatora z Haskella do JS.
 Są to [Fay], [GHCJS], [Haste] i [uhc]
   * Dla języka **[OCaml]** jest kilka transpilatorów, 
-    ale aktualnie nahbardziej obiecująco wygląda **[BuckleScript].**
+    ale aktualnie najbardziej obiecująco wygląda **[BuckleScript].**
+  * Język **[Racket]** był jednym z pierwszych transpilowanych do JS, aktualnie jest rozwijany [RacketScript]
 
 ### Podejście drugie - nowy język transpilowany do JS
 
@@ -240,6 +241,7 @@ gdy umie się już drugi nie powinno być problemem.
 [OCaml]: /posts-by-langs/ocaml
 [PureScript]: /posts-by-langs/purescript
 [Python]: /posts-by-langs/python
+[Racket]: /posts-by-langs/racket
 [ReasonML]: /posts-by-langs/reasonml
 [Ruby]: /posts-by-langs/ruby
 [Scala]: /posts-by-langs/scala
@@ -278,6 +280,8 @@ gdy umie się już drugi nie powinno być problemem.
 [GHCJS]: https://github.com/ghcjs/ghcjs
 [Haste]: https://github.com/valderman/haste-compiler
 [uhc]: https://github.com/uhc/uhc
+
+[RacketScript]: https://github.com/vishesh/racketscript
 
 [udash]: https://udash.io/
 

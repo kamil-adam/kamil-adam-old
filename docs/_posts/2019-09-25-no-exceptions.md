@@ -4,7 +4,7 @@ author:   TheKamilAdam
 category: scala-jvm
 tags:     no-exceptions monad tco
 labels:   
-langs:    haskell java ocaml racket scala scheme smalltalk 
+langs:    haskell java ocaml racket rust scala scheme smalltalk 
 libs:     
 redirect_from:
   - no-exceptions
@@ -219,7 +219,7 @@ Exception in thread "main" java.nio.charset.MalformedInputException: Input lengt
 	at pl.writeonly.scala.hyde.impl.oo.oo1.StandardExceptionHyde.main(StandardExceptionHyde.scala)
 ```
 
-Niestety Stacktrace w żaden sposób nie mówi nam dla akiego URLa wyjątek został rzucony.
+Niestety Stacktrace w żaden sposób nie mówi nam dla jakiego URLa wyjątek został rzucony.
 
 ### Wrapping Exceptions
 
@@ -314,7 +314,7 @@ W takim wypadku potrzebujemy konstrukcji,
 która pozwoli nam zapisać wyjątek z niedziałania konkretnego linku i iść ze sprawdzeniem dalej, 
 nie przerywając głównej pętli programu.
 
-Rozwiązaniem jest tutaj [monad]a `Try`. 
+Rozwiązaniem jest tutaj [monad](monada) `Try`. 
 Nie powinniśmy się jednak przejmować tym brzydkim słowem na `M` ponieważ ta właściwość nie zostanie tutaj użyta. 
 
 Obiekt singletonowy `Try` ma jedną metodę `apply` pozwalającą konstruować nowe instancje klasy `Try`:
@@ -424,10 +424,24 @@ Jeśli tylko to możliwe zamiast wyjątków należy używać klas
 
 Kod jest dostępny na [Githubie](https://github.com/writeonly/hyde/tree/v1.0).
 
+## Postscriptum
+
+Skąd pewność,
+że cokolwiek z tego co tu opisałem ma sens i jest przydatne w codziennej pracy programisty,
+a nie jest tylko wymysłem twórców Haskella?
+Ponieważ nowoczesny i wysokowydajny natywny język programowania **[Rust]**,
+zwany przez twórców językiem systemowym, nie posiada wyjątków.
+Dla błędów naprawialnych posiada klasę `Result` będącą odpowiednikiem klasy `Either` ze Scali.
+A dla błędów nie naprawialnych posiada makro `panic!` będące odpowiednikiem klasy `Error`,
+ale niemożliwej do złapania.
+Każde makro `panic!` zabija wątek w którym zostało zastosowane.
+Mimo tego **[Rust]** jest szybki jak C i C++.
+
 [haskell]: /posts-by-langs/haskell
 [java]: /posts-by-langs/java
 [ocaml]: /posts-by-langs/ocaml
 [racket]: /posts-by-langs/racket
+[rust]: //posts-by-langs/rust
 [scala]: /posts-by-langs/scala
 [scheme]: /posts-by-langs/scheme
 [smalltalk]: /posts-by-langs/smalltalk

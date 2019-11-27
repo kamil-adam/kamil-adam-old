@@ -28,7 +28,7 @@
         {% assign libs = post.libs | split: ' ' | sort %}
         {% assign libs_size = libs | size %}
         {% if 0 < libs_size %}
-        Języki:
+        Biblioteki:
         {% for lib in libs %}
         <a href="{{ site.baseurl }}/posts-by-libs/{{ lib }}">{{ lib }}</a>
         {% endfor %}

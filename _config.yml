@@ -1,8 +1,5 @@
 # Dependencies
 markdown:         CommonMarkGhPages
-commonmark:
-  options: ["SMART", "FOOTNOTES"]
-  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
 
 # Setup
 title:            WriteOnly.pl
@@ -11,14 +8,35 @@ description:      "Blog o programowaniu w językach Scala/JVM, Scala.js i Scala 
 url:              https://www.writeonly.pl
 
 author:
-  name:           Karlo Espiritu
-  url:            https://twitter.com/karloespiritu
+  name:           Kamil Adam
+  url:            https://twitter.com/thekamiladam
 
-paginate:         1
-paginate_path:    '/:num'
-                    # Or '/my-jekyll-site/page:num' if you want to move your index pages
+permalink: none
+service_worker: true
+future: true
 
-permalink: /:categories/:title
+facebook_url:       https://www.facebook.com/WriteOnlyPL/
+twitter_url:        https://twitter.com/TheKamilAdam
+linkedin_url:       https://www.linkedin.com/in/kamil-żabiński/
+#googleplus_url:
+#pinterest_url:
+#instagram_url:
+
+# Collections
+collections_dir: docs
+collections:
+  categories:
+    output: true
+  tags:
+    output: true
+  labels:
+    output: true
+  langs:
+    output: true
+  libs:
+    output: true
+  books:
+    output: true
 
 plugins:
   - jekyll-avatar
@@ -40,37 +58,23 @@ plugins:
   - jekyll-sitemap
   - jekyll-titles-from-headings
 
-# Custom vars
-version:            2.0.1
+# jekyll-commonmark-ghpages
+commonmark:
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
 
-github:
-  repo:             https://github.com/karloespiritu/blackdoc
-
-facebook_url:       https://www.facebook.com/WriteOnlyPL/
-twitter_url:        https://twitter.com/TheKamilAdam
-linkedin_url:       https://www.linkedin.com/in/kamil-żabiński/
-#googleplus_url:
-#pinterest_url:
-#instagram_url:
-
+# jekyll-mentions
 jekyll-mentions:
   base_url: https://twitter.com
 
-collections_dir: docs
-collections:
-  categories:
-    output: true
-  tags:
-    output: true
-  labels:
-    output: true
-  langs:
-    output: true
-  libs:
-    output: true
-  books:
-    output: true
+# jekyll-optional-front-matter
+include:
+  - _pages
+  - docs/CONTRIBUTING.md
 
-service_worker: true
+# jekyll-paginate
+paginate:         1
+paginate_path:    '/:num'
 
-future: true
+# jekyll-remote-theme
+remote_theme: twocolumn/WriteOnly

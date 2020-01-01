@@ -1,28 +1,22 @@
-# Dependencies
+# SITE CONFIGURATION
 markdown:         CommonMarkGhPages
 
-# Setup
-title:            WriteOnly.pl
-tagline:          WriteOnly Scala, Jekyll, Git & Bash Blog
-description:      "Blog o programowaniu w językach Scala/JVM, Scala.js i Scala Native oraz generatorze stron Jekyll, repozytorium Git i użyciu wiersza poleceń CLI"
-url:              https://www.writeonly.pl
+permalink: /:categories/:title
 
-author:
-  name:           Kamil Adam
-  url:            https://twitter.com/thekamiladam
-
-permalink: none
-service_worker: true
 future: true
+service_worker: true
 
-facebook_url:       https://www.facebook.com/WriteOnlyPL/
-twitter_url:        https://twitter.com/TheKamilAdam
-linkedin_url:       https://www.linkedin.com/in/kamil-żabiński/
-#googleplus_url:
-#pinterest_url:
-#instagram_url:
+sass:
+#  sass_dir: ui/_scss
+  style: compressed
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  startings: [head, body]
 
-# Collections
+# COLLECTIONS
 collections_dir: docs
 collections:
   categories:
@@ -38,6 +32,7 @@ collections:
   books:
     output: true
 
+# PLUGINS
 plugins:
   - jekyll-avatar
   - jekyll-coffeescript
@@ -52,8 +47,8 @@ plugins:
   - jekyll-readme-index
   - jekyll-redirect-from
   - jekyll-relative-links
-  - jekyll-remote-theme          # brilliant
-  - jekyll-sass-converter        # https://jekyllrb.com/docs/assets/
+  - jekyll-remote-theme
+  - jekyll-sass-converter
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-titles-from-headings
@@ -70,11 +65,59 @@ jekyll-mentions:
 # jekyll-optional-front-matter
 include:
   - _pages
-  - docs/CONTRIBUTING.md
 
 # jekyll-paginate
 paginate:         1
 paginate_path:    '/:num'
 
 # jekyll-remote-theme
-remote_theme: twocolumn/WriteOnly
+remote_theme: twocolumn/master-rust
+
+# jekyll-seo-tag
+title:            WriteOnly.pl
+tagline:          WriteOnly Scala, Jekyll, Git & Bash Blog
+description:      "Blog o programowaniu w językach Scala/JVM, Scala.js i Scala Native oraz generatorze stron Jekyll, systemie kontroli wersji Git i użyciu wiersza poleceń CLI"
+url:              https://www.writeonly.pl
+#author:          Kamil Adam
+logo:             /assets/img/logo.jpg
+
+social:
+  name: Kamil Adam
+  links:
+    - https://github.com/writeonly
+    - https://www.linkedin.com/company/writeonly-pl
+    - https://www.facebook.com/WriteOnlyPL
+    - https://www.instagram.com/degustujacaistota/
+    - https://twitter.com/TheKamilAdam
+#    - https://keybase.io/benbalter
+#    - https://plus.google.com/+BenBalter
+
+# THEME SETTINGS
+
+author:
+  name:           Kamil Adam
+  url:            https://twitter.com/thekamiladam
+
+google_analytics: UA-123732345-1
+
+disqus:
+  shortname: writeonly-pl
+
+# SOCIAL LINKS
+social_links:
+  github:  writeonly
+  linkedin: writeonly-pl
+  facebook: WriteOnlyPL
+  instagram: degustujacaistota
+  twitter: TheKamilAdam
+  rss: rss
+  # microdotblog: TheKamilAdam
+  # dribbble: jekyll
+  # flickr:   jekyll
+  # pinterest: jekyll
+  # youtube: jekyll
+  # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+  # youtube_channel_name: CloudCannon
+  # telegram: jekyll
+  # googleplus: +jekyll
+  # keybase: jekyll

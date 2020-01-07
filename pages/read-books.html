@@ -6,7 +6,7 @@ description: Przeczytane książki programistyczne
 ---
 <div class="posts">
   <dl class="posts-nav">
-    {% assign books = site.books | reverse | sort: "year-of-publishment" %}
+    {% assign books = site.books | reverse | sort: "year-of-publishment"| reverse %}
     {% for book in books %}
     <dt>
       <a class="posts-nav-item" href="{{ book.url | relative_url }}">

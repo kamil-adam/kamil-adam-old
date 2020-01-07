@@ -50,7 +50,7 @@ Przykładowy strona pomocnicza dla kategorii:
 ```yaml
 ---
 permalink: /categories/resentiment
-layout: page_category
+layout: page-category
 category: "resentiment"
 ---
 Opis powstawania projektu <a href="https://github.com/writeonly/resentiment">resentiment</a>.
@@ -63,7 +63,7 @@ Przykładowy strona pomocnicza dla tagu:
 ```yaml
 ---
 permalink: /posts-by-tags/scala-native
-layout: page_tag
+layout: page-tag
 tag: "scala-native"
 ---
 ```
@@ -101,10 +101,10 @@ Od tej pory:
 
 ## Layouts - układy stron
 
-W stronach pomocniczych użyliśmy layoutów `page_categories` i `page_tags`.
+W stronach pomocniczych użyliśmy layoutów `page-categories` i `page-tags`.
 Teraz trzeba je zdefiniować.
 
-Układ strony `_layout/page_category.html` zawierający wszystkie artykuły z danej kategorii:
+Układ strony `_layout/page-category.html` zawierający wszystkie artykuły z danej kategorii:
 
 {%raw%}
 ```yaml
@@ -145,7 +145,7 @@ title: {{ page.category }}
 ```
 {%endraw%}
 
-Układ strony `_layout/page_tag.html` zawierający wszystkie artykuły z danym tagiem:
+Układ strony `_layout/page-tag.html` zawierający wszystkie artykuły z danym tagiem:
 {%raw%}
 ```yaml
 ---
@@ -200,7 +200,7 @@ description: Kategorie artykułów
   {% assign categories = site.categories | sort: "title" %}
   <dl class="posts-nav">
     {% for node in categories %}
-    {% if node.title != null and node.layout == "page_category"  %}
+    {% if node.title != null and node.layout == "page-category"  %}
     <dt>
       <a class="posts-nav-item" href="{{ node.url | relative_url }}">{{ node.title }}</a>
     </dt>
@@ -227,7 +227,7 @@ description: Tagi artykułów
   <ul class="posts-nav">
     {% assign tags = site.tags | sort: "title" %}
     {% for node in tags %}
-    {% if node.title != null and node.layout == "page_tag" %}
+    {% if node.title != null and node.layout == "page-tag" %}
     <li>
       <a class="posts-nav-item" href="{{ node.url | relative_url }}">{{ node.title }}</a>
     </li>

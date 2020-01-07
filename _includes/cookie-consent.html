@@ -39,7 +39,7 @@
     function isTrue(value) {
         return value == 'true'
     }
-    const cookieNoticeDismissed = isTrue(readCookie('cookie-notice-dismissed'))
+    const cookieNoticeDismissed = isTrue(readCookie('cookie-notice-dismissed'));
     if(!cookieNoticeDismissed) {
         $('#cookie-notice').show();
     }

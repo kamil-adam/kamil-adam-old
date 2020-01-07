@@ -16,12 +16,15 @@
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/poole.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/syntax.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/blackdoc.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/writeonly.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond">
+  <link rel="preload" href="{{ site.baseurl }}/assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap">
+  </noscript>
+
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/apple-touch-icon-144-precomposed.png">
   <link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicon.ico">
@@ -29,7 +32,18 @@
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
   <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
-  <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery/jquery-3.4.0.min.js"></script>
+
+  <!-- JS -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!--  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>-->
+<!--  {% include zepto.html %}-->
+  <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery.disqusloader.js"></script>
+  <script>
+    $.urlParam = function(name){
+	  var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+	  return results && results[1] || 0;
+    }
+  </script>
 
   <!-- SEO -->
   {% include head-seo.html %}

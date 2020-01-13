@@ -4,8 +4,8 @@ author:   TheKamilAdam
 category: scala-jvm
 tags:     no-exceptions monad io linkchecker
 labels:   
-langs:    scala
-libs:     
+langs:    haskell java rust scala
+libs:     vavr
 redirect_from:
   - no-exceptions-std-lib
   - scala-jvm/no-exception-std-lib
@@ -247,13 +247,14 @@ Monad `Option`,  `Either`, `Try` oraz `Future` można używać także w języku 
 
 Kod jest oczywiście dostępny na [Githubie](https://github.com/writeonly/linkchecker/tree/v2.0).
 
-[haskell]:     /posts-by-langs/haskell
-[java]:        /posts-by-langs/java
-[rust]:        /posts-by-langs/rust
-[scala]:       /posts-by-langs/scala
+[haskell]:       /posts-by-langs/haskell
+[java]:          /posts-by-langs/java
+[rust]:          /posts-by-langs/rust
+[scala]:         /posts-by-langs/scala
 
-[vavr]:        /posts-by-libs/vavr
+[vavr]:          /posts-by-libs/vavr
 
-[io]:          /posts-by-tags/io
-[linkchecker]: /posts-by-tags/linkchecker
-[monada]:      /posts-by-tags/monad
+[io]:            /posts-by-tags/io
+[linkchecker]:   /posts-by-tags/linkchecker
+[monada]:        /posts-by-tags/monad
+[no-exceptions]: /posts-tags/no-exceptions

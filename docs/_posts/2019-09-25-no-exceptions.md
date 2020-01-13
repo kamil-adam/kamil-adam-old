@@ -4,7 +4,7 @@ author:   TheKamilAdam
 category: scala-jvm
 tags:     no-exceptions monad tco linkchecker
 labels:   
-langs:    haskell java ocaml racket rust scala scheme smalltalk 
+langs:    haskell java ocaml racket scala scheme smalltalk 
 libs:     
 redirect_from:
   - no-exceptions
@@ -424,16 +424,17 @@ Jeśli tylko to możliwe zamiast wyjątków należy używać klas
 
 Kod jest dostępny na [Githubie](https://github.com/writeonly/linkchecker/tree/v1.0).
 
-[haskell]:     /posts-by-langs/haskell
-[java]:        /posts-by-langs/java
-[ocaml]:       /posts-by-langs/ocaml
-[racket]:      /posts-by-langs/racket
-[scala]:       /posts-by-langs/scala
-[scheme]:      /posts-by-langs/scheme
-[smalltalk]:   /posts-by-langs/smalltalk
+[haskell]:       /posts-by-langs/haskell
+[java]:          /posts-by-langs/java
+[ocaml]:         /posts-by-langs/ocaml
+[racket]:        /posts-by-langs/racket
+[scala]:         /posts-by-langs/scala
+[scheme]:        /posts-by-langs/scheme
+[smalltalk]:     /posts-by-langs/smalltalk
 
-[linkchecker]: /posts-by-tags/linkchecker
-[TCO]:         /posts-by-tags/tco
+[linkchecker]:   /posts-by-tags/linkchecker
+[no-exceptions]: /posts-tags/no-exceptions
+[TCO]:           /posts-by-tags/tco
 
 [Java. Programowanie funkcyjne]: /read-books/java-programowanie-funkcyjne
 

@@ -2,7 +2,7 @@
 title:    'No Exceptions - o problemach z wyjątkami'
 author:   TheKamilAdam
 category: scala-jvm
-tags:     no-exceptions monad tco
+tags:     no-exceptions monad tco linkchecker
 labels:   
 langs:    haskell java ocaml racket rust scala scheme smalltalk 
 libs:     
@@ -422,33 +422,20 @@ W Scali ten punkt nie jest problemem, ponieważ w Scali wszystkie wyjątki są `
 Jeśli tylko to możliwe zamiast wyjątków należy używać klas
 `Option`, `Validation`, `Either`, `Try`.
 
-Kod jest dostępny na [Githubie](https://github.com/writeonly/hyde/tree/v1.0).
+Kod jest dostępny na [Githubie](https://github.com/writeonly/linkchecker/tree/v1.0).
 
-## Postscriptum
+[haskell]:     /posts-by-langs/haskell
+[java]:        /posts-by-langs/java
+[ocaml]:       /posts-by-langs/ocaml
+[racket]:      /posts-by-langs/racket
+[scala]:       /posts-by-langs/scala
+[scheme]:      /posts-by-langs/scheme
+[smalltalk]:   /posts-by-langs/smalltalk
 
-Skąd pewność,
-że cokolwiek z tego co tu opisałem ma sens i jest przydatne w codziennej pracy programisty,
-a nie jest tylko wymysłem twórców Haskella?
-Ponieważ nowoczesny i wysokowydajny natywny język programowania **[Rust]**,
-zwany przez twórców językiem systemowym, nie posiada wyjątków.
-Dla błędów naprawialnych posiada klasę `Result` będącą odpowiednikiem klasy `Either` ze Scali.
-A dla błędów nie naprawialnych posiada makro `panic!` będące odpowiednikiem klasy `Error`,
-ale niemożliwej do złapania.
-Każde makro `panic!` zabija wątek w którym zostało zastosowane.
-Mimo tego **[Rust]** jest szybki jak C i C++.
+[linkchecker]: /posts-by-tags/linkchecker
+[TCO]:         /posts-by-tags/tco
 
-[haskell]: /posts-by-langs/haskell
-[java]: /posts-by-langs/java
-[ocaml]: /posts-by-langs/ocaml
-[racket]: /posts-by-langs/racket
-[rust]: //posts-by-langs/rust
-[scala]: /posts-by-langs/scala
-[scheme]: /posts-by-langs/scheme
-[smalltalk]: /posts-by-langs/smalltalk
-
-[TCO]: /posts-by-tags/tco
-
-[Java. Programowanie funkcyjne]: read-books/java-programowanie-funkcyjne
+[Java. Programowanie funkcyjne]: /read-books/java-programowanie-funkcyjne
 
 [podstawowych założeniach paradygmatu obiektowego]: https://pl.wikipedia.org/wiki/Programowanie_obiektowe#Podstawowe_za%C5%82o%C5%BCenia_paradygmatu_obiektowego
 

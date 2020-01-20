@@ -2,7 +2,7 @@
 title:    'No Exceptions - problemy z wyjątkami i biblioteka standardowa'
 author:   TheKamilAdam
 category: scala-jvm
-tags:     no-exceptions monad io
+tags:     no-exceptions monad io linkchecker
 labels:   
 langs:    scala
 libs:     
@@ -232,6 +232,28 @@ class FutureState(data: UrlsWithThrowableList)(implicit d: Domain, ec: Execution
 Monady pozwalają nie tylko rozwiązywać problem wyjątków w kodzie,
 ale także ułatwiają programowanie asynchroniczne oraz równoległe.
 
-[scala]: /posts-by-langs/scala
-[monada]: /posts-by-tags/monad
-[io]: /posts-by-tags/io
+Skąd pewność,
+że cokolwiek z tego co tu opisałem ma sens i jest przydatne w codziennej pracy programisty,
+a nie jest tylko wymysłem twórców języka **[Haskell]**?
+Ponieważ nowoczesny i wysokowydajny natywny język programowania **[Rust]**,
+zwany przez twórców językiem systemowym, nie posiada wyjątków.
+Dla błędów naprawialnych posiada klasę `Result` będącą odpowiednikiem klasy `Either` ze Scali.
+A dla błędów nie naprawialnych posiada makro `panic!` będące odpowiednikiem klasy `Error`,
+ale niemożliwej do złapania.
+Każde makro `panic!` zabija wątek w którym zostało zastosowane.
+Mimo tego **[Rust]** jest szybki jak C i C++.
+
+Monad `Option`,  `Either`, `Try` oraz `Future` można używać także w języku programowania **[Java]** za pomocą biblioteki **[vavr]**.
+
+Kod jest oczywiście dostępny na [Githubie](https://github.com/writeonly/linkchecker/tree/v2.0).
+
+[haskell]:     /posts-by-langs/haskell
+[java]:        /posts-by-langs/java
+[rust]:        /posts-by-langs/rust
+[scala]:       /posts-by-langs/scala
+
+[vavr]:        /posts-by-libs/vavr
+
+[io]:          /posts-by-tags/io
+[linkchecker]: /posts-by-tags/linkchecker
+[monada]:      /posts-by-tags/monad

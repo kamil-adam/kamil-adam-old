@@ -231,7 +231,7 @@ Zwłaszcza,
 gdy chodzi o tak trudny temat jak przejrzysta obsługa błędów i programowanie równoległe.
 Warto więc na bieżąco obserwować zmiany w ekosystemie Scali.
 
-Kod jest oczywiście dostępny na [Githubie](https://github.com/writeonly/hyde/tree/v3.0).
+Kod jest oczywiście dostępny na [Githubie](https://github.com/writeonly/linkchecker/tree/v3.0).
 
 [haskell]:           /posts-by-langs/haskell
 [scala]:             /posts-by-langs/scala

@@ -2,13 +2,13 @@
 title:    'No Exceptions - problemy z biblioteką standardową i biblioteki zewnętrzne'
 author:   TheKamilAdam
 category: scala-jvm
-tags:     api applicative clang no-exceptions monad
+tags:     api applicative clang for-comprehension monad no-exceptions
 labels:   
 langs:    scala haskell
 libs:     scalaz
 redirect_from:
   - no-exceptions-thridparty-lib
-  - scala-jvm/no-thridparty-std-lib
+  - scala-jvm/no-exceptions-thridparty-lib
 ---
 
 To jest trzecia część cyklu o walce z wyjątkami w Scali.
@@ -87,7 +87,7 @@ Powodowało to,
 że musieliśmy `explicit` wybierać,
 którą wartość chcemy użyć.
 W przypadku monady `Disjunction` wartość poprawna jest używana domyślnie.
-Jest to przydatne zwłaszcza w konstrukcji `For Comprehensions`
+Jest to przydatne zwłaszcza w konstrukcji [For Comprehensions]
 
 Co do kodu skryptu nie ma tu Rocket Science.
 Użycie monady `Disjunction` jest prostsze od `Either` ponieważ domyślnie dla metod `map` i `flatMap` jest używana strona z poprawnym wynikiem.
@@ -233,18 +233,19 @@ Warto więc na bieżąco obserwować zmiany w ekosystemie Scali.
 
 Kod jest oczywiście dostępny na [Githubie](https://github.com/writeonly/hyde/tree/v3.0).
 
-[haskell]:       /posts-by-langs/haskell
-[scala]:         /posts-by-langs/scala
+[haskell]:           /posts-by-langs/haskell
+[scala]:             /posts-by-langs/scala
 
-[scalaz]:        /posts-by-libs/scalaz
+[scalaz]:            /posts-by-libs/scalaz
 
-[api]:           /posts-by-tags/api
-[aplikatywem]:   /posts-by-tags/applicative
-[aplikatywy]:    /posts-by-tags/applicative
-[c]:             /posts-by-tags/clang
-[linkchecker]:   /posts-by-tags/linkchecker
-[monad]:         /posts-by-tags/monad
-[monada]:        /posts-by-tags/monad
-[monad]:        /posts-by-tags/monad
-[monady]:        /posts-by-tags/monad
-[no-exceptions]: /posts-by-tags/no-exceptions
+[api]:               /posts-by-tags/api
+[aplikatywem]:       /posts-by-tags/applicative
+[aplikatywy]:        /posts-by-tags/applicative
+[c]:                 /posts-by-tags/clang
+[linkchecker]:       /posts-by-tags/linkchecker
+[for comprehension]: /posts-by-tags/for-comprehension
+[monad]:             /posts-by-tags/monad
+[monada]:            /posts-by-tags/monad
+[monad]:             /posts-by-tags/monad
+[monady]:            /posts-by-tags/monad
+[no-exceptions]:     /posts-by-tags/no-exceptions

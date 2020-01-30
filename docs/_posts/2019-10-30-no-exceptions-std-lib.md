@@ -243,7 +243,7 @@ ale niemożliwej do złapania.
 Każde makro `panic!` zabija wątek w którym zostało zastosowane.
 Mimo tego **[Rust]** jest szybki jak C i C++.
 
-Monad `Option`,  `Either`, `Try` oraz `Future` można używać także w języku programowania **[Java]** za pomocą biblioteki **[vavr]**.
+Monad `Option`, `Either`, `Try` oraz `Future` można używać także w języku programowania **[Java]** za pomocą biblioteki **[vavr]**.
 
 Kod jest oczywiście dostępny na [Githubie](https://github.com/writeonly/linkchecker/tree/v2.0).
 

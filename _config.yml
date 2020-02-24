@@ -103,6 +103,9 @@ google_analytics: UA-123732345-1
 disqus:
   shortname: writeonly-pl
 
+locale: pl-PL
+json-search: 'search-posts-metas-and-pages'
+
 # SOCIAL LINKS
 social_links:
   github:  writeonly

@@ -1,0 +1,47 @@
+# User interface text and labels
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  home             : Home
+  older            : Older
+  newer            : Newer
+  go-to-posts      : Go to post
+  go-to-comments   : Go to comments
+  share-on         : Share on
+  related-posts    : Related Posts
+  category         : Category
+  category-posts   : Posts of category
+  categories       : Categories
+  tags             : Posts contain tag
+  search-in-posts  : Search in posts
+  no-results-found : No results found
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
+
+# Polish
+# ------
+pl: &DEFAULT_PL
+  home             : Strona główna
+  older            : Starsze artykuły
+  newer            : Nowsze artykuły
+  go-to-posts      : Przejdz do artykułu
+  go-to-comments   : Przej do komantarzy
+  share-on         : Udostępnij
+  related-posts    : Powiązane artykuły
+  category         : Kategoria
+  category-posts   : Artykuły należące do kategorii
+  categories       : Kategorie
+  tag              : Tag
+  tag-posts        : Tagi
+  tags             : Artykuły zawierające tag
+  search-in-posts  : Przeszukaj artykuły
+  no-results-found : Nie znaleziono wyników
+pl-PL:
+  <<: *DEFAULT_PL

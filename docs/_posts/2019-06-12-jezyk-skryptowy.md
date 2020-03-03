@@ -2,7 +2,7 @@
 title:    'Który język programowania wybrać na początek - język skryptowy'
 author:   TheKamilAdam
 category: programming
-tags:     bash bdd cst dsl
+tags:     bash bdd cst dsl script sed
 labels:
 langs:    awk clojure common-lisp crystal elixir lisp perl python racket ruby scheme
 libs:

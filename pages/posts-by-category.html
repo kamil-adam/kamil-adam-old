@@ -4,7 +4,7 @@ title: Artykuły po kategorii
 permalink: /posts-by-category/
 description: Artykuły po kategorii
 ---
-{% include group-by-array.html collection=site.posts field='category' %}
+{% include group-by-array collection=site.posts field='category' %}
 <div class="posts">
   <dl class="posts-nav">
     {% for name in group_names %}

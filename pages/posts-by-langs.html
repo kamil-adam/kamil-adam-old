@@ -4,7 +4,7 @@ title: Artykuły po językach programowania
 permalink: /posts-by-langs/
 description: Artykuły po językach programowania
 ---
-{% include group-by-array.html collection=site.posts field="langs" %}
+{% include group-by-array collection=site.posts field="langs" %}
 <div class="posts">
   <dl class="posts-nav">
     {% for name in group_names %}

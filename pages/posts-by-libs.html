@@ -4,7 +4,7 @@ title: Artykuły po bibliotekach
 permalink: /posts-by-libs/
 description: Artykuły po bibliotekach
 ---
-{% include group-by-array.html collection=site.posts field="libs" %}
+{% include group-by-array collection=site.posts field="libs" %}
 <div class="posts">
   <dl class="posts-nav">
     {% for name in group_names %}

@@ -4,7 +4,7 @@ author:   TheKamilAdam
 category: jekyll
 tags:     css html jekyll
 labels:   
-langs:    
+langs:    javascript
 libs:     
 redirect_from:
   - preload-css

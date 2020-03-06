@@ -6,7 +6,7 @@ en: &DEFAULT_EN
   home             : Home
   older            : Older
   newer            : Newer
-  go-to-posts      : Go to post
+  go-to-post       : Go to post
   go-to-comments   : Go to comments
   share-on         : Share on
   related-posts    : Related Posts
@@ -31,8 +31,8 @@ pl: &DEFAULT_PL
   home             : Strona główna
   older            : Starsze artykuły
   newer            : Nowsze artykuły
-  go-to-posts      : Przejdz do artykułu
-  go-to-comments   : Przej do komantarzy
+  go-to-post       : Przejdź do artykułu
+  go-to-comments   : Przejdź do komantarzy
   share-on         : Udostępnij
   related-posts    : Powiązane artykuły
   category         : Kategoria

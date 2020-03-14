@@ -59,18 +59,9 @@ Przykładowy strona pomocnicza dla tagu:
 {%raw%}
 ```yaml
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-permalink: /posts-by-tools/scala-native
-=======
 permalink: /tools/scala-native
->>>>>>> 86a6e10... Update_docs
 #layout: page-tag
 tag: "scala-native"
-=======
-permalink: /tools/scala-native
-labeltag: "scala-native"
->>>>>>> 1876910... Update_docs
 ---
 ```
 {%endraw%}

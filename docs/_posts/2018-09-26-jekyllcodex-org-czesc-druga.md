@@ -2,10 +2,8 @@
 title:    "jekyllcodex.org - część druga"
 author:   TheKamilAdam
 category: jekyll
-tags:     jekyll blog jekyllcodex seo
-labels:
-langs:
-libs:
+tags:     blog jekyllcodex seo
+tools:    jekyll
 redirect_from:
   - jekyllcodex-org-czesc-druga
   - jekyll/jekyllcodex-org-czesc-druga

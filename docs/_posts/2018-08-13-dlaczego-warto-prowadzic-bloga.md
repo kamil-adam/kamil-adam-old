@@ -2,9 +2,9 @@
 title:    "Dlaczego warto prowadzić bloga o programowaniu"
 author:   TheKamilAdam
 category: thoughts
-tags:     blog github
-labels:
+tags:     blog
 langs:    scala java
+tools:    github
 libs:
 redirect_from:
   - dlaczego-warto-prowadzic-bloga
@@ -18,7 +18,7 @@ Natrafiałem na nie właśnie w tej kolejności.
 ## Notatki dla siebie
 Nie wiem jak inni programiści, 
 ale ja mam dobrą pamięć do rzeczy złożonych, 
-jak np. składnia języka **[Scala](/posts-by-langs/scala)**,
+jak np. składnia języka **[Scala]**,
 i słabą pamięć do rzeczy prostych, jak np. “z jakimi parametrami należy budować projekt w języku Scala, żeby otrzymać żądany efekt”.
 Rezultat tego był taki, że wielokrotnie przeszukiwałem internet w poszukiwaniu tych samych rzeczy.
 Pierwszą próbą rozwiązania mojego problemu był pomysł zapisywania wiedzy w pliku na dysku.
@@ -30,7 +30,7 @@ Nie tylko ja mam słabą pamięć.
 Poza tym do pracy przychodzą też nowi lub ludzie z innych zespołów, którzy chcą się czegoś dowiedzieć.
 Głupio mi było odpowiedzieć, że czegoś nie pamiętam, gdy wiedzą że robię to od roku.q
 Wycinanie fragmentów Dokumentów Googlowych i wysyłanie ich przez komunikator nie było najbardziej eleganckim rozwiązaniem.
-Więc założyłem repozytorium na **[GitHubie](/posts-by-tags/github)** i odsyłałem linki jako odpowiedzi na pytania.
+Więc założyłem repozytorium na **[GitHubie]** i odsyłałem linki jako odpowiedzi na pytania.
 Było to rozwiązanie lepsze, ale nie zadowalało mnie w pełni,
 ponieważ w ten sposób mogłem pomóc tylko osobom, które mnie bezpośrednio poprosiły o pomoc.
 
@@ -44,7 +44,7 @@ Blog będący Dziennikiem Postępów Prac pozwala temu przeciwdziałać i zaprez
 ## Dostanie wymarzonej pracy
 Jest to ostatni powód, który odkryłem. Jest to także powód, który ostatecznie zmotywował mnie do założenia tego bloga.
 
-Jestem programistą **[Javy](/posts-by-langs/java)**, a chcę być programistą **[Scali](/posts-by-langs/scala)**.
+Jestem programistą **[Javy]**, a chcę być programistą **[Scali]**.
 Fascynuję się tym językiem programowania odkąd o nim usłyszałem, czyli dłużej niż pracuję w Javie.
 Niestety na Górnym Śląsku, gdzie mieszkam, jest mało pracy dla programistów Scali.
 Można pracować zdalnie, ale jest ciężko przekonać firmy programistyczne,
@@ -58,4 +58,10 @@ Mój plan jest taki,
 Dokumentować tutaj każdą większą zmianę wraz z uzasadnieniem.
 
 Mam nadzieję, że będzie to jasne i łatwe do zrozumienia zarówno dla mnie, gdy po roku wrócę do swojego kodu,
-jak i dla wszystkich innych, którzy chcieliby się nauczyć języka **[Scala](/posts-by-langs/scala)**.
+jak i dla wszystkich innych, którzy chcieliby się nauczyć języka **[Scala]**.
+
+[Javy]:     /posts-by-langs/java
+[Scala]:    /posts-by-langs/scala
+[Scali]:    /posts-by-langs/scala
+
+[GitHubie]: /posts-by-tools/github

@@ -2,10 +2,9 @@
 title: "Git-flow i aliasy"
 author:   TheKamilAdam
 category: cli
-tags:     cli git alias
+tags:     alias cli 
 labels:   flow
-langs:
-libs:
+tools:    git
 redirect_from:
   - git-flow-i-aliasy
   - cli/git-flow-i-aliasy
@@ -49,7 +48,7 @@ gdzie będą stosować dokładnie ten sam Gitflow bez żadnych lokalnych modyfik
 ## Moje aliasy
 
 Jednak nawet te polecenia są dla mnie za długie.
-Dlatego przygotowałem [plik](<https://github.com/writeonly/cli/blob/master/git_config.sh>) z [aliasami Basha](</cli/2018/09/12/git-submoduly-i-aliasy.html>)
+Dlatego przygotowałem [plik](<https://github.com/writeonly/cli/blob/master/git_config.sh>) z [aliasami Basha](/git-submoduly-i-aliasy)
 
 ```bash
 # git flow

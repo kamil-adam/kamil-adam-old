@@ -2,10 +2,9 @@
 title:    'Czy nadaję się na programistę? Inne możliwości w IT'
 author:   TheKamilAdam
 category: thoughts
-tags:     blog bash api gui
-labels:
+tags:     blog api gui
 langs:    perl python ruby
-libs:
+tools:    bash
 redirect_from:
   - czy-nadaje-sie-na-programiste
   - thoughts/czy-nadaje-sie-na-programiste
@@ -154,14 +153,9 @@ Powinna być to osoba która ma dobry kontakt z ludźmi i umie przekazywać wied
 
 Wdrożeniem samej aplikacji zajmują się dwa kolejne stanowiska:
 * **SysOps Engineer** (ang. *Systems Operations Engineer*) kiedyś nazywany *SysAdmin* (ang. *Systems Administration*) - 
-wdraża *manualnie*, albo klikając po aplikacjach, albo wpisując polecenia w terminalu, czasem pisząc skrypty w **[Bashu](/posts-by-tags/bash)**.
+wdraża *manualnie*, albo klikając po aplikacjach, albo wpisując polecenia w terminalu, czasem pisząc skrypty w **[Bashu](/posts-by-tools/bash )**.
 * **DevOps Engineer** (ang. *Development and Operations*) często zwany także *Cloud Engineer* jeśli pracuje z chmurą - 
-wdraża automatycznie za pomocą skryptów w 
-**[Bashu](/posts-by-tags/bash)**,
-**[Perlu](/posts-by-langs/perl)**,
-**[Pythonie](/posts-by-langs/python)**,
-**[Ruby](/posts-by-langs/ruby)**
-lub innym języku skryptowym.
+wdraża automatycznie za pomocą skryptów w **[Bashu]**, **[Perlu]**, **[Pythonie]**, **[Ruby]** lub innym języku skryptowym.
 
 W uproszczeniu różnica między *SysOps Engineer* a *DevOps Engineer* jest taka jak między *Testerem manualnym* a *Testerem automatycznym*.
 W ostatnim czasie spada zapotrzebowanie na *SysOps Engineerów* a rośnie na *DevOps Engineerów*,
@@ -216,5 +210,11 @@ Podsumowując nietechniczne stanowiska w typowej firmie IT na które najłatwiej
 * UI/UX Designer - trzeba mieć zmysł artystyczny
 * Sprzedawca i Marketingowiec - tak samo jak wszędzie, IT nie jest tu w żaden sposób wyjątkowe.
 
-[API]: /posts-by-tags/api
-[GUI]: /posts-by-tags/gui
+[Perlu]:    /posts-by-langs/perl
+[Pythonie]: /posts-by-langs/python
+[Ruby]:     /posts-by-langs/ruby
+
+[Bashu]:    /posts-by-tools/bash 
+
+[API]:      /posts-by-tags/api
+[GUI]:      /posts-by-tags/gui

@@ -2,9 +2,9 @@
 title:    'No Exceptions - problemy z biblioteką standardową i biblioteki zewnętrzne'
 author:   TheKamilAdam
 category: scala-jvm
-tags:     api applicative clang for-comprehension monad no-exceptions
-labels:   
+tags:     api applicative for-comprehension monad no-exceptions
 langs:    scala haskell
+tools:    clang
 libs:     scalaz
 redirect_from:
   - no-exceptions-thridparty-lib
@@ -238,10 +238,11 @@ Kod jest oczywiście dostępny na [Githubie](https://github.com/writeonly/linkch
 
 [scalaz]:            /posts-by-libs/scalaz
 
+[c]:                 /posts-by-tools/clang
+
 [api]:               /posts-by-tags/api
 [aplikatywem]:       /posts-by-tags/applicative
 [aplikatywy]:        /posts-by-tags/applicative
-[c]:                 /posts-by-tags/clang
 [linkchecker]:       /posts-by-tags/linkchecker
 [for comprehension]: /posts-by-tags/for-comprehension
 [monad]:             /posts-by-tags/monad

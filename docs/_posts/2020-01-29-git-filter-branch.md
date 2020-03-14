@@ -2,7 +2,8 @@
 title:    'Git - zmiana informacji o autorze'
 author:   TheKamilAdam
 category: cli
-tags:     bash cli filter-branch git script
+tags:     cli filter-branch script
+tools:    bash git
 redirect_from:
   - no-exceptions-io
   - scala-jvm/no-exceptions-io
@@ -106,10 +107,11 @@ warto wiedzieć, że istnieje taka opcja.
 Zwłaszcza biorąc pod uwagę,
 że wiele zaawansowanych opcji systemu kontroli wersji **[git]** jest dostępnych tylko z [konsoli].
 
-[bash]:          /posts-by-tags/bash
+[bash]:          /posts-by-tools/bash 
+[git]:           /posts-by-tools/git
+
 [cli]:           /posts-by-tags/cli
 [filter-branch]: /posts-by-tags/filter-branch
-[git]:           /posts-by-tags/git
 [konsoli]:       /posts-by-tags/cli
 [script]:        /posts-by-tags/script
 [skrypt]:        /posts-by-tags/script

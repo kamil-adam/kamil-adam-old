@@ -3,7 +3,6 @@ title:    'No Exceptions - problemy z wyjątkami i biblioteka standardowa'
 author:   TheKamilAdam
 category: scala-jvm
 tags:     no-exceptions monad io linkchecker
-labels:   
 langs:    haskell java rust scala
 libs:     vavr
 redirect_from:
@@ -257,4 +256,4 @@ Kod jest oczywiście dostępny na [Githubie](https://github.com/writeonly/linkch
 [io]:            /posts-by-tags/io
 [linkchecker]:   /posts-by-tags/linkchecker
 [monada]:        /posts-by-tags/monad
-[no-exceptions]: /posts-tags/no-exceptions
+[no-exceptions]: /posts-by-tags/no-exceptions

@@ -3,7 +3,6 @@ title:    'java.util vs vavr - problem z typami generycznymi w metodzie Collecti
 author:   TheKamilAdam
 category: java
 tags:     collection interface immutable fp
-labels:   
 langs:    java kotlin scala
 libs:     vavr vavr-kotlin
 redirect_from:
@@ -12,7 +11,7 @@ redirect_from:
 ---
 
 ## Problem
-Niedawno na [4programers.net](4programmers.net/Forum/Java/337090-spring_dao) pojawiło się pytanie,
+Niedawno na [4programers.net](https://4programmers.net/Forum/Java/337090-spring_dao) pojawiło się pytanie,
 gdzie ostatecznie problemem była niedoskonałość metody `Collection<E>::remove(Object)` ze standardowej biblioteki Javy.
 
 Cały problem można sprowadzić do przykładu:

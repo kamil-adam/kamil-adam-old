@@ -2,10 +2,9 @@
 title:    'Krótki wpis o tym jak Google niszczy konkurencję'
 author:   TheKamilAdam
 category: jekyll
-tags:     css html jekyll
-labels:   
+tags:     css html
 langs:    javascript
-libs:     
+tools:    jekyll
 redirect_from:
   - preload-css
   - jekyll/preload-css
@@ -91,6 +90,7 @@ A po uruchomieniu jekylla dostaję:
 
 [JavaScript]: /posts-by-langs/javascript
 
+[jekyll]:     /posts-by-tools/jekyll
+
 [CSS]:        /posts-by-tags/css
 [html]:       /posts-by-tags/html
-[jekyll]:     /posts-by-tags/jekyll

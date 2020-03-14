@@ -27,6 +27,8 @@ collections:
     output: true
   langs:
     output: true
+  tools:
+    output: true
   libs:
     output: true
   books:

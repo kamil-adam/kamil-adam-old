@@ -2,10 +2,10 @@
 title:    'Krótki opis konstrukcji kompilatorów GCC, LLVM i Clang'
 author:   TheKamilAdam
 category: programming
-tags:     clang llvm compiler parser lexer ast scala-native cli interface jvm interpreter assembler api bytecode
+tags:     api assembler ast bytecode cli compiler interface interpreter lexer parser
 labels:   gcc ir r
 langs:    haskell kotlin lua python ruby crystal julia pony rust go lisp
-libs:
+tools:    clang jvm llvm scala-native
 redirect_from:
   - gcc-llvm-clang
   - programming/gcc-llvm-clang
@@ -275,16 +275,34 @@ clang lua.c -S -fomit-frame-pointer -o -
 ## Podsumowanie
 **[LLVM]** jest przyszłością i głównie ten projekt jest odpowiedzialny za wysyp nowych języków natywnych.
 
-[Kompilator]: /posts-by-tags/compiler
+[Common Lisp]: /posts-by-langs/common-lisp
+[Crystal]:     /posts-by-langs/crystal
+[Go]:          /posts-by-langs/go
+[Haskell]:     /posts-by-langs/haskell
+[JavaScript]:  /posts-by-langs/javascript
+[Julia]:       /posts-by-langs/julia
+[Kotlin]:      /posts-by-langs/kotlin
+[Lisp]:        /posts-by-langs/lisp
+[Lua]:         /posts-by-langs/lua
+[Pony]:        /posts-by-langs/pony
+[Python]:      /posts-by-langs/python
+[Ruby]:        /posts-by-langs/ruby
+[Rust]:        /posts-by-langs/rust
+[Scala]:       /posts-by-tools/scala-native
+
+[Clang]:       /posts-by-tools/clang
+[LLVM]:        /posts-by-tools/llvm
+
+[API]:         /posts-by-tags/api
+[Asembler]:    /posts-by-tags/assembler
+[AST]:         /posts-by-tags/ast
+[CLI]:         /posts-by-tags/cli
 [Interpreter]: /posts-by-tags/interpreter
-[Asembler]: /posts-by-tags/assembler
+[Kod bajtowy]: /posts-by-tags/bytecode
+[Kompilator]:  /posts-by-tags/compiler
+[leksera]:     /posts-by-tags/lexer
+[parsera]:     /posts-by-tags/parser
 
-[leksera]: /posts-by-tags/lexer
-[parsera]: /posts-by-tags/parser
-[AST]: /posts-by-tags/ast
-
-[LLVM]: /posts-by-tags/llvm
-[Lisp]: /posts-by-langs/lisp
 [rms]: https://pl.wikipedia.org/wiki/Richard_Stallman
 
 [polecenia standalone]: http://llvm.org/docs/CommandGuide/
@@ -294,23 +312,3 @@ clang lua.c -S -fomit-frame-pointer -o -
 [llc]: http://llvm.org/docs/CommandGuide/llc.html 
 [lli]: http://llvm.org/docs/CommandGuide/lli.html
 
-[Clang]: /posts-by-tags/clang
-[API]: /posts-by-tags/api
-
-[Common Lisp]: /posts-by-langs/common-lisp
-[Haskell]: /posts-by-langs/haskell
-[Kod bajtowy]: /posts-by-tags/bytecode
-[Kotlin]: /posts-by-langs/kotlin
-[Lua]: /posts-by-langs/lua
-[Python]: /posts-by-langs/python
-[Ruby]: /posts-by-langs/ruby
-[Scala]: /posts-by-tags/scala-native
-[Crystal]: /posts-by-langs/crystal
-[Julia]: /posts-by-langs/julia
-[Pony]: /posts-by-langs/pony
-[Rust]: /posts-by-langs/rust
-
-[Go]: /posts-by-langs/go
-[JavaScript]: /posts-by-langs/javascript
-
-[CLI]: /posts-by-tags/cli

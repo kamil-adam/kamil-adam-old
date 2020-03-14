@@ -2,10 +2,10 @@
 title:    "Flagi kompilatora Scalac"
 author:   TheKamilAdam
 category: scala-native
-tags:     sbt compiler scalafix
-labels:   scalac options
-langs:    scala perl 
-libs:
+tags:     compiler
+labels:   scalafix scalac
+langs:    perl scala
+tools:    sbt scalafix
 redirect_from:
   - flagi-kompilatora-scalac
   - scala-native/flagi-kompilatora-scalac

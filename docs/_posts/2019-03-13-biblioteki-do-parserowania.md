@@ -2,10 +2,10 @@
 title:    "Biblioteki do parsowania dla języka Scala"
 author:   TheKamilAdam
 category: scala-native
-tags:     library json parser lexer ast compiler xml properties interface dsl
-labels:   parboiled2
+tags:     ast compiler dsl interface json lexer library parser properties xml
+labels:   BNF parboiled2
 langs:    scala
-libs:     utest fastparse
+libs:     fastparse shocon stoml utest
 redirect_from:
   - biblioteki-do-parserowania
   - scala-native/biblioteki-do-parserowania
@@ -15,12 +15,12 @@ redirect_from:
 
 ## Co to jest parser?
 
-**[Parser](/posts-by-tags/parser)** to program dokonujący procesu analizy składniowej na ciągu leksemów (tokenach z typami),
+**[Parser]** to program dokonujący procesu analizy składniowej na ciągu leksemów (tokenach z typami),
 czyli sprawdzeniu ich zgodności z określoną gramatyką formalną.
-Wynikiem pracy parsera jest **[drzewo składniowe](/posts-by-tags/ast)** (ang. *abstract syntax tree*, *AST*),
+Wynikiem pracy parsera jest **[drzewo składniowe]** (ang. *abstract syntax tree*, *AST*),
 na którym są przeprowadzane dalsze operacje.
 
-Programem pomocniczym, często działającym równolegle do parsera, jest **[lekser](/posts-by-tags/lexer)**.
+Programem pomocniczym, często działającym równolegle do parsera, jest **[lekser]**.
 Dokonuje on procesu analizy leksykalnej,
 czyli dzieli wejściowy tekst na leksemy.
 
@@ -30,24 +30,24 @@ Parsery są używane do różnych celów:
 ### Parsowanie danych strukturalnych
 * Parsowanie języka programowania -
 jest to pierwsza rzecz jaka nasuwa się na myśl, przynajmniej mi.
-Parsery są pierwszą (wejściową) częścią **[kompilatora](/posts-by-tags/compiler)**.
+Parsery są pierwszą (wejściową) częścią **[kompilatora]**.
 Oczywiście mało prawdopodobne, że będziesz tworzył nowy język programowania.
 Czasem jednak istnieje potrzeba napisania parsera już istniejącego języka,
 gdy np. piszesz własny tool do formatowania kodu.
 * Parsowanie z serializowanych danych -
 z serializowane dane można przesyłać i przechowywać w formatach tekstowych takich jak
-**[JSON](/posts-by-tags/json)**, CSV, JSON Lines (połączenie zalet formatów JSON i CSV), **[XML](/posts-by-tags/xml)** i wielu innych.
+**[JSON]**, CSV, JSON Lines (połączenie zalet formatów JSON i CSV), **[XML]** i wielu innych.
 Ale możliwe, że chciałbyś napisać parser własnego formatu zoptymalizowany pod pewne konkretne wymagania.
-Jak np. [Rison](https://github.com/Hronom/jackson-dataformat-rison),
+Jak np. [Rison],
 JSON zmodyfikowany w taki sposób by móc go przesyłać bezpośrednio w adresie url.
 * Parsowanie konfiguracji -
-teoretycznie każdą konfigurację można zapisać w Javowych plikach **[Properties](/posts-by-tags/properties)** lub formacie JSON,
+teoretycznie każdą konfigurację można zapisać w Javowych plikach **[Properties]** lub formacie JSON,
 ewentualnie Yamlu (nadzbiorze formatu JSON) albo XMLu.
 Powstają jednak cały czas nowe formaty dedykowane do przechowywania konfiguracji jak
-[Hocon](<https://github.com/lightbend/config>) ([Shocon](<https://github.com/jvican/stoml>))
+[Hocon]) ([Shocon])
 lub
-[Toml](<https://github.com/toml-lang/toml>) ([Stoml](<https://github.com/jvican/stoml>)).
-* Parsowanie języka domenowego (ang. *domain-specific language*, **[DSL](/posts-by-tags/dsl**) -
+[Toml]) ([Stoml]).
+* Parsowanie języka domenowego (ang. *domain-specific language*, **[DSL]** -
 czasem prosta konfiguracja nie wystarcza i potrzebujemy czegoś więcej.
 Jeśli potrzebujesz prostych wyrażeń (np. relacji) wczytywanych z pliku możesz spróbować zaadoptować jeden z języków wyrażeń (ang. *Expression Language*, *EL*) jak
 SpEL,
@@ -70,13 +70,13 @@ Zużywały mało pamięci, co było ważne w czasach procesorów ośmiobitowych,
 Dodatkowo, ponieważ drzewo AST było na bierząco konsumowane,
 utrodniona była wieloetapowa optymalizacja wynikowego kodu
 i wynikowy kod także był wolny.
-W ciemnych wiekach średnich parsery generowało się za pomocą narzędzi Yacc i Lex lub podobnych ze zbliżonym **[interfejsem](/posts-by-tags/interface)**.
+W ciemnych wiekach średnich parsery generowało się za pomocą narzędzi Yacc i Lex lub podobnych ze zbliżonym **[interfejsem]**.
 Były one konfigurowane we własnym języku,
 podobnym do notacja Backusa-Naura (ang. **Backus-Naur Form**, **BNF**)
 oraz generowane przed właściwą kompilacją.
 
 Dziś istnieją biblioteki przy pomocy których można napisać parser o akceptowalnej wydajności.
-Dla języka **[Scala](/posts-by-langs/scala)** są to:
+Dla języka **[Scala]** są to:
 
 * [Scala Parser Combinators](<https://github.com/scala/scala-parser-combinators>) -
 Wspiera Scala.js w wersji 0.6.x.
@@ -93,7 +93,7 @@ Wersja FastParse 1.0.0 wspierała Scala Native.
 
 ## FastParse w akcji
 
-Prosty parser wyrażeń arytmetycznych zaimplementowany przy pomocy **[FastParse](/posts-by-tags/fastparse)**:
+Prosty parser wyrażeń arytmetycznych zaimplementowany przy pomocy **[FastParse]**:
 ```scala
 package pl.writeonly.re.shared.calculator
 
@@ -123,7 +123,7 @@ class CalculatorParser {
   val expr: P[Int] = P(addSub ~ End)
 }
 ```
-I proste testy do tego w frameworku **[utest](/posts-by-tags/utest)**:
+I proste testy do tego w frameworku **[utest]**:
 ```scala
 package pl.writeonly.re.shared.calculator
 
@@ -190,7 +190,27 @@ object CalculatorParserTest extends TestSuite {
 
 ## Podsumowanie
 
-Dzięki bibliotekom do parsowania możliwe jest pisanie parserów w językach ogólnego przeznaczenia jak **[Scala](/posts-by-langs/scala)**.
+Dzięki bibliotekom do parsowania możliwe jest pisanie parserów w językach ogólnego przeznaczenia jak **[Scala]**.
 Nie są potrzebne dodatkowe narzędzia, ani dodatkowe fazy kompilacji.
-Dodatkowo dzięki możliwości dodawania operatorów do składni języka **[Scala](/posts-by-langs/scala)**,
+Dodatkowo dzięki możliwości dodawania operatorów do składni języka **[Scala]**,
 możliwe jest używanie notacji podobnej do BNF.
+
+[Scala]:             /posts-by-langs/scala
+
+[FastParse]:         /posts-by-libs/fastparse
+[SHocon]:            /posts-by-libs/shocon
+[STOML]:             /posts-by-libs/stoml
+[utest]:             /posts-by-libs/utest
+
+[DSL]:               /posts-by-tags/dsl
+[drzewo składniowe]: /posts-by-tags/ast
+[interfejsem]:       /posts-by-tags/interface
+[JSON]:              /posts-by-tags/json
+[HOCON]:             /posts-by-tags/hocon
+[kompilatora]:       /posts-by-tags/compiler
+[lekser]:            /posts-by-tags/lexer
+[Properties]:        /posts-by-tags/properties
+[Parser]:            /posts-by-tags/parser
+[Rison]:             /posts-by-tags/rison
+[TOML]:              /posts-by-tags/toml
+[XML]:               /posts-by-tags/xml

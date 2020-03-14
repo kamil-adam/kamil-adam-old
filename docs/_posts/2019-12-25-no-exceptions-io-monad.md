@@ -2,9 +2,9 @@
 title:    'No Exceptions - IO, królowa monad'
 author:   TheKamilAdam
 category: scala-jvm
-tags:     alias api applicative clang for-comprehension io monad no-exceptions task
-labels:   
+tags:     alias api applicative for-comprehension io monad no-exceptions task
 langs:    scala haskell
+tools:    clang
 libs:     scalaz zio
 redirect_from:
   - no-exceptions-io
@@ -294,7 +294,6 @@ czyste programowanie bez wyjątków jest możliwe za jej pomocą.
 Wymaga to jednak dużo samozaparcia i jest trudniejsze niż w językach od początku zaprojektowanych w tym celu jak **[Haskell]** czy **[Eta]**.
 
 Kod jest oczywiście dostępny na [Githubie](https://github.com/writeonly/linkchecker/tree/v4.0).
-
 
 [eta]:               /posts-by-langs/eta
 [haskell]:           /posts-by-langs/haskell

@@ -2,9 +2,9 @@
 title:    "setxkbmap - Jak szybko zmienić układ klawiatury z konsoli na Ubuntu?"
 author:   TheKamilAdam
 category: cli
-tags:     cli bash ubuntu
-labels:
+tags:     cli
 langs:
+tools:    bash ubuntu
 libs:
 redirect_from:
   - setxkbmap
@@ -12,13 +12,13 @@ redirect_from:
   - cli/2019/02/13setxkbmap.html
 ---
 
-Po długiej przerwie prosty artykuł "Jak szybko zmienić układ klawiatury z konsoli na **[Ubuntu](/posts-by-tags/ubuntu)**?".
+Po długiej przerwie prosty artykuł "Jak szybko zmienić układ klawiatury z konsoli na **[Ubuntu]**?".
 
 
 ## Problem
 
 Podczas pracy na Xubuntu zainstalowanym na wirtualnej maszynie często zmienia mi się układ klawiatury z polskiej na amerykańską.
-Na **[Ubuntu](/posts-by-tags/ubuntu)** można odwrócić ten proces w łatwy sposób za pomocą ikonki na pasku zadań,
+Na **[Ubuntu]** można odwrócić ten proces w łatwy sposób za pomocą ikonki na pasku zadań,
 jednak już w Xubuntu ta opcja jest ukryta głęboko w trzewiach ustawień systemowych.
 Dlatego prościej jest to zrobić z linii poleceń.
 
@@ -72,3 +72,5 @@ gdy jest otwierany nowy terminal wystarczy dodać wywołanie polecenia `setxkbma
 ```bash
 echo "setxkbmap pl" >> ~/.bashrc
 ```
+
+[Ubuntu]: /posts-by-tools/ubuntu

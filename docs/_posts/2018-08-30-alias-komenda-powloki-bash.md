@@ -2,10 +2,8 @@
 title:    "Alias - polecenie powłoki Bash"
 author:   TheKamilAdam
 category: cli
-tags:     cli bash alias git
-labels:
-langs:
-libs:
+tags:     alias cli 
+tools:    bash git
 redirect_from:
   - alias-komenda-powloki-bash
   - cli/alias-komenda-powloki-bash

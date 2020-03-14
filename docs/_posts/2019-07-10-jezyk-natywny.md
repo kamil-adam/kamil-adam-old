@@ -2,10 +2,9 @@
 title:    'Który język programowania wybrać na początek - język natywny'
 author:   TheKamilAdam
 category: programming
-tags:     bytecode clang docker kotlin-native llvm monad native node-js scala-native type-classes
-labels:
+tags:     bytecode monad native type-classes
 langs:    common-lisp crystal dart erlang fsharp go haskell java javascript julia lua meta-language ocaml pony racket rust scala scheme smalltalk typescript
-libs:
+tools:    clang docker kotlin-native llvm node-js scala-native
 redirect_from:
   - jezyk-natywny
   - programming/jezyk-natywny
@@ -226,13 +225,14 @@ I to może odwrócić trend w najbliższych latach.
 [Smalltalk]: /posts-by-langs/smalltalk
 [TypeScript]: /posts-by-langs/typescript
 
+[Docker]: /posts-by-tools/docker
+[Kotlin Native]: /posts-by-tools/kotlin-native
+[LLVM]: /posts-by-tools/llvm
+[Node.js]: /posts-by-tools/node-js
+[Scala Native]: /posts-by-tools/scala-native
+
 [kod bajtowy]: /posts-by-tags/bytecode
-[Docker]: /posts-by-tags/docker
-[Kotlin Native]: /posts-by-tags/kotlin-native
-[LLVM]: /posts-by-tags/llvm
 [monady]: /posts-by-tags/monad
-[Node.js]: /posts-by-tags/node-js
-[Scala Native]: /posts-by-tags/scala-native
 [Type Classes]: /posts-by-tags/type-classes
 
 [maszyny P-code]: https://en.wikipedia.org/wiki/P-code_machine

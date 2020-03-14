@@ -2,10 +2,8 @@
 title:    "Jekyll - kategorie i tagi"
 author:   TheKamilAdam
 category: jekyll
-tags:     jekyll blog
-labels:
-langs:
-libs:
+tags:     blog
+tools:    jekyll  
 redirect_from:
   - kategorie-i-tagi
   - jekyll/kategorie-i-tagi
@@ -62,7 +60,7 @@ Przykładowy strona pomocnicza dla tagu:
 {%raw%}
 ```yaml
 ---
-permalink: /posts-by-tags/scala-native
+permalink: /posts-by-tools/scala-native
 layout: page-tag
 tag: "scala-native"
 ---

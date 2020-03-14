@@ -1,0 +1,35 @@
+---
+layout: posts
+title: Artykuły po narzędziach
+permalink: /posts-by-tools/
+description: Artykuły po narzędziach
+---
+{% include group-by-array collection=site.posts field="tools" %}
+<div class="posts">
+  <dl class="posts-nav">
+    {% for name in group_names %}
+    {% assign posts = group_items[forloop.index0] %}
+    <dt>
+      <h2>
+        <a href="{{ site.baseurl }}/posts-by-tools/{{ name }}">{{ name | capitalize }}</a>
+      </h2>
+    </dt>
+    <dd>
+      <ul>
+        {% for post in posts %}
+        <li>
+          <a class="posts-nav-item" href="{{ post.url | relative_url }}">
+            <span class="posts-nav-item-date">
+              <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
+                {{ post.date | date: "%Y-%m-%d" }}
+              </time>
+            </span>
+            {{ post.title }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </dd>
+    {% endfor %}
+  </dl>
+</div>

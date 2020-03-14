@@ -2,10 +2,11 @@
 title:    "Scala - No Universal Equality"
 author:   TheKamilAdam
 category: scala-native
-tags:     scala-jvm scala-js scala-native monad type-classes scalafix operator library compiler
+tags:     compiler library monad operator type-classes
 labels:   scalatic
-langs:    scala java haskell
-libs:     scalatest scalaz cats scalafix utest
+langs:    haskell java scala
+tools:    scala-jvm scala-js scala-native scalafix
+libs:     cats scalatest scalaz utest
 redirect_from:
   - no-universal-equality
   - scala-native/no-universal-equality
@@ -13,10 +14,10 @@ redirect_from:
   - resentiment/no-universal-equality.html
 ---
 
-Ostatnim błędem zgłaszanym w kodzie projektu **[resentiment](/posts-by-category/resentiment)** przez **[scalafix](/posts-by-tags/scalafix)**
+Ostatnim błędem zgłaszanym w kodzie projektu **[resentiment]** przez **[scalafix]**
 jest "No Universal Equality" wynikający z użycia operatora `==`.
 
-W języku **[Scala](/posts-by-langs/scala)** obiekty domyślnie porównuje się za pomocą operatora `==`.
+W języku **[Scala]** obiekty domyślnie porównuje się za pomocą operatora `==`.
 Operator ten wywołuje pod spodem znaną z Javy metodę `equals`.
 Operator `==` pozwala jednak na bezsensowne porównywanie obiektów, które są różnych klas.
 Mimo że  poprawnie napisana metoda `equals` zawsze zwróci w takim przypadku `false`.
@@ -29,7 +30,7 @@ Można ten problem rozwiązać na kilka sposobów.
 ## Dotty - Multiversal Equality
 
 Najprostszym sposobem rozwiązania problemu `Universal Equality` jest poczekać.
-Nowa wersja **[kompilator](/posts-by-tags/compiler)** Scala - *[Dotty](<https://dotty.epfl.ch/>)* będzie posiadać
+Nowa wersja **[kompilator]** Scala - *[Dotty](<https://dotty.epfl.ch/>)* będzie posiadać
 [Multiversal Equality](<http://dotty.epfl.ch/docs/reference/other-new-features/multiversal-equality.html>)
 co rozwiązuje problem.
 
@@ -41,7 +42,7 @@ których wywołanie wygląda jak wywołanie operatora i zwykle tym nowym operato
 
 ### Scalactic
 **[Scalactic](<http://www.scalactic.org>)**
-jest to zestaw utilsów/narzędzi wydzielony ze **[ScalaTest](/posts-by-tags/scalatest)**,
+jest to zestaw utilsów/narzędzi wydzielony ze **[ScalaTest]**,
 który może być przydatny także w kodzie produkcyjnym.
 
 **Scalactic** posiada wiele klas do porównywania wartości,
@@ -50,24 +51,24 @@ która wymaga by oba porównywane obiekty były tej samej klasy.
 
 Największą zaletą biblioteki **Scalactic** jest to,
 że nie zagłębia się w teorię czystego programowania funkcyjnego (ang. *pure functional programming*)
-i nie pojawiają się tam takie straszne terminy jak **[monada](/posts-by-tags/monad)** czy **[klasy typów](/posts-by-tags/type-classes)**.
+i nie pojawiają się tam takie straszne terminy jak **[monada]** czy **[klasy typów]**.
 
 ### Scalaz i Cats
 *Kolejność chronologiczna.*
 
-Są to dwie wspaniałe biblioteki, które robią ze Scali język funkcyjny przypominający język **[Haskell](/posts-by-langs/haskell)**.
+Są to dwie wspaniałe biblioteki, które robią ze Scali język funkcyjny przypominający język **[Haskell]**.
 
 Biblioteki te dzielą się na dwie główne części:
 * *Data types* - tutaj znajdują się monady, które są w Haskellu, ale nie ma ich w bibliotece standardowej języka Scala
 * *Type classes* - typ konstruktu systemowego, który obsługuje polimorfizm *ad hoc*.
 
-Zarówno **[Scalaz](/posts-by-tags/scalaz)** jak i **[Cats](/posts-by-tags/cats)** posiadają klasę `Equal`,
+Zarówno **[Scalaz]** jak i **[Cats]** posiadają klasę `Equal`,
 która pozwala porównywać obiekty za pomocą operatora `===`.
 
 Dobre porównanie obu bibliotek można znaleźć na [githubie](<https://github.com/fosskers/scalaz-and-cats>),
 chociaż różnice są bardzo małe.
-Obie biblioteki wspierają **[scala.js](/posts-by-tags/scala-js)**,
-ale tylko **Scalaz** - **[scala native](/posts-by-tags/scala-native)**.
+Obie biblioteki wspierają **[scala.js])**,
+ale tylko **Scalaz** - **[scala native]**.
 
 ## "No Universal Equality" z Scalaz w projekcie Resentiment
 
@@ -158,3 +159,46 @@ Jeśli jednak nie chcemy czekać do tego czasu warto się rozejrzeć w interneci
 ponieważ prawdopodobnie istnieją już rozwiązania naszych problemów.
 "Universal Equality" jest jednym z problemów,
 które w prosty sposób mogą być rozwiązane już dziś.
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+[resentiment]:  /posts-by-category/resentiment
+
+[Haskell]:      /posts-by-langs/haskell
+[Scala]:        /posts-by-langs/scala
+=======
+[Haskell]:      /langs/haskell
+[Scala]:        /langs/scala
+>>>>>>> e42851b... Update_docs
+=======
+[resentiment]:  /category/resentiment
+
+[Haskell]:      /langs/haskell
+[Scala]:        /langs/scala
+>>>>>>> 86a6e10... Update_docs
+
+[Cats]:         /libs/cats
+[ScalaTest]:    /libs/scalatest
+[Scalaz]:       /libs/scalaz
+
+[scala native]: /tools/scala-native
+[scalafix]:     /tools/scalafix
+[scala.js]:     /tools/scala-js
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+[klasy typów]:  /posts-by-tags/type-classes
+[kompilator]:   /posts-by-tags/compiler
+[monada]:       /posts-by-tags/monad
+=======
+[klasy typów]:  /tags/type-classes
+[kompilator]:   /tags/compiler
+[monada]:       /tags/monad
+>>>>>>> 86a6e10... Update_docs
+
+=======
+[klasy typów]:  /tags/type-classes
+[kompilator]:   /tags/compiler
+[monada]:       /tags/monad
+[resentiment]:  /tags/resentiment
+>>>>>>> e42851b... Update_docs

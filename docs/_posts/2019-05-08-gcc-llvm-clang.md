@@ -2,10 +2,10 @@
 title:    'Krótki opis konstrukcji kompilatorów GCC, LLVM i Clang'
 author:   TheKamilAdam
 category: programming
-tags:     clang llvm compiler parser lexer ast scala-native cli interface jvm interpreter assembler api bytecode
+tags:     api assembler ast bytecode cli compiler interface interpreter lexer parser
 labels:   gcc ir r
 langs:    haskell kotlin lua python ruby crystal julia pony rust go lisp
-libs:
+tools:    clang jvm llvm scala-native
 redirect_from:
   - gcc-llvm-clang
   - programming/gcc-llvm-clang
@@ -275,16 +275,34 @@ clang lua.c -S -fomit-frame-pointer -o -
 ## Podsumowanie
 **[LLVM]** jest przyszłością i głównie ten projekt jest odpowiedzialny za wysyp nowych języków natywnych.
 
-[Kompilator]: /posts-by-tags/compiler
-[Interpreter]: /posts-by-tags/interpreter
-[Asembler]: /posts-by-tags/assembler
+[Common Lisp]: /langs/common-lisp
+[Crystal]:     /langs/crystal
+[Go]:          /langs/go
+[Haskell]:     /langs/haskell
+[JavaScript]:  /langs/javascript
+[Julia]:       /langs/julia
+[Kotlin]:      /langs/kotlin
+[Lisp]:        /langs/lisp
+[Lua]:         /langs/lua
+[Pony]:        /langs/pony
+[Python]:      /langs/python
+[Ruby]:        /langs/ruby
+[Rust]:        /langs/rust
+[Scala]:       /tools/scala-native
 
-[leksera]: /posts-by-tags/lexer
-[parsera]: /posts-by-tags/parser
-[AST]: /posts-by-tags/ast
+[Clang]:       /tools/clang
+[LLVM]:        /tools/llvm
 
-[LLVM]: /posts-by-tags/llvm
-[Lisp]: /posts-by-langs/lisp
+[API]:         /tags/api
+[Asembler]:    /tags/assembler
+[AST]:         /tags/ast
+[CLI]:         /tags/cli
+[Interpreter]: /tags/interpreter
+[Kod bajtowy]: /tags/bytecode
+[Kompilator]:  /tags/compiler
+[leksera]:     /tags/lexer
+[parsera]:     /tags/parser
+
 [rms]: https://pl.wikipedia.org/wiki/Richard_Stallman
 
 [polecenia standalone]: http://llvm.org/docs/CommandGuide/
@@ -294,23 +312,3 @@ clang lua.c -S -fomit-frame-pointer -o -
 [llc]: http://llvm.org/docs/CommandGuide/llc.html 
 [lli]: http://llvm.org/docs/CommandGuide/lli.html
 
-[Clang]: /posts-by-tags/clang
-[API]: /posts-by-tags/api
-
-[Common Lisp]: /posts-by-langs/common-lisp
-[Haskell]: /posts-by-langs/haskell
-[Kod bajtowy]: /posts-by-tags/bytecode
-[Kotlin]: /posts-by-langs/kotlin
-[Lua]: /posts-by-langs/lua
-[Python]: /posts-by-langs/python
-[Ruby]: /posts-by-langs/ruby
-[Scala]: /posts-by-tags/scala-native
-[Crystal]: /posts-by-langs/crystal
-[Julia]: /posts-by-langs/julia
-[Pony]: /posts-by-langs/pony
-[Rust]: /posts-by-langs/rust
-
-[Go]: /posts-by-langs/go
-[JavaScript]: /posts-by-langs/javascript
-
-[CLI]: /posts-by-tags/cli

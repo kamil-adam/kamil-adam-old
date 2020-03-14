@@ -2,10 +2,8 @@
 title:    'Który język programowania wybrać na początek - język korporacyjny'
 author:   TheKamilAdam
 category: programming
-tags:     jvm
-labels:
 langs:    java scala kotlin clojure frege eta go python ruby lisp haskell ocaml fsharp
-libs:
+tools:    jvm
 redirect_from:
   - jezyk-korporacyjny
   - programming/jezyk-korporacyjny
@@ -143,27 +141,24 @@ dlatego nowe aplikacje także powstają w Javie i C#.
 Poza tym trudno pracować w nowych językach jak Scala, Kotlin czy F# nie znając starych języków jak Javy czy C#,
 ponieważ nowe języki używają bibliotek napisanych w swoich starszych kuzynach.
 
-[Tiobe]: https://www.tiobe.com/tiobe-index/
-[IntelliJ IDEA]: https://www.jetbrains.com/idea/download/
+[Clojure]: /langs/clojure
+[Eta]:     /langs/eta
+[Frege]:   /langs/frege
+[F#]:      /langs/fsharp
+[Go]:      /langs/go
+[Haskell]: /langs/haskell
+[Java]:    /langs/java
+[Kotlin]:  /langs/kotlin
+[Lisp]:    /langs/lisp
+[OCaml]:   /langs/ocaml
+[Python]:  /langs/python
+[Ruby]:    /langs/ruby
+[Scala]:   /langs/scala
 
-[Go]: /posts-by-langs/go
-
-[Java]: /posts-by-langs/java
-[Scala]: /posts-by-langs/scala
-[Kotlin]: /posts-by-langs/kotlin
-[Clojure]: /posts-by-langs/clojure
-[Frege]: /posts-by-langs/frege
-[Eta]: /posts-by-langs/eta
-
-[Python]: /posts-by-langs/python
-[Ruby]: /posts-by-langs/ruby
-[Lisp]: /posts-by-langs/lisp
-[Haskell]: /posts-by-langs/haskell
+[JVM]: /tools/jvm
 
 [C++/CLI]: https://pl.wikipedia.org/wiki/C%2B%2B/CLI
 [VB.NET]: https://pl.wikipedia.org/wiki/Visual_Basic_.NET
 [Visual Basic]: https://pl.wikipedia.org/wiki/Visual_Basic
-[F#]: /posts-by-langs/fsharp
-[OCaml]: /posts-by-langs/ocaml
-
-[JVM]: /posts-by-tags/jvm
+[Tiobe]: https://www.tiobe.com/tiobe-index/
+[IntelliJ IDEA]: https://www.jetbrains.com/idea/download/

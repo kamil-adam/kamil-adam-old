@@ -1,0 +1,36 @@
+---
+layout      : posts
+title       : Artykuły po tagach
+description : Artykuły po tagach
+permalink   : /tags/
+collections : tags
+---
+{% include group-by-array-space collection=site.posts field="tags" %}
+<div class="posts">
+  <dl class="posts-nav">
+    {% for name in group_names %}
+    {% assign posts = group_items[forloop.index0] %}
+    <dt>
+      <h2>
+        <a href="{{ site.baseurl }}/tags/{{ name}}">{{ name }}</a>
+      </h2>
+    </dt>
+    <dd>
+      <ul>
+        {% for post in posts %}
+        <li>
+          <a class="posts-nav-item" href="{{ post.url | relative_url }}">
+            <span class="posts-nav-item-date">
+              <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
+                {{ post.date | date: "%Y-%m-%d" }}
+              </time>
+            </span>
+            {{ post.title }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </dd>
+    {% endfor %}
+  </dl>
+</div>

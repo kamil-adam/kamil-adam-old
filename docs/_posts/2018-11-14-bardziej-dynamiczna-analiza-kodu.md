@@ -2,10 +2,11 @@
 title:    "Bardziej dynamiczna analiza kodu dla języka Scala - Property-based testing"
 author:   TheKamilAdam
 category: scala-native
-tags:     code-analysis dynamic-code-analysis scala-js scala-native
+tags:     code-analysis dynamic-code-analysis
 labels:   property-based scalacheck scalaprops nyaya
 langs:    scala haskell
-libs:     specs2 scalatest scalaz
+tools:    scala-js scala-native
+libs:     scalatest scalaz specs2
 redirect_from:
   - bardziej-dynamiczna-analiza-kodu
   - scala-native/bardziej-dynamiczna-analiza-kodu
@@ -47,14 +48,14 @@ Dlatego testy te są wolne, chociaż testują pojedyncze moduły i jednostki.
 * [ScalaCheck](<https://www.scalacheck.org/>) -
 pierwsza i najbardziej popularna biblioteka *property-based testing*.
 Wspiera Scala.js w wersji 0.6 i 1.0.0.
-Inspirowana biblioteką [QuickCheck](<http://hackage.haskell.org/package/QuickCheck>) dla języka **[Haskell](/posts-by-langs/haskell)**.
+Inspirowana biblioteką [QuickCheck](<http://hackage.haskell.org/package/QuickCheck>) dla języka **[Haskell]**.
 Jeden z projektów [typelevel](<https://typelevel.org/projects/>).
 Posiada integracje z [ScalaTest](<http://www.scalatest.org/user_guide/writing_scalacheck_style_properties>)
 i [Specs2](<https://etorreborre.github.io/specs2/guide/SPECS2-4.3.4/org.specs2.guide.UseScalaCheck.html>).
 * [scalaprops](<https://github.com/scalaprops/scalaprops>) -
 druga najbardziej popularna biblioteka *property-based testing*.
-Wspiera **[Scala.js](/posts-by-tags/scala-js)** w wersji 0.6 i **[Scala Native](/posts-by-tags/scala-native)** w wersji 0.3.
-Posiada integrację z biblioteką **[Scalaz](/posts-by-tags/scalaz)**.
+Wspiera **[Scala.js]** w wersji 0.6 i **[Scala Native]** w wersji 0.3.
+Posiada integrację z biblioteką **[Scalaz]**.
 * [Nyaya](<https://github.com/japgolly/nyaya>) -
 projekt niestety umarł.
 Wspierał Scala.js w wersji 0.6.
@@ -234,3 +235,10 @@ Klasyczne testy modułowe (jednostkowe) nie wystarczają,
 ponieważ poprawnie napisane testy modułowe,
 które pokrywają 100% kodu aplikacji,
 mogą być niepoprawne, jeśli dane wejściowe są źle dobrane.
+
+[Haskell]:      /langs/haskell
+
+[Scalaz]:       /libs/scalaz
+
+[Scala Native]: /tools/scala-native
+[Scala.js]:     /tools/scala-js

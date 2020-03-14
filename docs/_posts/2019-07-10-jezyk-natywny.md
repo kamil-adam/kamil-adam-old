@@ -2,10 +2,9 @@
 title:    'Który język programowania wybrać na początek - język natywny'
 author:   TheKamilAdam
 category: programming
-tags:     bytecode clang docker kotlin-native llvm monad native node-js scala-native type-classes
-labels:
+tags:     bytecode monad native type-classes
 langs:    common-lisp crystal dart erlang fsharp go haskell java javascript julia lua meta-language ocaml pony racket rust scala scheme smalltalk typescript
-libs:
+tools:    clang docker kotlin-native llvm node-js scala-native
 redirect_from:
   - jezyk-natywny
   - programming/jezyk-natywny
@@ -203,37 +202,38 @@ Z drugiej strony ilość i jakość narzędzi,
 które powstają w Go jest niesamowita.
 I to może odwrócić trend w najbliższych latach.
 
-[Common Lisp]: /posts-by-langs/common-lisp
-[Crystal]: /posts-by-langs/crystal
-[Dart]: /posts-by-langs/dart
-[Erlang]: /posts-by-langs/erlang
-[F#]: /posts-by-langs/fsharp
-[Go]: /posts-by-langs/go
-[Haskell]: /posts-by-langs/haskell
-[Java]: /posts-by-langs/java
-[JavaScript]: /posts-by-langs/javascript
-[Julia]: /posts-by-langs/julia
-[JS]: /posts-by-langs/javascript
-[Lua]: /posts-by-langs/lua
-[Meta Language]: /posts-by-langs/meta-language
-[OCaml]: /posts-by-langs/ocaml
-[Pony]: /posts-by-langs/pony
-[Racket]: /posts-by-langs/racket 
-[Ruby]: /posts-by-langs/ruby
-[Rust]: /posts-by-langs/rust
-[Scala]: /posts-by-langs/scala
-[Scheme]: /posts-by-langs/scheme
-[Smalltalk]: /posts-by-langs/smalltalk
-[TypeScript]: /posts-by-langs/typescript
+[Common Lisp]: /langs/common-lisp
+[Crystal]: /langs/crystal
+[Dart]: /langs/dart
+[Erlang]: /langs/erlang
+[F#]: /langs/fsharp
+[Go]: /langs/go
+[Haskell]: /langs/haskell
+[Java]: /langs/java
+[JavaScript]: /langs/javascript
+[Julia]: /langs/julia
+[JS]: /langs/javascript
+[Lua]: /langs/lua
+[Meta Language]: /langs/meta-language
+[OCaml]: /langs/ocaml
+[Pony]: /langs/pony
+[Racket]: /langs/racket 
+[Ruby]: /langs/ruby
+[Rust]: /langs/rust
+[Scala]: /langs/scala
+[Scheme]: /langs/scheme
+[Smalltalk]: /langs/smalltalk
+[TypeScript]: /langs/typescript
 
-[kod bajtowy]: /posts-by-tags/bytecode
-[Docker]: /posts-by-tags/docker
-[Kotlin Native]: /posts-by-tags/kotlin-native
-[LLVM]: /posts-by-tags/llvm
-[monady]: /posts-by-tags/monad
-[Node.js]: /posts-by-tags/node-js
-[Scala Native]: /posts-by-tags/scala-native
-[Type Classes]: /posts-by-tags/type-classes
+[Docker]: /tools/docker
+[Kotlin Native]: /tools/kotlin-native
+[LLVM]: /tools/llvm
+[Node.js]: /tools/node-js
+[Scala Native]: /tools/scala-native
+
+[kod bajtowy]: /tags/bytecode
+[monady]: /tags/monad
+[Type Classes]: /tags/type-classes
 
 [maszyny P-code]: https://en.wikipedia.org/wiki/P-code_machine
 

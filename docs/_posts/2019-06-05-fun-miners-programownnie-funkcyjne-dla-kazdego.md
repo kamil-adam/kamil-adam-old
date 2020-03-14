@@ -2,10 +2,9 @@
 title:    'Functional Miners - Programowanie Funkcyjne dla Każdego'
 author:   TheKamilAdam
 category: relationships
-tags:     monad interpreter transpiler compiler lambda-calculus
-labels:   brainfuck subleq monoid
+tags:     compiler interpreter lambda-calculus monad monoid transpiler
+labels:   brainfuck subleq
 langs:    elixir clojure scala java haskell
-libs:
 redirect_from:
   - programownnie-funkcyjne-dla-kazdego
   - relationships/programownnie-funkcyjne-dla-kazdego
@@ -92,15 +91,15 @@ Repozytorium z kodem do analizy lambd - *[Lambda analysis package](<https://gith
 
 Z niecierpliwością czekam na kolejne wykłady w ramach *Functional Miners* (@fun_miners)
 
-[Clojure]: /posts-by-langs/clojure
-[Elixir]: /posts-by-langs/elixir
-[Java]: /posts-by-langs/java
-[Haskell]: /posts-by-langs/haskell
-[Scala]: /posts-by-langs/scala
+[Clojure]:         /langs/clojure
+[Elixir]:          /langs/elixir
+[Haskell]:         /langs/haskell
+[Java]:            /langs/java
+[Scala]:           /langs/scala
 
-[kompilator]: /posts-by-tags/compiler
-[interpreter]: /posts-by-tags/interpreter
-[rachunku lambda]: /posts-by-tags/lambda-calculus
-[monad]: /posts-by-tags/monad
-[transpilator]: /posts-by-tags/transpiler
+[kompilator]:      /tags/compiler
+[interpreter]:     /tags/interpreter
+[rachunku lambda]: /tags/lambda-calculus
+[monad]:           /tags/monad
+[transpilator]:    /tags/transpiler
 

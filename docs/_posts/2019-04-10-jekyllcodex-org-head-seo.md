@@ -2,10 +2,8 @@
 title:    "jekyllcodex.org - problem ze skryptem seo"
 author:   TheKamilAdam
 category: jekyll
-tags:     jekyll blog jekyllcodex seo
-labels:
-langs:
-libs:
+tags:     blog jekyllcodex seo
+tools:    jekyll
 redirect_from:
   - jekyllcodex-org-head-seo
   - jekyll/jekyllcodex-org-head-seo
@@ -20,7 +18,7 @@ for post in paginator. posts %} {{ post. title }} {{ post. date | date:
 ```
 {%endraw%}
 
-wynika to z tego, że skrypt dla **[seo](/posts-by-tags/seo)**
+wynika to z tego, że skrypt dla **[seo]**
 ze strony [jekyllcodex](<https://jekyllcodex.org/without-plugin/seo/>)
 generuje skrócony opis nawet dla stron używających liquiidu.
 Dokładnie problematyczna jest linia:
@@ -61,7 +59,7 @@ Co produkcyjnie wygląda
 ```
 {%endraw%}
 
-A cały skrypt dla **[seo](/posts-by-tags/seo)** ostateczie wygląda:
+A cały skrypt dla **[seo]** ostateczie wygląda:
 {%raw%}
 ```html
   <meta charset="utf-8">
@@ -103,3 +101,5 @@ Należy umieścić go wewnątrz znaczników `<head />` za pomocą kodu `{%raw%}{
 
 ## Podsumowanie
 Nalezy sprawdzać i testować cudze skrypty. Zawsze.
+
+[seo]: /tags/seo

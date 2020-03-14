@@ -2,9 +2,9 @@
 title:    "Ciągła integracja, ciągła kontrola, ciągła Scala"
 author:   TheKamilAdam
 category: scala-native
-tags:     sbt scala-native clang ubuntu
 labels:   coveralls continuous-integration travis-ci
 langs:    scala java rust
+tools:    clang sbt scala-native ubuntu
 libs:
 redirect_from:
   - ciagla-intergracja
@@ -94,10 +94,10 @@ Chcąc jednak jak najszybciej (najprościej) pokazać zalety ciągłej integracj
 i dodatkowo dostępne jako usługa (ang. *Software as a Service*, *SaaS*).
 Dobrze także, aby *po wyjęciu z pudełka* wspierało używane przez nas języki programowania.
 Przy takich założeniach wybór padł na dwa serwisy:
-* popularniejszy [Travis CI](<https://travis-ci.org/writeonly/resentiment>) używający kontenerów z **[Ubuntu](/posts-by-tags/ubuntu)**
+* popularniejszy [Travis CI](<https://travis-ci.org/writeonly/resentiment>) używający kontenerów z **[Ubuntu]**
 * młodszy [CircleCI](<https://circleci.com/gh/writeonly/resentiment>) używający kontenerów z Debianem
 
-Niestety nie udało mi się skonfigurować CircleCI dla języka **[ScalaNative](/posts-by-tags/scala-native)**.
+Niestety nie udało mi się skonfigurować CircleCI dla języka **[ScalaNative]**.
 Problemem były zależności dla Debiana.
 
 Dodatkowo przydatne są także serwisy agregujące raporty z pokrycia kodu testami.
@@ -224,7 +224,7 @@ after_success:
 
 ## Podsumowanie
 
-Uważny czytelnik może zauważyć, że nie wywołuje testów dla **[ScalaNative](/posts-by-tags/scala-native)**.
+Uważny czytelnik może zauważyć, że nie wywołuje testów dla **[ScalaNative]**.
 Mimo zainstalowania wszystkich pakietów wywołanie testów dla ScalaNative kończy się błędem:
 ```bash
 [error] /usr/bin/ld: warning: libunwind.so.8, needed by /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/libunwind-x86_64.so, may conflict with libunwind.so.1
@@ -251,10 +251,10 @@ Caused by: java.io.IOException: error=2, No such file or directory
 	... 8 more
 ```
 
-Jest to kolejny problem **[ScalaNative](/posts-by-tags/scala-native)**. po braku możliwości wygenerowania pokrycia kodu
+Jest to kolejny problem **[ScalaNative])**. po braku możliwości wygenerowania pokrycia kodu
 oraz braku możliwości uruchomienia testów integracyjnych.
 Dowodzi to że ScalaNative niestety dalej jest zabawką
-i jeśli chce się pisać monady w języku kompilowanym natywnie należy wybrać **[Rust](/posts-by-langs/rust)**.
+i jeśli chce się pisać monady w języku kompilowanym natywnie należy wybrać **[Rust]**.
 
 ## Postscriptum
 
@@ -273,3 +273,8 @@ Ja oczywiście poszukiwałem oprogramowania działającego jako darmowa usługa 
 Termin **ciągła analiza statyczna** ułożyłem sam,
 jednak występujący w jego miejscu termin **ciągła kontrola jakości kodu** (ang. *Continuous Inspection of Code Quality*)
 jest według mnie zbyt ogólny.
+
+[Rust]:        /langs/rust
+
+[Ubuntu]:      /tools/ubuntu
+[ScalaNative]: /tools/scala-native

@@ -2,10 +2,9 @@
 title:    'Który język programowania wybrać na początek - język skryptowy'
 author:   TheKamilAdam
 category: programming
-tags:     bash bdd cst dsl script sed
-labels:
+tags:     bdd cst dsl script sed
 langs:    awk clojure common-lisp crystal elixir lisp perl python racket ruby scheme
-libs:
+tools:    bash
 redirect_from:
   - jezyk-skryptowy
   - programming/jezyk-skryptowy
@@ -123,9 +122,26 @@ Z języków dynamicznie typowanych interesujący dla mnie jest tylko **[Lisp]**
 ze wszystkimi swoimi dialektami (**[Clojure]**, **[Racket]**, **[Scheme]**, **[Common Lisp]**).
 Jest coś szalonego w języku, którego zapis jest od razu jego drzewem **[CST]**.
 
-[Python]: /posts-by-langs/python
-[Perl]: /posts-by-langs/perl
-[Ruby]: /posts-by-langs/ruby
+[AWK]:         /langs/awk
+[Clojure]:     /langs/clojure
+[Common Lisp]: /langs/common-lisp
+[Crystal]:     /langs/crystal
+[Elixir]:      /langs/elixir
+[Lisp]:        /langs/lisp
+[Perl]:        /langs/perl
+[Python]:      /langs/python
+[Racket]:      /langs/racket
+[Ruby]:        /langs/ruby
+[Scheme]:      /langs/scheme
+
+[Bash]:        /tools/bash 
+
+[ScalaTest]:   /libs/scalatest
+[Specs2]:      /libs/specs2
+
+[BDD]:         /tags/bdd
+[CST]:         /tags/cst
+[DSL]:         /tags/dsl
 
 [Język skryptowy]: https://pl.wikipedia.org/wiki/J%C4%99zyk_skryptowy
 [Tiobe]: https://www.tiobe.com/tiobe-index/
@@ -138,8 +154,6 @@ Jest coś szalonego w języku, którego zapis jest od razu jego drzewem **[CST]*
 [PyPy]: https://pypy.org/
 [Stackless Python]: https://github.com/stackless-dev/stackless/wiki
 
-[Bash]: /posts-by-tags/bash
-[AWK]: /posts-by-langs/awk
 [Sed]: https://pl.wikipedia.org/wiki/Sed_(program)
 
 [Sinatra]: https://en.wikipedia.org/wiki/Sinatra_(software)
@@ -151,18 +165,3 @@ Jest coś szalonego w języku, którego zapis jest od razu jego drzewem **[CST]*
 [RSpec]: https://en.wikipedia.org/wiki/RSpec
 [Cucumber]: https://en.wikipedia.org/wiki/Cucumber_(software)
 [Capybara]: https://en.wikipedia.org/wiki/Capybara_(software)
-
-[ScalaTest]: /posts-by-tags/scalatest
-[Specs2]: /posts-by-tags/specs2
-[DSL]: /posts-by-tags/dsl
-[BDD]: /posts-by-tags/bdd
-
-[Crystal]: /posts-by-langs/crystal
-[Elixir]: /posts-by-langs/elixir
-
-[Lisp]: /posts-by-langs/lisp
-[Common Lisp]: /posts-by-langs/common-lisp
-[Racket]: /posts-by-langs/racket
-[Scheme]: /posts-by-langs/scheme
-[Clojure]: /posts-by-langs/clojure
-[CST]: /posts-by-tags/cst

@@ -2,10 +2,7 @@
 title:    'Prosty sposób na zmianę historii Gita - polecenie edit'
 author:   TheKamilAdam
 category: cli
-tags:     git ubuntu
-labels:
-langs:
-libs:
+tools:    git ubuntu
 redirect_from:
   - git-rebase-i-edit
   - cli/git-rebase-i-edit

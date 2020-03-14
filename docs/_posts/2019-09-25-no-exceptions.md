@@ -3,9 +3,7 @@ title:    'No Exceptions - o problemach z wyjątkami'
 author:   TheKamilAdam
 category: scala-jvm
 tags:     no-exceptions monad tco linkchecker
-labels:   
-langs:    haskell java ocaml racket scala scheme smalltalk 
-libs:     
+langs:    haskell java ocaml racket scala scheme smalltalk
 redirect_from:
   - no-exceptions
   - scala-jvm/no-exception
@@ -314,7 +312,7 @@ W takim wypadku potrzebujemy konstrukcji,
 która pozwoli nam zapisać wyjątek z niedziałania konkretnego linku i iść ze sprawdzeniem dalej, 
 nie przerywając głównej pętli programu.
 
-Rozwiązaniem jest tutaj [monad](monada) `Try`. 
+Rozwiązaniem jest tutaj [monada] `Try`. 
 Nie powinniśmy się jednak przejmować tym brzydkim słowem na `M` ponieważ ta właściwość nie zostanie tutaj użyta. 
 
 Obiekt singletonowy `Try` ma jedną metodę `apply` pozwalającą konstruować nowe instancje klasy `Try`:
@@ -424,19 +422,19 @@ Jeśli tylko to możliwe zamiast wyjątków należy używać klas
 
 Kod jest dostępny na [Githubie](https://github.com/writeonly/linkchecker/tree/v1.0).
 
-[haskell]:       /posts-by-langs/haskell
-[java]:          /posts-by-langs/java
-[ocaml]:         /posts-by-langs/ocaml
-[racket]:        /posts-by-langs/racket
-[scala]:         /posts-by-langs/scala
-[scheme]:        /posts-by-langs/scheme
-[smalltalk]:     /posts-by-langs/smalltalk
+[haskell]:       /langs/haskell
+[java]:          /langs/java
+[ocaml]:         /langs/ocaml
+[racket]:        /langs/racket
+[scala]:         /langs/scala
+[scheme]:        /langs/scheme
+[smalltalk]:     /langs/smalltalk
 
-[linkchecker]:   /posts-by-tags/linkchecker
-[no-exceptions]: /posts-tags/no-exceptions
-[TCO]:           /posts-by-tags/tco
+[linkchecker]:   /tags/linkchecker
+[no-exceptions]: /tags/no-exceptions
+[TCO]:           /tags/tco
 
-[Java. Programowanie funkcyjne]: /read-books/java-programowanie-funkcyjne
+[Java. Programowanie funkcyjne]: /books/java-programowanie-funkcyjne
 
 [podstawowych założeniach paradygmatu obiektowego]: https://pl.wikipedia.org/wiki/Programowanie_obiektowe#Podstawowe_za%C5%82o%C5%BCenia_paradygmatu_obiektowego
 

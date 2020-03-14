@@ -2,10 +2,10 @@
 title:    'Problem wywołań cebulowych w Scali'
 author:   TheKamilAdam
 category: scala-native
-tags:     bash jekyll operator
-labels:
-libs:     scalaz
+tags:     operator
 langs:    clojure elixir elm fsharp julia kotlin lisp livescript meta-language ocaml perl racket scala
+tools:    bash jekyll
+libs:     scalaz
 redirect_from:
   - scalapipe
   - scala-native/scalapipe
@@ -41,7 +41,7 @@ Szumem jest tutaj tworzenie pomocniczych zmiennych,
 które często trudno nazwać w sensowny sposób.
 
 Dlatego powinniśmy unikać *wywołań cebulowych*
-Chyba, że piszemy w języku **[Clojure]**, **[Racket]** lub innym **[Lispie](/posts-by-langs/lisp)**.
+Chyba, że piszemy w języku **[Clojure]**, **[Racket]** lub innym **[Lispie]**.
 Wtedy formatujemy kod:
 ```clojure
 (third_function
@@ -132,7 +132,7 @@ Część z nich zawiera także drugi podobny operator zwany *back pipe operator*
 Ten drugi zapis prawdopodobnie inspirowany jest językiem [Clojure](<https://clojure.org/guides/threading_macros>).
 
 Tak, **[Clojure]** posiada dużo lukru składniowego,
-żeby poprawić standardową nieczytelność **[Lispa](/posts-by-langs/lisp)** dzięki czemu możemy zapisać:
+żeby poprawić standardową nieczytelność **[Lispa]** dzięki czemu możemy zapisać:
 
 ```clojure
 (-> data (first_function) (second_function) (third_function))
@@ -225,14 +225,17 @@ Składnia języka **[Scala]** jest elastyczna, ale czasem nie aż tak bardzo jak
 Mimo to, łatwo definiować nowe operatory oraz składnię, która może znacząco skrócić i uprościć kod.
 Warto jednak wcześnie sprawdzić czy nasz operator nie jest zdefiniowany w istniejącej i popularnej bibliotece.
 
-[Clojure]: /posts-by-langs/clojure
-[Elixir]: /posts-by-langs/elixir
-[Kotlin]: /posts-by-langs/kotlin
-[Meta Language]: /posts-by-langs/meta-language
-[Perl]: /posts-by-langs/perl
-[Racket]: /posts-by-langs/racket
-[Scala]: /posts-by-langs/scala
+[Clojure]:       /langs/clojure
+[Elixir]:        /langs/elixir
+[Kotlin]:        /langs/kotlin
+[Lispa]:         /langs/lisp
+[Lispie]:        /langs/lisp
+[Meta Language]: /langs/meta-language
+[Perl]:          /langs/perl
+[Racket]:        /langs/racket
+[Scala]:         /langs/scala
 
-[Bash]: /posts-by-tags/bash
-[Jekyll]: /posts-by-tags/jekyll
-[Scalaz]: /posts-by-tags/scalaz
+[Scalaz]:        /libs/scalaz
+
+[Bash]:          /tools/bash 
+[Jekyll]:        /tools/jekyll

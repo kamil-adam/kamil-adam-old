@@ -3,7 +3,6 @@ title:    "uTest - operator Arrow Asserts"
 author:   TheKamilAdam
 category: scala-native
 tags:     operator
-labels:
 langs:    scala
 libs:     utest
 redirect_from:
@@ -17,7 +16,7 @@ Dziś krótki wpis o tym, że warto czytać dokumentację. Zapraszam.
 
 ## Arrow Asserts
 
-Framework **[uTest](/posts-by-tags/utest)** do testów jednostkowych dla języka **[Scala](/posts-by-langs/scala)** udostępnia **[operator](/posts-by-tags/operator)** `a ==> b` zwany po angielsku **Arrow Asserts**
+Framework **[uTest]** do testów jednostkowych dla języka **[Scala]** udostępnia **[operator]** `a ==> b` zwany po angielsku **Arrow Asserts**
 (po polsku *Asercja Strzałkowa* ?). Jest on skrótem od `assert(a == b)`. Dzięki niemu kod :
 
 ```scala
@@ -101,3 +100,9 @@ object CalculatorTest extends TestSuite {
   }
 }
 ```
+
+[Scala]:    /langs/scala
+
+[uTest]:    /libs/utest
+
+[operator]: /tags/operator

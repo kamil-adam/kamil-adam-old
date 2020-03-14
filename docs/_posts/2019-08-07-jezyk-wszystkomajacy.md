@@ -2,9 +2,9 @@
 title:    'Kolejny język programowania - język wszystkomający'
 author:   TheKamilAdam
 category: programming
-tags:     jvm lambda-calculus node-js type-classes
-labels:
+tags:     lambda-calculus type-classes
 langs:    clojure eiffel elm emacs-lisp fsharp go haskell java javascript kotlin lisp meta-language ocaml perl python racket reasonml ruby rust sather scala scheme smalltalk tcl
+tools:    jvm node-js
 libs:     akka arrow cats pulsar quasar scalaz vavr zio
 redirect_from:
   - jezyk-wszystkomajacy
@@ -132,49 +132,50 @@ Ponieważ pokazuje ona jak niesamowicie elastyczne są języki obiektowe.
 Dzięki czemu można w łatwy sposób zaimplementować bibliotekę,
 która umożliwia programować funkcyjnie w języku obiektowym.
 
-[Clojure]: /posts-by-langs/clojure
-[Eiffel]: /posts-by-langs/eiffel
-[Elm]: /posts-by-langs/elm
-[Emacs Lisp]: /posts-by-langs/emacs-lisp
-[F#]: /posts-by-langs/fsharp
-[Haskell]: /posts-by-langs/haskell
-[Java]: /posts-by-langs/java
-[JS]: /posts-by-langs/javascript
-[Kotlin]: /posts-by-langs/kotlin
-[LISP]: /posts-by-langs/lisp
-[Meta Language]: /posts-by-langs/meta-language
-[OCaml]: /posts-by-langs/ocaml
-[Perl]: /posts-by-langs/perl
-[Python]: /posts-by-langs/python
-[Racket]: /posts-by-langs/racket
-[ReasonML]: /posts-by-langs/resonml
-[Ruby]: /posts-by-langs/ruby
-[Sather]: /posts-by-langs/sather
-[Scala]: /posts-by-langs/scala
-[Scheme]: /posts-by-langs/scheme
-[Smalltalk]: /posts-by-langs/smalltalk
-[TCL]: /posts-by-langs/tcl
+[Clojure]:         /langs/clojure
+[Eiffel]:          /langs/eiffel
+[Elm]:             /langs/elm
+[Emacs Lisp]:      /langs/emacs-lisp
+[F#]:              /langs/fsharp
+[Haskell]:         /langs/haskell
+[Java]:            /langs/java
+[JS]:              /langs/javascript
+[Kotlin]:          /langs/kotlin
+[LISP]:            /langs/lisp
+[Meta Language]:   /langs/meta-language
+[OCaml]:           /langs/ocaml
+[Perl]:            /langs/perl
+[Python]:          /langs/python
+[Racket]:          /langs/racket
+[ReasonML]:        /langs/reasonml
+[Ruby]:            /langs/ruby
+[Sather]:          /langs/sather
+[Scala]:           /langs/scala
+[Scheme]:          /langs/scheme
+[Smalltalk]:       /langs/smalltalk
+[TCL]:             /langs/tcl
 
-[Akka]: /posts-by-libs/akka
-[ARROW]: /posts-by-libs/arrow
-[Cats]: /posts-by-libs/cats
-[Functional Java]: /posts-by-libs/functionaljava
-[Pulsar]: posts-by-libs/pulsar
-[Quasar]: posts-by-libs/quasar
-[Scalaz]: /posts-by-libs/scalaz
-[Vavr]: /posts-by-libs/vavr
-[ZIO]: /posts-by-libs/zio
+[JVM]:             /tools/jvm
+[node.js]:         /tools/node-js
 
-[JVM]: /posts-by-tags/jvm
-[rachunek lambda]: /posts-by-tags/lambda-calculus
-[node.js]: /posts-by-tags/node-js
-[Type Classes]: /posts-by-tags/type-classes
+[Akka]:            /libs/akka
+[ARROW]:           /libs/arrow
+[Cats]:            /libs/cats
+[Functional Java]: /libs/functionaljava
+[Pulsar]:          /libs/pulsar
+[Quasar]:          /libs/quasar
+[Scalaz]:          /libs/scalaz
+[Vavr]:            /libs/vavr
+[ZIO]:             /libs/zio
 
-[Java. Programowanie funkcyjne]: /read-books/java-programowanie-funkcyjne
-[Pragmatyczny programista]: /read-books/pragmatyczny-programista
+[rachunek lambda]: /tags/lambda-calculus
+[Type Classes]:    /tags/type-classes
+
+[Java. Programowanie funkcyjne]: /books/java-programowanie-funkcyjne
+[Pragmatyczny programista]:      /books/pragmatyczny-programista
 
 [Squeak]: https://pl.wikipedia.org/wiki/Squeak
-[Tiobe]: https://www.tiobe.com/tiobe-index/
+[Tiobe]:  https://www.tiobe.com/tiobe-index/
 
 [imperatywnie]: https://pl.wikipedia.org/wiki/Programowanie_imperatywne
 [funkcyjnie]: https://pl.wikipedia.org/wiki/Programowanie_funkcyjne

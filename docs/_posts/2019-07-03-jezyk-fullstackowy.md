@@ -2,10 +2,10 @@
 title:    'Który język programowania wybrać na początek - język fullstackowy'
 author:   TheKamilAdam
 category: programming
-tags:     api bucklescript cli interpreter gui kotlin-js monad node-js scala-js transpiler   
-labels:   clojurescript udash kotlin-js postgresql
+tags:     api cli interpreter gui monad transpiler
 langs:    ceylon clojure coffeescript dart elm java javascript haskell kotlin livescript meta-language ocaml purescript python racket reasonml ruby scala typescript
-libs:     jquery
+tools:    bucklescript clojurescript kotlin-js node-js postgresql scala-js
+libs:     akka-http dropwizard jquery udash
 redirect_from:
   - jezyk-fullstackowy
   - programming/jezyk-fullstackowy
@@ -205,7 +205,7 @@ Pozwala to współdzielić kod między frontendem i backendem,
 który teoretycznie może być nawet aplikacją natywną.
 Jednocześnie  w tych językach programowania
 do rozwiązywania problemów asynchroniczności 
-są preferowane konstrukcje `Future` oraz **[monady](/posts-by-tags/monad)** `IO`,
+są preferowane konstrukcje `Future` oraz **[monady](/tags/monad)** `IO`,
 które łatwo przetłumaczyć na `Promise` z JS.
 
 Równie ciekawy wydaje się także,
@@ -226,40 +226,45 @@ gdy umie się już drugi nie powinno być problemem.
 
 [Lista języków kompilowanych do JS](<https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS>)
 
-[ceylon]: /posts-by-langs/ceylon
-[Clojure]: /posts-by-langs/clojure
-[CoffeeScript]: /posts-by-langs/coffeescript
-[Dart]: /posts-by-langs/dart
-[Elm]: /posts-by-langs/elm
-[Java]: /posts-by-langs/java
-[JavaScript]: /posts-by-langs/javascript
-[JS]: /posts-by-langs/javascript
-[Haskell]: /posts-by-langs/haskell
-[Kotlin]: /posts-by-langs/kotlin
-[LiveScript]: /posts-by-langs/livescript
-[Meta Language]: /posts-by-langs/meta-language
-[OCaml]: /posts-by-langs/ocaml
-[PureScript]: /posts-by-langs/purescript
-[Python]: /posts-by-langs/python
-[Racket]: /posts-by-langs/racket
-[ReasonML]: /posts-by-langs/reasonml
-[Ruby]: /posts-by-langs/ruby
-[Scala]: /posts-by-langs/scala
-[TypeScript]: /posts-by-langs/typescript
+[Ceylon]:        /langs/ceylon
+[Clojure]:       /langs/clojure
+[CoffeeScript]:  /langs/coffeescript
+[Dart]:          /langs/dart
+[Elm]:           /langs/elm
+[Java]:          /langs/java
+[JavaScript]:    /langs/javascript
+[JS]:            /langs/javascript
+[Haskell]:       /langs/haskell
+[Kotlin]:        /langs/kotlin
+[LiveScript]:    /langs/livescript
+[Meta Language]: /langs/meta-language
+[OCaml]:         /langs/ocaml
+[PureScript]:    /langs/purescript
+[Python]:        /langs/python
+[Racket]:        /langs/racket
+[ReasonML]:      /langs/reasonml
+[Ruby]:          /langs/ruby
+[Scala]:         /langs/scala
+[TypeScript]:    /langs/typescript
 
-[JQuery]: /posts-by-libs/jquery
+[BuckleScript]:  /tools/bucklescript
+[ClojureScript]: /tools/clojurescript
+[JVM]:           /tools/jvm
+[Kotlin.js]:     /tools/kotlin-js 
+[Node.js]:       /tools/node-js
+[PosgreSQL]:     /tools/postgresql
+[Scala.js]:      /tools/scala-js
 
-[API]: /posts-by-tags/api
-[BuckleScript]: /posts-by-tags/bucklescript
-[CLI]: /posts-by-tags/cli
-[JVM]: /posts-by-tags/jvm
-[interpreter]: /posts-by-tags/interpreter
-[GUI]: /posts-by-tags/gui
-[Kotlin.js]: /posts-by-tags/kotlin-js
-[monady]: /posts-by-tags/monad
-[Node.js]: /posts-by-tags/node.js
-[Scala.js]: /posts-by-tags/scala-js
-[transpilator]: /posts-by-tags/transpiler
+[Akka HTTP]:     /libs/akka-http
+[DropWizard]:    /libs/dropwizard
+[JQuery]:        /libs/jquery
+
+[API]:           /tags/api
+[CLI]:           /tags/cli
+[interpreter]:   /tags/interpreter
+[GUI]:           /tags/gui
+[monady]:        /tags/monad
+[transpilator]:  /tags/transpiler
 
 [Słabe typowanie]: https://pl.wikipedia.org/wiki/Typowanie_s%C5%82abe
 [JSFuck]: https://github.com/aemkei/jsfuck
@@ -303,8 +308,6 @@ gdy umie się już drugi nie powinno być problemem.
 [Programowanie sterowane zdarzeniami]: https://pl.wikipedia.org/wiki/Programowanie_sterowane_zdarzeniami
 
 [Lagom]: https://github.com/lagom/lagom
-[Akka HTTP]: https://github.com/akka/akka-http
 [Spark]: https://github.com/perwendel/spark
 [Ratpack]: https://github.com/ratpack/ratpack
 [WebFlux]: https://docs.spring.io/spring/docs/current/spring-framework-reference/web-reactive.html
-[DropWizard]: https://github.com/dropwizard/dropwizard

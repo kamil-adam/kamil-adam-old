@@ -2,8 +2,9 @@
 title:    'Lokalne uruchamianie strony hostowanej na GitHub Pages'
 author:   TheKamilAdam
 category: jekyll
-tags:     jekyll json alias github github-pages
+tags:     json alias github-pages
 lang:     go ruby
+tools:    jekyll github
 libs:
 redirect_from:
   - github-pages
@@ -12,16 +13,16 @@ redirect_from:
   - writeonlydoc/2019/05/01/github-pages.html
 ---
 
-Jedną z największych zalet generator statycznych stron **[Jekyll](/posts-by-tags/jekyll)** jest to,
+Jedną z największych zalet generator statycznych stron **[Jekyll]** jest to,
 że jest wspierany przez portal *[Github](<https://github.com/>)*
-za pomocą  **[Github Pages](/posts-by-tags/github-pages)**.
+za pomocą  **[Github Pages]**.
 Gdyby nie *Github Pages* prawdopodobnie wybrałbym *[Hugo](<https://github.com/gohugoio/hugo>)*
-napisane w języku **[Go](/posts-by-langs/go)**
+napisane w języku **[Go]**
 do budowania tego bloga.
 Największą wadą *Github Pages* jest to,
 że posiada ograniczony zbiór dozwolonych wtyczek i nie wolno instalować własnych wtyczek.
 Listę dozwolonych wtyczek (wraz z wersjami) można znaleźć na stronie [Dependency versions](https://pages.github.com/versions/)
-lub pod postacią pliku **[json](/posts-by-tags/json)** na stronie [versions.json](<https://pages.github.com/versions.json>).
+lub pod postacią pliku **[json]** na stronie [versions.json](<https://pages.github.com/versions.json>).
 
 Chcąc budować i uruchamiać stronę lokalnie (poza *GitHub Pages*) za pomocą poleceń:
 ```bash
@@ -41,13 +42,13 @@ i na tej podstawie budował plik `Gemfile.lock`.
 Brzmi strasznie.
 
 Na szczęście żadne z tych rozwiązań nie jest potrzebne,
-ponieważ *GitHub* udostępnia gem `github-pages` (bibliotekę języka **[Ruby](/posts-by-langs/ruby)**) zawierający wersję wszystkich wspieranych wtyczek dla Jekylla.
-Także wtyczki są zwykłymi gemami (bibliotekami) języka **[Ruby](/posts-by-langs/ruby)**.
-Więc jedyne co potrzebujemy to program `bundle` do zarządzania zależnościami w języku **[Ruby](/posts-by-langs/ruby)**.
+ponieważ *GitHub* udostępnia gem `github-pages` (bibliotekę języka **[Ruby]**) zawierający wersję wszystkich wspieranych wtyczek dla Jekylla.
+Także wtyczki są zwykłymi gemami (bibliotekami) języka **[Ruby]**.
+Więc jedyne co potrzebujemy to program `bundle` do zarządzania zależnościami w języku **[Ruby]**.
 
 ## Ukryta strona dokumentacji
 
-**[Jekyll](/posts-by-tags/jekyll)** posiada informację o integracji z *GitHub Pages*.
+**[Jekyll]** posiada informację o integracji z *GitHub Pages*.
 Niestety znajduje się to na [ukrytej stronie dokumentacji](<https://jekyllrb.com/docs/github-pages/>),
 tzn. nie znajdującej się w menu nawigacyjnym dokumentacji.
 Informuje ona jak zainstalować i używać gem `github-pages`.
@@ -109,7 +110,7 @@ bundle exec jekyll s
 
 ## Aliasy
 
-Polecenie `bundle exec jekyll` aż prosi się zastąpienie jakimś **[aliasem](/posts-by-tags/alias)**,
+Polecenie `bundle exec jekyll` aż prosi się zastąpienie jakimś **[aliasem]**,
 np. `bejekyll`.
 
 W konsoli wpisujemy:
@@ -133,7 +134,7 @@ lub
 ```bash
 srcsh
 ```
-jeśli używamy [niezniszczalnych aliasów](/cli/2018/08/30/alias-komenda-powloki-bash).
+jeśli używamy [niezniszczalnych aliasów](/alias-komenda-powloki-bash).
 
 I od teraz możemy budować i uruchamiać naszą stronę lokalnie za pomocą:
 
@@ -143,8 +144,17 @@ bejekyll s
 ```
 
 ## Podsumowanie
-*GitHub Pages* z generatorem stron **[Jekyll](/posts-by-tags/jekyll)** 
+*GitHub Pages* z generatorem stron **[Jekyll]** 
 są ciekawą i darmową alternatywą dla klasycznych sposobów prowadzenia bloga lub strony.
 Możliwość uruchamiania strony w takiej samej konfiguracji lokalnie jak na produkcji
 czyni z tego połączenia rozwiązanie skierowane nie tylko do hobbystów,
 ale także dla rozwiązań biznesowych.
+
+[Go]:           /langs/go
+[Ruby]:         /langs/ruby
+
+[Jekyll]:       /tools/jekyll
+
+[aliasem]:      /tags/alias
+[Github Pages]: /tags/github-pages
+[json]:         /tags/json

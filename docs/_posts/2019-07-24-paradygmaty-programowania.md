@@ -2,10 +2,9 @@
 title:    'Kolejny język programowania do nauki - paradygmaty programowania'
 author:   TheKamilAdam
 category: programming
-tags:     jvm lambda-calculus node-js 
-labels:
+tags:     lambda-calculus
 langs:    clojure coffeescript common-lisp elm emacs-lisp fsharp go haskell java javascript kotlin lisp livescript meta-language ocaml perl purescript python racket reasonml ruby rust scala scheme smalltalk typescript
-libs:     
+tools:    jvm node-js
 redirect_from:
   - paradygmaty-programowania
   - programming/paradygmaty-programowania
@@ -39,7 +38,7 @@ Bo przecież w informatyce nic się nie zmienia.
 Za wyjątkiem takich wypadków jak to że:
 * C zmiażdżyło Pascala oraz zastąpiło większość języków asemblerowych,
 stając się podstawowym językiem niskokoziomowym do pisania systemów operacyjnych i systemów wbudowanych.
-* **[Java]** (z pomocą C#) wygryzła C++ i Cobola stając się głównym [językiem korporacyjnym](/język-korporacyjny).
+* **[Java]** (z pomocą C#) wygryzła C++ i Cobola stając się głównym [językiem korporacyjnym](/jezyk-korporacyjny).
 * **[Python]** wygryzł języki **[Perl]** oraz **[TCL]** i dalej spycha pozostałe [języki skryptowe](/jezyk-skryptowy) do coraz głębszej niszy.
 * **[Python]** wygryzł języki **[Scheme]** i **[Racket]** z zastosowań naukowych. 
 
@@ -212,42 +211,43 @@ Tylko nie da się go nauczyć w jeden rok.
 
 Ciąg dalszy nastpił jako artykuł [Kolejny język programowania - język wszystkomający](/jezyk-wszystkomajacy)
 
-[Clojure]: /posts-by-langs/clojure
-[CS]: /posts-by-langs/coffeescript
-[Common Lisp]: /posts-by-langs/common-lisp
-[Elm]: /posts-by-langs/elm
-[F#]: /posts-by-langs/fsharp
-[Go]: /posts-by-langs/go
-[Haskell]: /posts-by-langs/haskell 
-[Java]: /posts-by-langs/java
-[JS]: /posts-by-langs/javascript
-[Kotlin]: /posts-by-langs/kotlin
-[LISP]: /posts-by-langs/lisp
-[LS]: /posts-by-langs/livescript
-[Meta Language]: /posts-by-langs/meta-language
-[OCaml]: /posts-by-langs/ocaml
-[Perl]: /posts-by-langs/perl
-[PureScript]: /posts-by-langs/purescript
-[Python]: /posts-by-langs/python
-[Racket]: /posts-by-langs/racket
-[ReasonML]: /posts-by-langs/resonml
-[Ruby]: /posts-by-langs/ruby
-[Rust]: /posts-by-langs/rust
-[Scheme]: /posts-by-langs/scheme
-[Smalltalk]: /posts-by-langs/smalltalk
-[Scala]: /posts-by-langs/scala
-[TCL]: /posts-by-langs/tcl
-[TS]: /posts-by-langs/typescript
+[Clojure]:       /langs/clojure
+[CS]:            /langs/coffeescript
+[Common Lisp]:   /langs/common-lisp
+[Elm]:           /langs/elm
+[F#]:            /langs/fsharp
+[Go]:            /langs/go
+[Haskell]:       /langs/haskell 
+[Java]:          /langs/java
+[JS]:            /langs/javascript
+[Kotlin]:        /langs/kotlin
+[LISP]:          /langs/lisp
+[LS]:            /langs/livescript
+[Meta Language]: /langs/meta-language
+[OCaml]:         /langs/ocaml
+[Perl]:          /langs/perl
+[PureScript]:    /langs/purescript
+[Python]:        /langs/python
+[Racket]:        /langs/racket
+[ReasonML]:      /langs/reasonml
+[Ruby]:          /langs/ruby
+[Rust]:          /langs/rust
+[Scheme]:        /langs/scheme
+[Smalltalk]:     /langs/smalltalk
+[Scala]:         /langs/scala
+[TCL]:           /langs/tcl
+[TS]:            /langs/typescript
 
-[JVM]: /posts-by-tags/jvm
-[node.js]: /posts-by-tags/node-js
-[rachunek lambda]: /posts-by-tags/lambda-calculus
+[JVM]:             /tools/jvm
+[node.js]:         /tools/node-js
 
-[Czysta architektura]: /read-books/czysta-architektura
-[Czysty kod]: /read-books/czysty-kod
-[Mistrz czystego kodu]: /read-books/mistrz-czystego-kodu
-[Pragmatyczny programista]: /read-books/pragmatyczny-programista
-[Scala. Nauka programowania]: /read-books/scala-nauka-programowania
+[rachunek lambda]: /tags/lambda-calculus
+
+[Czysta architektura]:        /books/czysta-architektura
+[Czysty kod]:                 /books/czysty-kod
+[Mistrz czystego kodu]:       /books/mistrz-czystego-kodu
+[Pragmatyczny programista]:   /books/pragmatyczny-programista
+[Scala. Nauka programowania]: /books/scala-nauka-programowania
 
 [Squeak]: https://pl.wikipedia.org/wiki/Squeak
-[Tiobe]: https://www.tiobe.com/tiobe-index/
+[Tiobe]:  https://www.tiobe.com/tiobe-index/

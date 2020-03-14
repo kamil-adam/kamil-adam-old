@@ -2,9 +2,10 @@
 title:    "Biblioteki do logowania dla języka Scala"
 author:   TheKamilAdam
 category: scala-native
-tags:     library cli scala-js scala-native factory logging
-labels:   logging scala-logging scribe
+tags:     library cli factory logging
+labels:   scala-logging scribe
 langs:    scala java
+tools:    scala-js scala-native   
 lisb:     utest slogging
 redirect_from:
   - biblioteki-do-logowania
@@ -19,7 +20,7 @@ Jednak im więcej wątków w aplikacji i im bardziej komunikują się one w spos
 Drugim sposobem jest logowanie informacji.
 Najprostszym sposobem logowania informacji w Javie jest `System.out.println`, a w Scali upraszcza się to do `println`.
 Ale jest to złe z dwóch powodów:
-* Po pierwsze, jeśli piszemy aplikację "konsolową" (ang. *command line interface*, **[CLI](/posts-by-tags/cli)**)
+* Po pierwsze, jeśli piszemy aplikację "konsolową" (ang. *command line interface*, **[CLI]**)
 to użytkownik będzie niepotrzebnie widział nieinteresujące go informacje z wewnętrznego procesu przetwarzania.
 * Tak wypisanych informacji nie można zapisać w bazie danych ani wysłać do innego systemu.
 
@@ -35,18 +36,18 @@ Niestety działa tylko dla Scala/JVM
 jest małym opakowaniem wbudowanego logowania Javy, aby uczynić go bardziej przyjaznym dla Scali.
 Niestety także, działa tylko dla Scala/JVM
 * [scalajs-java-logging](<https://github.com/scala-js/scala-js-java-logging>) -
-implementacja `java.logging` dla **[Scala.js](/posts-by-tags/scala-js)**.
-Wspiera **[Scala.js](/posts-by-tags/scala-js)** w wersji 0.6.x i 1.0.x
+implementacja `java.logging` dla **[Scala.js]**.
+Wspiera **[Scala.js]** w wersji 0.6.x i 1.0.x
 * [airframe-log](<https://wvlet.org/airframe/docs/airframe-log.html>) -
 biblioteka do ulepszania logowania aplikacji Scala z kolorami i lokalizacjami kodów źródłowych.
 Wspiera Scala.js w wersji 0.6.x i 1.0.x
 * [slogging](<https://github.com/jokade/slogging>) -
 biblioteka logowania zgodna z `scala-logging` (i `SLF4J`) oparta na makrach
-dla Scala/JVM, **[Scala.js](/posts-by-tags/scala-js)** (wersja 0.6.x) i **[Scala Native](/posts-by-tags/scala-native)**
+dla Scala/JVM, **[Scala.js]** (wersja 0.6.x) i **[Scala Native]**
 * [scribe](<https://github.com/outr/scribe>) -
 praktyczny szkielet logowania, który nie wymaga żadnej innej struktury logowania
 i może być w pełni skonfigurowany programowo.
-Wspiera **[Scala.js](/posts-by-tags/scala-js)** w wersji 0.6.x oraz **[Scala Native](/posts-by-tags/scala-native)**.
+Wspiera **[Scala.js]** w wersji 0.6.x oraz **[Scala Native]**.
 
 ## I konkretne próby zastosowania
 
@@ -128,7 +129,7 @@ object Core extends Core {
 }
 ```
 
-Tworzymy test jednostkowy we frameworku **[uTest](/posts-by-tags/utest)**:
+Tworzymy test jednostkowy we frameworku **[uTest]**:
 ```scala
 package pl.writeonly.re.shared
 
@@ -221,7 +222,7 @@ object Core extends Core {
 }
 ```
 
-Tworzymy test jednostkowy we frameworku **[uTest](/posts-by-tags/utest)**:
+Tworzymy test jednostkowy we frameworku **[uTest]**:
 ```scala
 package pl.writeonly.re.shared
 
@@ -360,3 +361,10 @@ Niestety pojawia się błąd:
 Jak zwykle składnia Scali pozwala zapisać te same rzeczy prościej niż w Javie,
 jednocześnie dzięki temu można wymusić konwencję tworzenia loggerów na etapie kompilacji.
 Dzięki temu nie mamy w kodzie loggerów o nazwach innych niż `loggger` jak np. `LOGGER` lub `LOG`.
+
+[Scala Native]: /tools/scala-native
+[Scala.js]:     /tools/scala-js
+
+[uTest]:        /libs/utest
+
+[CLI]:          /tags/cli

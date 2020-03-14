@@ -2,9 +2,9 @@
 title:    "Przenośna Scala"
 author:   TheKamilAdam
 category: scala-native
-tags:     clang compiler jvm llvm native node-js nojvm sbt scala-jvm scala-js scala-native transpiler
-labels:
+tags:     compiler native nojvm transpiler
 langs:    crystal erlang haskell go javascript pony rust scala
+tools:    clang jvm llvm node-js sbt scala-jvm scala-js scala-native
 libs:     akka
 redirect_from:
   - przenosna-scala
@@ -121,26 +121,26 @@ I uruchomienie:
 sbt re/run reJS/run reJVM/run
 ```
 
-[Scala]: /posts-by-langs/scala
+[Crystal]:      /langs/crystal
+[Erlang]:       /langs/erlang
+[Go]:           /langs/go
+[Haskell]:      /langs/haskell
+[JavaScript]:   /langs/javascript
+[Pony]:         /langs/pony
+[Rust]:         /langs/rust
+[Scala]:        /langs/scala
 
-[Rust]: /posts-by-langs/rust
-[C]: /posts-by-tags/clang
-[Haskell]: /posts-by-langs/haskell
-[Go]: /posts-by-langs/go
-[Erlang]: /posts-by-langs/erlang
-[JVM]: /posts-by-tags/jvm
+[C]:            /tools/clang
+[JVM]:          /tools/jvm
+[LLVM]:         /tools/llvm
+[Node.js]:      /tools/node-js
+[Scala Native]: /tools/scala-native
+[Scala.js]:     /tools/scala-js
 
-[JavaScript]: /posts-by-langs/javascript
-[Transpilator]: /posts-by-tags/transpiler
-[Scala.js]: /posts-by-tags/scala-js
-[Node.js]: /posts-by-tags/node-js
-[Akka.js]: http://akka-js.org/
+[Akka.js]:      /libs/akka-js
 
-[Pony]: /posts-by-langs/pony
-[Crystal]: /posts-by-langs/crystal
-[Kompilator]: /posts-by-tags/compiler
-[Scala Native]: /posts-by-tags/scala-native
-[LLVM]: /posts-by-tags/llvm
+[Transpilator]: /tags/transpiler
+[Kompilator]:   /tags/compiler
 
 [zależności]: http://www.scala-native.org/en/v0.3.8/user/setup.html#installing-clang-and-runtime-dependencies
 [aplikację skośną]: https://github.com/portable-scala/sbt-crossproject.g8

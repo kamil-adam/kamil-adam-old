@@ -2,10 +2,7 @@
 title:    'Prosty sposób na zmianę historii Gita'
 author:   TheKamilAdam
 category: cli
-tags:     git ubuntu
-labels:
-langs:
-libs:
+tools:    git ubuntu
 redirect_from:
   - git-rebase-i
   - cli/git-rebase-i
@@ -168,7 +165,7 @@ podobnie jak przy używaniu polecenia `git rebase NAZWA_GAŁĘZI`
 Czasem by móc podjąć decyzję, które rewizje zmodyfikować, musimy widzieć ich zawartość.
 Są do tego różne programy
 ale ja polecam ***Tig**: text-mode interface for Git*,
-które na **[Ubuntu](/posts-by-tags/ubuntu)** można zainstalować za pomocą:
+które na **[Ubuntu]** można zainstalować za pomocą:
 ```bash
 sudo apt-get install tig
 ```
@@ -178,3 +175,5 @@ Jego główną zaletą jest to,
 ## Podsumowanie
 Widać że `git rebase -i` to potężne narzędzie z wieloma możliwościami w rękach dobrego programisty.
 Polecenie `edit` jest opisane w kolejnym [artykule](/git-rebase-i-edit).
+
+[Ubuntu]: /tools/ubuntu

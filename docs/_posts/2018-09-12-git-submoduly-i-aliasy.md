@@ -2,10 +2,10 @@
 title: "Git - submoduły i aliasy"
 author:   TheKamilAdam
 category: cli
-tags:     cli git alias interpreter
+tags:     cli alias interpreter
 labels:   submodule
 langs:    java javascript
-libs:
+tools:    git
 redirect_from:
   - git-submoduly-i-aliasy
   - cli/git-submoduly-i-aliasy
@@ -37,8 +37,8 @@ wykonane w folderze projektu.
 - Ale nie zawsze jest to łatwe i możliwe:
   1. Biblioteki trzeba wydawać i trzymać je w menedżerze repozytoriów binarnych (ang. *Binary Repository Manager*),
 a takiego menedżera trzeba gdzieś zainstalować.
-  2. Menedżer repozytorium binarnych może kosztować, np. dla języka **[Java](/posts-by-langs/java)** jest za darmo, a dla języka **[JavaScript](/posts-by-langs/javascript)** już niekoniecznie.
-  3. W językach skryptowych biblioteki są często instalowane do **[interpretera](/posts-by-tags/interpreter)**
+  2. Menedżer repozytorium binarnych może kosztować, np. dla języka **[Java]** jest za darmo, a dla języka **[JavaScript]** już niekoniecznie.
+  3. W językach skryptowych biblioteki są często instalowane do **[interpretera]**
   co może utrudniać instalację programu klientowi
 (przykład z pierwszej wersji [Git-Tools-Submodules](<https://git-scm.com/book/en/v1/Git-Tools-Submodules>)).
   4. Nie wszystko da się umieścić w bibliotece, w tym wypadku jest to skrypt do budowania projektu.
@@ -62,7 +62,7 @@ Niestety polecenia te wydłużają i tak długie już polecenia gita.
 ## Aliasy Basha
 
 Szczęśliwie umiem rozwiązywać problem długich poleceń,
-bo znam [aliasy basha](/cli/2018/08/30/alias-komenda-powloki-bash.html).
+bo znam [aliasy basha](/alias-komenda-powloki-bash).
 
 Pierwsza wersja moich aliasów wyglądała następująco:
 ```bash
@@ -117,3 +117,8 @@ i można je wykonać poleceniem:
 ```bash
 curl -s https://raw.githubusercontent.com/writeonly/cli/master/git_config.sh | bash
 ```
+
+[Java]:         /langs/java
+[JavaScript]:   /langs/javascript
+
+[interpretera]: /tags/interpreter

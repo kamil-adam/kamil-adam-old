@@ -2,10 +2,8 @@
 title:    "Jekyll - kategorie i tagi"
 author:   TheKamilAdam
 category: jekyll
-tags:     jekyll blog
-labels:
-langs:
-libs:
+tags:     blog
+tools:    jekyll  
 redirect_from:
   - kategorie-i-tagi
   - jekyll/kategorie-i-tagi
@@ -26,7 +24,7 @@ W przypadku tego artykułu są to:
 {%raw%}
 ```yaml
 ---
-layout:   post
+#layout:   post
 title:    "Jekyll - kategorie i tagi"
 author:   TheKamilAdam
 category: jekyll
@@ -50,8 +48,7 @@ Przykładowy strona pomocnicza dla kategorii:
 ```yaml
 ---
 permalink: /categories/resentiment
-layout: page-category
-category: "resentiment"
+labelcategory: "resentiment"
 ---
 Opis powstawania projektu <a href="https://github.com/writeonly/resentiment">resentiment</a>.
 ```
@@ -62,9 +59,18 @@ Przykładowy strona pomocnicza dla tagu:
 {%raw%}
 ```yaml
 ---
-permalink: /posts-by-tags/scala-native
-layout: page-tag
+<<<<<<< HEAD
+<<<<<<< HEAD
+permalink: /posts-by-tools/scala-native
+=======
+permalink: /tools/scala-native
+>>>>>>> 86a6e10... Update_docs
+#layout: page-tag
 tag: "scala-native"
+=======
+permalink: /tools/scala-native
+labeltag: "scala-native"
+>>>>>>> 1876910... Update_docs
 ---
 ```
 {%endraw%}
@@ -109,7 +115,7 @@ Układ strony `_layout/page-category.html` zawierający wszystkie artykuły z da
 {%raw%}
 ```yaml
 ---
-layout: default
+#layout: default
 title: {{ page.category }}
 ---
 <div class="posts">
@@ -135,7 +141,7 @@ title: {{ page.category }}
       {% assign tags = post.tags | sort %}
       Tagi:
       {% for tag in tags %}
-      <a href="{{ site.baseurl }}/posts-by-tags/{{ tag }}">{{ tag }}</a>
+      <a href="{{ site.baseurl }}/tags/{{ tag }}">{{ tag }}</a>
       {% endfor %}
     </dd>
     {% endif %}
@@ -149,7 +155,7 @@ Układ strony `_layout/page-tag.html` zawierający wszystkie artykuły z danym t
 {%raw%}
 ```yaml
 ---
-layout: default
+#layout: default
 title: {{ page.tag }}
 ---
 <div class="posts">
@@ -191,7 +197,7 @@ Strona `pages/categories.html` zawierająca listę wszystkich kategorii:
 {%raw%}
 ```yaml
 ---
-layout: posts
+#layout: posts
 title: Kategorie
 permalink: /categories/
 description: Kategorie artykułów
@@ -218,9 +224,9 @@ Strona `pages/tags.html` zawierająca listę wszystkich tagów:
 {%raw%}
 ```yaml
 ---
-layout: posts
+#layout: posts
 title: Tagi
-permalink: /posts-by-tags/
+permalink: /tags/
 description: Tagi artykułów
 ---
 <div class="posts">

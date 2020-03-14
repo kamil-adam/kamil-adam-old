@@ -1,39 +1,147 @@
-# SITE CONFIGURATION
-markdown:         CommonMarkGhPages
+# Jekyll: https://jekyllrb.com/docs/configuration/
 
-permalink: /:categories/:title
+## Default Configuration: https://jekyllrb.com/docs/configuration/default/
 
-future: true
-service_worker: true
+### Conversion
+markdown                 : CommonMarkGhPages
+highlighter              : rouge
+
+### Filtering Content
+future                   : true
+
+### Outputting
+permalink                : /:categories/:title/
+paginate_path            : /:num
+timezone                 : "Europe/Warsaw" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+### Where things are
+include:
+  - _pages
 
 sass:
-#  sass_dir: ui/_scss
-  style: compressed
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  profile: false
-  startings: [head, body]
+  #  sass_dir: ui/_scss
+  style                  : compressed
 
-# COLLECTIONS
-collections_dir: docs
+## Collections: https://jekyllrb.com/docs/collections/
+collections_dir          : docs
 collections:
   categories:
-    output: true
+    output               : true
+    permalink            : /:collection/:path/
   tags:
-    output: true
-  labels:
-    output: true
+    output               : true
+    permalink            : /:collection/:path/
   langs:
-    output: true
+    output               : true
+    permalink            : /:collection/:path/
+  tools:
+    output               : true
+    permalink            : /:collection/:path/
   libs:
-    output: true
+    output               : true
+    permalink            : /:collection/:path/
   books:
-    output: true
+    output               : true
+    permalink            : /:collection/:path/
 
-# PLUGINS
+## Front Matter Defaults: https://jekyllrb.com/docs/configuration/front-matter-defaults/
+
+defaults:
+  # _posts
+  - scope:
+      path               : ""
+      type               : posts
+    values:
+      layout             : post
+      read_time          : true
+      comments           : true
+      share              : true
+      related            : true
+      pagination         : true
+      toc: true
+      toc_sticky         : true
+      sidebar:
+        nav              : sidebar-main
+  # _pages
+  - scope:
+      path               : "_pages"
+      type               : pages
+    values:
+      layout             : page
+      classes            : wide
+      sidebar            :
+        main             : true
+        nav              : sidebar-main
+  # _categories
+  - scope:
+      path               : ""
+      type               : categories
+    values:
+      layout             : page-category
+      share              : true
+      classes            : wide
+      sidebar:
+        main             : true
+        nav              : sidebar-main
+  # _tags
+  - scope:
+      path               : ""
+      type               : tags
+    values:
+      layout             : page-tag
+      share              : true
+      classes            : wide
+      sidebar:
+        main             : true
+        nav              : sidebar-main
+  # _langs
+  - scope:
+      path               : ""
+      type               : langs
+    values               :
+      layout             : page-lang
+      share              : true
+      classes            : wide
+      sidebar:
+        main             : true
+        nav              : sidebar-main
+  # _tools
+  - scope:
+      path               : ""
+      type               : tools
+    values:
+      layout             : page-tool
+      share              : true
+      classes            : wide
+      sidebar:
+        main             : true
+        nav              : sidebar-main
+  # _libs
+  - scope:
+      path               : ""
+      type               :  libs
+    values:
+      layout             : page-lib
+      share              : true
+      classes            : wide
+      sidebar:
+        main             : true
+        nav              : sidebar-main
+  # _books
+  - scope:
+      path               : ""
+      type               : books
+    values:
+      layout             : page-book
+      share              : true
+      classes            : wide
+      sidebar:
+        main             : true
+        nav              : sidebar-main
+
+# Plugins
 plugins:
+  - jemoji
   - jekyll-avatar
   - jekyll-coffeescript
   - jekyll-commonmark-ghpages
@@ -53,74 +161,84 @@ plugins:
   - jekyll-sitemap
   - jekyll-titles-from-headings
 
-# jekyll-commonmark-ghpages
+## jekyll-commonmark-ghpages
 commonmark:
-  options: ["SMART", "FOOTNOTES"]
-  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
+  options                : ["SMART", "FOOTNOTES"]
+  extensions             : ["strikethrough", "autolink", "table", "tagfilter"]
 
-# jekyll-mentions
+## jekyll-mentions
 jekyll-mentions:
-  base_url: https://twitter.com
+  base_url               : "https://twitter.com"
 
-# jekyll-optional-front-matter
-include:
-  - _pages
+## jekyll-paginate
+paginate                 : 1
 
-# jekyll-paginate
-paginate:         1
-paginate_path:    '/:num'
+## jekyll-remote-theme
+remote_theme             : twocolumn/master-rust
 
-# jekyll-remote-theme
-remote_theme: twocolumn/master-rust
-
-# jekyll-seo-tag
-title:            WriteOnly.pl
-tagline:          WriteOnly Scala, Jekyll, Git & Bash Blog
-description:      "Blog o programowaniu w językach Scala/JVM, Scala.js i Scala Native oraz generatorze stron Jekyll, systemie kontroli wersji Git i użyciu wiersza poleceń CLI"
-url:              https://www.writeonly.pl
-#author:          Kamil Adam
-logo:             /assets/img/logo.jpg
-
+## jekyll-seo-tag
+title                    : "WriteOnly.pl"
+tagline                  : "WriteOnly Scala, Jekyll, Git & Bash Blog"
+description: >-
+  Blog o programowaniu w językach Scala/JVM, Scala.js i Scala Native
+  oraz generatorze stron Jekyll, systemie kontroli wersji Git i użyciu wiersza poleceń CLI
+url                      :
+author:
+  twitter                : "TheKamilAdam"
+  name                   : "Kamil Adam"
+  avatar                 : "/assets/images/kamil.adam.jpg"
+  bio                    : "My awesome biography constrained to a sentence or two goes here."
+twitter:
+  username               : "TheKamilAdam"
+facebook:
+logo                     : "/assets/favicon.ico"
 social:
-  name: Kamil Adam
+  name                   : "Kamil Adam"
   links:
     - https://github.com/writeonly
     - https://www.linkedin.com/company/writeonly-pl
     - https://www.facebook.com/WriteOnlyPL
     - https://www.instagram.com/degustujacaistota/
     - https://twitter.com/TheKamilAdam
-#    - https://keybase.io/benbalter
-#    - https://plus.google.com/+BenBalter
 
-# THEME SETTINGS
+# External systems
 
-author:
-  name:           Kamil Adam
-  url:            https://twitter.com/thekamiladam
+## Compress HTML
+compress_html:
+  clippings              : all
+  comments               : all
+  endings                : all
+  profile                : false
+  startings              : [head, body]
 
-google_analytics: UA-136426906-1
+## Analytics
+google_analytics         : UA-136426906-1
 
+## Comments
 disqus:
-  shortname: writeonly-pl
+  shortname              : writeonly-pl
 
-locale: pl-PL
-json-search: 'search-posts-metas-and-pages'
+## Search
+json-search              : 'search-posts-metas-and-pages'
+
+# Theme settings
+locale                   : "pl-PL"
 
 # SOCIAL LINKS
 social_links:
-  github:  writeonly
-  linkedin: writeonly-pl
-  facebook: WriteOnlyPL
-  instagram: degustujacaistota
-  twitter: TheKamilAdam
-  rss: rss
-  # microdotblog: TheKamilAdam
-  # dribbble: jekyll
-  # flickr:   jekyll
-  # pinterest: jekyll
-  # youtube: jekyll
-  # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
-  # youtube_channel_name: CloudCannon
-  # telegram: jekyll
-  # googleplus: +jekyll
-  # keybase: jekyll
+  github                 : writeonly
+  linkedin               : writeonly-pl
+  facebook               : WriteOnlyPL
+  instagram              : degustujacaistota
+  twitter                : TheKamilAdam
+  rss                    : rss
+  # microdotblog          : TheKamilAdam
+  # dribbble              : jekyll
+  # flickr                : jekyll
+  # pinterest             : jekyll
+  # youtube               : jekyll
+  # youtube_channel       : UC8CXR0-3I70i1tfPg1PAE1g
+  # youtube_channel_name  : CloudCannon
+  # telegram              : jekyll
+  # googleplus            : +jekyll
+  # keybase               : jekyll

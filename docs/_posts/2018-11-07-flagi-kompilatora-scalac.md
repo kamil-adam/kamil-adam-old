@@ -13,7 +13,7 @@ redirect_from:
   - resentiment/2018/11/07/flagi-kompilatora-scalac.html
 ---
 
-Nie bójmy się tego powiedzieć, Scala to nowy **[Perl](/posts-by-langs/perl)**.
+Nie bójmy się tego powiedzieć, Scala to nowy **[Perl](/langs/perl)**.
 I tak jak w Perlu, w Scali obowiązuje zasada TIMTOWTDI (ang. There is more than one way to do it),
 czyli "Można to zrobić na różne sposoby".
 
@@ -21,7 +21,7 @@ Jednak z biegiem czasu twórcy języka Scala uznali,
 że niektóre sposoby są lepsze od innych i powinna istnieć możliwość wyłączenia gorszych sposobów.
 Dodatkowo niektóre funkcjonalności języka są tak inne od tego co do tej pory widzieli programiści języków obiektowych,
 że nie powinny być domyślnie włączone.
-Oba te warunki, i pewnie jeszcze kilka innych, powodują, że Scalac, **[kompilator](/posts-by-tags/compiler)** języka Scala,
+Oba te warunki, i pewnie jeszcze kilka innych, powodują, że Scalac, **[kompilator](/tags/compiler)** języka Scala,
 posiada [flagi kompilacji](<https://docs.scala-lang.org/overviews/compiler-options/index.html>).
 Dokładniej Scalac posiada ogromną ilość flag kompilacji.
 

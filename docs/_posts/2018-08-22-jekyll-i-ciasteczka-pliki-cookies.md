@@ -101,8 +101,8 @@ Czuję, że na stronie <https://jekyllcodex.org/> spędzę więcej czasu  z czeg
 * później zacznę pisać o języku **[Scala]**
 * istnieje niebezpieczeństwo, że nauczę się jQuery
 
-[Scala]:        /posts-by-langs/scala
+[Scala]:        /langs/scala
 
-[Jekyll]:       /posts-by-tools/jekyll
+[Jekyll]:       /tools/jekyll
 
-[GitHub Pages]: /posts-by-tags/github-pages
+[GitHub Pages]: /tags/github-pages

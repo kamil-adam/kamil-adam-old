@@ -141,21 +141,21 @@ dlatego nowe aplikacje także powstają w Javie i C#.
 Poza tym trudno pracować w nowych językach jak Scala, Kotlin czy F# nie znając starych języków jak Javy czy C#,
 ponieważ nowe języki używają bibliotek napisanych w swoich starszych kuzynach.
 
-[Clojure]: /posts-by-langs/clojure
-[Eta]:     /posts-by-langs/eta
-[Frege]:   /posts-by-langs/frege
-[F#]:      /posts-by-langs/fsharp
-[Go]:      /posts-by-langs/go
-[Haskell]: /posts-by-langs/haskell
-[Java]:    /posts-by-langs/java
-[Kotlin]:  /posts-by-langs/kotlin
-[Lisp]:    /posts-by-langs/lisp
-[OCaml]:   /posts-by-langs/ocaml
-[Python]:  /posts-by-langs/python
-[Ruby]:    /posts-by-langs/ruby
-[Scala]:   /posts-by-langs/scala
+[Clojure]: /langs/clojure
+[Eta]:     /langs/eta
+[Frege]:   /langs/frege
+[F#]:      /langs/fsharp
+[Go]:      /langs/go
+[Haskell]: /langs/haskell
+[Java]:    /langs/java
+[Kotlin]:  /langs/kotlin
+[Lisp]:    /langs/lisp
+[OCaml]:   /langs/ocaml
+[Python]:  /langs/python
+[Ruby]:    /langs/ruby
+[Scala]:   /langs/scala
 
-[JVM]: /posts-by-tools/jvm
+[JVM]: /tools/jvm
 
 [C++/CLI]: https://pl.wikipedia.org/wiki/C%2B%2B/CLI
 [VB.NET]: https://pl.wikipedia.org/wiki/Visual_Basic_.NET

@@ -150,11 +150,11 @@ Możliwość uruchamiania strony w takiej samej konfiguracji lokalnie jak na pro
 czyni z tego połączenia rozwiązanie skierowane nie tylko do hobbystów,
 ale także dla rozwiązań biznesowych.
 
-[Go]:           /posts-by-langs/go
-[Ruby]:         /posts-by-langs/ruby
+[Go]:           /langs/go
+[Ruby]:         /langs/ruby
 
-[Jekyll]:       /posts-by-tools/jekyll
+[Jekyll]:       /tools/jekyll
 
-[aliasem]:      /posts-by-tags/alias
-[Github Pages]: /posts-by-tags/github-pages
-[json]:         /posts-by-tags/json
+[aliasem]:      /tags/alias
+[Github Pages]: /tags/github-pages
+[json]:         /tags/json

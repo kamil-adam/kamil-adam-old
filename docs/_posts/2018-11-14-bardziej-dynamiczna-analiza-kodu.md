@@ -236,9 +236,9 @@ ponieważ poprawnie napisane testy modułowe,
 które pokrywają 100% kodu aplikacji,
 mogą być niepoprawne, jeśli dane wejściowe są źle dobrane.
 
-[Haskell]:      /posts-by-langs/haskell
+[Haskell]:      /langs/haskell
 
-[Scalaz]:       /posts-by-libs/scalaz
+[Scalaz]:       /libs/scalaz
 
-[Scala Native]: /posts-by-tools/scala-native
-[Scala.js]:     /posts-by-tools/scala-js
+[Scala Native]: /tools/scala-native
+[Scala.js]:     /tools/scala-js

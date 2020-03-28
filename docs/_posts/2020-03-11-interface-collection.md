@@ -146,13 +146,13 @@ Są to między innymi:
 
 [no universal equality]: /no-universal-equality
 
-[Java]:                  /posts-by-langs/java
-[Kotlin]:                /posts-by-langs/kotlin
-[Scala]:                 /posts-by-langs/scala
+[Java]:                  /langs/java
+[Kotlin]:                /langs/kotlin
+[Scala]:                 /langs/scala
 
-[vavr]:                  /posts-by-libs/vavr
-[vavr-kotlin]:           /posts-by-libs/vavr-kotlin
+[vavr]:                  /libs/vavr
+[vavr-kotlin]:           /libs/vavr-kotlin
 
-[collection]:            /posts-by-tags/collection
-[immutable]:             /posts-by-tags/immutable
-[interface]:             /posts-by-tags/interface
+[collection]:            /tags/collection
+[immutable]:             /tags/immutable
+[interface]:             /tags/interface

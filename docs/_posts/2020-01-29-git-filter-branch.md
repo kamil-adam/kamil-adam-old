@@ -107,13 +107,13 @@ warto wiedzieć, że istnieje taka opcja.
 Zwłaszcza biorąc pod uwagę,
 że wiele zaawansowanych opcji systemu kontroli wersji **[git]** jest dostępnych tylko z [konsoli].
 
-[bash]:          /posts-by-tools/bash 
-[git]:           /posts-by-tools/git
+[bash]:          /tools/bash 
+[git]:           /tools/git
 
-[cli]:           /posts-by-tags/cli
-[filter-branch]: /posts-by-tags/filter-branch
-[konsoli]:       /posts-by-tags/cli
-[script]:        /posts-by-tags/script
-[skrypt]:        /posts-by-tags/script
+[cli]:           /tags/cli
+[filter-branch]: /tags/filter-branch
+[konsoli]:       /tags/cli
+[script]:        /tags/script
+[skrypt]:        /tags/script
 
 

@@ -60,8 +60,8 @@ Dokumentować tutaj każdą większą zmianę wraz z uzasadnieniem.
 Mam nadzieję, że będzie to jasne i łatwe do zrozumienia zarówno dla mnie, gdy po roku wrócę do swojego kodu,
 jak i dla wszystkich innych, którzy chcieliby się nauczyć języka **[Scala]**.
 
-[Javy]:     /posts-by-langs/java
-[Scala]:    /posts-by-langs/scala
-[Scali]:    /posts-by-langs/scala
+[Javy]:     /langs/java
+[Scala]:    /langs/scala
+[Scali]:    /langs/scala
 
-[GitHubie]: /posts-by-tools/github
+[GitHubie]: /tools/github

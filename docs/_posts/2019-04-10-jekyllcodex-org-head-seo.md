@@ -102,4 +102,4 @@ Należy umieścić go wewnątrz znaczników `<head />` za pomocą kodu `{%raw%}{
 ## Podsumowanie
 Nalezy sprawdzać i testować cudze skrypty. Zawsze.
 
-[seo]: /posts-by-tags/seo
+[seo]: /tags/seo

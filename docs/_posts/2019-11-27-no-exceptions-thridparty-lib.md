@@ -233,20 +233,20 @@ Warto więc na bieżąco obserwować zmiany w ekosystemie Scali.
 
 Kod jest oczywiście dostępny na [Githubie](https://github.com/writeonly/linkchecker/tree/v3.0).
 
-[haskell]:           /posts-by-langs/haskell
-[scala]:             /posts-by-langs/scala
+[haskell]:           /langs/haskell
+[scala]:             /langs/scala
 
-[scalaz]:            /posts-by-libs/scalaz
+[scalaz]:            /libs/scalaz
 
-[c]:                 /posts-by-tools/clang
+[c]:                 /tools/clang
 
-[api]:               /posts-by-tags/api
-[aplikatywem]:       /posts-by-tags/applicative
-[aplikatywy]:        /posts-by-tags/applicative
-[linkchecker]:       /posts-by-tags/linkchecker
-[for comprehension]: /posts-by-tags/for-comprehension
-[monad]:             /posts-by-tags/monad
-[monada]:            /posts-by-tags/monad
-[monad]:             /posts-by-tags/monad
-[monady]:            /posts-by-tags/monad
-[no-exceptions]:     /posts-by-tags/no-exceptions
+[api]:               /tags/api
+[aplikatywem]:       /tags/applicative
+[aplikatywy]:        /tags/applicative
+[linkchecker]:       /tags/linkchecker
+[for comprehension]: /tags/for-comprehension
+[monad]:             /tags/monad
+[monada]:            /tags/monad
+[monad]:             /tags/monad
+[monady]:            /tags/monad
+[no-exceptions]:     /tags/no-exceptions

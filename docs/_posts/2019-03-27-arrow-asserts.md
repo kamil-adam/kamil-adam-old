@@ -101,8 +101,8 @@ object CalculatorTest extends TestSuite {
 }
 ```
 
-[Scala]:    /posts-by-langs/scala
+[Scala]:    /langs/scala
 
-[uTest]:    /posts-by-libs/utest
+[uTest]:    /libs/utest
 
-[operator]: /posts-by-tags/operator
+[operator]: /tags/operator

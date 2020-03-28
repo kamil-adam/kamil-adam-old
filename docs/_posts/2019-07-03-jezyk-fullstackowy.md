@@ -205,7 +205,7 @@ Pozwala to współdzielić kod między frontendem i backendem,
 który teoretycznie może być nawet aplikacją natywną.
 Jednocześnie  w tych językach programowania
 do rozwiązywania problemów asynchroniczności 
-są preferowane konstrukcje `Future` oraz **[monady](/posts-by-tags/monad)** `IO`,
+są preferowane konstrukcje `Future` oraz **[monady](/tags/monad)** `IO`,
 które łatwo przetłumaczyć na `Promise` z JS.
 
 Równie ciekawy wydaje się także,
@@ -226,45 +226,45 @@ gdy umie się już drugi nie powinno być problemem.
 
 [Lista języków kompilowanych do JS](<https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS>)
 
-[Ceylon]:        /posts-by-langs/ceylon
-[Clojure]:       /posts-by-langs/clojure
-[CoffeeScript]:  /posts-by-langs/coffeescript
-[Dart]:          /posts-by-langs/dart
-[Elm]:           /posts-by-langs/elm
-[Java]:          /posts-by-langs/java
-[JavaScript]:    /posts-by-langs/javascript
-[JS]:            /posts-by-langs/javascript
-[Haskell]:       /posts-by-langs/haskell
-[Kotlin]:        /posts-by-langs/kotlin
-[LiveScript]:    /posts-by-langs/livescript
-[Meta Language]: /posts-by-langs/meta-language
-[OCaml]:         /posts-by-langs/ocaml
-[PureScript]:    /posts-by-langs/purescript
-[Python]:        /posts-by-langs/python
-[Racket]:        /posts-by-langs/racket
-[ReasonML]:      /posts-by-langs/reasonml
-[Ruby]:          /posts-by-langs/ruby
-[Scala]:         /posts-by-langs/scala
-[TypeScript]:    /posts-by-langs/typescript
+[Ceylon]:        /langs/ceylon
+[Clojure]:       /langs/clojure
+[CoffeeScript]:  /langs/coffeescript
+[Dart]:          /langs/dart
+[Elm]:           /langs/elm
+[Java]:          /langs/java
+[JavaScript]:    /langs/javascript
+[JS]:            /langs/javascript
+[Haskell]:       /langs/haskell
+[Kotlin]:        /langs/kotlin
+[LiveScript]:    /langs/livescript
+[Meta Language]: /langs/meta-language
+[OCaml]:         /langs/ocaml
+[PureScript]:    /langs/purescript
+[Python]:        /langs/python
+[Racket]:        /langs/racket
+[ReasonML]:      /langs/reasonml
+[Ruby]:          /langs/ruby
+[Scala]:         /langs/scala
+[TypeScript]:    /langs/typescript
 
-[BuckleScript]:  /posts-by-tools/bucklescript
-[ClojureScript]: /posts-by-tools/clojurescript
-[JVM]:           /posts-by-tools/jvm
-[Kotlin.js]:     /posts-by-tools/kotlin-js 
-[Node.js]:       /posts-by-tools/node-js
-[PosgreSQL]:     /posts-by-tools/postgresql
-[Scala.js]:      /posts-by-tools/scala-js
+[BuckleScript]:  /tools/bucklescript
+[ClojureScript]: /tools/clojurescript
+[JVM]:           /tools/jvm
+[Kotlin.js]:     /tools/kotlin-js 
+[Node.js]:       /tools/node-js
+[PosgreSQL]:     /tools/postgresql
+[Scala.js]:      /tools/scala-js
 
-[Akka HTTP]:     /posts-by-libs/akka-http
-[DropWizard]:    /posts-by-libs/dropwizard
-[JQuery]:        /posts-by-libs/jquery
+[Akka HTTP]:     /libs/akka-http
+[DropWizard]:    /libs/dropwizard
+[JQuery]:        /libs/jquery
 
-[API]:           /posts-by-tags/api
-[CLI]:           /posts-by-tags/cli
-[interpreter]:   /posts-by-tags/interpreter
-[GUI]:           /posts-by-tags/gui
-[monady]:        /posts-by-tags/monad
-[transpilator]:  /posts-by-tags/transpiler
+[API]:           /tags/api
+[CLI]:           /tags/cli
+[interpreter]:   /tags/interpreter
+[GUI]:           /tags/gui
+[monady]:        /tags/monad
+[transpilator]:  /tags/transpiler
 
 [Słabe typowanie]: https://pl.wikipedia.org/wiki/Typowanie_s%C5%82abe
 [JSFuck]: https://github.com/aemkei/jsfuck

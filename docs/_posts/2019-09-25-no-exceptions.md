@@ -422,19 +422,19 @@ Jeśli tylko to możliwe zamiast wyjątków należy używać klas
 
 Kod jest dostępny na [Githubie](https://github.com/writeonly/linkchecker/tree/v1.0).
 
-[haskell]:       /posts-by-langs/haskell
-[java]:          /posts-by-langs/java
-[ocaml]:         /posts-by-langs/ocaml
-[racket]:        /posts-by-langs/racket
-[scala]:         /posts-by-langs/scala
-[scheme]:        /posts-by-langs/scheme
-[smalltalk]:     /posts-by-langs/smalltalk
+[haskell]:       /langs/haskell
+[java]:          /langs/java
+[ocaml]:         /langs/ocaml
+[racket]:        /langs/racket
+[scala]:         /langs/scala
+[scheme]:        /langs/scheme
+[smalltalk]:     /langs/smalltalk
 
-[linkchecker]:   /posts-by-tags/linkchecker
-[no-exceptions]: /posts-by-tags/no-exceptions
-[TCO]:           /posts-by-tags/tco
+[linkchecker]:   /tags/linkchecker
+[no-exceptions]: /tags/no-exceptions
+[TCO]:           /tags/tco
 
-[Java. Programowanie funkcyjne]: /read-books/java-programowanie-funkcyjne
+[Java. Programowanie funkcyjne]: /books/java-programowanie-funkcyjne
 
 [podstawowych założeniach paradygmatu obiektowego]: https://pl.wikipedia.org/wiki/Programowanie_obiektowe#Podstawowe_za%C5%82o%C5%BCenia_paradygmatu_obiektowego
 

@@ -118,7 +118,7 @@ i można je wykonać poleceniem:
 curl -s https://raw.githubusercontent.com/writeonly/cli/master/git_config.sh | bash
 ```
 
-[Java]:         /posts-by-langs/java
-[JavaScript]:   /posts-by-langs/javascript
+[Java]:         /langs/java
+[JavaScript]:   /langs/javascript
 
-[interpretera]: /posts-by-tags/interpreter
+[interpretera]: /tags/interpreter

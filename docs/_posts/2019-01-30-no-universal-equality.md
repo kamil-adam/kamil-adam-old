@@ -160,20 +160,45 @@ ponieważ prawdopodobnie istnieją już rozwiązania naszych problemów.
 "Universal Equality" jest jednym z problemów,
 które w prosty sposób mogą być rozwiązane już dziś.
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 [resentiment]:  /posts-by-category/resentiment
 
 [Haskell]:      /posts-by-langs/haskell
 [Scala]:        /posts-by-langs/scala
+=======
+[Haskell]:      /langs/haskell
+[Scala]:        /langs/scala
+>>>>>>> e42851b... Update_docs
+=======
+[resentiment]:  /category/resentiment
 
-[Cats]:         /posts-by-libs/cats
-[ScalaTest]:    /posts-by-libs/scalatest
-[Scalaz]:       /posts-by-libs/scalaz
+[Haskell]:      /langs/haskell
+[Scala]:        /langs/scala
+>>>>>>> 86a6e10... Update_docs
 
-[scala native]: /posts-by-tools/scala-native
-[scalafix]:     /posts-by-tools/scalafix
-[scala.js]:     /posts-by-tools/scala-js
+[Cats]:         /libs/cats
+[ScalaTest]:    /libs/scalatest
+[Scalaz]:       /libs/scalaz
 
+[scala native]: /tools/scala-native
+[scalafix]:     /tools/scalafix
+[scala.js]:     /tools/scala-js
+
+<<<<<<< HEAD
+<<<<<<< HEAD
 [klasy typów]:  /posts-by-tags/type-classes
 [kompilator]:   /posts-by-tags/compiler
 [monada]:       /posts-by-tags/monad
+=======
+[klasy typów]:  /tags/type-classes
+[kompilator]:   /tags/compiler
+[monada]:       /tags/monad
+>>>>>>> 86a6e10... Update_docs
 
+=======
+[klasy typów]:  /tags/type-classes
+[kompilator]:   /tags/compiler
+[monada]:       /tags/monad
+[resentiment]:  /tags/resentiment
+>>>>>>> e42851b... Update_docs

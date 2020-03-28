@@ -176,4 +176,4 @@ Jego główną zaletą jest to,
 Widać że `git rebase -i` to potężne narzędzie z wieloma możliwościami w rękach dobrego programisty.
 Polecenie `edit` jest opisane w kolejnym [artykule](/git-rebase-i-edit).
 
-[Ubuntu]: /posts-by-tools/ubuntu
+[Ubuntu]: /tools/ubuntu

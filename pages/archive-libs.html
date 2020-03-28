@@ -1,17 +1,18 @@
 ---
-layout: posts
-title: Artykuły po językach programowania
-permalink: /posts-by-langs/
-description: Artykuły po językach programowania
+layout      : posts
+title       : Artykuły po bibliotekach
+description : Artykuły po bibliotekach
+permalink   : /libs/
+collections : libs
 ---
-{% include group-by-array collection=site.posts field="langs" %}
+{% include group-by-array-space collection=site.posts field="libs" %}
 <div class="posts">
   <dl class="posts-nav">
     {% for name in group_names %}
     {% assign posts = group_items[forloop.index0] %}
     <dt>
       <h2>
-        <a href="{{ site.baseurl }}/posts-by-langs/{{ name }}">{{ name | capitalize }}</a>
+        <a href="{{ site.baseurl }}/libs/{{ name}}">{{ name }}</a>
       </h2>
     </dt>
     <dd>

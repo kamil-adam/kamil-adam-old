@@ -202,38 +202,38 @@ Z drugiej strony ilość i jakość narzędzi,
 które powstają w Go jest niesamowita.
 I to może odwrócić trend w najbliższych latach.
 
-[Common Lisp]: /posts-by-langs/common-lisp
-[Crystal]: /posts-by-langs/crystal
-[Dart]: /posts-by-langs/dart
-[Erlang]: /posts-by-langs/erlang
-[F#]: /posts-by-langs/fsharp
-[Go]: /posts-by-langs/go
-[Haskell]: /posts-by-langs/haskell
-[Java]: /posts-by-langs/java
-[JavaScript]: /posts-by-langs/javascript
-[Julia]: /posts-by-langs/julia
-[JS]: /posts-by-langs/javascript
-[Lua]: /posts-by-langs/lua
-[Meta Language]: /posts-by-langs/meta-language
-[OCaml]: /posts-by-langs/ocaml
-[Pony]: /posts-by-langs/pony
-[Racket]: /posts-by-langs/racket 
-[Ruby]: /posts-by-langs/ruby
-[Rust]: /posts-by-langs/rust
-[Scala]: /posts-by-langs/scala
-[Scheme]: /posts-by-langs/scheme
-[Smalltalk]: /posts-by-langs/smalltalk
-[TypeScript]: /posts-by-langs/typescript
+[Common Lisp]: /langs/common-lisp
+[Crystal]: /langs/crystal
+[Dart]: /langs/dart
+[Erlang]: /langs/erlang
+[F#]: /langs/fsharp
+[Go]: /langs/go
+[Haskell]: /langs/haskell
+[Java]: /langs/java
+[JavaScript]: /langs/javascript
+[Julia]: /langs/julia
+[JS]: /langs/javascript
+[Lua]: /langs/lua
+[Meta Language]: /langs/meta-language
+[OCaml]: /langs/ocaml
+[Pony]: /langs/pony
+[Racket]: /langs/racket 
+[Ruby]: /langs/ruby
+[Rust]: /langs/rust
+[Scala]: /langs/scala
+[Scheme]: /langs/scheme
+[Smalltalk]: /langs/smalltalk
+[TypeScript]: /langs/typescript
 
-[Docker]: /posts-by-tools/docker
-[Kotlin Native]: /posts-by-tools/kotlin-native
-[LLVM]: /posts-by-tools/llvm
-[Node.js]: /posts-by-tools/node-js
-[Scala Native]: /posts-by-tools/scala-native
+[Docker]: /tools/docker
+[Kotlin Native]: /tools/kotlin-native
+[LLVM]: /tools/llvm
+[Node.js]: /tools/node-js
+[Scala Native]: /tools/scala-native
 
-[kod bajtowy]: /posts-by-tags/bytecode
-[monady]: /posts-by-tags/monad
-[Type Classes]: /posts-by-tags/type-classes
+[kod bajtowy]: /tags/bytecode
+[monady]: /tags/monad
+[Type Classes]: /tags/type-classes
 
 [maszyny P-code]: https://en.wikipedia.org/wiki/P-code_machine
 

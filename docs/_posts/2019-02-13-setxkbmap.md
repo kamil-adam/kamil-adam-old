@@ -73,4 +73,4 @@ gdy jest otwierany nowy terminal wystarczy dodać wywołanie polecenia `setxkbma
 echo "setxkbmap pl" >> ~/.bashrc
 ```
 
-[Ubuntu]: /posts-by-tools/ubuntu
+[Ubuntu]: /tools/ubuntu

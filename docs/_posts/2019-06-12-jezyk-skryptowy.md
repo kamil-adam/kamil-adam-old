@@ -122,26 +122,26 @@ Z języków dynamicznie typowanych interesujący dla mnie jest tylko **[Lisp]**
 ze wszystkimi swoimi dialektami (**[Clojure]**, **[Racket]**, **[Scheme]**, **[Common Lisp]**).
 Jest coś szalonego w języku, którego zapis jest od razu jego drzewem **[CST]**.
 
-[AWK]:         /posts-by-langs/awk
-[Clojure]:     /posts-by-langs/clojure
-[Common Lisp]: /posts-by-langs/common-lisp
-[Crystal]:     /posts-by-langs/crystal
-[Elixir]:      /posts-by-langs/elixir
-[Lisp]:        /posts-by-langs/lisp
-[Perl]:        /posts-by-langs/perl
-[Python]:      /posts-by-langs/python
-[Racket]:      /posts-by-langs/racket
-[Ruby]:        /posts-by-langs/ruby
-[Scheme]:      /posts-by-langs/scheme
+[AWK]:         /langs/awk
+[Clojure]:     /langs/clojure
+[Common Lisp]: /langs/common-lisp
+[Crystal]:     /langs/crystal
+[Elixir]:      /langs/elixir
+[Lisp]:        /langs/lisp
+[Perl]:        /langs/perl
+[Python]:      /langs/python
+[Racket]:      /langs/racket
+[Ruby]:        /langs/ruby
+[Scheme]:      /langs/scheme
 
-[Bash]:        /posts-by-tools/bash 
+[Bash]:        /tools/bash 
 
-[ScalaTest]:   /posts-by-libs/scalatest
-[Specs2]:      /posts-by-libs/specs2
+[ScalaTest]:   /libs/scalatest
+[Specs2]:      /libs/specs2
 
-[BDD]:         /posts-by-tags/bdd
-[CST]:         /posts-by-tags/cst
-[DSL]:         /posts-by-tags/dsl
+[BDD]:         /tags/bdd
+[CST]:         /tags/cst
+[DSL]:         /tags/dsl
 
 [Język skryptowy]: https://pl.wikipedia.org/wiki/J%C4%99zyk_skryptowy
 [Tiobe]: https://www.tiobe.com/tiobe-index/

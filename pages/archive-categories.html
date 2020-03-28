@@ -1,17 +1,18 @@
 ---
-layout: posts
-title: Artykuły po kategorii
-permalink: /posts-by-category/
-description: Artykuły po kategorii
+layout      : posts
+title       : Artykuły po kategorii
+description : Artykuły po kategorii
+permalink   : /categories/
+collections : categories
 ---
-{% include group-by-array collection=site.posts field='category' %}
+{% include group-by-array-space collection=site.posts field='category' %}
 <div class="posts">
   <dl class="posts-nav">
     {% for name in group_names %}
     {% assign posts = group_items[forloop.index0] %}
     <dt>
       <h2>
-        <a href="{{ site.baseurl }}/posts-by-category/{{ name }}">{{ name | capitalize }}</a>
+        <a href="{{ site.baseurl }}/category/{{ name }}">{{ name | capitalize }}</a>
       </h2>
     </dt>
     <dd>

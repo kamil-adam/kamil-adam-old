@@ -91,15 +91,15 @@ Repozytorium z kodem do analizy lambd - *[Lambda analysis package](<https://gith
 
 Z niecierpliwością czekam na kolejne wykłady w ramach *Functional Miners* (@fun_miners)
 
-[Clojure]:         /posts-by-langs/clojure
-[Elixir]:          /posts-by-langs/elixir
-[Haskell]:         /posts-by-langs/haskell
-[Java]:            /posts-by-langs/java
-[Scala]:           /posts-by-langs/scala
+[Clojure]:         /langs/clojure
+[Elixir]:          /langs/elixir
+[Haskell]:         /langs/haskell
+[Java]:            /langs/java
+[Scala]:           /langs/scala
 
-[kompilator]:      /posts-by-tags/compiler
-[interpreter]:     /posts-by-tags/interpreter
-[rachunku lambda]: /posts-by-tags/lambda-calculus
-[monad]:           /posts-by-tags/monad
-[transpilator]:    /posts-by-tags/transpiler
+[kompilator]:      /tags/compiler
+[interpreter]:     /tags/interpreter
+[rachunku lambda]: /tags/lambda-calculus
+[monad]:           /tags/monad
+[transpilator]:    /tags/transpiler
 

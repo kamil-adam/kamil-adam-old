@@ -195,22 +195,22 @@ Nie są potrzebne dodatkowe narzędzia, ani dodatkowe fazy kompilacji.
 Dodatkowo dzięki możliwości dodawania operatorów do składni języka **[Scala]**,
 możliwe jest używanie notacji podobnej do BNF.
 
-[Scala]:             /posts-by-langs/scala
+[Scala]:             /langs/scala
 
-[FastParse]:         /posts-by-libs/fastparse
-[SHocon]:            /posts-by-libs/shocon
-[STOML]:             /posts-by-libs/stoml
-[utest]:             /posts-by-libs/utest
+[FastParse]:         /libs/fastparse
+[SHocon]:            /libs/shocon
+[STOML]:             /libs/stoml
+[utest]:             /libs/utest
 
-[DSL]:               /posts-by-tags/dsl
-[drzewo składniowe]: /posts-by-tags/ast
-[interfejsem]:       /posts-by-tags/interface
-[JSON]:              /posts-by-tags/json
-[HOCON]:             /posts-by-tags/hocon
-[kompilatora]:       /posts-by-tags/compiler
-[lekser]:            /posts-by-tags/lexer
-[Properties]:        /posts-by-tags/properties
-[Parser]:            /posts-by-tags/parser
-[Rison]:             /posts-by-tags/rison
-[TOML]:              /posts-by-tags/toml
-[XML]:               /posts-by-tags/xml
+[DSL]:               /tags/dsl
+[drzewo składniowe]: /tags/ast
+[interfejsem]:       /tags/interface
+[JSON]:              /tags/json
+[HOCON]:             /tags/hocon
+[kompilatora]:       /tags/compiler
+[lekser]:            /tags/lexer
+[Properties]:        /tags/properties
+[Parser]:            /tags/parser
+[Rison]:             /tags/rison
+[TOML]:              /tags/toml
+[XML]:               /tags/xml

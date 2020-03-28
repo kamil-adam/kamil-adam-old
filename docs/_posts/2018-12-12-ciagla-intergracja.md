@@ -274,7 +274,7 @@ Termin **ciągła analiza statyczna** ułożyłem sam,
 jednak występujący w jego miejscu termin **ciągła kontrola jakości kodu** (ang. *Continuous Inspection of Code Quality*)
 jest według mnie zbyt ogólny.
 
-[Rust]:        /posts-by-langs/rust
+[Rust]:        /langs/rust
 
-[Ubuntu]:      /posts-by-tools/ubuntu
-[ScalaNative]: /posts-by-tools/scala-native
+[Ubuntu]:      /tools/ubuntu
+[ScalaNative]: /tools/scala-native

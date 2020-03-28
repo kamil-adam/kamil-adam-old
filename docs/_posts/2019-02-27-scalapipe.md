@@ -225,17 +225,17 @@ Składnia języka **[Scala]** jest elastyczna, ale czasem nie aż tak bardzo jak
 Mimo to, łatwo definiować nowe operatory oraz składnię, która może znacząco skrócić i uprościć kod.
 Warto jednak wcześnie sprawdzić czy nasz operator nie jest zdefiniowany w istniejącej i popularnej bibliotece.
 
-[Clojure]:       /posts-by-langs/clojure
-[Elixir]:        /posts-by-langs/elixir
-[Kotlin]:        /posts-by-langs/kotlin
-[Lispa]:         /posts-by-langs/lisp
-[Lispie]:        /posts-by-langs/lisp
-[Meta Language]: /posts-by-langs/meta-language
-[Perl]:          /posts-by-langs/perl
-[Racket]:        /posts-by-langs/racket
-[Scala]:         /posts-by-langs/scala
+[Clojure]:       /langs/clojure
+[Elixir]:        /langs/elixir
+[Kotlin]:        /langs/kotlin
+[Lispa]:         /langs/lisp
+[Lispie]:        /langs/lisp
+[Meta Language]: /langs/meta-language
+[Perl]:          /langs/perl
+[Racket]:        /langs/racket
+[Scala]:         /langs/scala
 
-[Scalaz]:        /posts-by-libs/scalaz
+[Scalaz]:        /libs/scalaz
 
-[Bash]:          /posts-by-tools/bash 
-[Jekyll]:        /posts-by-tools/jekyll
+[Bash]:          /tools/bash 
+[Jekyll]:        /tools/jekyll

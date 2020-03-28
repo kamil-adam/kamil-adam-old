@@ -362,9 +362,9 @@ Jak zwykle składnia Scali pozwala zapisać te same rzeczy prościej niż w Javi
 jednocześnie dzięki temu można wymusić konwencję tworzenia loggerów na etapie kompilacji.
 Dzięki temu nie mamy w kodzie loggerów o nazwach innych niż `loggger` jak np. `LOGGER` lub `LOG`.
 
-[Scala Native]: /posts-by-tools/scala-native
-[Scala.js]:     /posts-by-tools/scala-js
+[Scala Native]: /tools/scala-native
+[Scala.js]:     /tools/scala-js
 
-[uTest]:        /posts-by-libs/utest
+[uTest]:        /libs/utest
 
-[CLI]:          /posts-by-tags/cli
+[CLI]:          /tags/cli

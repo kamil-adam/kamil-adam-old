@@ -275,33 +275,33 @@ clang lua.c -S -fomit-frame-pointer -o -
 ## Podsumowanie
 **[LLVM]** jest przyszłością i głównie ten projekt jest odpowiedzialny za wysyp nowych języków natywnych.
 
-[Common Lisp]: /posts-by-langs/common-lisp
-[Crystal]:     /posts-by-langs/crystal
-[Go]:          /posts-by-langs/go
-[Haskell]:     /posts-by-langs/haskell
-[JavaScript]:  /posts-by-langs/javascript
-[Julia]:       /posts-by-langs/julia
-[Kotlin]:      /posts-by-langs/kotlin
-[Lisp]:        /posts-by-langs/lisp
-[Lua]:         /posts-by-langs/lua
-[Pony]:        /posts-by-langs/pony
-[Python]:      /posts-by-langs/python
-[Ruby]:        /posts-by-langs/ruby
-[Rust]:        /posts-by-langs/rust
-[Scala]:       /posts-by-tools/scala-native
+[Common Lisp]: /langs/common-lisp
+[Crystal]:     /langs/crystal
+[Go]:          /langs/go
+[Haskell]:     /langs/haskell
+[JavaScript]:  /langs/javascript
+[Julia]:       /langs/julia
+[Kotlin]:      /langs/kotlin
+[Lisp]:        /langs/lisp
+[Lua]:         /langs/lua
+[Pony]:        /langs/pony
+[Python]:      /langs/python
+[Ruby]:        /langs/ruby
+[Rust]:        /langs/rust
+[Scala]:       /tools/scala-native
 
-[Clang]:       /posts-by-tools/clang
-[LLVM]:        /posts-by-tools/llvm
+[Clang]:       /tools/clang
+[LLVM]:        /tools/llvm
 
-[API]:         /posts-by-tags/api
-[Asembler]:    /posts-by-tags/assembler
-[AST]:         /posts-by-tags/ast
-[CLI]:         /posts-by-tags/cli
-[Interpreter]: /posts-by-tags/interpreter
-[Kod bajtowy]: /posts-by-tags/bytecode
-[Kompilator]:  /posts-by-tags/compiler
-[leksera]:     /posts-by-tags/lexer
-[parsera]:     /posts-by-tags/parser
+[API]:         /tags/api
+[Asembler]:    /tags/assembler
+[AST]:         /tags/ast
+[CLI]:         /tags/cli
+[Interpreter]: /tags/interpreter
+[Kod bajtowy]: /tags/bytecode
+[Kompilator]:  /tags/compiler
+[leksera]:     /tags/lexer
+[parsera]:     /tags/parser
 
 [rms]: https://pl.wikipedia.org/wiki/Richard_Stallman
 

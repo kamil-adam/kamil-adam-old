@@ -1,17 +1,18 @@
 ---
-layout: posts
-title: Artykuły po bibliotekach
-permalink: /posts-by-libs/
-description: Artykuły po bibliotekach
+layout      : posts
+title       : Artykuły po narzędziach
+description : Artykuły po narzędziach
+permalink   : /tools/
+collections : tools
 ---
-{% include group-by-array collection=site.posts field="libs" %}
+{% include group-by-array-space collection=site.posts field="tools" %}
 <div class="posts">
   <dl class="posts-nav">
     {% for name in group_names %}
     {% assign posts = group_items[forloop.index0] %}
     <dt>
       <h2>
-        <a href="{{ site.baseurl }}/posts-by-libs/{{ name}}">{{ name }}</a>
+        <a href="{{ site.baseurl }}/tools/{{ name }}">{{ name | capitalize }}</a>
       </h2>
     </dt>
     <dd>

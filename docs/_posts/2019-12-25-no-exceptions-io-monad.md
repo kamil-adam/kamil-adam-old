@@ -295,21 +295,21 @@ Wymaga to jednak dużo samozaparcia i jest trudniejsze niż w językach od pocz�
 
 Kod jest oczywiście dostępny na [Githubie](https://github.com/writeonly/linkchecker/tree/v4.0).
 
-[eta]:               /posts-by-langs/eta
-[haskell]:           /posts-by-langs/haskell
-[scala]:             /posts-by-langs/scala
+[eta]:               /langs/eta
+[haskell]:           /langs/haskell
+[scala]:             /langs/scala
 
-[scalaz]:            /posts-by-libs/scalaz
-[zio]:               /posts-by-libs/zio
+[scalaz]:            /libs/scalaz
+[zio]:               /libs/zio
 
-[api]:               /posts-by-tags/api
-[aplikatywem]:       /posts-by-tags/applicative
-[aplikatywy]:        /posts-by-tags/applicative
-[io]:                /posts-by-tags/io
-[for comprehension]: /posts-by-tags/for-comprehension
-[linkchecker]:       /posts-by-tags/linkchecker
-[monad]:             /posts-by-tags/monad
-[monada]:            /posts-by-tags/monad
-[monad]:             /posts-by-tags/monad
-[monady]:            /posts-by-tags/monad
-[no-exceptions]:     /posts-by-tags/no-exceptions
+[api]:               /tags/api
+[aplikatywem]:       /tags/applicative
+[aplikatywy]:        /tags/applicative
+[io]:                /tags/io
+[for comprehension]: /tags/for-comprehension
+[linkchecker]:       /tags/linkchecker
+[monad]:             /tags/monad
+[monada]:            /tags/monad
+[monad]:             /tags/monad
+[monady]:            /tags/monad
+[no-exceptions]:     /tags/no-exceptions

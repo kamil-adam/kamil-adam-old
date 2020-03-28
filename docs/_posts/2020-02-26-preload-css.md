@@ -68,7 +68,7 @@ W rezultacie moje ładowanie pliku [CSS] przed uruchomieniem jekylla wygląda na
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
   </noscript>
   <script type="text/javascript">
-   {% include loadCss.js %}
+   {% include head/loadCss.js %}
   </script>
 ```
 {% endraw %}
@@ -80,7 +80,7 @@ A po uruchomieniu jekylla dostaję:
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
   </noscript>
   <script type="text/javascript">
-   {% include loadCss.js %}
+   {% include head/loadCss.js %}
   </script>
 ```
 
@@ -88,9 +88,9 @@ A po uruchomieniu jekylla dostaję:
 * Nie ufaj Googlowi, niszczą konkurencję
 * Warto testować strony na Firefoxie
 
-[JavaScript]: /posts-by-langs/javascript
+[JavaScript]: /langs/javascript
 
-[jekyll]:     /posts-by-tools/jekyll
+[jekyll]:     /tools/jekyll
 
-[CSS]:        /posts-by-tags/css
-[html]:       /posts-by-tags/html
+[CSS]:        /tags/css
+[html]:       /tags/html

@@ -121,26 +121,26 @@ I uruchomienie:
 sbt re/run reJS/run reJVM/run
 ```
 
-[Crystal]:      /posts-by-langs/crystal
-[Erlang]:       /posts-by-langs/erlang
-[Go]:           /posts-by-langs/go
-[Haskell]:      /posts-by-langs/haskell
-[JavaScript]:   /posts-by-langs/javascript
-[Pony]:         /posts-by-langs/pony
-[Rust]:         /posts-by-langs/rust
-[Scala]:        /posts-by-langs/scala
+[Crystal]:      /langs/crystal
+[Erlang]:       /langs/erlang
+[Go]:           /langs/go
+[Haskell]:      /langs/haskell
+[JavaScript]:   /langs/javascript
+[Pony]:         /langs/pony
+[Rust]:         /langs/rust
+[Scala]:        /langs/scala
 
-[C]:            /posts-by-tools/clang
-[JVM]:          /posts-by-tools/jvm
-[LLVM]:         /posts-by-tools/llvm
-[Node.js]:      /posts-by-tools/node-js
-[Scala Native]: /posts-by-tools/scala-native
-[Scala.js]:     /posts-by-tools/scala-js
+[C]:            /tools/clang
+[JVM]:          /tools/jvm
+[LLVM]:         /tools/llvm
+[Node.js]:      /tools/node-js
+[Scala Native]: /tools/scala-native
+[Scala.js]:     /tools/scala-js
 
-[Akka.js]:      /posts-by-libs/akka-js
+[Akka.js]:      /libs/akka-js
 
-[Transpilator]: /posts-by-tags/transpiler
-[Kompilator]:   /posts-by-tags/compiler
+[Transpilator]: /tags/transpiler
+[Kompilator]:   /tags/compiler
 
 [zależności]: http://www.scala-native.org/en/v0.3.8/user/setup.html#installing-clang-and-runtime-dependencies
 [aplikację skośną]: https://github.com/portable-scala/sbt-crossproject.g8

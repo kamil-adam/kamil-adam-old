@@ -246,14 +246,14 @@ Monad `Option`, `Either`, `Try` oraz `Future` można używać także w języku p
 
 Kod jest oczywiście dostępny na [Githubie](https://github.com/writeonly/linkchecker/tree/v2.0).
 
-[haskell]:       /posts-by-langs/haskell
-[java]:          /posts-by-langs/java
-[rust]:          /posts-by-langs/rust
-[scala]:         /posts-by-langs/scala
+[haskell]:       /langs/haskell
+[java]:          /langs/java
+[rust]:          /langs/rust
+[scala]:         /langs/scala
 
-[vavr]:          /posts-by-libs/vavr
+[vavr]:          /libs/vavr
 
-[io]:            /posts-by-tags/io
-[linkchecker]:   /posts-by-tags/linkchecker
-[monada]:        /posts-by-tags/monad
-[no-exceptions]: /posts-by-tags/no-exceptions
+[io]:            /tags/io
+[linkchecker]:   /tags/linkchecker
+[monada]:        /tags/monad
+[no-exceptions]: /tags/no-exceptions

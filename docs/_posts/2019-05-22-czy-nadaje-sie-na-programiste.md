@@ -153,7 +153,7 @@ Powinna być to osoba która ma dobry kontakt z ludźmi i umie przekazywać wied
 
 Wdrożeniem samej aplikacji zajmują się dwa kolejne stanowiska:
 * **SysOps Engineer** (ang. *Systems Operations Engineer*) kiedyś nazywany *SysAdmin* (ang. *Systems Administration*) - 
-wdraża *manualnie*, albo klikając po aplikacjach, albo wpisując polecenia w terminalu, czasem pisząc skrypty w **[Bashu](/posts-by-tools/bash )**.
+wdraża *manualnie*, albo klikając po aplikacjach, albo wpisując polecenia w terminalu, czasem pisząc skrypty w **[Bashu](/tools/bash )**.
 * **DevOps Engineer** (ang. *Development and Operations*) często zwany także *Cloud Engineer* jeśli pracuje z chmurą - 
 wdraża automatycznie za pomocą skryptów w **[Bashu]**, **[Perlu]**, **[Pythonie]**, **[Ruby]** lub innym języku skryptowym.
 
@@ -210,11 +210,11 @@ Podsumowując nietechniczne stanowiska w typowej firmie IT na które najłatwiej
 * UI/UX Designer - trzeba mieć zmysł artystyczny
 * Sprzedawca i Marketingowiec - tak samo jak wszędzie, IT nie jest tu w żaden sposób wyjątkowe.
 
-[Perlu]:    /posts-by-langs/perl
-[Pythonie]: /posts-by-langs/python
-[Ruby]:     /posts-by-langs/ruby
+[Perlu]:    /langs/perl
+[Pythonie]: /langs/python
+[Ruby]:     /langs/ruby
 
-[Bashu]:    /posts-by-tools/bash 
+[Bashu]:    /tools/bash 
 
-[API]:      /posts-by-tags/api
-[GUI]:      /posts-by-tags/gui
+[API]:      /tags/api
+[GUI]:      /tags/gui

@@ -1,0 +1,26 @@
+---
+layout: posts
+title: Wszystkie artykuły
+permalink: /all-posts/
+description: Wszystkie artykuły
+---
+<div class="posts">
+  <dl class="posts-nav">
+    {% for post in site.posts %}
+    <dt>
+      <a class="posts-nav-item" href="{{ post.url | relative_url }}">
+        <span class="posts-nav-item-date">
+          <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
+            {{ post.date | date: "%Y-%m-%d" }}
+          </time>
+        </span>
+        {{ post.title }}
+      </a>
+    </dt>
+    <dd>
+      Kategoria :
+      <a href="{{ site.baseurl }}/categories/{{ post.category }}">{{ post.category | capitalize }}</a>
+    </dd>
+    {% endfor %}
+  </dl>
+</div>

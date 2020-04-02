@@ -16,6 +16,7 @@ timezone                 : "Europe/Warsaw" # https://en.wikipedia.org/wiki/List_
 
 ### Where things are
 include:
+  - _collections
   - _pages
 
 sass:
@@ -23,7 +24,7 @@ sass:
   style                  : compressed
 
 ## Collections: https://jekyllrb.com/docs/collections/
-collections_dir          : docs
+collections_dir          : _collections
 collections:
   categories:
     output               : true

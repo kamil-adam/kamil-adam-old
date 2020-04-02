@@ -9,10 +9,10 @@ redirect_from:
   - scala-jvm/no-exception
 ---
 
-Wyjątki bywają problematyczne, 
+Wyjątki bywają problematyczne,
 ale przez swoich obrońców, są często przedstawiane jako jedna z fundamentalnych części programowania obiektowego.
 Co ciekawe wyjątków nie ma w [podstawowych założeniach paradygmatu obiektowego].
-Nie ma też nic o wyjątkach w definicji programowania obiektowego podanej przez Alana Kaya, 
+Nie ma też nic o wyjątkach w definicji programowania obiektowego podanej przez Alana Kaya,
 lider zespołu tworzącego język **[Smalltalk]** uznawany za twórcę tego terminu.
 Za to jest o komunikowaniu się obiektów za pomocą wiadomości.
 
@@ -23,7 +23,7 @@ Prześledźmy to na przykładzie prostego skryptu do testowania linków w ramach
 
 Mam na blogu wiele linków.
 Wiem że część z nich jest martwa i prowadzi nigdzie, a ja chciałbym to naprawić.
-Niestety nie wiem, które są to linki. 
+Niestety nie wiem, które są to linki.
 Więc postanowiłem napisać skrypt, który je wszystkie zagreguje.
 
 Mówiąc skrypt mam na myśli mały program do którego nie warto pisać testów jednostkowych.
@@ -32,8 +32,8 @@ Mówiąc skrypt mam na myśli mały program do którego nie warto pisać testów
 
 Algorytm działania skryptu jest prosty:
 1. Budowanie stanu początkowego - zaczynamy od jednoelementowego zbioru zawierającego URL będący domeną
-2. Komunikacja ze światem zewnętrznym - dla każdego URL ze zbioru pobieramy źródło strony. 
-   W rezultacie mamy zbiór źródeł stron 
+2. Komunikacja ze światem zewnętrznym - dla każdego URL ze zbioru pobieramy źródło strony.
+W rezultacie mamy zbiór źródeł stron
 3. Budowa kolejnego stanu - Każde źródło ze zbioru parsujemy w poszukiwaniu linków wewnętrznych.
    W rezultacie mamy zbiór zbiorów linków wewnętrznych.
    Spłaszczamy zbiór zbiorów i zamieniamy linki wewnętrzne na URL
@@ -91,7 +91,7 @@ w których rekurencja jest tak samo wydajna jak iteracja (czyli jest dobra).
 
 Jednak nie każdy rodzaj rekurencji jest dobry (wydajny).
 Ten rodzaj, który jest dobry jest nazywany rekurencja ogonową.
-Rekurencja ogonowa (ang. *tail call*) zwana też rekurencją prawostronną, 
+Rekurencja ogonowa (ang. *tail call*) zwana też rekurencją prawostronną,
 jest to odmiana rekurencji,
 gdzie ostatnią operacją w funkcji jest wywołanie samej siebie.
 Dzięki czemu kompilator może w łatwy sposób przeprowadzić optymalizację (ang. *tail call optimization*, **[TCO]**)
@@ -164,8 +164,8 @@ object SourcePageFromInternalUrl extends InternalUrlToSourcePage {
 }
 
   type InternalUrlToSourcePage = InternalUrlTo[SourcePage]
-  
-  type InternalUrlTo[A] = InternalUrl => A
+
+type InternalUrlTo[A] = InternalUrl => A
 ```
 
 Funkcja `HtmlFromInternalRef` pobiera źródło strony na podstawie linku.
@@ -240,8 +240,7 @@ object SourcePageOrThrowExceptionFromInternalUrl extends InternalUrlToSourcePage
       case e: URISyntaxException => throw internalUrl.toException(e)
     }
 }
-``` 
-
+```
 Czemu ta lista zawiera aż trzy przypadki?
 Otóż nie potrafiłem się zdecydować czy używam klasy `java.net.URL` czy `java.net.URI`, a żeby było trudniej:
 * konstruktor klasy `java.net.URL` rzuca `MalformedURLException` dziedziczący po `IOException`
@@ -309,12 +308,11 @@ I wszystko byłoby dobrze gdyby nie to,
 że często potrzebujemy raport ze wszystkimi błędami.
 Chociażby dlatego, żeby oszacować ilość pracy do zrobienia.
 W takim wypadku potrzebujemy konstrukcji,
-która pozwoli nam zapisać wyjątek z niedziałania konkretnego linku i iść ze sprawdzeniem dalej, 
+która pozwoli nam zapisać wyjątek z niedziałania konkretnego linku i iść ze sprawdzeniem dalej,
 nie przerywając głównej pętli programu.
 
-Rozwiązaniem jest tutaj [monada] `Try`. 
-Nie powinniśmy się jednak przejmować tym brzydkim słowem na `M` ponieważ ta właściwość nie zostanie tutaj użyta. 
-
+Rozwiązaniem jest tutaj [monada] `Try`.
+Nie powinniśmy się jednak przejmować tym brzydkim słowem na `M` ponieważ ta właściwość nie zostanie tutaj użyta.
 Obiekt singletonowy `Try` ma jedną metodę `apply` pozwalającą konstruować nowe instancje klasy `Try`:
 ```scala
 object Try {
@@ -400,7 +398,7 @@ trait AbstractNextStateObject {
 
 Przy czym najważniejsza jest tutaj metoda `nextData`, która:
 * Najpierw dzielimy zbiór pobranych dokumentów SourcePage na krotkę `partitioned` na wartości poprawne (`Success`) i niepoprawne (`Failure`)
-* Następnie na podstawie poprawnych wartości budujemy zmienną `newWrappedUrls` zawierający nowe linki wewnętrzne 
+* Następnie na podstawie poprawnych wartości budujemy zmienną `newWrappedUrls` zawierający nowe linki wewnętrzne
 * Z drugiej części krotki tworzymy zmienną `newThrowableList` będącą listą wszystkich niepoprawnych linków
 * Na podstawie otrzymanych danych tworzymy nowy stan, który zwracamy
 
@@ -410,7 +408,7 @@ Przy czym najważniejsza jest tutaj metoda `nextData`, która:
 2. No Checked Exceptions
 3. No Exceptions
 
-A na poważnie: 
+A na poważnie:
 * **Żadnych cudzych wyjątków - cudze wyjątki nie zawierają kontekstu**.
 Każdy wyjątek należy opakować i dodać jak najwięcej informacji z kontekstu dlaczego został rzucony
 * **Żadnych weryfikowalnych wyjątków - wyjątki niszczą interfejs**.

@@ -74,7 +74,7 @@ Ewentualnie prażona soja do chrupania, ale dalej jest bez smaku.
 Myślę, że jest to najważniejszy argument w całej dyskusji.
 Soja wcale nie pasuje do Maca i innych drogich rzeczy.
 Obecnie napój sojowy jest tylko dwa złote droższy od zwykłego krowiego mleka
-i tylko o złotówkę droższy od krowiego mleka bez laktozy. 
+i tylko o złotówkę droższy od krowiego mleka bez laktozy.
 Od napoju sojowego jest trochę droższy napój ryżowy oraz owsiany.
 Dwa razy droższy jest napój migdałowy
 i jest to najdroższe `mleko roślinne` jakie można dostać w Polsce w kawiarniach i sklepach.

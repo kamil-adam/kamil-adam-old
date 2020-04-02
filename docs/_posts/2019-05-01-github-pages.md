@@ -144,7 +144,7 @@ bejekyll s
 ```
 
 ## Podsumowanie
-*GitHub Pages* z generatorem stron **[Jekyll]** 
+*GitHub Pages* z generatorem stron **[Jekyll]**
 są ciekawą i darmową alternatywą dla klasycznych sposobów prowadzenia bloga lub strony.
 Możliwość uruchamiania strony w takiej samej konfiguracji lokalnie jak na produkcji
 czyni z tego połączenia rozwiązanie skierowane nie tylko do hobbystów,
@@ -154,6 +154,7 @@ ale także dla rozwiązań biznesowych.
 [Ruby]:         /langs/ruby
 
 [Jekyll]:       /tools/jekyll
+[git]:          /tools/git
 
 [aliasem]:      /tags/alias
 [Github Pages]: /tags/github-pages

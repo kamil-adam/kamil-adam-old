@@ -237,5 +237,5 @@ Warto jednak wcześnie sprawdzić czy nasz operator nie jest zdefiniowany w istn
 
 [Scalaz]:        /libs/scalaz
 
-[Bash]:          /tools/bash 
+[Bash]:          /tools/bash
 [Jekyll]:        /tools/jekyll

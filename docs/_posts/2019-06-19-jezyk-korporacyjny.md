@@ -46,7 +46,7 @@ a jak najwięcej uwagi poświęcać na pisanie wysokopoziomowej logiki biznesowe
 4. wydajność/skalowalność - często aplikacje klasy enterprise mają dużo klientów naraz,
 więc muszą być wydajne i skalowalne
 
-Co ciekawe 1. kłóci się z 3. a 2. kłóci się z 4. 
+Co ciekawe 1. kłóci się z 3. a 2. kłóci się z 4.
 Widać więc, że potrzebny jest *zgniły kompromis*.
 
 Kiedyś były dwa główne języki korporacyjne:
@@ -65,11 +65,11 @@ Główne zalety pozajęzykowe Javy to:
 * Główny język używany w Google do pisania aplikacji,
 a przynajmniej do niedawna tak było
 
-Pradopodobnie największą wadą Javy jest to, 
+Pradopodobnie największą wadą Javy jest to,
 że jej rozwój mocno zamarł po wydaniu Javy 6 przez co inne języki mocno ją przegoniły.
 Co prawda ostatnio nowe wersje wydawane są częściej,
 jednak dodają one mało nowych funkcjonalności.
-Z tego powodu składnia Javy jest niesamowicie rozwlekłą i bywa nazywana barokową, 
+Z tego powodu składnia Javy jest niesamowicie rozwlekłą i bywa nazywana barokową,
 tzn. trzeba napisać dużo kodu by osiągnąć ten sam efekt co w nowszych językach programowania.
 
 ## Korpo platforma - JVM
@@ -78,19 +78,19 @@ Java to nie tylko język,
 ale także platforma **[JVM]** (ang. *Java Virtual Machine*) odcinająca język od sprzątu.
 Java jest kompilowana do *[kodu bajtowego Javy](https://pl.wikipedia.org/wiki/Kod_bajtowy_Javy)*
 (and. *Java bytecode*),
-który jest następnie wykonywany przez JVM, 
+który jest następnie wykonywany przez JVM,
 a dokładniej przez **JRE**  (ang. *Java Runtime Environment*).
 Do kodu bajtowego Javy są też kompilowane inne języki programowania,
 które w łatwy i przyjazny sposób można integrować z Javą.
-Języki te posiadają o wiele zwięźlejszą składnie i można je podzielić z grubsza na trzy kategorie: 
+Języki te posiadają o wiele zwięźlejszą składnie i można je podzielić z grubsza na trzy kategorie:
 * Nowe języki programowania:
   * **[Scala]** - wielki worek na *feature'y*,
 dzięki czemu w Scali da się zaimplementować wszystkie paradygmaty programowania
-  * **[Kotlin]** - Scala-- plus pare innych *feature'ów*, 
+  * **[Kotlin]** - Scala-- plus pare innych *feature'ów*,
 zdrowy kompromis między *wszystkomaniem* Scali i prostotą Javy,
 ale powoli zmierza do języka w którym także można używać wszystkich paradygmatów programowania
   * **Groovy** - skryptowy język oparty składniowo o Javę.
-W skrócie *Java z opcjonalnymi typami*, 
+W skrócie *Java z opcjonalnymi typami*,
 co jest oczywiście **wadą**
 * Dialekty istniejących języków (niekompatybilne na poziomie kodu źródłowego):
   * **[Clojure]** - dialekt języka **[Lisp]**, posiada opcjonalny system @TypedClojure
@@ -111,13 +111,13 @@ W sporze tym przypadkowo wygrała Java,
 ponieważ jest darmowa i już prawie całkiem Open Source.
 Jednocześnie Java posiada bardziej rozwlekłą składnie i mniejszą bibliotekę standardową.
 
-C# identycznie jak Java jest kompilowany do kodu bajtowego, 
-który nazywany jest 
+C# identycznie jak Java jest kompilowany do kodu bajtowego,
+który nazywany jest
 [Wspólnym Językiem Pośredni](https://en.wikipedia.org/wiki/Common_Intermediate_Language)
 (ang. *Common Intermediate Language*, **CLI**).
 CLI następnie jest wykonywany przez maszynę wirtualną nazywaną platformą .NET.
 
-Podobnie jak dla kodu bajtowego Javy i JVM, 
+Podobnie jak dla kodu bajtowego Javy i JVM,
 tak dla CLI i platformy .Net także istnieją inne języki programowania,
 które można z grubsza podzielić na dwie kategorie:
 * Nowe języki programowania inspirowane istniejącymi już językami:
@@ -134,7 +134,7 @@ Czy warto uczyć się języków Java i C#?
 Biorąc pod uwagę,
 że pojawiają się nowe języki z lepszą składnią (Scala, Kotlin, F#, Go)?
 
-Według mnie warto. 
+Według mnie warto.
 Dziesięcioletnie aplikacje napisane w Javie i C# nie znikną z dnia na dzień.
 Dodatkowo menedżerowie nie lubią często eksperymentować,
 dlatego nowe aplikacje także powstają w Javie i C#.

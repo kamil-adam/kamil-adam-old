@@ -13,7 +13,7 @@ redirect_from:
   - writeonlydoc/2018/08/22/jekyll-i-ciasteczka-pliki-cookies.html
 ---
 
-Przed założeniem bloga opartego na technologiach **[Jekyll]** i **[GitHub Pages]** 
+Przed założeniem bloga opartego na technologiach **[Jekyll]** i **[GitHub Pages]**
 przejrzałem sporo polskojęzycznych blogów z opisem “Jak to zrobić”.
 Wszyscy mówili, że jest to niesamowicie proste.
 Za wyjątkiem jednego malkontenta, Gutka (<https://blog.gutek.pl/2014/10/30/nowy-blog-2/>).

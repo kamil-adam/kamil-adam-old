@@ -17,9 +17,9 @@ W dawnych czasach każdy dobry programista chciał napisać swój własny **[kom
 Co prawda te czasy już minęły i dziś większość z nas programuje w językach o wiele bardziej złożonych niż C.
 Dzięki czemu jesteśmy w stanie pisać szybciej kod.
 Ale nadal warto znać podstawy budowy kompilatorów.
-Na szczęście konstrukcja kompilatora jest prosta jak konstrukcja dzidy bojowej. 
+Na szczęście konstrukcja kompilatora jest prosta jak konstrukcja dzidy bojowej.
 Dzida bojowa składa się z:
-1. przeddzidzia dzidy bojowej 
+1. przeddzidzia dzidy bojowej
 2. śróddzidzia dzidy bojowej
 3. zadzidzia dzidy bojowej.
 
@@ -32,13 +32,12 @@ Podobnie jest z kompilatorem.
 
 Zgadza się.
 Dobrze widzicie.
-Pojęcia front-end i back-end są starsze niż aplikacje jednostronicowe (ang. *single-page application*, *SPA*). 
-
+Pojęcia front-end i back-end są starsze niż aplikacje jednostronicowe (ang. *single-page application*, *SPA*).
 ### Front-end
 Front-end kompilatora składa się z:
 1. analizatora leksykalnego (**[leksera]**) - wynikiem działania jest ciąg leksemów (tokenów z typami)
 2. analizatora składniowego (**[parsera]**) - wynikiem jest drzewo **[AST]**
-3. analizatora semantycznego - wynikiem jest zmodyfikowane drzewo AST z tablicą symboli. 
+3. analizatora semantycznego - wynikiem jest zmodyfikowane drzewo AST z tablicą symboli.
 Analizator semantyczny zajmuje się:
     * kontrolą nazw
     * kontrolą typów
@@ -49,10 +48,10 @@ drzewo zostaje spłaszczone do uniwersalnego kodu bajtowego lub uniwersalnego j�
 
 ### Middle-end
 Zwany też optymalizatorem reprezentacji pośredniej.
-Dokonuje optymalizacji uniwersalnych, 
+Dokonuje optymalizacji uniwersalnych,
 czyli wszystkie optymalizacje niezależne od języka wejściowego i architektury docelowej.
 Z jednej strony jest to najmniej potrzebna część kompilatora.
-Z drugiej to właśnie rozbudowany optymalizator decyduje o tym, 
+Z drugiej to właśnie rozbudowany optymalizator decyduje o tym,
 który **[kompilator]** jest najlepszy.
 
 ### Back-end
@@ -104,13 +103,13 @@ Niestety tego etapu nigdy nie udało mi się przejść więc nie wiem co dzieje 
 
 W skład LLVM wchodzi wiele bibliotek dostępnych także jako [polecenia standalone].
 Są to:
-* [llvm-as] - **[Asembler]** LLVM, 
+* [llvm-as] - **[Asembler]** LLVM,
 konwertuje kod czytelny dla człowieka w języku asemblera LLVM (pliki *.ll) do bitkodu LLVM (pliki *.bc)
-* [llvm-dis] - Disasembler LLVM, 
+* [llvm-dis] - Disasembler LLVM,
 konwertuje bitkod LLVM (pliki *.bc) do kodu czytelnego dla człowieka w języku asemblera LLVM (pliki *.ll)
-* [opt] - Optimizer LLVM, 
+* [opt] - Optimizer LLVM,
 optymalizuje kod w języku asemblera LLVM
-* [llc] - **[Kompilator]** LLVM, 
+* [llc] - **[Kompilator]** LLVM,
 kompiluje kod w języku asemblera LLVM na kod w języku asemblera docelowej architektury
 * [lli] - **[Interpreter]** (sic!) LLVM,
 wykonuje kod
@@ -155,16 +154,16 @@ Swift.
 Co ciekawe nie ma wśród nich języka **[Go]**.
 Plotki mówią że jest to spowodowane tym,
 że głównym sponsorem LLVM jest Apple.
-Ale LLVM jest używany przez Google w wielu innych projektach, 
+Ale LLVM jest używany przez Google w wielu innych projektach,
 jak chociażby w Chromium/Chrom do kompilowania języka **[JavaScript]**.
-Oficjalnym wytłumaczeniem jest to, że LLVM nie pozwalał na zarządzanie włóknami (ang. *fiber*), lekkimi procesami, 
+Oficjalnym wytłumaczeniem jest to, że LLVM nie pozwalał na zarządzanie włóknami (ang. *fiber*), lekkimi procesami,
 potrzebnymi do implementacji gorutyn (ang. *goroutines*).
 
 
 ### Przykładowa kompilacja za pomocą GCC i Clang
 
 Jako przykład skompilujemy interpreter języka **[Lua]**.
-Najpierw za pomocą kompilatora GCC, 
+Najpierw za pomocą kompilatora GCC,
 a później za pomocą LLVM.
 
 Ściągamy repozytorium z kodem interpretera języka **[Lua]**:
@@ -182,7 +181,7 @@ I kompilujemy:
 make all
 ```
 
-Może brakować wam kilku bibliotek potrzebnych do kompilacji. 
+Może brakować wam kilku bibliotek potrzebnych do kompilacji.
 U mnie było to:
 ```bash
 sudo apt-get install libreadline-dev
@@ -233,14 +232,13 @@ print("Hello World")
 
 Widać,
 że GCC może zostać bezproblemowo zastąpiony przez Clang,
-ponieważ oba kompilatory mają zgodny interfejs **[CLI]**. 
-
+ponieważ oba kompilatory mają zgodny interfejs **[CLI]**.
 ### Clang w szczegółach
 
 Za pomocą kompilatora Clang możemy...
 
- 
-... skompilować pojedynczy plik:  
+
+... skompilować pojedynczy plik:
 ```bash
 clang lua.c
 ```
@@ -303,12 +301,11 @@ clang lua.c -S -fomit-frame-pointer -o -
 [leksera]:     /tags/lexer
 [parsera]:     /tags/parser
 
-[rms]: https://pl.wikipedia.org/wiki/Richard_Stallman
+[rms]:                  https://pl.wikipedia.org/wiki/Richard_Stallman
 
 [polecenia standalone]: http://llvm.org/docs/CommandGuide/
-[llvm-as]: http://llvm.org/docs/CommandGuide/llvm-as.html 
-[llvm-dis]: http://llvm.org/docs/CommandGuide/llvm-dis.html
-[opt]: http://llvm.org/docs/CommandGuide/opt.html 
-[llc]: http://llvm.org/docs/CommandGuide/llc.html 
-[lli]: http://llvm.org/docs/CommandGuide/lli.html
-
+[llvm-as]:              http://llvm.org/docs/CommandGuide/llvm-as.html
+[llvm-dis]:             http://llvm.org/docs/CommandGuide/llvm-dis.html
+[opt]:                  http://llvm.org/docs/CommandGuide/opt.html
+[llc]:                  http://llvm.org/docs/CommandGuide/llc.html
+[lli]:                  http://llvm.org/docs/CommandGuide/lli.html

@@ -2,7 +2,7 @@
 title:    "Dynamiczna analiza kodu dla SBT - testy jednostkowe"
 author:   TheKamilAdam
 category: scala-native
-tags:     code-analysis dynamic-code-analysis 
+tags:     code-analysis dynamic-code-analysis
 labels:   minitest greenlight
 langs:    scala
 tools:    scala-jvm scala-js scala-native

@@ -2,7 +2,7 @@
 title:    "Statyczna analiza kodu dla języka Scala w SBT - część 1."
 author:   TheKamilAdam
 category: scala-native
-tags:     code-analysis static-code-analysis  
+tags:     code-analysis static-code-analysis
 labels:   scalafmt scalariform
 langs:    scala
 tools:    sbt scalafix

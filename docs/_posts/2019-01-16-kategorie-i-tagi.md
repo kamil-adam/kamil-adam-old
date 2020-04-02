@@ -3,7 +3,7 @@ title:    "Jekyll - kategorie i tagi"
 author:   TheKamilAdam
 category: jekyll
 tags:     blog
-tools:    jekyll  
+tools:    jekyll
 redirect_from:
   - kategorie-i-tagi
   - jekyll/kategorie-i-tagi

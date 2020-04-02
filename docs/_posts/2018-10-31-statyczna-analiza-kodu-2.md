@@ -2,7 +2,7 @@
 title:    "Statyczna analiza kodu dla języka Scala w SBT - część 2."
 author:   TheKamilAdam
 category: scala-native
-tags:     code-analysis static-code-analysis 
+tags:     code-analysis static-code-analysis
 labels:   scalastyle wartremover scapegoat linter scala-clippy sbt-cpd sbt-stats
 langs:    scala
 tools:    sbt scala-jvm scala-js scala-native

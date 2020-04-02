@@ -17,7 +17,7 @@ Wiele osób pyta się,
 **który język programowania wybrać na początek** jako pierwszy język do nauki.
 Wiele jednak zależy od tego do czego chcemy użyć tego języka programowania.
 Dlatego wybrałem zwycięzców w czterech kategoriach:
-1. dynamicznie typowany język skryptowy ogólnego przeznaczenia 
+1. dynamicznie typowany język skryptowy ogólnego przeznaczenia
 2. [statycznie typowany język korporacyjny używany do pisania długowiecznych aplikacji klasy *enterprise*](/jezyk-korporacyjny)
 3. [fullstack język, który można używać do pisania frontendu i backendu](/jezyk-fullstackowy)
 4. [szybki język natywny działający bez maszyny wirtualnej i interpretera](/jezyk-natywny)
@@ -111,9 +111,8 @@ Tu nastąpi standardowa odpowiedź w informatyce, *to zależy*.
 * Jeśli jednak chcesz zostać programistą to polecam wcześniej przejrzeć oferty pracy
 czy w twojej okolicy jest zapotrzebowanie na ten język programowania.
 **[Python]** jest aktualnie na trzecim miejscu w rankingu [Tiobe],
-ale bardzo możliwe, 
-że w twojej okolicy jest więcej ofert na np. programistę języka **[Ruby]**. 
-
+ale bardzo możliwe,
+że w twojej okolicy jest więcej ofert na np. programistę języka **[Ruby]**.
 ## Postscriptum
 
 Nie lubię języków skryptowych.
@@ -134,8 +133,7 @@ Jest coś szalonego w języku, którego zapis jest od razu jego drzewem **[CST]*
 [Ruby]:        /langs/ruby
 [Scheme]:      /langs/scheme
 
-[Bash]:        /tools/bash 
-
+[Bash]:        /tools/bash
 [ScalaTest]:   /libs/scalatest
 [Specs2]:      /libs/specs2
 

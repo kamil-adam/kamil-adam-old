@@ -11,13 +11,13 @@ redirect_from:
   - programming/jezyk-wszystkomajacy
 ---
 
-**Język wszystkomający** jest to język w którym można programować 
+**Język wszystkomający** jest to język w którym można programować
 [imperatywnie], [funkcyjnie], [obiektowo], [proceduralnie] oraz [strukturalnie].
 Prawdopodobnie jest to język zły do nauki jako pierwszy język programowania.
 Może też być złym językiem do nauki pojedynczych paradygmatów programowania,
 jeśli nie mamy odpowiedniej dyscypliny.
 Jeśli jednak mamy tę dyscyplinę jest to genialny język do nauki nowych paradygmatów programowania.
-Po co uczyć się nowych paradygmatów programowania starałem się wyjaśnić w artykule 
+Po co uczyć się nowych paradygmatów programowania starałem się wyjaśnić w artykule
 [Kolejny język programowania do nauki - paradygmaty programowania](/paradygmaty-programowania).
 
 ## Pierwszy język wszystkomający
@@ -26,7 +26,7 @@ Jednak to nie ten język programowania chciałbym Tobie polecić.
 A język będący pierwowzorem Scali.
 
 Istnieje popularna legenda,
-że Martin Odersky tworząc język **[Scala]** połączył świat obiektowy, czyli język **[Java]**, 
+że Martin Odersky tworząc język **[Scala]** połączył świat obiektowy, czyli język **[Java]**,
 ze światem funkcyjnym, czyli z językiem **[Haskell]**.
 Jednak gdyby była to prawda to nie byłyby potrzebne dodatkowe biblioteki jak **[Scalaz]** lub **[Cats]** robiące z Scali Haskella.
 Tak naprawdę Martin Odersky dostał zlecenie dodania typów polimorficznych (nazywanych w Javie generykami)
@@ -49,7 +49,7 @@ Ale dlaczego nikt o tym nie mówi i powszechnie uważa się,
 że **[Scala]** była pierwszym językiem obiektowo-funkcyjnym?
 Może dlatego,
 że z trzech rodzin funkcyjnych języków programowania **[OCaml]** jest najmniej znany.
-Na dowód tego mam przykładowe zapytania do wyszukiwarki google. 
+Na dowód tego mam przykładowe zapytania do wyszukiwarki google.
 * `scheme tutorial` - 1 770 000 000 wyników
 * `haskell tutorial` - 1 220 000 wyników
 * `ocaml tutorial` -233 000 wyników
@@ -80,19 +80,18 @@ Książka [Pragmatyczny programista] powstała w 2000 roku.
 Istniały trzy główne grupy języków programowania (przynajmniej według autorów książki [Pragmatyczny programista]):
 1. Niskopoziomowe, rozwlekłe [języki korporacyjne](/jezyk-korporacyjny) i [języki natywne](/jezyk-natywny) -
    ciężko się w nich pisało, były rozwlekłe i wszystkie były podobne do siebie.
-2. Wysokopoziomowe, dynamicznie typowane [języki skryptowe](/jezyk-skryptowy) - 
-   **[TCL]**, **[Perl]**, **[Python]**.
+2. Wysokopoziomowe, dynamicznie typowane [języki skryptowe](/jezyk-skryptowy) -
+**[TCL]**, **[Perl]**, **[Python]**.
    **[Ruby]** był jeszcze nieznany poza Japonią.
 3. Języki eksperymentalne w których pokładano przyszłość, czyli:
-   * **[Smalltalk]** i jego implementacja [Squeak]. 
-     Język totalnie obiektowy (zwany reflektywnym) w którym można było wszystko przedefiniować.
+   * **[Smalltalk]** i jego implementacja [Squeak].
+Język totalnie obiektowy (zwany reflektywnym) w którym można było wszystko przedefiniować.
      Odbijało się to jednak negatywnie na jego szybkości.
    * **[Eiffel]** oraz wzorujący się na nim **[Sather]**,
-     promujące programowanie kontraktowe. 
-
+     promujące programowanie kontraktowe.
 Żaden z języków eksperymentalnych nie przebił się do mainstreamu.
 Jednocześnie autorzy nie zająkneli się na temat programowania funkcyjnego wierząc,
-że języki dynamicznie typowane i totalnie obiektowe (reflektywne) 
+że języki dynamicznie typowane i totalnie obiektowe (reflektywne)
 oraz programowanie kontraktowe rozwiążą wszystkie nasze problemy.
 Dziś wiadomo że nie rozwiązały.
 
@@ -122,8 +121,8 @@ Tu należy się małe wyjaśnienie:
   i swoje imperatywne przyzwyczajenia do nowopoznanego języka.
 * *Scotlin* lub *Skotlin* jest to określenie tego czym powoli staje się język Kotlin,
   który początkowo miał być pragmatycznym i prostym do nauki językiem ogólnego przeznaczenia.
-  A powoli zbiera wszystkie pomysły ze Scali. 
-  Aktualnie trwają [dyskusje](<https://discuss.kotlinlang.org/t/type-classes-in-kotlin/410/3>)
+  A powoli zbiera wszystkie pomysły ze Scali.
+Aktualnie trwają [dyskusje](<https://discuss.kotlinlang.org/t/type-classes-in-kotlin/410/3>)
   nad wprowadzeniem **[Type Classes]** do tego pragmatycznego i prostego języka programowania.
 
 Z książek polecam [Java. Programowanie funkcyjne].

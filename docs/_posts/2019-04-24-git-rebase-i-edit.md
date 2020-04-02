@@ -87,3 +87,6 @@ pick 9999999 dobre zatwierdzenie, bo małe
 
 ## Podsumowanie
 Nic nie napisałem na temat działania polecenia `exec`, ponieważ nigdy nie miałem potrzeby go użyć.
+
+[git]:    /tools/git
+[Ubuntu]: /tools/ubuntu

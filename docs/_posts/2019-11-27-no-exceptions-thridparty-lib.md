@@ -31,13 +31,13 @@ Z tego powodu funkcja ta jest niebezpieczna.
 A mogłaby mieć zmienioną sygnaturę na:
 ```c
 char *gets(char *str, int size);
-``` 
+```
 Co rozwiązałoby problem.
 Jednak po wielu latach twórcy standardu **[C]** zamiast poprawić funkcję `gets` stwierdzili,
 że wolą ją usunąć.
 
 Co to ma wspólnego ze Scalą?
-Otóż niektórzy programiści, 
+Otóż niektórzy programiści,
 wiedząc że są marne szanse na naprawę błędów projektowych ze standardowej biblioteki Scali,
 napisali własne, poprawione wersje.
 
@@ -70,9 +70,9 @@ final case class -\/[+A](a: A) extends (A \/ Nothing)
 final case class \/-[+B](b: B) extends (Nothing \/ B)
 ```
 Powyższy kod może wydawać się dziwny,
-do momentu gdy nie uświadomimy sobie, 
+do momentu gdy nie uświadomimy sobie,
 że klasa `Disjunction` nawet nie istnieje w kodzie biblioteki Scalaz.
-`Disjunction` jest tylko aliasem na klasę `\/` 
+`Disjunction` jest tylko aliasem na klasę `\/`
 (czytane jako "Wściekły Zając", ale ja wymawiam to jako "Hail Hydra"):
 ```scala
   type Disjunction[+A, +B] = \/[A, B]
@@ -120,8 +120,8 @@ object DisjunctionAPIState {
 
 ## Validation vs Disjunction
 
-Klasa `Validation` także posiada dwie podklasy, 
-ale w tym przypadku nie mamy dziwnych symboli, 
+Klasa `Validation` także posiada dwie podklasy,
+ale w tym przypadku nie mamy dziwnych symboli,
 tylko intuicyjne nazwy:
 
 ```scala

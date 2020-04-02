@@ -40,8 +40,7 @@ Za wyjątkiem takich wypadków jak to że:
 stając się podstawowym językiem niskokoziomowym do pisania systemów operacyjnych i systemów wbudowanych.
 * **[Java]** (z pomocą C#) wygryzła C++ i Cobola stając się głównym [językiem korporacyjnym](/jezyk-korporacyjny).
 * **[Python]** wygryzł języki **[Perl]** oraz **[TCL]** i dalej spycha pozostałe [języki skryptowe](/jezyk-skryptowy) do coraz głębszej niszy.
-* **[Python]** wygryzł języki **[Scheme]** i **[Racket]** z zastosowań naukowych. 
-
+* **[Python]** wygryzł języki **[Scheme]** i **[Racket]** z zastosowań naukowych.
 Aktualnie:
 * **[Rust]** stara się zostać głównym [językiem natywnym](/jezyk-natywny).
 * **[Go]** stara się zostać głównym [językiem korporacyjnym](/jezyk-korporacyjny)
@@ -69,8 +68,8 @@ Tutaj najlepiej sięgnąć do literatury.
 W książce [Czysta Architektura] Robert C. Martin zapewnia,
 że są tylko trzy paradygmaty programowania i z tego co można wyczytać w jego książce są to:
 1. **Programowanie strukturalne** - wymyślone w 1968  przez Edsger Dijkstra.
-Edsger Dijkstra skrytykował używanie instrukcji `goto` 
-i zalecał używanie instrukcji sterujących selekcji  (`if`/`then`/`else`) oraz iteracji (`for`/`while`/`until`).  
+Edsger Dijkstra skrytykował używanie instrukcji `goto`
+i zalecał używanie instrukcji sterujących selekcji  (`if`/`then`/`else`) oraz iteracji (`for`/`while`/`until`).
 2. **Programowanie obiektowe** - wymyślone w roku 1966 przez Ole-Johan Dahl i Kristen Nygaard
 przy tworzeniu języków do symulacji SIMULA I i SIMULA-67.
 Rozwiązuje problem polimorfizmu.
@@ -99,44 +98,42 @@ ale przypadkiem zaimplementowane już w 1958 w języki **[LISP]**.
    3. Dla języka C++ w 1985 roku.
       Jest to obecnie najpopularniejsza definicja obiektowości.
       Oparta na dziedziczeniu (czasem nazywanym rozszerzanie lub implementowaniem) klas, interfejsów i/lub protokołów.
-   4. Duck typing i systemy typu strukturalnego, 
-      gdzie nie implementuje się interfejsów, 
-      ale obiekty po prostu mają posiadać pewien zestaw metod. 
-      Używane głównie w [językach skryptowych](/jezyk-skryptowy),
+   4. Duck typing i systemy typu strukturalnego,
+gdzie nie implementuje się interfejsów,
+ale obiekty po prostu mają posiadać pewien zestaw metod.
+Używane głównie w [językach skryptowych](/jezyk-skryptowy),
       ale od niedawna także w statycznie typowanym jezyku **[Go]**.
    5. CLOS (Common Lisp Object System) -
       system obiektowy oparty o multimetody używany w **[Common Lisp]**.
 3. **Programowanie funkcyjne** zostało zdefiniowane w 1936 jako [rachunek lambda].
 Od tej pory były trzy główne próby stworzenia języka funkcyjnego:
    1. Dynamicznie typowany język z rekurencją ogonową i leniwymi listami (strumieniami),
-      czyli **[LISP]** stworzony w roku 1958. 
-      Ustandaryzowany jako **[Scheme]** w 1975 roku.
+      czyli **[LISP]** stworzony w roku 1958.
+Ustandaryzowany jako **[Scheme]** w 1975 roku.
       Alternatywny standard **[Common Lisp]** jest bardziej podobny do zwykłych (imperatywnych) języków programowania,
       ponieważ  nie gwarantuje rekurencji ogonowej.
    2. Statycznie typowany, generyczny język programowania z rekurencją i strumieniami,
-      czyli **[Meta Language]** stworzony  w 1973 roku. 
-      Ustandaryzowany jako **Standard ML** w 1990 roku. 
-      Co ciekawe **[OCaml]** z 1996 roku jest prawdopodobnie pierwszym [językiem wszystkomającym](/jezyk-wszystkomajacy), 
-      czyli obiektowo-funkcyjnym.
+      czyli **[Meta Language]** stworzony  w 1973 roku.
+Ustandaryzowany jako **Standard ML** w 1990 roku.
+Co ciekawe **[OCaml]** z 1996 roku jest prawdopodobnie pierwszym [językiem wszystkomającym](/jezyk-wszystkomajacy),
+czyli obiektowo-funkcyjnym.
    3. W pełni funkcyjny język programowania kompilowany do rachunku lambda,
       czyli **[Haskell]** stworzony w roku 1990.
       Ponieważ nie zbudowano jeszcze komputera wykonującego natywnie [rachunek lambda]
-      to jest on dalej kompilowany do imperatywnych rozkazów procesora.  
-
+      to jest on dalej kompilowany do imperatywnych rozkazów procesora.
 ### Scala. Nauka programowania
 
-W książce [Scala. Nauka programowania] Vikash Sharma 
+W książce [Scala. Nauka programowania] Vikash Sharma
 wymienia za to cztery paradygmaty programowania:
 * **Programowanie imperatywne** - *najpierw zrób to, potem zrób tamto*.
 * **Programowanie funkcyjne** - *oceń i zrób*.
 * **Programowanie logiczne** - *odpowiedź za pomocą rozwiązania*.
-* **Programowanie zorientowane obiektowo** - przekazuje **komunikaty** między obiektami, 
-aby w ten sposób symulować ewolucję faktycznie używanego podejścia. 
-
+* **Programowanie zorientowane obiektowo** - przekazuje **komunikaty** między obiektami,
+aby w ten sposób symulować ewolucję faktycznie używanego podejścia.
 Z czego programowanie logiczne jest dedykowane do specyficznej klasy problemów matematycznych.
 
 ### http://wazniak.mimuw.edu.pl
-  
+
 Na stronie <http://wazniak.mimuw.edu.pl>ę
 w kursie [Paradygmaty programowania](http://wazniak.mimuw.edu.pl/index.php?title=Paradygmaty_programowania)
 autor zgadza się co do czterech głównych paradygmatów z Vikash Sharma,
@@ -177,15 +174,15 @@ Ponieważ większość aplikacji jest obecnie przepisywana na mikroserwisy to w 
 że jeśli w danym języku programowania można napisać mikroserwis to można używać go na produkcji.
 
 Ale tu znów będziemy kopać się z nieznanym sobie frameworkiem do RESTów w nieznanym sobie języku programowania.
-Możliwe także, 
+Możliwe także,
 że z nieznaną sobie bazą danych.
 Potrzebne jest lepsze zadanie.
 Nie używające http, kolejek wiadomości i baz danych,
 ale pozwalające wykorzystać jak najwięcej funkcjonalności (ang. *features*) poznawanego języka programowania.
 
-Nawet jeśli znajdziemy takie zadanie, tj. używające dużo funkcjonalności języka bez nauki frameworków 
-to poświęcimy dużo czasu na przebijanie się przez instalowanie tego języka, 
-zwłaszcza jeśli będzie to [język natywny](/jezyk-natywny), 
+Nawet jeśli znajdziemy takie zadanie, tj. używające dużo funkcjonalności języka bez nauki frameworków
+to poświęcimy dużo czasu na przebijanie się przez instalowanie tego języka,
+zwłaszcza jeśli będzie to [język natywny](/jezyk-natywny),
 oraz pisanie prostych `"Hello world!"` w tym języku.
 Oczywiście jeśli mamy dużo czasu nie jest to problemem.
 Jeśli jednak mamy mało czasu to pewnie chcielibyśmy od razu siąść i kodować.
@@ -200,8 +197,7 @@ Czyli:
 * jeśli programujemy w C# na .NET możemy zacząć używać **[F#]**;
 * jeśli programujemy w Javie na **[JVM]** możemy zacząć używać jednego z języków **[Scala]**, **[Kotlin]** lub **[Clojure]**;
 * jeśli programujemy w **[JS]**/**[CS]**/**[LS]**/**[TS]** na **[node.js]**
-możemy zacząć używać jednego z funkcyjnych transpilowanych do **[JS]** jak **[Elm]**, **[PureScript]** lub **[ReasonML]**. 
-
+możemy zacząć używać jednego z funkcyjnych transpilowanych do **[JS]** jak **[Elm]**, **[PureScript]** lub **[ReasonML]**.
 ## Podsumowanie
 
 Jednak idealniebyłoby, gdyby istniał jeden język programowania,
@@ -217,7 +213,7 @@ Ciąg dalszy nastpił jako artykuł [Kolejny język programowania - język wszys
 [Elm]:           /langs/elm
 [F#]:            /langs/fsharp
 [Go]:            /langs/go
-[Haskell]:       /langs/haskell 
+[Haskell]:       /langs/haskell
 [Java]:          /langs/java
 [JS]:            /langs/javascript
 [Kotlin]:        /langs/kotlin

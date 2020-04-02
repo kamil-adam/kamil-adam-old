@@ -46,7 +46,7 @@ Czyli:
    * W pozostałych wypadkach będzie to najprawodpodobniej kod maszynowy
 
 ## Zalety języków natywnych
-Języki natywne posiadają wiele zalet. 
+Języki natywne posiadają wiele zalet.
 Dla mnie najważniejszymi są:
 * możliwość spakowania programu/aplikacji do jednego pliku wykonywalnego
 razem ze wszystkimi bibliotekami trzecimi i plikami konfiguracyjnymi
@@ -60,14 +60,13 @@ Tak właśnie jest w przypadku języków kompilowanych do kodu natywnego.
 
 Jeśli piszemy w języku skryptowym czasem można oszukać.
 Niektóre języki skryptowe pozwalają spakować skrypty i interpreter w jeden wykonywalny plik.
-Przykładem może tu być [Electron], 
+Przykładem może tu być [Electron],
 który posłużył do napisania edytorów [Atom] oraz [VSC].
 
 Gorzej jest w przypadku języków korporacyjnych kompilowanych do kodu bajtowego.
 Ich maszyny wirtualne, jak JVM, są często zbyt duże, by móc je dołączać do każdego programu z osobna.
 Prawdziwy problem zaczyna się,
-gdy różne programy wymagają różnych wersji maszyny wirtualych np. JRE 6 i JRE 11.   
-
+gdy różne programy wymagają różnych wersji maszyny wirtualych np. JRE 6 i JRE 11.
 ### Niska zajętość RAMu
 [Electron] jest wspaniałym narzędziem,
 które pozwoliło programistom frontendu pisać aplikacje desktopowe.
@@ -80,10 +79,10 @@ interpreter JavaScriptu V8 oraz silnik do renderowania HTMLu i CSSów.
 W przypadku języków natywnych możemy użyć bibliotek graficznych wbudowanych w system operacyjny.
 Lub przenośnych bibliotek graficznych jak GTK (Gnome) oraz Qt (KDE).
 Nie musimy uruchamiać także zewnętrznych interpreterów, maszyn wirtualnych i kompilatorów JIT.
- 
+
 ### Szybkość działania
 Szybkość poszczególnych języków programowania jest tematem drażliwym.
-Często testy porównawcze (ang. *benchmarks*) szybkości działania poszczególnych języków programowania 
+Często testy porównawcze (ang. *benchmarks*) szybkości działania poszczególnych języków programowania
 są pisane w taki sposób,
 żeby potwierdziły tezę piszącego.
 Potem można spotkać raporty z których wynika,
@@ -91,9 +90,8 @@ Potem można spotkać raporty z których wynika,
 
 Drugim problemem jest to, że wydajność języków zmienia się w czasie.
 Np. początkowo kod bajtowy Javy był tylko interpretowany.
-Obecnie jest kompilowany podczas uruchomienia  (ang. *just-in-time compilation*, **JIT**) 
-
-Przydałby się niezależny zestaw testów nie sponsorowany przez żaden z języków. 
+Obecnie jest kompilowany podczas uruchomienia  (ang. *just-in-time compilation*, **JIT**)
+Przydałby się niezależny zestaw testów nie sponsorowany przez żaden z języków.
 Szczęśliwie taki zestaw istnieje i nazywa się [Benchmarks Game].
 
 Na podstawie tego zestawu testów możemy podzielić języki programowania na kilka grup pod względem szybkości działania:
@@ -117,8 +115,8 @@ Na podstawie tego zestawu testów możemy podzielić języki programowania na ki
    * **[Go]** - kompilowany do kodu natywnego
 4. Trzy do dziesięciu razy wolniejsze niż C:
    * **[TypeScript]** - kompilowany do **[JS]** i uruchamiany na **[Node.js]**
-   * **[Dart]** - prawdopodobnie kompilowany do **[JS]** i uruchamiany na **[Node.js]** 
-   * **[Haskell]** GHC - prawdopodobnie kompilowany do C
+   * **[Dart]** - prawdopodobnie kompilowany do **[JS]** i uruchamiany na **[Node.js]**
+* **[Haskell]** GHC - prawdopodobnie kompilowany do C
    * **[Node.js]** - prawdopodobnie chodzi o **[JavaScript]**
    * **[Racket]** - dialekt **[Scheme]**
 5. Ponad dziesięć razy wolniejsze niż C:
@@ -169,7 +167,7 @@ ale na szczęście istnieją inne dobre IDE dla **[Go]** jak [Atom] lub [VSC]
 * Dzięki temu, że posiada <s>~~upośledzoną~~</s> prostą składnię prawdopodobnie będzie to też nowy [język korporacyjny](/jezyk-korporacyjny).
 
 Dodatkowo problemy znane z C++ są rozwiązane w **[Go]** za pomocą wszystkomającego kompilatora,
-który także formatuje kod i zarządza zależnościami. 
+który także formatuje kod i zarządza zależnościami.
 Co prawda nie jest superszybki,
 co widać po testach,
 ale za to szybko się kompiluje.
@@ -181,7 +179,7 @@ Lub chcemy pisać szybko działające oprogramowanie?
 W takim przypadku istnieje kilka alternatyw,
 ale żadna z nich nie jest łatwa:
 * **[Rust]** - posiada zaawansowany system typów,
-domyślną niezmienność (ang. *immutable*), 
+domyślną niezmienność (ang. *immutable*),
 prawie **[Type Classes]** i wiele innych cech deklaratywno funkcyjnych języków programowania.
 Jednocześnie pozwalając na imperatywne optymalizacje tam gdzie ważna jest wydajność.
 * **[Pony]** - posiada typowany system aktorów inspirowany językiem **[Erlang]**,
@@ -217,7 +215,7 @@ I to może odwrócić trend w najbliższych latach.
 [Meta Language]: /langs/meta-language
 [OCaml]: /langs/ocaml
 [Pony]: /langs/pony
-[Racket]: /langs/racket 
+[Racket]: /langs/racket
 [Ruby]: /langs/ruby
 [Rust]: /langs/rust
 [Scala]: /langs/scala

@@ -2,7 +2,7 @@
 title: "Git-flow i aliasy"
 author:   TheKamilAdam
 category: cli
-tags:     alias cli 
+tags:     alias cli
 labels:   flow
 tools:    git
 redirect_from:

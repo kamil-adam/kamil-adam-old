@@ -19,7 +19,7 @@ Ogólnie `Try` nie jest zalecane w nowym kodzie.
 Chociażby dlatego, że nie możemy zamiast `Throwable` używać bardziej specyficznego błędu.
 W naszym przypadku `UrlException`.
 
-Rozwiązaniem jest [monada] `Either`. 
+Rozwiązaniem jest [monada] `Either`.
 [Monada] `Either` podobnie jak [monada] `Try` posiada dwie wartości.
 Jednak w jego przypadku nazywają się one `right` i `left`:
 * `right` jest prawa - czyli poprawny
@@ -42,8 +42,7 @@ Metoda `nonFatalCatch` z obiektu singletonowego `scala.util.control.Exception` j
 
 Jaka jest wyższość monady `Either` nad monadą `Try`?
 W monadzie `Try` możemy sparametryzować tylko warość poprawną.
-W monadzie `Eiher` - także błąd. 
-
+W monadzie `Eiher` - także błąd.
 Ogólnie to szkoda, że [monada] `Try` nie jest zdefiniowany jako:
 ```scala
 type Try[A] = Either[Throwable, A]
@@ -106,8 +105,7 @@ Jej nazwa pochodzi od tego że wynik dostaniemy w przyszłości, a w międzyczas
 * przeliczać wartości które już otrzymał z monady `Future`
 
 Konstrukcje podobne to `Future` w różnych bibliotekach i językach są zwane także zadaniami (ang. `Task`),
-obietnicami (ang. `Promise`) lub po prostu **[IO]**. 
-
+obietnicami (ang. `Promise`) lub po prostu **[IO]**.
 ```scala
 object SourcePageFutureFromInternalUrl {
 
@@ -148,7 +146,7 @@ class EitherBeginState(data: UrlsWithThrowableList)(implicit d: Domain, ec: Exec
 }
 ```
 
-Metoda `Future.sequence` trawersuje zbiór, 
+Metoda `Future.sequence` trawersuje zbiór,
 czyli zbiór monad `Future` zamienia na jedną monadę `Future` zawierającą zbiór.
 Następnie metoda `Await.result(future, 1.minute)` wypakowywuje zawartość monady,
 czyli oczekuje blokująco maksymalnie jedną minutę aż wszystkie zadania zostaną zakończone.

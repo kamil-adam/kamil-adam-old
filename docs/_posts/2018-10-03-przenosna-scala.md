@@ -59,8 +59,8 @@ Niestety **[Scala.js]** i Akka.js posiadają wszystkie wady **[Node.js]** to zna
 ale do front-endu wydają się idealne.
 
 ### Native
-Największą zaletą języków 
-**[Rust]**, **[Pony]**, **[Crystal]** czy **[Go]**, 
+Największą zaletą języków
+**[Rust]**, **[Pony]**, **[Crystal]** czy **[Go]**,
 jest to,
 że są to języki kompilowane do postaci natywnej,
 a programy w nich pisane mogą być dostarczane do klienta pod postacią jednego pliku.

@@ -33,20 +33,19 @@ git filter-branch --env-filter '
     GIT_COMMITTER_EMAIL="new@email"
 ' --tag-name-filter cat -- --branches --tags
 ```
-Polecenie to dla każdego zatwierdzenia ustawia nowe 
+Polecenie to dla każdego zatwierdzenia ustawia nowe
 `GIT_AUTHOR_NAME`, `GIT_AUTHOR_EMAIL`, `GIT_COMMITTER_NAME` i `GIT_COMMITTER_EMAIL`.
 
 Tutaj warto dodać,
 że *committer* (nie mam pojęcia jak to będzie po polsku) jest to osoba,
-która włącza zatwierdzenia z gałęzi tymczasowej do głównej. 
-
-Na końcu należy jeszcze wypchnąć zmiany do repozytorium za pomocą polecenia 
+która włącza zatwierdzenia z gałęzi tymczasowej do głównej.
+Na końcu należy jeszcze wypchnąć zmiany do repozytorium za pomocą polecenia
 `git push --force --tags origin 'refs/heads/*'`.
 
 ## Najpopularniejszy przypadek
 Często jednak nie chcemy zmieniać wszystkich zatwierdzeń,
 ale tylko te utworzone przez konkretnego autora.
-Prawdopodobnie najpopularniejszym przypadkiem jest zmiana adresu autora zatwierdzeń. 
+Prawdopodobnie najpopularniejszym przypadkiem jest zmiana adresu autora zatwierdzeń.
 Można to osiągnąć za pomocą poniższego skryptu zawierającego dwie instrukcje `if`
 ```bash
 #!/bin/sh -x
@@ -107,7 +106,7 @@ warto wiedzieć, że istnieje taka opcja.
 Zwłaszcza biorąc pod uwagę,
 że wiele zaawansowanych opcji systemu kontroli wersji **[git]** jest dostępnych tylko z [konsoli].
 
-[bash]:          /tools/bash 
+[bash]:          /tools/bash
 [git]:           /tools/git
 
 [cli]:           /tags/cli

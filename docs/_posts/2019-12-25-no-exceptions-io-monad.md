@@ -38,7 +38,7 @@ W Scali, dzięki bibliotekom, mamy do wyboru kilka implementacji monady `IO`:
 ## `scalaz.effect.IO`
 
 Monada `scalaz.effect.IO` pierwotnie należała do `scalaz-core`,
-ale obecnie jest przeniesiona do biblioteki `scalaz-effect`. 
+ale obecnie jest przeniesiona do biblioteki `scalaz-effect`.
 Posiada jeden parametr generyczny określający zwracany typ.
 
 Logika programu [linkchecker] pisana przy wykorzystaniu `scalaz.effect.IO` wygląda następująco:
@@ -141,9 +141,8 @@ class IO2State(data: UrlsWithThrowableList)(implicit d: Domain) extends Validati
 Dla tej wersji monady `IO` także nie znalazłem prostej metody trawersowania,
 więc napisałem ją za pomocą metod `flatMap` i `map`.
 
-## `scalaz.ioeffect.Task` - Task po raz drugi 
-
-W bibliotece `scalaz-ioeffect` monada `Task` jest tylko aliasem do monady `IO`: 
+## `scalaz.ioeffect.Task` - Task po raz drugi
+W bibliotece `scalaz-ioeffect` monada `Task` jest tylko aliasem do monady `IO`:
 ```scala
   type Task[A] = IO[Throwable, A]
 ```
@@ -186,8 +185,8 @@ class Task2State(data: UrlsWithThrowableList)(implicit d: Domain) extends Valida
 Monada `IO` z biblioteki ` scalaz-ioeffect` także została zdeprecjonowana.
 
 Czemu powstała kolejna biblioteka?
-Dla wielu osób programowanie czysto funkcyjne z biblioteką `scalaz` było odpychające 
-z powodu ogromnej ilości typów proponowanych przez tą bibliotekę 
+Dla wielu osób programowanie czysto funkcyjne z biblioteką `scalaz` było odpychające
+z powodu ogromnej ilości typów proponowanych przez tą bibliotekę
 (`Option`, `Maybe`, `Either`, `Disjunction`, `Validation`).
 Jest to spowodowane tym,
 że biblioteka `scalaz` jest próbą przeniesienia full typowania z języka **[Haskell]**.

@@ -5,7 +5,7 @@ category: scala-native
 tags:     library cli factory logging
 labels:   scala-logging scribe
 langs:    scala java
-tools:    scala-js scala-native   
+tools:    scala-js scala-native
 lisb:     utest slogging
 redirect_from:
   - biblioteki-do-logowania

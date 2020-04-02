@@ -16,8 +16,8 @@ Ja znalazłem cztery powody, dlaczego warto prowadzić bloga o programowaniu.
 Natrafiałem na nie właśnie w tej kolejności.
 
 ## Notatki dla siebie
-Nie wiem jak inni programiści, 
-ale ja mam dobrą pamięć do rzeczy złożonych, 
+Nie wiem jak inni programiści,
+ale ja mam dobrą pamięć do rzeczy złożonych,
 jak np. składnia języka **[Scala]**,
 i słabą pamięć do rzeczy prostych, jak np. “z jakimi parametrami należy budować projekt w języku Scala, żeby otrzymać żądany efekt”.
 Rezultat tego był taki, że wielokrotnie przeszukiwałem internet w poszukiwaniu tych samych rzeczy.

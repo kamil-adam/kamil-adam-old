@@ -21,8 +21,8 @@ import java.util.*;
 
 public class ImmutableLists {
     public static void main(String[] args) {
-      
-      final var immutableList = List.of("java", "util", "sucks");
+
+final var immutableList = List.of("java", "util", "sucks");
 
       final var result0 = immutableList.remove(0);
       System.out.println(result0);
@@ -34,7 +34,7 @@ public class ImmutableLists {
 ```
 
 Ok, nie można.
-Jeśli spróbujecie uruchomić powyższy kod to walnie was w twarz wyjątek `UnsupportedOperationException`, 
+Jeśli spróbujecie uruchomić powyższy kod to walnie was w twarz wyjątek `UnsupportedOperationException`,
 ponieważ **[Java]** ma upośledzone kolekcje niemutowalne:
 
 ```bash
@@ -50,8 +50,8 @@ import java.util.*;
 
 public class MutableLists {
     public static void main(String[] args) {
-      
-      final var immutableList = List.of("java", "util", "sucks");
+
+final var immutableList = List.of("java", "util", "sucks");
 
       final var mutableList0 = new ArrayList(immutableList);
       final var result0 = mutableList0.remove(0);
@@ -64,8 +64,7 @@ public class MutableLists {
 }
 ```
 
-## Analiza 
-
+## Analiza
 Dawno temu,
 w odległej przeszłości,
 w **[Java]** nie było typów parametrycznych zwanych w Javie typami generycznymi lub skrótowo generykami.
@@ -85,8 +84,7 @@ Dodatkowo dochodzi do tego to,
 że metoda usuwająca element z listy po wartości elementu (`Collection<E>::remove(Object)`)
 nazywa się dokładnie tak samo jak metoda usuwająca element z listy po indeksie (`Collection<E>::remove(int)`)
 Razem prowadzi to do powyższych patologii,
-czyli że metoda działa w zupełnie inny sposób dla typu `Integer`, a w innny dla `int`. 
-
+czyli że metoda działa w zupełnie inny sposób dla typu `Integer`, a w innny dla `int`.
 ## Rozwiązanie
 
 Rozwiązaniem jest porzucenie bezsensownych kolekcji z standardowej biblioteki Javy i użycie biblioteki [vavr].
@@ -97,8 +95,8 @@ import java.io.vavr.collection.*;
 
 public class VavrLists {
     public static void main(String[] args) {
-      
-      final var immutableList = List.of("Vavr", "is", "awesome");
+
+final var immutableList = List.of("Vavr", "is", "awesome");
 
       final var result0 = immutableList.removeAt(0);
       System.out.println(result0);
@@ -121,8 +119,8 @@ import java.io.vavr.collection.*;
 
 public class VavrLists {
     public static void main(String[] args) {
-      
-      final var immutableList = List.of("Vavr", "is", "awesome");
+
+final var immutableList = List.of("Vavr", "is", "awesome");
 
       final var result0 = immutableList.removeAt(0);
       System.out.println(result0);
@@ -138,7 +136,7 @@ I wszystko działa tak jak należy.
 
 Zalety bibliotek [vavr] jest mnóstwo i aż trudno je zliczyć.
 Są to między innymi:
-* metoda `List<E>::remove(E)` służąca do usuwania elementu na podstawie wartości elementu jest generyczna 
+* metoda `List<E>::remove(E)` służąca do usuwania elementu na podstawie wartości elementu jest generyczna
 * istnieje osobna metoda do usuwania elementu po indeksie o nazwie `List<E>::removeAt(int)`
 * jest pełne wsparcie dla niemutowalności
 * kolekcje z [vavr] są wzorowane na bibliotece standardowej Scali, więc jeśli będziesz kiedyś chcieć nauczyć się Scali będzie Ci łatwiej
